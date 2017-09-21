@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-usermanager-desc": "Schnettschtäll för Metmaacher ze verwallde: derbeidonn, ändere, fottschmiiße.",
+	"bs-usermanager-admin-nodelete": "Däm Wikki_Köhbeß singe Zohjang zom Wikki kam_mer nit fott schmiiße.",
+	"bs-usermanager-self-nodelete": "Do kanns Dinge Zohjang zom Wikki nit fott schmiiße.",
+	"bs-usermanager-db-error": "Ene Dahtebangk_Fähler es opjetrodde.",
+	"bs-usermanager-enter-pwd": "bes esu johd un donn e Paßßwood enjävvve",
+	"bs-usermanager-idnotexist": "Heh dä Metmaacher jidd_et nit.",
+	"bs-usermanager-invalid-pwd": "Dat Paßwoot jeiht nit.",
+	"bs-usermanager-invalid-realname": "Dä „reschtejje Name“ es onjöltesch udder Kappes.",
+	"bs-usermanager-invalid-uname": "Dä Nahme es för ene Metmaacher nit jöltesh.",
+	"bs-usermanager-invalid-email-gen": "De Addräß för de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i> es onjöltesch.",
+	"bs-usermanager-label": "Metmaacher verwallde",
+	"bs-usermanager-user-added": "Dä Metmaacher es derbei jedonn.",
+	"bs-usermanager-user-deleted": "Dä Metmaacher es fottjeschmeße.",
+	"bs-usermanager-user-exists": "Ene metmaacher met däm Nahme jiddet alt.",
+	"bs-usermanager-save-successful": "Änderonge faßjehallde.",
+	"bs-usermanager-headerusername": "Metmaacher_Nahme",
+	"bs-usermanager-headerrealname": "Der „reeschteje“ Nahme",
+	"bs-usermanager-headeremail": "De <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>-Adräß",
+	"bs-usermanager-headergroups": "Jroppe",
+	"bs-usermanager-titleadduser": "Donn ene Metmaacher derbei",
+	"bs-usermanager-titleeditdetails": "Donn ene Metmaacher ändere",
+	"bs-usermanager-labelnewpassword": "Et Paßwoot",
+	"bs-usermanager-labelpasswordcheck": "Norr_ens dat Paßwoot",
+	"bs-usermanager-titledeleteuser": "Metmaacher fottschmiiße",
+	"bs-usermanager-confirmdeleteuser": "Wells De verhaftesch {{PLURAL:$1|heh dä|heh di $1|keine}} Metmaacher fottschmiiße?",
+	"bs-usermanager-groups-more": "…&nbsp;mih",
+	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme.",
+	"apihelp-bs-usermanager-tasks-description": "Livvert Operazjuhne för et Zohsazprojramm <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">Checklist </code>"
+}

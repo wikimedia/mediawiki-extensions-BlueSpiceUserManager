@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Reza1615",
+			"Dalba"
+		]
+	},
+	"bs-usermanager-enter-pwd": "لطفاً یک گذرواژه وارد کنید.",
+	"bs-usermanager-invalid-pwd": "گذرواژه نامعتبر است.",
+	"bs-usermanager-save-successful": "تغییرات ذخیره‌شد.",
+	"bs-usermanager-headerusername": "نام کاربری",
+	"bs-usermanager-headerrealname": "نام واقعی",
+	"bs-usermanager-headeremail": "رایانامه",
+	"bs-usermanager-headergroups": "گروه‌ها",
+	"bs-usermanager-titleadduser": "افزودن کاربر",
+	"bs-usermanager-titleeditdetails": "ویرایش کاربر",
+	"bs-usermanager-labelnewpassword": "گذرواژه",
+	"bs-usermanager-labelpasswordcheck": "تأیید گذرواژه",
+	"bs-usermanager-titledeleteuser": "حذف کاربر",
+	"bs-usermanager-groups-more": "بیشتر...",
+	"bs-usermanager-no-self-desysop": "نمی‌توانید دسترسی مدیریتی خودتان را بگیرید."
+}

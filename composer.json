@@ -1,0 +1,8 @@
+{
+	"autoload" : {
+		"psr-4": {
+			"BS\\UserManager\\": "src",
+			"BS\\UserManager\\Tests\\": "tests/phpunit"
+		}
+	}
+}

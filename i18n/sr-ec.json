@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Сербијана",
+			"Zoranzoki21"
+		]
+	},
+	"bs-usermanager-headeremail": "Имејл",
+	"apihelp-bs-usermanager-group-store-description": "Даје кориснички менаџер задатака api за BlueSpice."
+}

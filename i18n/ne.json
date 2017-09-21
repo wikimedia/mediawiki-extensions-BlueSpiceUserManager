@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"bs-usermanager-desc": "प्रयोगकर्ताहरू जोड्ने, सम्पादन गर्ने तथा मेट्ने प्रवन्धक अवतरण",
+	"bs-usermanager-admin-nodelete": "प्रवन्धक खाता मेट्न सकिदैन।",
+	"bs-usermanager-self-nodelete": "तपाईं आफ्नो खाता मेटाउन सक्नुहुन्न।",
+	"bs-usermanager-db-error": "डेटावेसमा त्रुटि उत्पन्न भयो।",
+	"bs-usermanager-enter-pwd": "कृपया पासवर्ड हाल्नुहोस्।",
+	"bs-usermanager-idnotexist": "यो प्रयोगकर्ता अस्तित्वमा छैन।",
+	"bs-usermanager-invalid-pwd": "पासवर्ड मान्य छैन।",
+	"bs-usermanager-invalid-realname": "वास्तविक नाम अमान्य छ।",
+	"bs-usermanager-invalid-uname": "प्रयोगकर्ता नाम अमान्य छ।",
+	"bs-usermanager-invalid-email-gen": "इमेल ठेगाना अमान्य छ।",
+	"bs-usermanager-label": "प्रयोगकर्ता प्रवन्धक",
+	"bs-usermanager-user-added": "यो प्रयोगकर्ता जोडिएको छ।",
+	"bs-usermanager-user-deleted": "यो प्रयोगकर्ता मेटिएको छ।",
+	"bs-usermanager-user-exists": "यो प्रयोगकर्तानाम पहिले देखि समावेस छ।",
+	"bs-usermanager-save-successful": "परिवर्तन सङ्ग्रह भएको छ।",
+	"bs-usermanager-headerusername": "प्रयोगकर्ता नाम",
+	"bs-usermanager-headerrealname": "वास्तविक नाम",
+	"bs-usermanager-headeremail": "इमेल",
+	"bs-usermanager-headergroups": "समूहहरू",
+	"bs-usermanager-titleadduser": "प्रयोगर्ता जोड्ने",
+	"bs-usermanager-titleeditdetails": "प्रयोगकर्ता सम्पादन गर्ने",
+	"bs-usermanager-labelnewpassword": "पासवर्ड",
+	"bs-usermanager-labelpasswordcheck": "पासवर्ड निश्चित गर्नुहोस्",
+	"bs-usermanager-titledeleteuser": "प्रयोगकर्ता मेट्ने",
+	"bs-usermanager-confirmdeleteuser": "के तपाईं {{PLURAL:$1|यो प्रयोगकर्ता|यी $1 प्रयोगकर्ताहर}}लाई मेट्न चाहनुहुन्छ?",
+	"bs-usermanager-groups-more": "...अझै",
+	"bs-usermanager-no-self-desysop": "तपाईं आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।"
+}

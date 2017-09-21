@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"R-Joe"
+		]
+	},
+	"bs-usermanager-group-add-not-allowed": "Felhasználók hozzáadása a csoporthoz $1 nem megengedettek.",
+	"bs-usermanager-group-remove-not-allowed": "Felhasználók eltávolítása a csoport $1 nem megengedett."
+}

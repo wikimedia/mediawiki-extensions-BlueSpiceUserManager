@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fohanno"
+		]
+	},
+	"bs-usermanager-admin-nodelete": "Ne c'haller ket dilemel kont ar merour.",
+	"bs-usermanager-self-nodelete": "Ne c'hallit ket dilemel ho kont.",
+	"bs-usermanager-db-error": "Ur fazi zo bet gant an diaz roadennoù.",
+	"bs-usermanager-enter-pwd": "Merkit ur ger-tremen mar plij.",
+	"bs-usermanager-idnotexist": "N'eus ket eus an implijer-mañ.",
+	"bs-usermanager-invalid-pwd": "Direizh eo ar ger-tremen.",
+	"bs-usermanager-invalid-realname": "Direizh eo ar gwir anv.",
+	"bs-usermanager-invalid-uname": "Direizh eo an anv implijer.",
+	"bs-usermanager-invalid-email-gen": "Direizh eo ar chomlec'h postel.",
+	"bs-usermanager-label": "Merout implijerien",
+	"bs-usermanager-user-added": "Ouzhpennet eo bet an implijer.",
+	"bs-usermanager-user-deleted": "Dilamet eo bet an implijer.",
+	"bs-usermanager-user-exists": "An anv implijer zo anezhañ dija.",
+	"bs-usermanager-save-successful": "Kemmoù enrollet.",
+	"bs-usermanager-headerusername": "Anv implijer",
+	"bs-usermanager-headerrealname": "Gwir anv",
+	"bs-usermanager-headeremail": "Postel",
+	"bs-usermanager-headergroups": "Strolladoù",
+	"bs-usermanager-titleadduser": "Ouzhpennañ un implijer",
+	"bs-usermanager-titleeditdetails": "Aozañ an implijer",
+	"bs-usermanager-labelnewpassword": "Ger-tremen",
+	"bs-usermanager-labelpasswordcheck": "Kadarnaat ar ger-tremen",
+	"bs-usermanager-titledeleteuser": "Dilemel an implijer",
+	"bs-usermanager-confirmdeleteuser": "Ha sur oc'h e fell deoc'h dilemel {{PLURAL:$1|an implijer-mañ|an $1 implijer-mañ}}?"
+}

@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"Cwlin0416",
+			"LNDDYL"
+		]
+	},
+	"bs-usermanager-enter-pwd": "請輸入密碼。",
+	"bs-usermanager-invalid-pwd": "密碼無效。",
+	"bs-usermanager-invalid-realname": "真實姓名無效。",
+	"bs-usermanager-invalid-uname": "使用者名稱無效。",
+	"bs-usermanager-invalid-email-gen": "電子郵件地址無效。",
+	"bs-usermanager-label": "使用者管理",
+	"bs-usermanager-user-added": "已新增使用者。",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|使用者|$1 個使用者}}已被刪除。",
+	"bs-usermanager-user-exists": "使用者已存在。",
+	"bs-usermanager-save-successful": "已儲存變更。",
+	"bs-usermanager-headerusername": "使用者名稱",
+	"bs-usermanager-headerrealname": "真實姓名",
+	"bs-usermanager-headeremail": "電子郵件",
+	"bs-usermanager-headergroups": "群組",
+	"bs-usermanager-titleadduser": "新增使用者",
+	"bs-usermanager-titleeditdetails": "編輯使用者",
+	"bs-usermanager-labelnewpassword": "密碼",
+	"bs-usermanager-labelpasswordcheck": "確認密碼",
+	"bs-usermanager-titledeleteuser": "刪除使用者",
+	"bs-usermanager-groups-more": "... 更多",
+	"bs-usermanager-endisable": "啟用/禁用",
+	"bs-usermanager-editpassword": "變更密碼"
+}

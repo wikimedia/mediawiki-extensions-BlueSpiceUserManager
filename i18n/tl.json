@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Emem.calist"
+		]
+	},
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|Ang manunulak na ito|$1 Ang mga manunulak}} ay ipinatanggal.",
+	"bs-usermanager-editpassword-successful": "Ang salitang-hudyat ay nabago, ipagdiwang!",
+	"bs-usermanager-title-multipleuserselected": "Maraming manunulak ang pinili",
+	"bs-usermanager-multipleuserselected": "Mababago lang ang salitang-hudyat ng paisa-isa sa bawat manunulak"
+}

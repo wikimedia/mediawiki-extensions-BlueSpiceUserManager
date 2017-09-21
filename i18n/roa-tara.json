@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"bs-usermanager-headerusername": "Nome utende",
+	"bs-usermanager-headerrealname": "Nome vere",
+	"bs-usermanager-headeremail": "E-mail",
+	"bs-usermanager-headergroups": "Gruppe",
+	"bs-usermanager-titleadduser": "Aggiunge 'n'utende",
+	"bs-usermanager-titleeditdetails": "Cange l'utende",
+	"bs-usermanager-labelnewpassword": "Passuord",
+	"bs-usermanager-labelpasswordcheck": "Conferme 'a passuord",
+	"bs-usermanager-titledeleteuser": "Scangìlle l'utende"
+}

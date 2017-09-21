@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oldstoneage"
+		]
+	},
+	"bs-usermanager-desc": "الوجيهة تاع التنضام باش تسيّر المستعمليّين",
+	"bs-usermanager-self-nodelete": "ما تنجمش تمحي الكونت تاعك",
+	"bs-usermanager-enter-pwd": "اتفضّل دخّل كلمتٰ السرّ",
+	"bs-usermanager-idnotexist": "هاد أسمٰ المستعملي ما كاينش منّهُ",
+	"bs-usermanager-invalid-realname": "الأسم الصحّاني هادا ماشي مقبول.",
+	"bs-usermanager-invalid-uname": "أسم المستعملي ماشي مقبول",
+	"bs-usermanager-invalid-email-gen": "لادريسة تاع ليمال ماشي مقبولة",
+	"bs-usermanager-label": "المسيار تاع المستعمليّين",
+	"bs-usermanager-user-exists": "هاد الأسم المستعملي راه كاين مقبل.",
+	"bs-usermanager-save-successful": "التبديلات راهم مسجّلين",
+	"bs-usermanager-headerusername": "أسمٰ المستعملي",
+	"bs-usermanager-headerrealname": "الأسم الصحّاني",
+	"bs-usermanager-headeremail": "لادريسة تاع ليمال",
+	"bs-usermanager-headergroups": "جماعات",
+	"bs-usermanager-labelnewpassword": "كلمتٰ السرّ",
+	"bs-usermanager-labelpasswordcheck": "أكّد كلمتٰ السرّ"
+}

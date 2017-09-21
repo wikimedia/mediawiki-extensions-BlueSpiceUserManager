@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tumsaa"
+		]
+	},
+	"bs-usermanager-db-error": "Dogoggorri daataabeezii uummame.",
+	"bs-usermanager-idnotexist": "Fayyadamaan akkanaa hin jiru.",
+	"bs-usermanager-invalid-realname": "Maqaan dhugaa kun sirrii miti.",
+	"bs-usermanager-user-deleted": "Fayyadamaan kun balleeffamee jira.",
+	"bs-usermanager-save-successful": "Jijjiiramni olkaawwamee jira.",
+	"bs-usermanager-headerrealname": "Maqaa Dhugaa",
+	"bs-usermanager-headeremail": "Imeelii",
+	"bs-usermanager-headergroups": "Gareewwan",
+	"bs-usermanager-titleadduser": "Fayyadamaa galchi",
+	"bs-usermanager-titleeditdetails": "Fayyadamaa jijjiiri",
+	"bs-usermanager-titledeleteuser": "Fayyadamaa balleessi.",
+	"bs-usermanager-confirmdeleteuser": "Dhuguma {{PLURAL:$1|this user|these $1 users}} balleessuu barbaaddaa?"
+}

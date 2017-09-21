@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"bs-usermanager-desc": "प्रयोक्ताकें जोडए, सम्पादन आ मेटाबए लेल माइनजन (प्रवन्धक)कें अवतरण",
+	"bs-usermanager-admin-nodelete": "प्रवन्धक खाता नै मेटा सकएत अछि।",
+	"bs-usermanager-self-nodelete": "अहाँ अपन खाता नै मेटा सकए छी।",
+	"bs-usermanager-db-error": "डाटाबेस अनुरोध त्रुटि भेल अछि।",
+	"bs-usermanager-enter-pwd": "कृपया अपन कूटशब्द भरु।",
+	"bs-usermanager-idnotexist": "इ प्रयोक्ता नै भेटल।",
+	"bs-usermanager-invalid-pwd": "कूटशब्द अमान्य अछि।",
+	"bs-usermanager-invalid-realname": "असल नाम अमान्य अछि।",
+	"bs-usermanager-invalid-uname": "प्रयोक्तानाम अमान्य अछि।",
+	"bs-usermanager-invalid-email-gen": "इ-पत्र अमान्य अछि।",
+	"bs-usermanager-label": "खाता व्यवस्थापन",
+	"bs-usermanager-user-added": "प्रयोक्ता जुडल।",
+	"bs-usermanager-user-deleted": "प्रयोक्ता मेटाएल गेल।",
+	"bs-usermanager-user-exists": "इ प्रयोक्तानाम पहिने सँ अछि।",
+	"bs-usermanager-save-successful": "परिवर्त्तन रक्षण भेल।",
+	"bs-usermanager-headerusername": "प्रयोक्ता नाम",
+	"bs-usermanager-headerrealname": "असल नाम",
+	"bs-usermanager-headeremail": "ई-पत्र",
+	"bs-usermanager-headergroups": "वर्ग",
+	"bs-usermanager-titleadduser": "प्रयोक्ता जोडी",
+	"bs-usermanager-titleeditdetails": "प्रयोक्ता सम्पादन करू",
+	"bs-usermanager-labelnewpassword": "कूटशब्द",
+	"bs-usermanager-labelpasswordcheck": "कूटशब्द जाँचू",
+	"bs-usermanager-titledeleteuser": "प्रयोक्ता मेटाबी",
+	"bs-usermanager-confirmdeleteuser": "कि अहाँ {{PLURAL:$1|इ प्रयोक्ता|इ $1 प्रयोक्तासभ}} कें मेटाएल चाहए छी?",
+	"bs-usermanager-groups-more": "...आर",
+	"bs-usermanager-no-self-desysop": "अहाँ अपन माइनजन अधिकार नै घुमा सकए छी।"
+}

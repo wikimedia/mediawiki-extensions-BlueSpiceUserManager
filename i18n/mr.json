@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"V.narsikar"
+		]
+	},
+	"bs-usermanager-no-self-block": "आपण आपल्या स्वतःस अक्षम करु शकत नाही.",
+	"bs-usermanager-block-error": "{{GENDER:$1|सदस्य}} $1 ला अक्षम करता आले नाही.",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|सदस्य}} $1 ला सक्षम करता आले नाही.",
+	"bs-usermanager-headerenabled": "सक्षम केले",
+	"bs-usermanager-log-user-disabled": "सदस्यव्यवस्थापकाद्वारे(यूजरमॅनेजर) {{GENDER:$1|सदस्य}} $1 ला अक्षम केल्या गेले.",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|सदस्य}} $1 अक्षम केल्या गेला.",
+	"bs-usermanager-user-enabled": "{{GENDER:$1|सदस्य}} $1 सक्षम केल्या गेला.",
+	"bs-usermanager-endisable": "सक्षम करा/अक्षम करा",
+	"bs-usermanager-confirmdisableuser": "आपणास खरेच {{GENDER:$1|सदस्य}} $1 ला अक्षम करावयाचे आहे काय?",
+	"bs-usermanager-confirmenableuser": "आपणास खरेच {{GENDER:$1|सदस्य}} $1 ला सक्षम करावयाचे आहे काय?",
+	"bs-usermanager-titledisableuser": "सदस्यास अक्षम करा",
+	"bs-usermanager-titleenableuser": "सदस्यास सक्षम करा"
+}

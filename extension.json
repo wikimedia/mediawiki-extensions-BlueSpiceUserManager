@@ -1,0 +1,84 @@
+{
+	"name": "BlueSpiceUserManager",
+	"author": [
+		"Sebastian Ulbricht",
+		"Stephan Muggli",
+		"Markus Glaser",
+		"Leonid Verhovskij"
+	],
+	"version": "2.27.1-alpha",
+	"url": "https://www.mediawiki.org/wiki/Extension:UserManager",
+	"descriptionmsg": "bs-usermanager-desc",
+	"license-name": "GPL-2.0+",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"UserManager": {
+			"className": "UserManager",
+			"extPath": "/BlueSpiceUserManager"
+		}
+	},
+	"SpecialPages": {
+		"UserManager": "SpecialUserManager"
+	},
+	"ExtensionMessagesFiles": {
+		"UserManagerAlias": "includes/specials/SpecialUserManager.alias.php"
+	},
+	"APIModules": {
+		"bs-usermanager-tasks": "BSApiTasksUserManager",
+		"bs-usermanager-group-store": "BSApiChangeableGroupStore"
+	},
+	"Hooks": {
+		"UnitTestsList": "UserManager::onUnitTestsList"
+	},
+	"MessagesDirs": {
+		"UserManager": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"UserManager": "UserManager.class.php",
+		"BSApiTasksUserManager": "includes/api/BSApiTasksUserManager.php",
+		"BSApiChangeableGroupStore": "includes/api/BSApiChangeableGroupStore.php",
+		"SpecialUserManager": "includes/specials/SpecialUserManager.class.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.userManager": {
+			"scripts": "bluespice.userManager.js",
+			"dependencies": "ext.bluespice.extjs",
+			"messages": [
+				"bs-usermanager-headerusername",
+				"bs-usermanager-headerrealname",
+				"bs-usermanager-headeremail",
+				"bs-usermanager-headergroups",
+				"bs-usermanager-titleadduser",
+				"bs-usermanager-titleeditdetails",
+				"bs-usermanager-labelnewpassword",
+				"bs-usermanager-labelpasswordcheck",
+				"bs-usermanager-headergroups",
+				"bs-usermanager-titledeleteuser",
+				"bs-usermanager-confirmdeleteuser",
+				"bs-usermanager-groups-more",
+				"bs-usermanager-no-self-desysop",
+				"bs-usermanager-headerenabled",
+				"bs-usermanager-endisable",
+				"bs-usermanager-confirmdisableuser",
+				"bs-usermanager-confirmenableuser",
+				"bs-usermanager-titledisableuser",
+				"bs-usermanager-titleenableuser",
+				"bs-usermanager-editgroups",
+				"bs-usermanager-editpassword",
+				"bs-usermanager-editpassword-successful",
+				"bs-usermanager-title-nouserselected",
+				"bs-usermanager-nouserselected",
+				"bs-usermanager-title-multipleuserselected",
+				"bs-usermanager-multipleuserselected",
+				"bs-usermanager-invalid-groups"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceUserManager/resources"
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Belkacem77"
+		]
+	},
+	"bs-usermanager-desc": "Agrudem n tedbelt i tmerna, asnifel akked tukksa n iseqdacen",
+	"bs-usermanager-admin-nodelete": "Amiḍan n unedbal ur yezmir ara ad yettwakkes.",
+	"bs-usermanager-self-nodelete": "Ur tezmired ara ad tekkseḍ amiḍan-ik.",
+	"bs-usermanager-db-error": "Teḍra tuccḍa di taffa n isefka.",
+	"bs-usermanager-enter-pwd": "Sekcem awal uffir.",
+	"bs-usermanager-idnotexist": "Aseqdac-agi ulac-it.",
+	"bs-usermanager-invalid-pwd": "Yir awal uffir.",
+	"bs-usermanager-invalid-realname": "Yir isem ilaw.",
+	"bs-usermanager-invalid-uname": "Yir isem n useqdac.",
+	"bs-usermanager-invalid-email-gen": "Yir tansa n yimayl.",
+	"bs-usermanager-label": "Amsefrak n iseqdacen",
+	"bs-usermanager-user-added": "Aseqdac yettwarna.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1| n useqdac|$1 n iseqdacen}} {{PLURAL:$1|yettwakkes|ttwakksen}} .",
+	"bs-usermanager-user-exists": "Isem n useqdac yella yakan.",
+	"bs-usermanager-save-successful": "Asnifel yettwasekles.",
+	"bs-usermanager-headerusername": "Isem n useqdac",
+	"bs-usermanager-headerrealname": "Isem ilaw",
+	"bs-usermanager-headeremail": "Imayl",
+	"bs-usermanager-headergroups": "Igrawen",
+	"bs-usermanager-titleadduser": "Rnu aseqdac",
+	"bs-usermanager-titleeditdetails": "Ẓreg aseqdac",
+	"bs-usermanager-labelnewpassword": "Awal uffir",
+	"bs-usermanager-labelpasswordcheck": "Sentem awal uffir",
+	"bs-usermanager-titledeleteuser": "Kkes aseqdac",
+	"bs-usermanager-groups-more": "... ugar",
+	"bs-usermanager-no-self-desysop": "Ur tezmireḍ ara ad tekkseḍ azref-ik n sysop."
+}

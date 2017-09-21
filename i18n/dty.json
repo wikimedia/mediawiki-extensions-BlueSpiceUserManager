@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nirajan pant"
+		]
+	},
+	"bs-usermanager-no-self-block": "तम आफुइलाई अक्षम नाइ अरिसक्दा:",
+	"bs-usermanager-block-error": "{{GENDER:$1|प्रयोगकर्ता}} $1 लाई अक्षम अद्द नाइ सकिनो।",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|The user}} $1 सक्षम अद्द नाइ सकियो।",
+	"bs-usermanager-headerenabled": "सक्षम",
+	"bs-usermanager-log-user-disabled": "{{GENDER:$1|प्रयोगकर्ता}} $1 प्रयोगकर्ता व्यवस्थापक बठेइ अक्षम अरिरैछ",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|The user}} $1 अक्षम अरीरैछ।",
+	"bs-usermanager-user-enabled": "{{GENDER:$1|The user}} $1 सक्षम अरीरैछ।",
+	"bs-usermanager-endisable": "सक्षम/अक्षम",
+	"bs-usermanager-confirmdisableuser": "तम साच्ची {{GENDER:$1|प्रयोगकर्ता}} $1 लाई अक्षम अद्द चाहन्छ:?",
+	"bs-usermanager-confirmenableuser": "तम साच्ची {{GENDER:$1|प्रयोगकर्ता}} $1 लाई सक्षम अद्द चाहन्छ:?",
+	"bs-usermanager-titledisableuser": "प्रयोगकर्ता अक्षम अर:",
+	"bs-usermanager-titleenableuser": "प्रयोगकर्ता सक्षम अर:",
+	"usermanager": "प्रयोगकर्ता प्रबन्धक",
+	"bs-usermanager-editgroups": "समूहअन सम्पादन अरऽ",
+	"bs-usermanager-editpassword": "पारवर्ड बदेलऽ",
+	"bs-usermanager-editpassword-successful": "पासवर्ड सफलतापूर्वक बदेलियो",
+	"bs-usermanager-title-multipleuserselected": "बहुप्रयोगकर्ताअन छानीर्याहान"
+}

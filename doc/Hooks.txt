@@ -1,0 +1,18 @@
+==UserManager.class.php==
+
+'BSUserManagerAfterAddUser':
+$this:
+$oNewUser: the user that was created
+$aParams: username, email, password, realname
+&$aResponse: insert error and success messages here
+
+'BSUserManagerAfterEditUser':
+$this:
+$oUser: the user that was changed
+$aParams: username, email, password, realname
+&$aResponse: insert error and success messages here
+
+'BSUserManagerAfterDeleteUser':
+$this:
+$oUser: the user that was deleted
+&$aResponse: insert error and success messages here

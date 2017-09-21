@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"bs-usermanager-desc": "Администраторски посредник за додавање, измена и бришење на корисници",
+	"bs-usermanager-admin-nodelete": "Администраторската сметка не може да се избрише.",
+	"bs-usermanager-self-nodelete": "Не можете да ја избришете вашата сметка.",
+	"bs-usermanager-db-error": "Се појави грешка во базата.",
+	"bs-usermanager-enter-pwd": "Внесете лозинка.",
+	"bs-usermanager-idnotexist": "Овој корисник не постои.",
+	"bs-usermanager-invalid-pwd": "Лозинката е неважечка.",
+	"bs-usermanager-invalid-realname": "Вистинското име е неважечко.",
+	"bs-usermanager-invalid-uname": "Корисничкото име е неважечко.",
+	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
+	"bs-usermanager-label": "Раководство со корисници",
+	"bs-usermanager-user-added": "Корисникот е додаден.",
+	"bs-usermanager-user-deleted": "Овој корисник е избришан.",
+	"bs-usermanager-user-exists": "Корисничкото име веќе постои.",
+	"bs-usermanager-save-successful": "Промените се зачувани.",
+	"bs-usermanager-headerusername": "Корисничко име",
+	"bs-usermanager-headerrealname": "Вистинско име",
+	"bs-usermanager-headeremail": "Е-пошта",
+	"bs-usermanager-headergroups": "Групи",
+	"bs-usermanager-titleadduser": "Додај корисник",
+	"bs-usermanager-titleeditdetails": "Измени корисник",
+	"bs-usermanager-labelnewpassword": "Лозинка",
+	"bs-usermanager-labelpasswordcheck": "Потврдете ја лозинката",
+	"bs-usermanager-titledeleteuser": "Бришење на корисник",
+	"bs-usermanager-confirmdeleteuser": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете корисников|ги избришете овие $1 корисници}}?",
+	"bs-usermanager-groups-more": "... повеќе",
+	"bs-usermanager-no-self-desysop": "Не можете самите да си го одземете администраторското право."
+}

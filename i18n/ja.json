@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Suchichi02"
+		]
+	},
+	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
+	"bs-usermanager-enter-pwd": "パスワードを入力してください。",
+	"bs-usermanager-idnotexist": "この利用者は存在しません。",
+	"bs-usermanager-invalid-pwd": "パスワードが無効です。",
+	"bs-usermanager-invalid-realname": "本名が無効です。",
+	"bs-usermanager-invalid-uname": "利用者名が無効です。",
+	"bs-usermanager-invalid-email-gen": "メールアドレスが無効です。",
+	"bs-usermanager-user-added": "利用者を追加しました。",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|利用者|$1人の利用者}}を削除しました。",
+	"bs-usermanager-user-exists": "既に存在する利用者名です。",
+	"bs-usermanager-save-successful": "変更内容を保存しました。",
+	"bs-usermanager-headerusername": "利用者名",
+	"bs-usermanager-headerrealname": "本名",
+	"bs-usermanager-headeremail": "メール",
+	"bs-usermanager-headergroups": "グループ",
+	"bs-usermanager-titleadduser": "利用者の追加",
+	"bs-usermanager-titleeditdetails": "利用者の編集",
+	"bs-usermanager-labelnewpassword": "パスワード",
+	"bs-usermanager-labelpasswordcheck": "パスワード再入力",
+	"bs-usermanager-titledeleteuser": "利用者の削除",
+	"bs-usermanager-confirmdeleteuser": "{{PLURAL:$1|この利用者|これらの $1 名の利用者}}を本当に削除しますか?"
+}

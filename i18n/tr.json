@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sayginer",
+			"Violetanka"
+		]
+	},
+	"bs-usermanager-desc": "Kullanıcı ekleme, düzenleme ve silme için yönetim arayüzü",
+	"bs-usermanager-self-nodelete": "Kullanıcı hesabınızı silemezsiniz.",
+	"bs-usermanager-enter-pwd": "Lütfen bir parola girin.",
+	"bs-usermanager-invalid-realname": "Gerçek ad geçersiz.",
+	"bs-usermanager-invalid-uname": "Kullanıcı adı geçersiz.",
+	"bs-usermanager-invalid-email-gen": "E-posta adresi geçersiz.",
+	"bs-usermanager-user-deleted": "Kullanıcı silindi.",
+	"bs-usermanager-user-exists": "Bu kullanıcı adı zaten mevcut.",
+	"bs-usermanager-save-successful": "Değişiklikler kaydedildi.",
+	"bs-usermanager-headerusername": "Kullanıcı adı",
+	"bs-usermanager-headerrealname": "Gerçek ad",
+	"bs-usermanager-headeremail": "E-posta",
+	"bs-usermanager-headergroups": "Gruplar",
+	"bs-usermanager-titleadduser": "Kullanıcı ekle",
+	"bs-usermanager-labelnewpassword": "Parola",
+	"bs-usermanager-titledeleteuser": "Kullanıcı sil"
+}

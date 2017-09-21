@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"bs-usermanager-self-nodelete": "Et voi poistaa tiliäsi.",
+	"bs-usermanager-db-error": "Tietokantavirhe on tapahtunut.",
+	"bs-usermanager-enter-pwd": "Syötä salasana.",
+	"bs-usermanager-idnotexist": "Käyttäjää ei ole olemassa.",
+	"bs-usermanager-invalid-pwd": "Salasana on virheellinen.",
+	"bs-usermanager-invalid-realname": "Oikea nimi on virheellinen.",
+	"bs-usermanager-invalid-uname": "Käyttäjänimi on virheellinen.",
+	"bs-usermanager-invalid-email-gen": "Sähköpostiosoite on virheellinen.",
+	"bs-usermanager-user-added": "Käyttäjä on lisätty.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|käyttäjä on|$1 käyttäjää on}} poistettu.",
+	"bs-usermanager-user-exists": "Nimiavaruus on jo olemassa.",
+	"bs-usermanager-save-successful": "Muutokset on tallennettu.",
+	"bs-usermanager-headerusername": "Käyttäjänimi",
+	"bs-usermanager-headerrealname": "Oikea nimi",
+	"bs-usermanager-headeremail": "Sähköpostiosoite",
+	"bs-usermanager-headergroups": "Ryhmät",
+	"bs-usermanager-titleadduser": "Lisää käyttäjä",
+	"bs-usermanager-titleeditdetails": "Muokkaa käyttäjää",
+	"bs-usermanager-labelnewpassword": "Salasana",
+	"bs-usermanager-labelpasswordcheck": "Vahvista salasana",
+	"bs-usermanager-titledeleteuser": "Poista käyttäjä",
+	"bs-usermanager-confirmdeleteuser": "Oletko varma, että haluat poistaa {{PLURAL:$1|tämän käyttäjän|nämä $1 käyttäjää}}?",
+	"bs-usermanager-groups-more": "... lisää",
+	"bs-usermanager-no-self-block": "Et voi poistaa itseäsi.",
+	"bs-usermanager-block-error": "{{GENDER:$1|Käyttäjää}} $1 ei voida poistaa.",
+	"bs-usermanager-headerenabled": "Käytössä",
+	"bs-usermanager-endisable": "Ota käyttöön/poista käytöstä",
+	"bs-usermanager-confirmdisableuser": "Haluatko todella poistaa {{GENDER:$1|käyttäjän}} $1?",
+	"bs-usermanager-editgroups": "Muokkaa ryhmiä",
+	"bs-usermanager-editpassword": "Vaihda salasana",
+	"bs-usermanager-editpassword-successful": "Salasana on vaihdettu onnistuneesti",
+	"bs-usermanager-title-nouserselected": "Ei käyttäjää valittuna",
+	"bs-usermanager-nouserselected": "Valitse käyttäjä",
+	"bs-usermanager-title-multipleuserselected": "Useita käyttäjiä on valittu",
+	"bs-usermanager-multipleuserselected": "Voit muuttaa salasanan vain yhdelle käyttäjälle kerrallaan",
+	"bs-usermanager-invalid-groups": "Ryhmät eivät kelpaa"
+}

@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"Азат Хәлилов",
+			"Ләйсән"
+		]
+	},
+	"bs-usermanager-desc": "Ҡулланыусыларҙы өҫтәү һәм юйыу өсөн хакимиәт интерфейсы",
+	"bs-usermanager-admin-nodelete": "Хакимдың иҫәп яҙмаһын юйып булмай.",
+	"bs-usermanager-self-nodelete": "Һеҙ үҙегеҙҙең иҫәп яҙмаһын юйа алмайһығыҙ.",
+	"bs-usermanager-db-error": "Мәғлүмәт базаһында хата килеп сыҡты",
+	"bs-usermanager-enter-pwd": "Серһүҙҙе яҙығыҙ.",
+	"bs-usermanager-idnotexist": "Был ҡулланыусы юҡ",
+	"bs-usermanager-invalid-pwd": "Серһүҙ дөрөҫ түгел.",
+	"bs-usermanager-invalid-realname": "Ҡатнашыусының бындай исеме ярамай.",
+	"bs-usermanager-invalid-uname": "Бындай ҡулланыусы исеме алырға ярамай",
+	"bs-usermanager-invalid-email-gen": "Электрон почтаның ярамаған адресы.",
+	"bs-usermanager-label": "Иҫәп яҙмалары менән идара итеү",
+	"bs-usermanager-user-added": "Ҡатнашыусы өҫтәлде.",
+	"bs-usermanager-user-deleted": "Ҡатнашыусы юйылды.",
+	"bs-usermanager-user-exists": "Бындай исемле ҡатнашыусы юҡ.",
+	"bs-usermanager-save-successful": "Үҙгәртеүҙәр һаҡланды.",
+	"bs-usermanager-headerusername": "Ҡулланыусы исеме",
+	"bs-usermanager-headerrealname": "Ысын исеме",
+	"bs-usermanager-headeremail": "Электрон почта",
+	"bs-usermanager-headergroups": "Төркөмдәр",
+	"bs-usermanager-titleadduser": "Ҡатнашыусыны өҫтәргә",
+	"bs-usermanager-titleeditdetails": "Ҡатнашыусыны мөхәррирләргә",
+	"bs-usermanager-labelnewpassword": "Серһүҙ",
+	"bs-usermanager-labelpasswordcheck": "Паролде раҫлағыҙ",
+	"bs-usermanager-titledeleteuser": "Ҡатнашыусыны юйырға",
+	"bs-usermanager-confirmdeleteuser": "{{PLURAL:$1|Был ҡатнашыусыны}} ысынлап та юйырға теләйһегеҙме?",
+	"bs-usermanager-groups-more": "…тағы",
+	"bs-usermanager-no-self-desysop": "Үҙегеҙҙән хаким хоҡуғын ала алмайһығыҙ"
+}

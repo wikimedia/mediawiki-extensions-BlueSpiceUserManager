@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-usermanager-self-nodelete": "Sie können nicht Ihr Benutzerkonto löschen.",
+	"bs-usermanager-enter-pwd": "Bitte geben Sie ein Passwort ein.",
+	"bs-usermanager-invalid-pwd": "Das Passwort ist unzulässig.",
+	"bs-usermanager-invalid-realname": "Der echte Name ist unzulässig.",
+	"bs-usermanager-invalid-uname": "Der Benutzername ist unzulässig.",
+	"bs-usermanager-confirmdeleteuser": "Sind Sie sicher, dass Sie {{PLURAL:$1|diesen|diese $1}} Benutzer löschen wollen?",
+	"bs-usermanager-no-self-desysop": "Sie können sich nicht selbst das Sysop recht nehmen."
+}
