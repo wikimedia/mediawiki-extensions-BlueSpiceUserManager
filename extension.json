@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0+",
 	"type": "bluespice",
 	"bsgExtensions": {
-		"UserManager": {
+		"BlueSpiceUserManager": {
 			"className": "UserManager",
 			"extPath": "/BlueSpiceUserManager"
 		}

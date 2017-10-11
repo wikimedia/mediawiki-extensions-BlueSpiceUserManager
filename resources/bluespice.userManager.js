@@ -12,6 +12,10 @@
 
 (function( mw, $, bs, d, undefined){
 	Ext.onReady( function(){
+		Ext.Loader.setPath(
+			'BS.UserManager',
+			bs.em.paths.get( 'BlueSpiceUserManager' ) + '/resources/BS.UserManager'
+		);
 		Ext.create( 'BS.UserManager.panel.Manager', {
 			renderTo: 'bs-usermanager-grid',
 			operationPermissions: {
