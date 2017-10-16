@@ -1,4 +1,11 @@
 {
+	"name": "mediawiki/blue-spice-user-manager",
+	"type": "mediawiki-extension",
+	"description": "Administration interface for adding, editing and deleting users",
+	"license": "GPL-3.0",
+	"require": {
+		"composer/installers": "~1.0"
+	},
 	"autoload" : {
 		"psr-4": {
 			"BS\\UserManager\\": "src",
