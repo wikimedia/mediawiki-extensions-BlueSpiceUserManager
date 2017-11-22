@@ -1,15 +1,15 @@
 {
 	"name": "BlueSpiceUserManager",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0-alpha",
+	"url": "https://www.mediawiki.org/wiki/Extension:UserManager",
 	"author": [
 		"Sebastian Ulbricht",
 		"Stephan Muggli",
 		"Markus Glaser",
 		"Leonid Verhovskij"
 	],
-	"version": "2.27.1-alpha",
-	"url": "https://www.mediawiki.org/wiki/Extension:UserManager",
 	"descriptionmsg": "bs-usermanager-desc",
-	"license-name": "GPL-2.0+",
 	"type": "bluespice",
 	"bsgExtensions": {
 		"BlueSpiceUserManager": {
