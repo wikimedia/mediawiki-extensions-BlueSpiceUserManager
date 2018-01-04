@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceUserManager",
-	"license-name": "GPL-3.0",
+	"license-name": "GPL-3.0-only",
 	"version": "3.0.0-alpha",
 	"url": "https://www.mediawiki.org/wiki/Extension:UserManager",
 	"author": [
