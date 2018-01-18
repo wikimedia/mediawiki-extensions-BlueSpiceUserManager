@@ -44,14 +44,6 @@ class UserManager extends BsExtensionMW {
 		$this->mExtensionFile = __FILE__;
 		$this->mExtensionType = EXTTYPE::VARIABLE;
 
-		WikiAdmin::registerModule( 'UserManager', array(
-			'image' => '/extensions/BlueSpiceExtensions/WikiAdmin/resources/images/bs-btn_usermanagement_v1.png',
-			'level' => 'wikiadmin',
-			'message' => 'bs-usermanager-label',
-			'iconCls' => 'bs-icon-user-add',
-			'permissions' => [ 'usermanager-viewspecialpage' ],
-		) );
-
 		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 

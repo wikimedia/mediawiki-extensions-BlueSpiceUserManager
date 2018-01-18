@@ -17,6 +17,9 @@
 			"extPath": "/BlueSpiceUserManager"
 		}
 	},
+	"BlueSpiceFoundationAdminToolRegistry": {
+		"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
+	},
 	"SpecialPages": {
 		"UserManager": "SpecialUserManager"
 	},
