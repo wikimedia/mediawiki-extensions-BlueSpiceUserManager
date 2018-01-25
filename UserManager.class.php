@@ -314,7 +314,7 @@ class UserManager extends BsExtensionMW {
 		$block->setTarget( $oUser );
 		$block->setBlocker( $oPerformer );
 		$block->mReason = wfMessage( 'bs-usermanager-log-user-disabled', $oUser->getName() )->text();
-		$block->mExpiry = 'indefinite';
+		$block->mExpiry = 'infinity';
 		$block->prevents( 'createaccount', false );
 		$block->prevents( 'editownusertalk', false );
 		$block->prevents( 'sendemail', true );

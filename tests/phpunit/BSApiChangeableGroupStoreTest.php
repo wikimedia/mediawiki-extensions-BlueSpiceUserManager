@@ -6,6 +6,7 @@
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpiceUserManager
+ * @group Database
  */
 class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 
