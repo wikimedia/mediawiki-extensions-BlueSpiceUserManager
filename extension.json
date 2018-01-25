@@ -83,5 +83,6 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceUserManager/resources"
 	},
+	"load_composer_autoloader" : true,
 	"manifest_version": 1
 }
