@@ -10,7 +10,7 @@
  */
 class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 
-	protected $iFixtureTotal = 4;
+	protected $iFixtureTotal = 3;
 
 	protected function getStoreSchema() {
 		return [
@@ -36,7 +36,7 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 			'wgGroupPermissions',
 			[ 'groupchanger' => [ 'userrights' => false ] ]
 		);
-		$aChangeableGroups = [ 'autoreview', 'bot', 'bureaucrat', 'sysop' ];
+		$aChangeableGroups = [ 'bot', 'bureaucrat', 'sysop' ];
 		$this->setMwGlobals( [
 			'wgAddGroups' => [ 'groupchanger' => $aChangeableGroups ],
 			'wgRemoveGroups' => [ 'groupchanger' => $aChangeableGroups ],
@@ -50,8 +50,8 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 
 	public function provideSingleFilterData() {
 		return [
-			'Filter by group_name' => [ 'string', 'ct', 'group_name', 'auto', 1 ],
-			'Filter by additional_group' => ['boolean', 'eq', 'additional_group', false, 4]
+			'Filter by group_name' => [ 'string', 'ct', 'group_name', 'sys', 1 ],
+			'Filter by additional_group' => ['boolean', 'eq', 'additional_group', false, 3]
 		];
 	}
 
@@ -77,7 +77,19 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 
+	public function provideKeyItemData() {
+		return [
+			'bot'=> [ "group_name", "bot" ],
+			'bureaucrat' => [ "group_name", "bureaucrat" ],
+			'sysop' => [ "group_name", "sysop" ]
+		];
+	}
+
 	protected function getModuleName() {
 		return 'bs-usermanager-group-store';
+	}
+
+	protected function skipAssertTotal() {
+		return true;
 	}
 }

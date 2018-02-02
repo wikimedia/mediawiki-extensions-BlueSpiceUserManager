@@ -47,7 +47,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'password' => 'pass123',
 			'rePassword' => 'pass123',
 			'email' => 'example@localhost.com',
-			'enabled' => false,
+			'enabled' => true,
 			'groups' => array ( 'bureaucrat' )
 		) );
 

@@ -153,7 +153,10 @@ class UserManager extends BsExtensionMW {
 
 		$oStatus = Status::newGood( $oUser );
 
-		$oUserManager = BsExtensionManager::getExtension( 'UserManager' );
+		$oUserManager =
+			\MediaWiki\MediaWikiServices::getInstance()
+			->getService( 'BSExtensionFactory' )
+			->getExtension( 'BlueSpiceUserManager' );
 		Hooks::run(
 			'BSUserManagerAfterAddUser',
 			array(
@@ -278,7 +281,10 @@ class UserManager extends BsExtensionMW {
 			}
 		}
 
-		$oUserManager = BsExtensionManager::getExtension( 'UserManager' );
+		$oUserManager =
+			\MediaWiki\MediaWikiServices::getInstance()
+			->getService( 'BSExtensionFactory' )
+			->getExtension( 'BlueSpiceUserManager' );
 		Hooks::run(
 			'BSUserManagerAfterEditUser',
 			array(
@@ -407,7 +413,10 @@ class UserManager extends BsExtensionMW {
 			$oStatus->merge( Status::newFatal( 'bs-usermanager-db-error' ) );
 		}
 
-		$oUserManager = BsExtensionManager::getExtension( 'UserManager' );
+		$oUserManager =
+			\MediaWiki\MediaWikiServices::getInstance()
+			->getService( 'BSExtensionFactory' )
+			->getExtension( 'BlueSpiceUserManager' );
 		Hooks::run( 'BSUserManagerAfterDeleteUser', array(
 			$oUserManager,
 			$oUser,
