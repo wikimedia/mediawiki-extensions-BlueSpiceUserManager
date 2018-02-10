@@ -39,12 +39,9 @@ class UserManager extends BsExtensionMW {
 	protected static $excludegroups = array( '*', 'user', 'autoconfirmed', 'emailconfirmed' );
 
 	public function __construct() {
-		wfProfileIn( 'BS::'.__METHOD__ );
 		// Base settings
 		$this->mExtensionFile = __FILE__;
 		$this->mExtensionType = EXTTYPE::VARIABLE;
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	protected function initExt() {
