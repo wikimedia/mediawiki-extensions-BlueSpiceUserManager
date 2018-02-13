@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"बिप्लब आनन्द"
+			"बिप्लब आनन्द",
+			"Drjpoudel"
 		]
 	},
 	"bs-usermanager-desc": "प्रयोगकर्ताहरू जोड्ने, सम्पादन गर्ने तथा मेट्ने प्रवन्धक अवतरण",
@@ -14,7 +15,7 @@
 	"bs-usermanager-invalid-realname": "वास्तविक नाम अमान्य छ।",
 	"bs-usermanager-invalid-uname": "प्रयोगकर्ता नाम अमान्य छ।",
 	"bs-usermanager-invalid-email-gen": "इमेल ठेगाना अमान्य छ।",
-	"bs-usermanager-label": "प्रयोगकर्ता प्रवन्धक",
+	"bs-usermanager-label": "प्रयोगकर्ता प्रबन्धक",
 	"bs-usermanager-user-added": "यो प्रयोगकर्ता जोडिएको छ।",
 	"bs-usermanager-user-deleted": "यो प्रयोगकर्ता मेटिएको छ।",
 	"bs-usermanager-user-exists": "यो प्रयोगकर्तानाम पहिले देखि समावेस छ।",
