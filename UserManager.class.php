@@ -38,16 +38,6 @@ class UserManager extends BsExtensionMW {
 	/* These groups are not touched by the addtogroup tool */
 	protected static $excludegroups = array( '*', 'user', 'autoconfirmed', 'emailconfirmed' );
 
-	public function __construct() {
-		// Base settings
-		$this->mExtensionFile = __FILE__;
-		$this->mExtensionType = EXTTYPE::VARIABLE;
-	}
-
-	protected function initExt() {
-		$this->mCore->registerPermission( 'usermanager-viewspecialpage', array( 'sysop' ), array( 'type' => 'global' ) );
-	}
-
 	/**
 	 * Adds an user
 	 * @param string $sUserName

@@ -12,20 +12,18 @@
  */
 
 Ext.define( 'BS.UserManager.dialog.UserGroups', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	requires: ['BS.UserManager.form.field.GroupList'],
 	currentData: {},
 	selectedData: {},
 	maxHeight: 620,
 	title: mw.message('bs-usermanager-headergroups').plain(),
-	afterInitComponent: function() {
+	makeItems: function() {
 
 		this.cbGroups = new BS.UserManager.form.field.GroupList();
-		this.items = [
+		return [
 			this.cbGroups
 		];
-
-		this.callParent(arguments);
 	},
 	setData: function( obj ) {
 		this.currentData = obj;

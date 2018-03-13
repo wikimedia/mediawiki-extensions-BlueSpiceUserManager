@@ -13,12 +13,12 @@
  */
 
 Ext.define( 'BS.UserManager.dialog.AddUser', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	requires: [ 'BS.UserManager.form.field.GroupList' ],
 	currentData: {},
 	selectedData: {},
 	maxHeight: 620,
-	afterInitComponent: function() {
+	makeItems: function() {
 		this.tfUserName = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message('bs-usermanager-headerusername').plain(),
 			labelWidth: 130,
@@ -63,7 +63,7 @@ Ext.define( 'BS.UserManager.dialog.AddUser', {
 		});
 		this.cbGroups = new BS.UserManager.form.field.GroupList();
 
-		this.items = [
+		return [
 			this.tfUserName,
 			this.tfPassword,
 			this.tfRePassword,
@@ -72,8 +72,6 @@ Ext.define( 'BS.UserManager.dialog.AddUser', {
 			this.tfEnabled,
 			this.cbGroups
 		];
-
-		this.callParent(arguments);
 	},
 	resetData: function() {
 		this.tfUserName.reset();

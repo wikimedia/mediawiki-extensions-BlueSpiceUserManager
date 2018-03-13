@@ -62,59 +62,54 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			dataIndex: 'enabled',
 			hidden: true,
 			renderer: this.renderIcon,
-			flex: 1
+			flex: 1,
+			filter: {
+				type: 'boolean'
+			}
 		} );
 		this.colUserName = Ext.create( 'Ext.grid.column.Template', {
 			id: 'username',
 			header: mw.message('bs-usermanager-headerusername').plain(),
 			sortable: true,
-			filterable: true,
 			dataIndex: 'user_name',
 			tpl: '{page_link}',
-			flex: 1
+			flex: 1,
+			filter: {
+				type: 'string'
+			}
 		} );
 		this.colRealName = Ext.create( 'Ext.grid.column.Template', {
 			id: 'userrealname',
 			header: mw.message('bs-usermanager-headerrealname').plain(),
 			sortable: true,
-			filterable: true,
 			dataIndex: 'user_real_name',
 			tpl: '{user_real_name}',
-			flex: 1
+			flex: 1,
+			filter: {
+				type: 'string'
+			}
 		} );
 		this.colEmail = Ext.create( 'Ext.grid.column.Column', {
 			id: this.getId()+'-useremail',
 			header: mw.message('bs-usermanager-headeremail').plain(),
 			sortable: true,
-			filterable: true,
 			dataIndex: 'user_email',
 			renderer: this.renderEmail,
-			flex: 1
+			flex: 1,
+			filter: {
+				type: 'string'
+			}
 		} );
 		this.colGroups = Ext.create( 'Ext.grid.column.Column', {
 			header: mw.message('bs-usermanager-headergroups').plain(),
 			dataIndex: 'groups',
 			renderer: this.renderGroups,
 			sortable: false,
-			flex: 1
+			flex: 1,
+			filter: {
+				type: 'list'
+			}
 		} );
-		this.filters = Ext.create('Ext.ux.grid.FiltersFeature', {
-			encode: true,
-			local: false,
-			filters: [{
-				//Needs to be defined here as column is initially hidden (Bug in ExtJS?)
-				type: 'bool',
-				dataIndex: 'enabled',
-				value: true,
-				active: true
-			},{
-				type: 'list',
-				dataIndex: 'groups',
-				store: this.strGroups
-			}]
-		});
-
-		this.gpMainConf.features = [this.filters];
 
 		this.colMainConf.columns = [
 			this.colEnabled,
@@ -155,7 +150,6 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			});
 
 			this.btnEditGroups.on( 'click', this.onBtnEditGroupsClick, this );
-			this.addEvents( 'button-add','button-edit','button-delete', 'button-edit-groups' );
 			arrItems.push( this.btnEditGroups );
 		}
 
@@ -170,7 +164,6 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				disabled: true
 			});
 			this.btnEditPassword.on( 'click', this.onBtnEditPasswordClick, this );
-			this.addEvents( 'button-add','button-edit','button-delete', 'button-edit-groups', 'button-edit-password' );
 			arrItems.push( this.btnEditPassword );
 		}
 

@@ -83,6 +83,14 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceUserManager/resources"
 	},
+	"GroupPermissions": {
+		"sysop": {
+			"usermanager-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"usermanager-viewspecialpage"
+	],
 	"load_composer_autoloader" : true,
 	"manifest_version": 1
 }

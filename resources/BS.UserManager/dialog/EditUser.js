@@ -13,11 +13,11 @@
  */
 
 Ext.define( 'BS.UserManager.dialog.EditUser', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	currentData: {},
 	selectedData: {},
 	maxHeight: 620,
-	afterInitComponent: function() {
+	makeItems: function() {
 		this.tfUserID = Ext.create( 'Ext.form.field.Hidden', {
 			name: 'userid'
 		});
@@ -48,14 +48,12 @@ Ext.define( 'BS.UserManager.dialog.EditUser', {
 			checked: true
 		});
 
-		this.items = [
+		return [
 			this.tfUserName,
 			this.tfEmail,
 			this.tfRealName,
 			this.tfEnabled
 		];
-
-		this.callParent(arguments);
 	},
 	resetData: function() {
 		this.tfUserName.reset();
