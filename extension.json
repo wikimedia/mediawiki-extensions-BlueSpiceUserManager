@@ -20,6 +20,14 @@
 	"BlueSpiceFoundationAdminToolRegistry": {
 		"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
 	},
+	"BlueSpiceFoundationPermissionRegistry": {
+		"usermanager-viewspecialpage": {
+			"type": "global",
+			"roles": [
+				"admin", "demo"
+			]
+		}
+	},
 	"SpecialPages": {
 		"UserManager": "SpecialUserManager"
 	},
