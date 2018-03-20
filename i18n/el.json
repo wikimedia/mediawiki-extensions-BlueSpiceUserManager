@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-usermanager-save-successful": "Οι αλλαγές αποθηκεύτηκαν.",
+	"bs-usermanager-headerusername": "Όνομα χρήστη",
+	"bs-usermanager-headerrealname": "Πραγματικό όνομα",
+	"bs-usermanager-headeremail": "Διεύθυνση ηλ. ταχυδρομείου",
+	"bs-usermanager-headergroups": "Ομάδες",
+	"bs-usermanager-titleadduser": "Πρόσθεση χρήστη",
+	"bs-usermanager-titleeditdetails": "Τροποποίηση χρήστη",
+	"bs-usermanager-labelnewpassword": "Κωδικός πρόσβασης",
+	"bs-usermanager-labelpasswordcheck": "Επιβεβαίωση κωδικού",
+	"bs-usermanager-titledeleteuser": "Διαγραφή Χρήστη",
+	"bs-usermanager-groups-more": "... περισσότερα"
+}
