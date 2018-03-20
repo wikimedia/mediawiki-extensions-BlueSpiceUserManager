@@ -107,7 +107,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			sortable: false,
 			flex: 1,
 			filter: {
-				type: 'list'
+				type: 'string'
 			}
 		} );
 
@@ -119,6 +119,23 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			this.colGroups
 		];
 		this.callParent( arguments );
+	},
+
+	makeGridPlugins: function() {
+		var plugins = this.callParent();
+		plugins.push( {
+			ptype: 'rowexpander',
+			rowBodyTpl : new Ext.XTemplate(
+				'<strong>' + mw.message('bs-usermanager-headergroups').plain() + ':</strong> {groups:this.renderGroups}',
+				{
+					renderGroups: function( value ){
+						return value.join( ', ' );
+					}
+				}
+			)
+		} );
+
+		return plugins;
 	},
 
 	makeSelModel: function(){
@@ -206,29 +223,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 
 	renderGroups: function( value ) {
-		if ( value.length === 0 ) return '';
-
-		var html = '<ul class="bs-extjs-list">';
-		for ( var i = 0; i < value.length; i++ ) {
-			if( i === 2  ) {
-				html += '<li>' + mw.html.element(
-					'a',
-					{
-						href: '#',
-						class: 'bs-um-more-groups'
-					},
-					mw.message('bs-usermanager-groups-more').plain()
-				) + '</li>';
-				html += '</ul>';
-				html += '<ul class="bs-extjs-list bs-um-hidden-groups" style="display:none">';
-			}
-			//TODO: Get group display name from this.strGroups without crashing
-			//or use messages instead
-			html += '<li>' + value[i] + '</li>';
-		}
-		html += '</ul>';
-
-		return html;
+		return value.join( ', ' );
 	},
 	renderEmail: function( value ) {
 		if ( value.length === 0 ) return '';

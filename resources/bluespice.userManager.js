@@ -29,9 +29,4 @@
 		} );
 	} );
 
-	$(d).on( 'click', '.bs-um-more-groups', function() {
-		$(this).parent('li').hide();
-		$(this).parents('ul').next('.bs-um-hidden-groups').show();
-		return false;
-	});
 })(mediaWiki, jQuery, blueSpice, document );
