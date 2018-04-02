@@ -7,6 +7,8 @@
 	},
 	"bs-usermanager-desc": "ממשק ניהול עבור הוספה, עריכה ומחיקה של משתמשים",
 	"bs-usermanager-no-self-desysop": "אין באפשרותך להסיר את הרשאות מפעיל המערכת של עצמך.",
+	"apihelp-bs-usermanager-tasks-description": "אספקת פעולות עבור הרחבת רשימות הבדיקה (Checklist)",
+	"apihelp-bs-usermanager-tasks-summary": "אספקת פעולות עבור הרחבת רשימות הבדיקה (Checklist)",
 	"usermanager": "מנהל משתמשים",
 	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"מנהל משתמשים\"",
 	"bs-usermanager-group-add-not-allowed": "אין באפשרותך להוסיף משתמשים לקבוצה $1",
