@@ -38,9 +38,6 @@
 		"bs-usermanager-tasks": "BSApiTasksUserManager",
 		"bs-usermanager-group-store": "BSApiChangeableGroupStore"
 	},
-	"Hooks": {
-		"UnitTestsList": "UserManager::onUnitTestsList"
-	},
 	"MessagesDirs": {
 		"UserManager": [
 			"i18n"
