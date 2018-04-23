@@ -539,10 +539,49 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		};
 
 		var me = this;
+		var passwordChangePromise;
+
+		var currentUserId = mw.config.get( 'wgUserId' );
+		if( currentUserId === parseInt( data.userID ) ) {
+			bs.util.confirm('bs-usermanager-self-change-password',
+				{
+					text: mw.message( 'bs-usermanager-own-password-change' ).plain(),
+				}, {
+					ok: function ( ) {
+						passwordChangePromise = me.doChangePassword( data );
+						passwordChangePromise.then( function( response ) {
+							var loginTitle = mw.Title.makeTitle( -1, 'Login' );
+							var currentTitle = mw.Title.makeTitle(
+								mw.config.get( 'wgNamespaceNumber' ),
+								mw.config.get( 'wgTitle' )
+							);
+							window.location.href = loginTitle.getUrl( {
+								returnto: currentTitle.getPrefixedText()
+							} );
+						} );
+					},
+					cancel: function() {
+						me.dlgPassword.resetData();
+					},
+					scope: this
+				}
+			);
+		} else {
+			passwordChangePromise = me.doChangePassword( data );
+			passwordChangePromise.then( function( response ) {
+				me.dlgPassword.resetData();
+				me.reloadStore();
+			} );
+		}
+	},
+	doChangePassword: function( data ) {
+		var result = $.Deferred();
+
+		var me = this;
 		var cfg = {//copy from bluespice.api.js
 			failure: function( response, module, task, $dfd, cfg ) {
 				var message = response.message || '';
-				if ( response.errors.length > 0 ) {
+				if ( response.errors && response.errors.length > 0 ) {
 					for ( var i in response.errors ) {
 						if ( typeof( response.errors[i].message ) !== 'string' ) continue;
 						message = message + '<br />' + response.errors[i].message;
@@ -564,9 +603,10 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			data,
 			cfg
 		).done( function( response ) {
-			me.dlgPassword.resetData();
-			me.reloadStore();
+			result.resolve( response );
 		});
+
+		return result.promise();
 	},
 	onDlgUserGroupsOk: function( sender, data ) {
 		var selectedRow = this.grdMain.getSelectionModel().getSelection();

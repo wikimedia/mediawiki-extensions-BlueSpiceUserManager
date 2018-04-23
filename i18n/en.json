@@ -58,5 +58,6 @@
 	"bs-usermanager-multipleuserselected": "You can only change password for one user at a time",
 	"bs-usermanager-invalid-groups": "Groups are invalid",
 	"apihelp-bs-usermanager-group-store-description": "Provides the user manager tasks api for BlueSpice.",
-	"apihelp-bs-usermanager-group-store-summary": "Provides the user manager tasks api for BlueSpice."
+	"apihelp-bs-usermanager-group-store-summary": "Provides the user manager tasks api for BlueSpice.",
+	"bs-usermanager-own-password-change": "You are about to change your own password. You will be logged out and redirected to login page. Do you want to continue?"
 }

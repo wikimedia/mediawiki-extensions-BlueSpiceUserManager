@@ -60,5 +60,6 @@
 	"bs-usermanager-multipleuserselected": "Used as explain text of an alert panel with JavaScript",
 	"bs-usermanager-invalid-groups": "Used as error message",
 	"apihelp-bs-usermanager-group-store-description": "{{doc-apihelp-description|bs-usermanager-group-store}}",
-	"apihelp-bs-usermanager-group-store-summary": "{{doc-apihelp-summary|bs-usermanager-group-store}}"
+	"apihelp-bs-usermanager-group-store-summary": "{{doc-apihelp-summary|bs-usermanager-group-store}}",
+	"bs-usermanager-own-password-change": "Dialog text warning users they are about to change their own password"
 }
