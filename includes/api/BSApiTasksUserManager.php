@@ -220,7 +220,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			'enableUser' => array( 'wikiadmin' ),
 			'deleteUser' => array( 'wikiadmin' ),
 			'setUserGroups' => array( 'userrights' ),
-			'editPassword' => array( 'wikiadmin' )
+			'editPassword' => array( 'wikiadmin', 'usermanager-editpassword' )
 		);
 	}
 

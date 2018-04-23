@@ -33,7 +33,8 @@ class AdminTool implements IAdminTool {
 
 	public function getPermissions() {
 		$permissions = array(
-			'usermanager-viewspecialpage'
+			'usermanager-viewspecialpage',
+			'usermanager-editpassword'
 		);
 		return $permissions;
 	}
