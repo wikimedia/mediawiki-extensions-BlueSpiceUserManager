@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"Martinligabue",
-			"Selven"
+			"Selven",
+			"Sarah Bernabei"
 		]
 	},
 	"bs-usermanager-db-error": "Si è verificato un errore sul database.",
@@ -41,5 +42,6 @@
 	"bs-usermanager-editpassword-successful": "La password è stata cambiata",
 	"bs-usermanager-title-nouserselected": "Nessun utente selezionato",
 	"bs-usermanager-nouserselected": "Si prega di selezionare un utente",
-	"bs-usermanager-invalid-groups": "I gruppi non sono validi"
+	"bs-usermanager-invalid-groups": "I gruppi non sono validi",
+	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?"
 }
