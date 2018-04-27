@@ -24,7 +24,13 @@
 		"usermanager-viewspecialpage": {
 			"type": "global",
 			"roles": [
-				"admin", "demo"
+				"admin"
+			]
+		},
+		"usermanager-editpassword": {
+			"type": "global",
+			"roles": [
+				"admin"
 			]
 		}
 	},
