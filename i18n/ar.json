@@ -61,5 +61,6 @@
 	"bs-usermanager-multipleuserselected": "يمكنك فقط تغيير كلمة المرور لمستخدم واحد في المرة الواحدة",
 	"bs-usermanager-invalid-groups": "المجموعات غير صالحة",
 	"apihelp-bs-usermanager-group-store-description": "يوفر api مهام مدير المستخدم لـBlueSpice.",
-	"apihelp-bs-usermanager-group-store-summary": "يوفر api مهام مدير المستخدم لـBlueSpice."
+	"apihelp-bs-usermanager-group-store-summary": "يوفر api مهام مدير المستخدم لـBlueSpice.",
+	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟"
 }
