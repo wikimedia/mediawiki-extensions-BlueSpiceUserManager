@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"MaGa"
+		]
+	},
+	"bs-usermanager-editpassword": "Promjena zaporke",
+	"bs-usermanager-multipleuserselected": "U isto vrijeme možete promijeniti zaporku za samo jednog suradnika."
+}
