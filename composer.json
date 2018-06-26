@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-user-manager",
+	"name": "bluespice/usermanager",
 	"type": "mediawiki-extension",
 	"description": "Administration interface for adding, editing and deleting users",
 	"license": "GPL-3.0-only",
@@ -25,5 +25,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceUserManager"
 	}
 }
