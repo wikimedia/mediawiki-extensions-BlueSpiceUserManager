@@ -64,7 +64,8 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			renderer: this.renderIcon,
 			flex: 1,
 			filter: {
-				type: 'boolean'
+				type: 'boolean',
+				value: true
 			}
 		} );
 		this.colUserName = Ext.create( 'Ext.grid.column.Template', {
