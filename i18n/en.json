@@ -59,5 +59,7 @@
 	"bs-usermanager-invalid-groups": "Groups are invalid",
 	"apihelp-bs-usermanager-group-store-description": "Provides the user manager tasks api for BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Provides the user manager tasks api for BlueSpice.",
-	"bs-usermanager-own-password-change": "You are about to change your own password. You will be logged out and redirected to login page. Do you want to continue?"
+	"bs-usermanager-own-password-change": "You are about to change your own password. You will be logged out and redirected to login page. Do you want to continue?",
+	"right-usermanager-viewspecialpage": "Grants access to the [[Special:UserManager]] special page.",
+	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page."
 }

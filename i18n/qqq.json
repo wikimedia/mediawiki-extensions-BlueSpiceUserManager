@@ -61,5 +61,7 @@
 	"bs-usermanager-invalid-groups": "Used as error message",
 	"apihelp-bs-usermanager-group-store-description": "{{doc-apihelp-description|bs-usermanager-group-store}}",
 	"apihelp-bs-usermanager-group-store-summary": "{{doc-apihelp-summary|bs-usermanager-group-store}}",
-	"bs-usermanager-own-password-change": "Dialog text warning users they are about to change their own password"
+	"bs-usermanager-own-password-change": "Dialog text warning users they are about to change their own password",
+	"right-usermanager-viewspecialpage": "Grants access to the [[Special:UserManager]] special page.\n{{doc-right|usermanager-viewspecialpage}}",
+	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-right|usermanager-editpassword}}"
 }
