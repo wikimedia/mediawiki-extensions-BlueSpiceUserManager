@@ -63,5 +63,7 @@
 	"bs-usermanager-invalid-groups": "Les groupes ne sont pas valides",
 	"apihelp-bs-usermanager-group-store-description": "Fournit une API BlueSpice aux taches de gestion utilisateur.",
 	"apihelp-bs-usermanager-group-store-summary": "Fournit l’API des tâches de gestion utilisateur pour BlueSpice.",
-	"bs-usermanager-own-password-change": "Vous allez changer votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion. Voulez-vous continuer ?"
+	"bs-usermanager-own-password-change": "Vous allez changer votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion. Voulez-vous continuer ?",
+	"right-usermanager-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:UserManager]].",
+	"right-usermanager-editpassword": "Autorise la modification des mots de passe utilisateur sur la page spéciale [[Special:UserManager]]."
 }

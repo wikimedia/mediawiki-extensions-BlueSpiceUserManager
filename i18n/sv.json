@@ -56,5 +56,7 @@
 	"bs-usermanager-nouserselected": "Välj en användare",
 	"bs-usermanager-title-multipleuserselected": "Flera användare är markerade",
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
-	"bs-usermanager-invalid-groups": "Grupper är ogiltiga"
+	"bs-usermanager-invalid-groups": "Grupper är ogiltiga",
+	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
+	"right-usermanager-editpassword": "Aktiverar ändring av användarlösenord med hanteraren på specialsidan [[Special:UserManager]]."
 }
