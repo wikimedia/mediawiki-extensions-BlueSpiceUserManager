@@ -11,27 +11,31 @@
 	],
 	"descriptionmsg": "bs-usermanager-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceUserManager": {
-			"className": "UserManager",
-			"extPath": "/BlueSpiceUserManager"
-		}
-	},
-	"BlueSpiceFoundationAdminToolRegistry": {
-		"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
-	},
-	"BlueSpiceFoundationPermissionRegistry": {
-		"usermanager-viewspecialpage": {
-			"type": "global",
-			"roles": [
-				"admin"
-			]
-		},
-		"usermanager-editpassword": {
-			"type": "global",
-			"roles": [
-				"admin"
-			]
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceUserManager": {
+					"className": "UserManager",
+					"extPath": "/BlueSpiceUserManager"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"usermanager-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin"
+					]
+				},
+				"usermanager-editpassword": {
+					"type": "global",
+					"roles": [
+						"admin"
+					]
+				}
+			}
 		}
 	},
 	"SpecialPages": {
@@ -104,5 +108,5 @@
 		"usermanager-viewspecialpage"
 	],
 	"load_composer_autoloader" : true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
