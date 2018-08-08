@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"right-usermanager-viewspecialpage": "Gir tilgang til spesialsiden [[Special:UserManager]].",
+	"right-usermanager-editpassword": "Slår på endring av brukerpassord med behandleren på spesialsiden [[Special:UserManager]]."
+}
