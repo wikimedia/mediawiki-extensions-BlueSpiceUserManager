@@ -62,5 +62,7 @@
 	"bs-usermanager-invalid-groups": "المجموعات غير صالحة",
 	"apihelp-bs-usermanager-group-store-description": "يوفر api مهام مدير المستخدم لـBlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "يوفر api مهام مدير المستخدم لـBlueSpice.",
-	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟"
+	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟",
+	"right-usermanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:UserManager]].",
+	"right-usermanager-editpassword": "يمكن من تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]]."
 }
