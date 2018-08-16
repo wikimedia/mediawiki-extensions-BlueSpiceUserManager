@@ -15,7 +15,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceUserManager": {
-					"className": "UserManager",
+					"className": "\\BlueSpice\\UserManager\\Extension",
 					"extPath": "/BlueSpiceUserManager"
 				}
 			},
@@ -38,6 +38,12 @@
 			}
 		}
 	},
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": "*"
+		}
+	},
 	"SpecialPages": {
 		"UserManager": "SpecialUserManager"
 	},
@@ -53,8 +59,10 @@
 			"i18n"
 		]
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\UserManager\\": "src/"
+	},
 	"AutoloadClasses": {
-		"UserManager": "UserManager.class.php",
 		"BSApiTasksUserManager": "includes/api/BSApiTasksUserManager.php",
 		"BSApiChangeableGroupStore": "includes/api/BSApiChangeableGroupStore.php",
 		"SpecialUserManager": "includes/specials/SpecialUserManager.class.php"

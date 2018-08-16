@@ -29,7 +29,7 @@ namespace BlueSpice\UserManager\Hook;
 use BlueSpice\Hook;
 
 /**
- * Located in \UserManager::addUser after a user was initially added
+ * Located in \BlueSpice\UserManager\Extension::addUser after a user was initially added
  */
 abstract class BSUserManagerAfterAddUser extends Hook {
 
