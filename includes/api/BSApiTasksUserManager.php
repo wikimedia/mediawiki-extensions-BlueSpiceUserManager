@@ -263,7 +263,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$aMetaData['enabled'] = $oTaskData->enabled;
 		}
 
-		$oStatus = UserManager::addUser(
+		$oStatus = \BlueSpice\UserManager\Extension::addUser(
 			$oTaskData->userName,
 			$aMetaData,
 			$this->getUser()
@@ -274,7 +274,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		}
 
 		if( is_array($aGroups) ) {
-			$oStatus = UserManager::setGroups(
+			$oStatus = \BlueSpice\UserManager\Extension::setGroups(
 				$oStatus->getValue(),
 				$aGroups
 			);
@@ -302,7 +302,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 		$oUser = User::newFromID( $oTaskData->userID );
 
-		$oStatus = UserManager::editPassword(
+		$oStatus = \BlueSpice\UserManager\Extension::editPassword(
 			$oUser,
 			$aPassword,
 			$this->getUser()
@@ -348,7 +348,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$aMetaData['enabled'] = $oTaskData->enabled;
 		}
 
-		$oStatus = UserManager::editUser(
+		$oStatus = \BlueSpice\UserManager\Extension::editUser(
 			$oUser,
 			$aMetaData,
 			true,
@@ -377,7 +377,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 		foreach ( $oTaskData->userIDs as $sUserID ) {
 			$oUser = User::newFromID( $sUserID );
-			$oStatus = UserManager::deleteUser( $oUser, $this->getUser() );
+			$oStatus = \BlueSpice\UserManager\Extension::deleteUser( $oUser, $this->getUser() );
 			if( !$oStatus->isOK() ) {
 				$oReturn->message = $oStatus->getMessage()->parse();
 				return $oReturn;
@@ -400,7 +400,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$oUser = User::newFromID( $oTaskData->userID );
 
 		$oPerformer = $this->getUser();
-		$oStatus = UserManager::disableUser( $oUser, $oPerformer );
+		$oStatus = \BlueSpice\UserManager\Extension::disableUser( $oUser, $oPerformer );
 		if( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
@@ -422,7 +422,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$oUser = User::newFromID( $oTaskData->userID );
 
 		$oPerformer = $this->getUser();
-		$oStatus = UserManager::enableUser( $oUser, $oPerformer );
+		$oStatus = \BlueSpice\UserManager\Extension::enableUser( $oUser, $oPerformer );
 		if( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
@@ -455,7 +455,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$oStatus = Status::newGood();
 		foreach( $oTaskData->userIDs as $sUserID ) {
 			$oUser = User::newFromID( $sUserID );
-			$oStatus->merge( UserManager::setGroups(
+			$oStatus->merge( \BlueSpice\UserManager\Extension::setGroups(
 				$oUser,
 				$oTaskData->groups
 			));
