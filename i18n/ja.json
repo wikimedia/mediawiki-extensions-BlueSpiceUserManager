@@ -7,6 +7,7 @@
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
+	"bs-usermanager-db-error": "データベース エラーが発生しました。",
 	"bs-usermanager-enter-pwd": "パスワードを入力してください。",
 	"bs-usermanager-idnotexist": "この利用者は存在しません。",
 	"bs-usermanager-invalid-pwd": "パスワードが無効です。",
