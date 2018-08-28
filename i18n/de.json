@@ -3,7 +3,8 @@
 		"authors": [
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
-			"Umherirrender"
+			"Umherirrender",
+			"Hwboehm"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
@@ -34,6 +35,7 @@
 	"bs-usermanager-groups-more": "… mehr",
 	"bs-usermanager-no-self-desysop": "Du kannst dir nicht selbst das Sysop recht nehmen.",
 	"apihelp-bs-usermanager-tasks-description": "Bietet Operationen für die Prüflistenerweiterung",
+	"apihelp-bs-usermanager-tasks-summary": "Bietet Operationen für die Prüflistenerweiterung",
 	"bs-usermanager-no-self-block": "Du kannst nicht dich selbst deaktivieren.",
 	"bs-usermanager-block-error": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 konnte nicht deaktiviert werden.",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 konnte nicht aktiviert werden.",
