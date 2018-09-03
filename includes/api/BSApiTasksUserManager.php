@@ -385,7 +385,15 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		}
 
 		$oReturn->success = true;
-		$oReturn->message = wfMessage( 'bs-usermanager-user-deleted', count($oTaskData->userIDs) )->text();
+		$msg = Message::newFromKey( 'bs-usermanager-user-deleted' );
+		$idCount = count( $oTaskData->userIDs );
+		$msg->params( $idCount );
+		if( $idCount === 1 ) {
+			$msg->params(
+				User::newFromID( $oTaskData->userIDs[0] )->getOption( 'gender' )
+			);
+		}
+		$oReturn->message = $msg->text();
 
 		return $oReturn;
 	}
