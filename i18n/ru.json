@@ -21,7 +21,7 @@
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
 	"bs-usermanager-label": "Управление учётными записями",
 	"bs-usermanager-user-added": "Участник был добавлен.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|Участник был удалён.|$1 Участники были удалёны.}}",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Участник был удалён.|Участница была удалена.}}|$1 участника были удалёны.|$1 участников были удалёны.}}",
 	"bs-usermanager-user-exists": "Такое имя участника уже существует.",
 	"bs-usermanager-save-successful": "Изменения сохранены.",
 	"bs-usermanager-headerusername": "Имя участника",

@@ -18,7 +18,7 @@
 	"bs-usermanager-invalid-email-gen": "E-postadressen är ogiltig.",
 	"bs-usermanager-label": "Användaradministrering",
 	"bs-usermanager-user-added": "Användaren har lagts till.",
-	"bs-usermanager-user-deleted": "Användaren har raderats.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Användaren|$1 användare}}}} har raderats.",
 	"bs-usermanager-user-exists": "Användarnamnet existerar redan.",
 	"bs-usermanager-save-successful": "Ändringarna sparade.",
 	"bs-usermanager-headerusername": "Användarnamn",

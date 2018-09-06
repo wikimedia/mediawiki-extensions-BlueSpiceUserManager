@@ -16,7 +16,7 @@
 	"bs-usermanager-invalid-email-gen": "邮件地址无效。",
 	"bs-usermanager-label": "用户管理",
 	"bs-usermanager-user-added": "用户已添加。",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|用户|$1个用户}}已删除。",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|用户}}|$1个用户}}已删除。",
 	"bs-usermanager-user-exists": "用户已存在。",
 	"bs-usermanager-save-successful": "更改已保存。",
 	"bs-usermanager-headerusername": "用户名",

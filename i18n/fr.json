@@ -20,7 +20,7 @@
 	"bs-usermanager-invalid-email-gen": "L’adresse de courriel n’est pas valide.",
 	"bs-usermanager-label": "Gestionnaire des utilisateurs",
 	"bs-usermanager-user-added": "L’utilisateur a été ajouté.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|L'utilisateur a|$1 utilisateurs ont}} été supprimé{{PLURAL:$1||s}} .",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|L’{{GENDER:$2|utilisateur|utilisatrice}} a|$1 utilisateurs ont}} été supprimé{{PLURAL:$1|{{GENDER:$2||e}}|s}} .",
 	"bs-usermanager-user-exists": "Le nom d’utilisateur existe déjà.",
 	"bs-usermanager-save-successful": "Modifications enregistrées.",
 	"bs-usermanager-headerusername": "Nom d’utilisateur",
