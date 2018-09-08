@@ -18,7 +18,7 @@
 	"bs-usermanager-invalid-email-gen": "O endereço de correio eletrónico é inválido.",
 	"bs-usermanager-label": "Administrador de utilizadores",
 	"bs-usermanager-user-added": "O utilizador foi adicionado.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|O utilizador foi eliminado|$1 utilizadores foram eliminados}}.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|O utilizador foi eliminado|A utilizadora foi eliminada}}|$1 utilizadores foram eliminados}}.",
 	"bs-usermanager-user-exists": "O nome de utilizador já existe.",
 	"bs-usermanager-save-successful": "As alterações foram gravadas.",
 	"bs-usermanager-headerusername": "Nome de utilizador",
