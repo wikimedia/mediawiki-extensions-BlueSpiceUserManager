@@ -29,7 +29,7 @@
 	"bs-usermanager-labelnewpassword": "Contrasinal",
 	"bs-usermanager-labelpasswordcheck": "Confirme o contrasinal",
 	"bs-usermanager-titledeleteuser": "Borrar o usuario",
-	"bs-usermanager-confirmdeleteuser": "¿Está seguro de querer eliminar {{PLURAL:$1|este usuario|estos usuarios}}?",
+	"bs-usermanager-confirmdeleteuser": "¿Está seguro de querer eliminar {{PLURAL:$1|este usuario|estes usuarios}}?",
 	"bs-usermanager-groups-more": "... mais",
 	"bs-usermanager-no-self-desysop": "Non pode retirar o permiso de \"sysop\" a sí mesmo.",
 	"apihelp-bs-usermanager-tasks-description": "Proporciona operacións para a extensión Checklist",
