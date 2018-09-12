@@ -19,7 +19,7 @@
 	"bs-usermanager-invalid-email-gen": "عنوان البريد الإلكتروني غير صالح.",
 	"bs-usermanager-label": "مدير المستخدم",
 	"bs-usermanager-user-added": "تمت إضافة المستخدم.",
-	"bs-usermanager-user-deleted": "لقد تم حذف {{PLURAL:$1|مستخدم|$1 مستخدمين}}.",
+	"bs-usermanager-user-deleted": "لقد تم حذف {{PLURAL:$1|{{GENDER:$2|مستخدم|مستخدمة}}|$1 مستخدمين}}.",
 	"bs-usermanager-user-exists": "اسم المستخدم موجود بالفعل.",
 	"bs-usermanager-save-successful": "تم حفظ التغييرات.",
 	"bs-usermanager-headerusername": "اسم المستخدم",
