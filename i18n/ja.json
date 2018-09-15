@@ -3,7 +3,8 @@
 		"authors": [
 			"Shirayuki",
 			"Suchichi02",
-			"Suyama"
+			"Suyama",
+			"Omotecho"
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
@@ -15,7 +16,7 @@
 	"bs-usermanager-invalid-uname": "利用者名が無効です。",
 	"bs-usermanager-invalid-email-gen": "メールアドレスが無効です。",
 	"bs-usermanager-user-added": "利用者を追加しました。",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|利用者|$1人の利用者}}を削除しました。",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|利用者}}|$1人}}を削除しました。",
 	"bs-usermanager-user-exists": "既に存在する利用者名です。",
 	"bs-usermanager-save-successful": "変更内容を保存しました。",
 	"bs-usermanager-headerusername": "利用者名",
