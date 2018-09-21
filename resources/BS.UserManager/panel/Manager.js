@@ -247,7 +247,9 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		 */
 		this.btnEdit.enable();
 		this.btnEditGroups.enable();
-		this.btnEditPassword.enable();
+		if( this.btnEditPassword ) {
+			this.btnEditPassword.enable();
+		}
 	},
 	onBtnAddClick: function( oButton, oEvent ) {
 		if ( !this.dlgUserAdd ) {
