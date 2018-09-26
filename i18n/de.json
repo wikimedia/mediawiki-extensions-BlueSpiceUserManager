@@ -14,7 +14,7 @@
 	"bs-usermanager-enter-pwd": "Bitte gib ein Passwort ein.",
 	"bs-usermanager-idnotexist": "Dieser Benutzer existiert nicht.",
 	"bs-usermanager-invalid-pwd": "Das Passwort ist unzulässig.",
-	"bs-usermanager-invalid-realname": "Der echt Name ist unzulässig.",
+	"bs-usermanager-invalid-realname": "Der echte Name ist unzulässig.",
 	"bs-usermanager-invalid-uname": "Der Benutzername ist unzulässig.",
 	"bs-usermanager-invalid-email-gen": "Die E-Mail-Adresse ist unzulässig.",
 	"bs-usermanager-label": "Benutzerverwaltung",
