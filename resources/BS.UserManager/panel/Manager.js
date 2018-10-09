@@ -159,7 +159,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		if(this.opPermitted('usergroups')){
 			this.btnEditGroups = new Ext.Button({
 				id: this.getId()+'-btn-edit-groups',
-				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-um_groups.png',
+				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_group.png',
 				iconCls: 'btn'+this.tbarHeight,
 				tooltip:  mw.message('bs-usermanager-editgroups').plain(),
 				height: 50,
@@ -174,7 +174,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		if(this.opPermitted('editpassword')) {
 			this.btnEditPassword = new Ext.Button({
 				id: this.getId()+'-btn-edit-password',
-				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-um_pass.png',
+				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_password.png',
 				iconCls: 'btn'+this.tbarHeight,
 				tooltip: mw.message('bs-usermanager-editpassword').plain(),
 				height: 50,
