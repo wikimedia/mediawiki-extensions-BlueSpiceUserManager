@@ -1,11 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli",
+			"Hwboehm"
 		]
 	},
 	"bs-usermanager-self-nodelete": "Sie können nicht Ihr Benutzerkonto löschen.",
 	"bs-usermanager-enter-pwd": "Bitte geben Sie ein Passwort ein.",
 	"bs-usermanager-confirmdeleteuser": "Sind Sie sicher, dass Sie {{PLURAL:$1|diesen|diese $1}} Benutzer löschen wollen?",
-	"bs-usermanager-no-self-desysop": "Sie können sich nicht selbst das Sysop recht nehmen."
+	"bs-usermanager-no-self-desysop": "Sie können sich nicht selbst das Sysop recht nehmen.",
+	"bs-usermanager-no-self-block": "Sie können nicht sich selbst deaktivieren.",
+	"bs-usermanager-confirmdisableuser": "Möchten Sie wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 deaktivieren?",
+	"bs-usermanager-confirmenableuser": "Möchten Sie wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 aktivieren?",
+	"bs-usermanager-group-add-not-allowed": "Sie sind nicht berechtigt, Benutzer zu der Gruppe $1 hinzuzufügen.",
+	"bs-usermanager-group-remove-not-allowed": "Sie sind nicht berechtigt, Benutzer von der Gruppe $1 zu entfernen.",
+	"bs-usermanager-nouserselected": "Bitte wählen Sie einen Benutzer aus",
+	"bs-usermanager-multipleuserselected": "Sie können das Passwort nur für einen Benutzer gleichzeitig ändern",
+	"bs-usermanager-own-password-change": "Sie sind dabei, Ihr eigenes Passwort zu ändern. Sie werden abgemeldet und zur Anmeldeseite weitergeleitet. Möchten Sie fortfahren?"
 }
