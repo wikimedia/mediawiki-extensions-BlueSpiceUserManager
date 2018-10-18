@@ -1,6 +1,6 @@
 <?php
 
-class SpecialUserManager extends BsSpecialPage {
+class SpecialUserManager extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'UserManager', 'usermanager-viewspecialpage' );
