@@ -79,6 +79,7 @@
 				"bs-usermanager-headerusername",
 				"bs-usermanager-headerrealname",
 				"bs-usermanager-headeremail",
+				"bs-usermanager-headerregistration",
 				"bs-usermanager-headergroups",
 				"bs-usermanager-titleadduser",
 				"bs-usermanager-titleeditdetails",
