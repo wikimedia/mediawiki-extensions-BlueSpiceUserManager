@@ -26,6 +26,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				'user_page_link',
 				'user_real_name',
 				'user_email',
+				{ 'name': 'user_registration', 'type': 'date', 'dateFormat': 'YmdHis' },
 				'page_link',
 				'groups',
 				'enabled'
@@ -101,6 +102,18 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				type: 'string'
 			}
 		} );
+		this.colRegistration = Ext.create( 'Ext.grid.column.Column', {
+			id: this.getId()+'-userregistration',
+			header: mw.message( 'bs-usermanager-headerregistration' ).plain(),
+			sortable: true,
+			dataIndex: 'user_registration',
+			renderer: this.renderRegistration,
+			hidden: true,
+			flex: 1,
+			filter: {
+				type: 'date'
+			}
+		} );
 		this.colGroups = Ext.create( 'Ext.grid.column.Column', {
 			header: mw.message('bs-usermanager-headergroups').plain(),
 			dataIndex: 'groups',
@@ -117,6 +130,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			this.colUserName,
 			this.colRealName,
 			this.colEmail,
+			this.colRegistration,
 			this.colGroups
 		];
 		this.callParent( arguments );
@@ -230,6 +244,12 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		if ( value.length === 0 ) return '';
 
 		return '<a href="mailto:' + value + '">' + value + '</a>';
+	},
+	renderRegistration: function ( value ) {
+		if( !value ) {
+			return '';
+		}
+		return value.toLocaleString( mw.user.options.get( 'language' ) );
 	},
 	renderIcon: function( value ) {
 		//TODO: make CSS class icon
