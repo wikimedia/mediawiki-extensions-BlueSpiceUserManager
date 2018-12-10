@@ -3,6 +3,7 @@
 use BlueSpice\Tests\BSApiTasksTestBase;
 
 /**
+ * @group Broken
  * @group large
  * @group API
  * @group BlueSpice
