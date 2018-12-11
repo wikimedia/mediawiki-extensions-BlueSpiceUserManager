@@ -24,6 +24,7 @@
 	"bs-usermanager-headerusername": "Column headline and label for username\\n{{Identical|Username}}",
 	"bs-usermanager-headerrealname": "Column headline and label for real name\\n{{Identical|Real name}}",
 	"bs-usermanager-headeremail": "Column headline and label for Email\\n{{Identical|Email}}",
+	"bs-usermanager-headerregistration": "Column headline and label for the registration date\\n{{Identical|Registration}}",
 	"bs-usermanager-headergroups": "Column headline and label for Groups\n{{Identical|Group}}",
 	"bs-usermanager-titleadduser": "Window title for add user\\n{{Identical|Add user}}",
 	"bs-usermanager-titleeditdetails": "Window title for edit user\\n{{Identical|Edit user}}",
