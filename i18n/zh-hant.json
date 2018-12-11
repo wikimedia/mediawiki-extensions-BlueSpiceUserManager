@@ -26,6 +26,7 @@
 	"bs-usermanager-headerusername": "使用者名稱",
 	"bs-usermanager-headerrealname": "真實姓名",
 	"bs-usermanager-headeremail": "電子郵件",
+	"bs-usermanager-headerregistration": "註冊",
 	"bs-usermanager-headergroups": "群組",
 	"bs-usermanager-titleadduser": "新增使用者",
 	"bs-usermanager-titleeditdetails": "編輯使用者",
