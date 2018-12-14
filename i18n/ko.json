@@ -22,6 +22,7 @@
 	"bs-usermanager-headerusername": "사용자 이름",
 	"bs-usermanager-headerrealname": "실명",
 	"bs-usermanager-headeremail": "이메일",
+	"bs-usermanager-headerregistration": "등록",
 	"bs-usermanager-headergroups": "그룹",
 	"bs-usermanager-titleadduser": "사용자 추가",
 	"bs-usermanager-titleeditdetails": "사용자 편집",
