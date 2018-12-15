@@ -25,6 +25,7 @@
 	"bs-usermanager-headerusername": "اسم المستخدم",
 	"bs-usermanager-headerrealname": "الاسم الحقيقي",
 	"bs-usermanager-headeremail": "البريد الإلكتروني",
+	"bs-usermanager-headerregistration": "تسجيل",
 	"bs-usermanager-headergroups": "المجموعات",
 	"bs-usermanager-titleadduser": "إضافة المستخدم",
 	"bs-usermanager-titleeditdetails": "تعديل المستخدم",
