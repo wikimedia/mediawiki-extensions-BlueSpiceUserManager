@@ -24,6 +24,7 @@
 	"bs-usermanager-headerusername": "Användarnamn",
 	"bs-usermanager-headerrealname": "Riktigt namn",
 	"bs-usermanager-headeremail": "E-post",
+	"bs-usermanager-headerregistration": "Registrering",
 	"bs-usermanager-headergroups": "Grupper",
 	"bs-usermanager-titleadduser": "Lägg till användare",
 	"bs-usermanager-titleeditdetails": "Redigera användare",
