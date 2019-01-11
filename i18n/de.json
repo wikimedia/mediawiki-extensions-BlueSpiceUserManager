@@ -60,6 +60,8 @@
 	"bs-usermanager-title-multipleuserselected": "Es wurden mehrere Benutzer ausgewählt",
 	"bs-usermanager-multipleuserselected": "Du kannst das Passwort nur für einen Benutzer gleichzeitig ändern",
 	"bs-usermanager-invalid-groups": "Die Gruppen sind ungültig",
+	"bs-usermanager-filter-only-activated-users": "Alle aktivierten Benutzer anzeigen",
+	"bs-usermanager-filter-only-deactivated-users": "Alle deaktivierten Benutzer anzeigen",
 	"apihelp-bs-usermanager-group-store-description": "Stellt die UserManager-Aufgaben-API für BlueSpice bereit.",
 	"apihelp-bs-usermanager-group-store-summary": "Stellt die UserManager-Aufgaben-API für BlueSpice bereit.",
 	"bs-usermanager-own-password-change": "Du bist dabei, dein eigenes Passwort zu ändern. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet. Möchtest du fortfahren?",

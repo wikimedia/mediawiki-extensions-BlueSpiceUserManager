@@ -104,7 +104,9 @@
 				"bs-usermanager-title-multipleuserselected",
 				"bs-usermanager-multipleuserselected",
 				"bs-usermanager-invalid-groups",
-				"bs-usermanager-own-password-change"
+				"bs-usermanager-own-password-change",
+				"bs-usermanager-filter-only-activated-users",
+				"bs-usermanager-filter-only-deactivated-users"
 			]
 		}
 	},
