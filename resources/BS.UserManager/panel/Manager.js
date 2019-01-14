@@ -64,9 +64,13 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			hidden: true,
 			renderer: this.renderIcon,
 			flex: 1,
+			xtype: 'booleancolumn',
 			filter: {
 				type: 'boolean',
-				value: true
+				value: true,
+				defaultValue: true,
+				yesText: mw.message( 'bs-usermanager-filter-only-activated-users' ).plain(),
+				noText: mw.message( 'bs-usermanager-filter-only-deactivated-users' ).plain()
 			}
 		} );
 		this.colUserName = Ext.create( 'Ext.grid.column.Template', {
