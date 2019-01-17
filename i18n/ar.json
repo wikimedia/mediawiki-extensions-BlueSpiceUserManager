@@ -4,7 +4,8 @@
 			"سامي الرحيلي",
 			"Moud hosny",
 			"محمد أحمد عبد الفتاح",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"bs-usermanager-desc": "واجهة الإدارة لإضافة وتحرير وحذف المستخدمين",
@@ -61,6 +62,8 @@
 	"bs-usermanager-title-multipleuserselected": "تم تحديد العديد من المستخدمين",
 	"bs-usermanager-multipleuserselected": "يمكنك فقط تغيير كلمة المرور لمستخدم واحد في المرة الواحدة",
 	"bs-usermanager-invalid-groups": "المجموعات غير صالحة",
+	"bs-usermanager-filter-only-activated-users": "عرض كل المستخدمين المفعلين",
+	"bs-usermanager-filter-only-deactivated-users": "عرض كل المستخدمين المعطلين",
 	"apihelp-bs-usermanager-group-store-description": "يوفر api مهام مدير المستخدم لـBlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "يوفر api مهام مدير المستخدم لـBlueSpice.",
 	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"A Chinese Wikipedian"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -57,6 +58,8 @@
 	"bs-usermanager-title-multipleuserselected": "选择了多个用户",
 	"bs-usermanager-multipleuserselected": "您每次只能更改一位用户的密码",
 	"bs-usermanager-invalid-groups": "组无效",
+	"bs-usermanager-filter-only-activated-users": "显示所有激活的用户",
+	"bs-usermanager-filter-only-deactivated-users": "显示所有停用的用户",
 	"apihelp-bs-usermanager-group-store-description": "为BlueSpice提供用户管理器任务api。",
 	"apihelp-bs-usermanager-group-store-summary": "为BlueSpice提供用户管理器任务api。",
 	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？"

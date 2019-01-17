@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"B20180"
+		]
+	},
+	"bs-usermanager-filter-only-activated-users": "แสดงผู้ใช้ที่เปิดใช้งานทั้งหมด",
+	"bs-usermanager-filter-only-deactivated-users": "แสดงผู้ใช้ที่ไม่ได้ใช้งานทั้งหมด"
+}

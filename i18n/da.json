@@ -4,5 +4,7 @@
 			"Saederup92"
 		]
 	},
-	"bs-usermanager-headerregistration": "Registrering"
+	"bs-usermanager-headerregistration": "Registrering",
+	"bs-usermanager-filter-only-activated-users": "Vis alle aktiverede brugere",
+	"bs-usermanager-filter-only-deactivated-users": "Vis alle deaktiverede brugere"
 }

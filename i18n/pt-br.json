@@ -59,6 +59,8 @@
 	"bs-usermanager-title-multipleuserselected": "Estão selecionados vários usuários",
 	"bs-usermanager-multipleuserselected": "Só pode alterar a senha de um usuário de cada vez",
 	"bs-usermanager-invalid-groups": "Os grupos são inválidos",
+	"bs-usermanager-filter-only-activated-users": "Mostrar todos os usuários ativados",
+	"bs-usermanager-filter-only-deactivated-users": "Mostrar todos os usuários desativados",
 	"apihelp-bs-usermanager-group-store-description": "Fornece a API de tarefas de gestão do usuário para o BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Fornece as tarefas do gerenciador de usuários api para o BlueSpice.",
 	"bs-usermanager-own-password-change": "Você está prestes a mudar sua própria senha. Você será desconectado e redirecionado para a página de login. Você quer continuar?",
