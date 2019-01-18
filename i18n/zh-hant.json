@@ -62,6 +62,8 @@
 	"bs-usermanager-title-multipleuserselected": "已選多名使用者",
 	"bs-usermanager-multipleuserselected": "您一次僅能更改一位使用者的密碼",
 	"bs-usermanager-invalid-groups": "群組無效",
+	"bs-usermanager-filter-only-activated-users": "顯示全部活躍的使用者",
+	"bs-usermanager-filter-only-deactivated-users": "顯示全部停用的使用者",
 	"apihelp-bs-usermanager-group-store-description": "為 BlueSpice 提供使用者管理任務 API。",
 	"apihelp-bs-usermanager-group-store-summary": "為 BlueSpice 提供使用者管理任務 API。",
 	"bs-usermanager-own-password-change": "您將要更改您自己的密碼。您之後會被登出，並重新導向到登入頁面。您要繼續嗎？",
