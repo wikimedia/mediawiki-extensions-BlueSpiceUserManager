@@ -4,7 +4,8 @@
 			"Beta16",
 			"Martinligabue",
 			"Selven",
-			"Sarah Bernabei"
+			"Sarah Bernabei",
+			"Lorelai87"
 		]
 	},
 	"bs-usermanager-db-error": "Si è verificato un errore sul database.",
@@ -43,5 +44,7 @@
 	"bs-usermanager-title-nouserselected": "Nessun utente selezionato",
 	"bs-usermanager-nouserselected": "Si prega di selezionare un utente",
 	"bs-usermanager-invalid-groups": "I gruppi non sono validi",
+	"bs-usermanager-filter-only-activated-users": "Mostra tutti gli utenti attivi",
+	"bs-usermanager-filter-only-deactivated-users": "Mostra tutti gli utenti non attivi",
 	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?"
 }
