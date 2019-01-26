@@ -29,6 +29,7 @@
 	"bs-usermanager-labelnewpassword": "비밀번호",
 	"bs-usermanager-labelpasswordcheck": "비밀번호 확인",
 	"bs-usermanager-titledeleteuser": "사용자 삭제",
+	"bs-usermanager-groups-more": "... 기타",
 	"bs-usermanager-no-self-block": "자기 자신을 비활성화할 수 없습니다.",
 	"bs-usermanager-block-error": "$1 {{GENDER:$1|사용자}}를 비활성화할 수 없습니다.",
 	"bs-usermanager-unblock-error": "$1 {{GENDER:$1|사용자}}를 활성화할 수 없습니다.",
