@@ -12,7 +12,7 @@
 	"bs-usermanager-admin-nodelete": "لا يمكن حذف حساب الإداري.",
 	"bs-usermanager-self-nodelete": "لا يمكنك حذف حسابك.",
 	"bs-usermanager-db-error": "لقد حدث خطأ في قاعدة البيانات.",
-	"bs-usermanager-enter-pwd": "يُرجَى إدخال كلمة مرور.",
+	"bs-usermanager-enter-pwd": "يرجى إدخال كلمة سر.",
 	"bs-usermanager-idnotexist": "هذا المستخدم غير موجود.",
 	"bs-usermanager-invalid-pwd": "كلمة المرور غير صالحة",
 	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح.",
