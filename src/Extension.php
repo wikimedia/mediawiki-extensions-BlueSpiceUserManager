@@ -307,9 +307,9 @@ class Extension extends \BlueSpice\Extension {
 		$block->setBlocker( $oPerformer );
 		$block->mReason = \wfMessage( 'bs-usermanager-log-user-disabled', $oUser->getName() )->text();
 		$block->mExpiry = 'infinity';
-		$block->prevents( 'createaccount', false );
-		$block->prevents( 'editownusertalk', false );
-		$block->prevents( 'sendemail', true );
+		$block->isCreateAccountBlocked( false );
+		$block->isUsertalkEditAllowed( true );
+		$block->isEmailBlocked( true );
 		$block->isHardblock( true );
 		$block->isAutoblocking( false );
 		$reason = [ 'hookaborted' ];
