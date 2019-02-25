@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Oldstoneage"
+			"Oldstoneage",
+			"Meno25"
 		]
 	},
 	"bs-usermanager-desc": "الوجيهة تاع التنضام باش تسيّر المستعمليّين",
@@ -9,7 +10,7 @@
 	"bs-usermanager-enter-pwd": "اتفضّل دخّل كلمتٰ السرّ",
 	"bs-usermanager-idnotexist": "هاد أسمٰ المستعملي ما كاينش منّهُ",
 	"bs-usermanager-invalid-realname": "الأسم الصحّاني هادا ماشي مقبول.",
-	"bs-usermanager-invalid-uname": "أسم المستعملي ماشي مقبول",
+	"bs-usermanager-invalid-uname": "اسم المستعملي ماشي مقبول",
 	"bs-usermanager-invalid-email-gen": "لادريسة تاع ليمال ماشي مقبولة",
 	"bs-usermanager-label": "المسيار تاع المستعمليّين",
 	"bs-usermanager-user-exists": "هاد الأسم المستعملي راه كاين مقبل.",
