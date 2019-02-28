@@ -25,6 +25,7 @@
 	"bs-usermanager-headerusername": "Nombre de usuario",
 	"bs-usermanager-headerrealname": "Nombre verdadero",
 	"bs-usermanager-headeremail": "Correo electrónico",
+	"bs-usermanager-headerregistration": "Registro",
 	"bs-usermanager-headergroups": "Grupos",
 	"bs-usermanager-titleadduser": "Añadir un usuario",
 	"bs-usermanager-titleeditdetails": "Editar el usuario",
