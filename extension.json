@@ -69,7 +69,7 @@
 	"AutoloadClasses": {
 		"BSApiTasksUserManager": "includes/api/BSApiTasksUserManager.php",
 		"BSApiChangeableGroupStore": "includes/api/BSApiChangeableGroupStore.php",
-		"SpecialUserManager": "includes/specials/SpecialUserManager.class.php"
+		"SpecialUserManager": "includes/specials/SpecialUserManager.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.userManager": {
