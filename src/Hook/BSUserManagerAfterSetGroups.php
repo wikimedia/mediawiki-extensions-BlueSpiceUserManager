@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Hook handler base class for BlueSpice hook BSUserManagerAfterSetGroups in
  * UserManager
@@ -22,10 +23,12 @@
  * @author     Dejan Savuljesku <savuljesku@hallowelt.com>
  * @package    BlueSpiceUserManager
  * @copyright  Copyright (C) 2017 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+
 namespace BlueSpice\UserManager\Hook;
+
 use BlueSpice\Hook;
 
 abstract class BSUserManagerAfterSetGroups extends Hook {
@@ -60,23 +63,39 @@ abstract class BSUserManagerAfterSetGroups extends Hook {
 	 */
 	protected $status;
 
-	public static function callback( $user, $groups, $addGroups, $removeGroups, $excludeGroups, &$status ) {
+	/**
+	 *
+	 * @param \User $user
+	 * @param array $groups
+	 * @param array $addGroups
+	 * @param array $removeGroups
+	 * @param array $excludeGroups
+	 * @param \Status &$status
+	 * @return bool
+	 */
+	public static function callback( $user, $groups, $addGroups, $removeGroups,
+		$excludeGroups, &$status ) {
 		$className = static::class;
 		$hookHandler = new $className(
-			null,
-			null,
-			$user,
-			$groups,
-			$addGroups,
-			$removeGroups,
-			$excludeGroups,
+			null, null, $user, $groups, $addGroups, $removeGroups, $excludeGroups,
 			$status
 		);
 		return $hookHandler->process();
 	}
 
-
-	public function __construct( $context, $config, $user, $groups, $addGroups, $removeGroups, $excludeGroups, &$status ) {
+	/**
+	 *
+	 * @param \IContextSource $context
+	 * @param \Config $config
+	 * @param \User $user
+	 * @param array $groups
+	 * @param array $addGroups
+	 * @param array $removeGroups
+	 * @param array $excludeGroups
+	 * @param \Status &$status
+	 */
+	public function __construct( $context, $config, $user, $groups, $addGroups,
+		$removeGroups, $excludeGroups, &$status ) {
 		parent::__construct( $context, $config );
 
 		$this->user = $user;
@@ -86,4 +105,5 @@ abstract class BSUserManagerAfterSetGroups extends Hook {
 		$this->excludeGroups = $excludeGroups;
 		$this->status =& $status;
 	}
+
 }

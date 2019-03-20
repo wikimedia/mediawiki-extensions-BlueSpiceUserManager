@@ -21,7 +21,7 @@
  * @author     Patric Wirth <wirth@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 /**
@@ -34,7 +34,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	 * Methods that can be called by task param
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'addUser' => [
 			'examples' => [
 				[
@@ -205,7 +205,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	/**
 	 * Returns an array of tasks and their required permissions
@@ -213,53 +213,58 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'addUser' => array( 'wikiadmin' ),
-			'editUser' => array( 'wikiadmin' ),
-			'disableUser' => array( 'wikiadmin' ),
-			'enableUser' => array( 'wikiadmin' ),
-			'deleteUser' => array( 'wikiadmin' ),
-			'setUserGroups' => array( 'userrights' ),
-			'editPassword' => array( 'wikiadmin', 'usermanager-editpassword' )
-		);
+		return [
+			'addUser' => [ 'wikiadmin' ],
+			'editUser' => [ 'wikiadmin' ],
+			'disableUser' => [ 'wikiadmin' ],
+			'enableUser' => [ 'wikiadmin' ],
+			'deleteUser' => [ 'wikiadmin' ],
+			'setUserGroups' => [ 'userrights' ],
+			'editPassword' => [ 'wikiadmin', 'usermanager-editpassword' ]
+		];
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function getTaskDataDefinitions() {
-		//TODO
+		// TODO
 		return false;
 	}
 
 	/**
 	 * Creates an user.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_addUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 		$aGroups = false;
-		if( isset($oTaskData->groups) ) {
+		if ( isset( $oTaskData->groups ) ) {
 			$aGroups = $oTaskData->groups;
 		}
 
-		if( empty($oTaskData->userName) ) {
+		if ( empty( $oTaskData->userName ) ) {
 			$oReturn->message = wfMessage(
 				'bs-usermanager-invalid-uname'
 			)->plain();
 		}
 
-		$aMetaData = array();
-		if( isset($oTaskData->password) ) {
+		$aMetaData = [];
+		if ( isset( $oTaskData->password ) ) {
 			$aMetaData['password'] = $oTaskData->password;
 		}
-		if( isset($oTaskData->rePassword) ) {
+		if ( isset( $oTaskData->rePassword ) ) {
 			$aMetaData['repassword'] = $oTaskData->rePassword;
 		}
-		if( isset($oTaskData->email) ) {
+		if ( isset( $oTaskData->email ) ) {
 			$aMetaData['email'] = $oTaskData->email;
 		}
-		if( isset($oTaskData->realname) ) {
+		if ( isset( $oTaskData->realname ) ) {
 			$aMetaData['realname'] = $oTaskData->realname;
 		}
-		if( isset($oTaskData->enabled) ) {
+		if ( isset( $oTaskData->enabled ) ) {
 			$aMetaData['enabled'] = $oTaskData->enabled;
 		}
 
@@ -268,17 +273,17 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$aMetaData,
 			$this->getUser()
 		);
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}
 
-		if( is_array($aGroups) ) {
+		if ( is_array( $aGroups ) ) {
 			$oStatus = \BlueSpice\UserManager\Extension::setGroups(
 				$oStatus->getValue(),
 				$aGroups
 			);
-			if( !$oStatus->isOK() ) {
+			if ( !$oStatus->isOK() ) {
 				$oReturn->message = $oStatus->getMessage()->parse();
 				return $oReturn;
 			}
@@ -292,6 +297,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 	/**
 	 * Changes password of a user.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_editPassword( $oTaskData ) {
@@ -308,7 +314,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$this->getUser()
 		);
 
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}
@@ -319,32 +325,32 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		)->plain();
 
 		return $oReturn;
-
 	}
 
 	/**
 	 * Edits an user.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_editUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
-		if( empty($oTaskData->userID) ) {
+		if ( empty( $oTaskData->userID ) ) {
 			$oReturn->message = wfMessage(
 				'bs-usermanager-invalid-uname'
 			)->plain();
 		}
 		$oUser = User::newFromID( $oTaskData->userID );
 
-		$aMetaData = array();
+		$aMetaData = [];
 
-		if( isset($oTaskData->email) ) {
+		if ( isset( $oTaskData->email ) ) {
 			$aMetaData['email'] = $oTaskData->email;
 		}
-		if( isset($oTaskData->realname) ) {
+		if ( isset( $oTaskData->realname ) ) {
 			$aMetaData['realname'] = $oTaskData->realname;
 		}
-		if( isset($oTaskData->enabled) ) {
+		if ( isset( $oTaskData->enabled ) ) {
 			$aMetaData['enabled'] = $oTaskData->enabled;
 		}
 
@@ -355,7 +361,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$this->getUser()
 		);
 
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}
@@ -370,6 +376,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 	/**
 	 * Deletes an User.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_deleteUser( $oTaskData ) {
@@ -378,7 +385,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		foreach ( $oTaskData->userIDs as $sUserID ) {
 			$oUser = User::newFromID( $sUserID );
 			$oStatus = \BlueSpice\UserManager\Extension::deleteUser( $oUser, $this->getUser() );
-			if( !$oStatus->isOK() ) {
+			if ( !$oStatus->isOK() ) {
 				$oReturn->message = $oStatus->getMessage()->parse();
 				return $oReturn;
 			}
@@ -388,7 +395,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$msg = Message::newFromKey( 'bs-usermanager-user-deleted' );
 		$idCount = count( $oTaskData->userIDs );
 		$msg->params( $idCount );
-		if( $idCount === 1 ) {
+		if ( $idCount === 1 ) {
 			$msg->params(
 				User::newFromID( $oTaskData->userIDs[0] )->getOption( 'gender' )
 			);
@@ -400,6 +407,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 	/**
 	 * Disables a user.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_disableUser( $oTaskData ) {
@@ -409,7 +417,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 		$oPerformer = $this->getUser();
 		$oStatus = \BlueSpice\UserManager\Extension::disableUser( $oUser, $oPerformer );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}
@@ -422,6 +430,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 	/**
 	 * Enables an User.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_enableUser( $oTaskData ) {
@@ -431,7 +440,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 		$oPerformer = $this->getUser();
 		$oStatus = \BlueSpice\UserManager\Extension::enableUser( $oUser, $oPerformer );
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}
@@ -444,32 +453,33 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 
 	/**
 	 * Sets user groups for user.
+	 * @param stdClass $oTaskData
 	 * @return stdClass Standard tasks API return
 	 */
 	protected function task_setUserGroups( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
-		if( empty($oTaskData->userIDs) || !is_array($oTaskData->userIDs) ) {
+		if ( empty( $oTaskData->userIDs ) || !is_array( $oTaskData->userIDs ) ) {
 			$oReturn->message = wfMessage(
 				'bs-usermanager-invalid-uname'
 			)->plain();
 		}
 
-		if( !isset($oTaskData->groups) || !is_array($oTaskData->groups) ) {
+		if ( !isset( $oTaskData->groups ) || !is_array( $oTaskData->groups ) ) {
 			$oReturn->message = wfMessage(
 				'bs-usermanager-invalid-groups'
 			)->plain();
 		}
 		$oStatus = Status::newGood();
-		foreach( $oTaskData->userIDs as $sUserID ) {
+		foreach ( $oTaskData->userIDs as $sUserID ) {
 			$oUser = User::newFromID( $sUserID );
 			$oStatus->merge( \BlueSpice\UserManager\Extension::setGroups(
 				$oUser,
 				$oTaskData->groups
-			));
+			) );
 		}
 
-		if( !$oStatus->isOK() ) {
+		if ( !$oStatus->isOK() ) {
 			$oReturn->message = $oStatus->getMessage()->parse();
 			return $oReturn;
 		}

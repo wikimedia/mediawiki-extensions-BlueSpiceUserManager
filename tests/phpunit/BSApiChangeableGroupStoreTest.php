@@ -53,7 +53,7 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 	public function provideSingleFilterData() {
 		return [
 			'Filter by group_name' => [ 'string', 'ct', 'group_name', 'sys', 1 ],
-			'Filter by additional_group' => ['boolean', 'eq', 'additional_group', false, 3]
+			'Filter by additional_group' => [ 'boolean', 'eq', 'additional_group', false, 3 ]
 		];
 	}
 
@@ -81,7 +81,7 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 
 	public function provideKeyItemData() {
 		return [
-			'bot'=> [ "group_name", "bot" ],
+			'bot' => [ "group_name", "bot" ],
 			'bureaucrat' => [ "group_name", "bureaucrat" ],
 			'sysop' => [ "group_name", "sysop" ]
 		];

@@ -1,12 +1,12 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'UserManager' => array( 'UserManager', 'User Manager' ),
-);
+$specialPageAliases['en'] = [
+	'UserManager' => [ 'UserManager', 'User Manager' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'UserManager' => array( 'UserManager', 'User Manager', 'Benutzerverwaltung', 'Benutzer Verwaltung' ),
-);
+$specialPageAliases['de'] = [
+	'UserManager' => [ 'UserManager', 'User Manager', 'Benutzerverwaltung', 'Benutzer Verwaltung' ],
+];

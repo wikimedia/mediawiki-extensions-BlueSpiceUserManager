@@ -21,7 +21,7 @@
  * @author     Markus Glaser <glaser@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  *
  */
 class BSApiChangeableGroupStore extends BSApiGroupStore {
@@ -31,17 +31,17 @@ class BSApiChangeableGroupStore extends BSApiGroupStore {
 	 */
 	protected function makeData( $sQuery = '' ) {
 		$aData = parent::makeData( $sQuery );
-		$aChangeableData = array();
+		$aChangeableData = [];
 		$aChangeableGroups = $this->getUser()->changeableGroups();
 		$aChangeableGroupsMerged = array_unique( array_merge(
 			$aChangeableGroups['add'],
 			$aChangeableGroups['add-self'],
 			$aChangeableGroups['remove'],
 			$aChangeableGroups['remove-self']
-		));
+		) );
 
 		foreach ( $aData as $aGroupDef ) {
-			if( !in_array( $aGroupDef->group_name, $aChangeableGroupsMerged ) ) {
+			if ( !in_array( $aGroupDef->group_name, $aChangeableGroupsMerged ) ) {
 				continue;
 			}
 			$aChangeableData[] = $aGroupDef;
