@@ -444,7 +444,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 			if (
 				!in_array( $group, $changeableGroups['add'] ) &&
-				!$attemptChangeSelf || !in_array( $group, $changeableGroups['add-self'] )
+				( !$attemptChangeSelf || !in_array( $group, $changeableGroups['add-self'] ) )
 			) {
 				return \Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
 			}
@@ -454,9 +454,10 @@ class Extension extends \BlueSpice\Extension {
 			if ( in_array( $group, self::$excludegroups ) ) {
 				continue;
 			}
+
 			if (
 				!in_array( $group, $changeableGroups['remove'] ) &&
-				!$attemptChangeSelf || !in_array( $group, $changeableGroups['remove-self'] )
+				( !$attemptChangeSelf || !in_array( $group, $changeableGroups['remove-self'] ) )
 			) {
 				return \Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
 			}
