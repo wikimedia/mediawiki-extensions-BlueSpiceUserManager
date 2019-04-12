@@ -29,7 +29,6 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	protected function createStoreFixtureData() {
-		return;
 	}
 
 	protected function setUp() {
