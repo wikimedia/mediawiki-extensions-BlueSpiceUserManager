@@ -49,7 +49,6 @@
 	"bs-usermanager-titledisableuser": "Window title for disable user",
 	"bs-usermanager-titleenableuser": "Window title for enable user",
 	"usermanager": "Page title for special page of user manager",
-	"action-usermanager-viewspecialpage": "Label for denied page access, with name of special page\n{{doc-action|usermanager-viewspecialpage}}",
 	"bs-usermanager-group-add-not-allowed": "Error message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when trying to add a user to a restricted group\n\n* $1 is the name of the restricted group",
 	"bs-usermanager-group-remove-not-allowed": "Error message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when trying to remove a user from a restricted group\n\n* $1 is the name of the restricted group",
 	"bs-usermanager-editgroups": "Used as tooltip of an icon",
@@ -65,6 +64,8 @@
 	"apihelp-bs-usermanager-group-store-description": "{{doc-apihelp-description|bs-usermanager-group-store}}",
 	"apihelp-bs-usermanager-group-store-summary": "{{doc-apihelp-summary|bs-usermanager-group-store}}",
 	"bs-usermanager-own-password-change": "Dialog text warning users they are about to change their own password",
+	"action-usermanager-viewspecialpage": "Label for denied page access, with name of special page\n{{doc-action|usermanager-viewspecialpage}}",
 	"right-usermanager-viewspecialpage": "Grants access to the [[Special:UserManager]] special page.\n{{doc-right|usermanager-viewspecialpage}}",
+	"action-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-action|usermanager-editpassword}}",
 	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-right|usermanager-editpassword}}"
 }
