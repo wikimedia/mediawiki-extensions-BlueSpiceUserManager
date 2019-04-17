@@ -47,7 +47,6 @@
 	"bs-usermanager-titledisableuser": "Desactivar ó usuario",
 	"bs-usermanager-titleenableuser": "Activar ó usuario",
 	"usermanager": "Administrador de usuarios",
-	"action-usermanager-viewspecialpage": "ver a páxina especial \"Administrador de usuarios\"",
 	"bs-usermanager-group-add-not-allowed": "Non tes permisos para engadir usuarios ó grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "Non tes permisos para eliminar usuarios do grupo $1",
 	"bs-usermanager-editgroups": "Editar grupos",
@@ -59,5 +58,6 @@
 	"bs-usermanager-multipleuserselected": "Só podes cambiar o contrasinal dun usuario ó mesmo tempo",
 	"bs-usermanager-invalid-groups": "Os grupos non son válidos",
 	"apihelp-bs-usermanager-group-store-description": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
-	"apihelp-bs-usermanager-group-store-summary": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice."
+	"apihelp-bs-usermanager-group-store-summary": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
+	"action-usermanager-viewspecialpage": "ver a páxina especial \"Administrador de usuarios\""
 }

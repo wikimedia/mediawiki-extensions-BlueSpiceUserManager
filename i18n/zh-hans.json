@@ -47,7 +47,6 @@
 	"bs-usermanager-titledisableuser": "禁用用户",
 	"bs-usermanager-titleenableuser": "启用用户",
 	"usermanager": "用户管理",
-	"action-usermanager-viewspecialpage": "查看特殊页面“用户管理”",
 	"bs-usermanager-group-add-not-allowed": "您不被允许添加用户至用户组$1",
 	"bs-usermanager-group-remove-not-allowed": "您不被允许从用户组$1中移除用户",
 	"bs-usermanager-editgroups": "编辑组",
@@ -62,5 +61,6 @@
 	"bs-usermanager-filter-only-deactivated-users": "显示所有停用的用户",
 	"apihelp-bs-usermanager-group-store-description": "为BlueSpice提供用户管理器任务api。",
 	"apihelp-bs-usermanager-group-store-summary": "为BlueSpice提供用户管理器任务api。",
-	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？"
+	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？",
+	"action-usermanager-viewspecialpage": "查看特殊页面“用户管理”"
 }

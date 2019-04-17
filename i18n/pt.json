@@ -49,7 +49,6 @@
 	"bs-usermanager-titledisableuser": "Desativar utilizador",
 	"bs-usermanager-titleenableuser": "Ativar utilizador",
 	"usermanager": "Administrador de utilizadores",
-	"action-usermanager-viewspecialpage": "ver página especial \"Administrador de utilizadores\"",
 	"bs-usermanager-group-add-not-allowed": "Não tem permissões para adicionar utilizadores ao grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "Não tem permissões para remover utilizadores do grupo $1",
 	"bs-usermanager-editgroups": "Editar grupos",
@@ -65,6 +64,7 @@
 	"apihelp-bs-usermanager-group-store-description": "Fornece a API de tarefas de gestão do utilizador para o BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Fornece a API de tarefas de gestão do utilizador para o BlueSpice.",
 	"bs-usermanager-own-password-change": "Está prestes a alterar a sua palavra-passe. Esta sessão será terminada e será redirecionado para a página de início de sessão. Quer continuar?",
+	"action-usermanager-viewspecialpage": "ver página especial \"Administrador de utilizadores\"",
 	"right-usermanager-viewspecialpage": "Concede acesso à página especial [[Special:UserManager]].",
 	"right-usermanager-editpassword": "Permite alterar a palavra-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]."
 }

@@ -48,7 +48,6 @@
 	"bs-usermanager-titledisableuser": "Desactivar usuario",
 	"bs-usermanager-titleenableuser": "Activar usuario",
 	"usermanager": "Gestor de usuarios",
-	"action-usermanager-viewspecialpage": "ver la página especial \"gestor de usuarios\"",
 	"bs-usermanager-group-add-not-allowed": "No se te permite añadir usuarios al grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "No se te permite quitar usuarios del grupo $1",
 	"bs-usermanager-editgroups": "Editar grupos",
@@ -60,6 +59,7 @@
 	"bs-usermanager-multipleuserselected": "Solo puedes cambiar la contraseña de un usuario cada vez",
 	"bs-usermanager-invalid-groups": "Los grupos no son válidos",
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
+	"action-usermanager-viewspecialpage": "ver la página especial \"gestor de usuarios\"",
 	"right-usermanager-viewspecialpage": "Otorga acceso a la página especial [[Special:UserManager]].",
 	"right-usermanager-editpassword": "Permite modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]."
 }

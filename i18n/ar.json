@@ -51,7 +51,6 @@
 	"bs-usermanager-titledisableuser": "تعطيل المستخدم",
 	"bs-usermanager-titleenableuser": "تمكين مستخدم",
 	"usermanager": "مدير المستخدم",
-	"action-usermanager-viewspecialpage": "عرض الصفحة الخاصة \"مدير المستخدم\"",
 	"bs-usermanager-group-add-not-allowed": "لا يُسمَح لك بإضافة مستخدمين إلى المجموعة $1",
 	"bs-usermanager-group-remove-not-allowed": "لا يُسمَح لك بإزالة مستخدمين من المجموعة $1",
 	"bs-usermanager-editgroups": "عدل المجموعات",
@@ -67,6 +66,8 @@
 	"apihelp-bs-usermanager-group-store-description": "يوفر api مهام مدير المستخدم لـBlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "يوفر api مهام مدير المستخدم لـBlueSpice.",
 	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟",
+	"action-usermanager-viewspecialpage": "عرض الصفحة الخاصة \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:UserManager]].",
+	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين",
 	"right-usermanager-editpassword": "يمكن من تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]]."
 }

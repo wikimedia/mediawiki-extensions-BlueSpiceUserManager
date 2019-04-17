@@ -46,7 +46,6 @@
 	"bs-usermanager-titledisableuser": "Išjungti vartotoją",
 	"bs-usermanager-titleenableuser": "Įgalinti vartotoją",
 	"usermanager": "Vartotojo valdymas",
-	"action-usermanager-viewspecialpage": "žiūrėti specialųpuslapį „User manager“",
 	"bs-usermanager-group-add-not-allowed": "Jūs negalite pridėti vartotojų į grupę $1",
 	"bs-usermanager-group-remove-not-allowed": "Jūs negalite pašalinti vartotojų iš grupės $1",
 	"bs-usermanager-editgroups": "Redaguoti grupes",
@@ -56,5 +55,6 @@
 	"bs-usermanager-nouserselected": "Prašome pasirinkti vartotoją",
 	"bs-usermanager-title-multipleuserselected": "Yra pasirinkti keli vartotojai",
 	"bs-usermanager-multipleuserselected": "Galite pakeisti slaptažodį vienam vartotojui vienu metu",
-	"bs-usermanager-invalid-groups": "Grupės negalimos"
+	"bs-usermanager-invalid-groups": "Grupės negalimos",
+	"action-usermanager-viewspecialpage": "žiūrėti specialųpuslapį „User manager“"
 }

@@ -42,7 +42,6 @@
 	"bs-usermanager-titledisableuser": "사용자 비활성화",
 	"bs-usermanager-titleenableuser": "사용자 활성화",
 	"usermanager": "사용자 관리자",
-	"action-usermanager-viewspecialpage": "특수문서 \"사용자 관리자\" 보기",
 	"bs-usermanager-group-add-not-allowed": "사용자를 $1 그룹에 추가할 권한이 없습니다",
 	"bs-usermanager-group-remove-not-allowed": "그룹 $1에서 사용자를 제거할 권한이 없습니다",
 	"bs-usermanager-editgroups": "그룹 편집",
@@ -54,5 +53,7 @@
 	"bs-usermanager-multipleuserselected": "한 번에 한 사용자에 한해서만 비밀번호를 바꿀 수 있습니다",
 	"bs-usermanager-invalid-groups": "그룹이 유효하지 않습니다",
 	"apihelp-bs-usermanager-group-store-summary": "BlueSpice를 위한 사용자 관리자 작업 API를 제공합니다.",
-	"bs-usermanager-own-password-change": "자신의 비밀번호를 변경하려고 합니다. 로그아웃된 다음 로그인 페이지로 넘어갑니다. 계속하시겠습니까?"
+	"bs-usermanager-own-password-change": "자신의 비밀번호를 변경하려고 합니다. 로그아웃된 다음 로그인 페이지로 넘어갑니다. 계속하시겠습니까?",
+	"action-usermanager-viewspecialpage": "특수문서 \"{{int:usermanager}}\" 보기",
+	"action-usermanager-editpassword": "사용자의 비밀번호를 바꾸기"
 }

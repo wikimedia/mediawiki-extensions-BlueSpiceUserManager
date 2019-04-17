@@ -47,7 +47,6 @@
 	"bs-usermanager-titledisableuser": "ביטול משתמש",
 	"bs-usermanager-titleenableuser": "הפעלת משתמש",
 	"usermanager": "ניהול משתמשים",
-	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"ניהול משתמשים\"",
 	"bs-usermanager-group-add-not-allowed": "אין באפשרותך להוסיף משתמשים לקבוצה $1",
 	"bs-usermanager-group-remove-not-allowed": "אין באפשרותך להסיר משתמשים מהקבוצה $1",
 	"bs-usermanager-editgroups": "עריכת קבוצות",
@@ -60,5 +59,6 @@
 	"bs-usermanager-invalid-groups": "הקבוצות אינן תקינות",
 	"apihelp-bs-usermanager-group-store-description": "אספקת API עבור המשימות של הרחבת ניהול המשתמשים של BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "אספקת API עבור המשימות של הרחבת ניהול המשתמשים של BlueSpice.",
-	"bs-usermanager-own-password-change": "{{GENDER:|אתה עומד|את עומדת|אתם עומדים}} לשנות את הסיסמה {{GENDER:|שלך|שלך|שלכם}}. פעולה זו תגרום לכך {{GENDER:|שתוצא מחשבונך ותועבר|שתוצאי מחשבונך ותועברי|שתוצאו מחשבונכם ותועברו}} לדף הכניסה לחשבון. האם {{GENDER:|ברצונך|ברצונך|ברצונכם}} להמשיך?"
+	"bs-usermanager-own-password-change": "{{GENDER:|אתה עומד|את עומדת|אתם עומדים}} לשנות את הסיסמה {{GENDER:|שלך|שלך|שלכם}}. פעולה זו תגרום לכך {{GENDER:|שתוצא מחשבונך ותועבר|שתוצאי מחשבונך ותועברי|שתוצאו מחשבונכם ותועברו}} לדף הכניסה לחשבון. האם {{GENDER:|ברצונך|ברצונך|ברצונכם}} להמשיך?",
+	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"ניהול משתמשים\""
 }

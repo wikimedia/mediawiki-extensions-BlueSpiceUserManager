@@ -5,7 +5,8 @@
 			"Cwlin0416",
 			"LNDDYL",
 			"Sanmosa",
-			"Kly"
+			"Kly",
+			"A2093064"
 		]
 	},
 	"bs-usermanager-desc": "用於新增、編輯，以及刪除使用者的管理介面",
@@ -51,7 +52,6 @@
 	"bs-usermanager-titledisableuser": "停用使用者",
 	"bs-usermanager-titleenableuser": "啟用使用者",
 	"usermanager": "使用者管理",
-	"action-usermanager-viewspecialpage": "檢視特殊頁面「User manager」",
 	"bs-usermanager-group-add-not-allowed": "您不被允許從群組 $1 來新增使用者",
 	"bs-usermanager-group-remove-not-allowed": "您不被允許從群組 $1 來移除使用者",
 	"bs-usermanager-editgroups": "編輯群組",
@@ -67,6 +67,8 @@
 	"apihelp-bs-usermanager-group-store-description": "為 BlueSpice 提供使用者管理任務 API。",
 	"apihelp-bs-usermanager-group-store-summary": "為 BlueSpice 提供使用者管理任務 API。",
 	"bs-usermanager-own-password-change": "您將要更改您自己的密碼。您之後會被登出，並重新導向到登入頁面。您要繼續嗎？",
+	"action-usermanager-viewspecialpage": "檢視特殊頁面「{{int:usermanager}}」",
 	"right-usermanager-viewspecialpage": "授予存取特殊頁面 [[Special:UserManager]] 的權限。",
+	"action-usermanager-editpassword": "更改使用者密碼",
 	"right-usermanager-editpassword": "以在 [[Special:UserManager]] 特殊頁面上的管理來啓用更改使用者密碼。"
 }

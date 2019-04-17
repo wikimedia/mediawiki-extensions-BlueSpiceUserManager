@@ -46,7 +46,6 @@
 	"bs-usermanager-titledisableuser": "Gebruiker uitschakelen",
 	"bs-usermanager-titleenableuser": "Gebruiker inschakelen",
 	"usermanager": "Gebruikersbeheer",
-	"action-usermanager-viewspecialpage": "de speciale pagina \"User manager\" te bekijken",
 	"bs-usermanager-editgroups": "Groepen bewerken",
 	"bs-usermanager-editpassword": "Wachtwoord wijzigen",
 	"bs-usermanager-editpassword-successful": "Het wachtwoord is succesvol gewijzigd",
@@ -54,5 +53,6 @@
 	"bs-usermanager-nouserselected": "Gelieve een gebruiker te selecteren",
 	"bs-usermanager-title-multipleuserselected": "Meerdere gebruikers zijn geselecteerd",
 	"bs-usermanager-multipleuserselected": "U kunt alleen het wachtwoord wijzigen voor één gebruiker tegelijk",
-	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig"
+	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig",
+	"action-usermanager-viewspecialpage": "de speciale pagina \"User manager\" te bekijken"
 }
