@@ -63,7 +63,8 @@
 	"apihelp-bs-usermanager-group-store-description": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"bs-usermanager-own-password-change": "Ви збираєтесь змінити свій власний пароль. Ви автоматично вийдете із системи і потрапите на сторінку входу. Бажаєте продовжити?",
-	"action-usermanager-viewspecialpage": "Перегляд спеціальної сторінки «Менеджер користувачів»",
+	"action-usermanager-viewspecialpage": "перегляд спеціальної сторінки «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:UserManager]]",
+	"action-usermanager-editpassword": "зміну паролів користувачів",
 	"right-usermanager-editpassword": "може змінювати паролі користувачів на спеціальній сторінці [[Special:UserManager]]."
 }
