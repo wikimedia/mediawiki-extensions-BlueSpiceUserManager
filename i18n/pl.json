@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Darellur"
+			"Darellur",
+			"Railfail536"
 		]
 	},
 	"bs-usermanager-desc": "Interfejs administracyjny do dodawania, edytowania i usuwania użytkowników",
@@ -39,5 +40,6 @@
 	"bs-usermanager-title-multipleuserselected": "Zaznaczono wielu użytkowników",
 	"bs-usermanager-multipleuserselected": "Możesz zmienić hasło tylko jednego użytkownika na raz",
 	"bs-usermanager-own-password-change": "Zamierzasz zmienić swoje hasło. Zostaniesz wylogowany i przekierowany na stronę logowania. Czy chcesz kontynuować?",
-	"right-usermanager-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:UserManager]].",
+	"action-usermanager-editpassword": "zmianiania haseł użytkowników"
 }
