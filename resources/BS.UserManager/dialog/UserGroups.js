@@ -17,6 +17,8 @@ Ext.define( 'BS.UserManager.dialog.UserGroups', {
 	currentData: {},
 	selectedData: {},
 	maxHeight: 620,
+	layout: 'anchor',
+	autoScroll: true,
 	title: mw.message('bs-usermanager-headergroups').plain(),
 	makeItems: function() {
 
