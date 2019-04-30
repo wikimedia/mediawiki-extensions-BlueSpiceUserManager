@@ -24,6 +24,7 @@
 	"bs-usermanager-headerusername": "用户名",
 	"bs-usermanager-headerrealname": "真实姓名",
 	"bs-usermanager-headeremail": "电子邮件",
+	"bs-usermanager-headerregistration": "注册",
 	"bs-usermanager-headergroups": "组",
 	"bs-usermanager-titleadduser": "添加用户",
 	"bs-usermanager-titleeditdetails": "编辑用户",
@@ -63,6 +64,8 @@
 	"apihelp-bs-usermanager-group-store-description": "为BlueSpice提供用户管理器任务api。",
 	"apihelp-bs-usermanager-group-store-summary": "为BlueSpice提供用户管理器任务api。",
 	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？",
-	"action-usermanager-viewspecialpage": "查看特殊页面“用户管理”",
-	"action-usermanager-editpassword": "更改用户密码"
+	"action-usermanager-viewspecialpage": "查看特殊页面“{{int:usermanager}}”",
+	"right-usermanager-viewspecialpage": "授予访问特殊页面 [[Special:UserManager]] 的权限。",
+	"action-usermanager-editpassword": "更改用户密码",
+	"right-usermanager-editpassword": "授予在特殊页面 [[Special:UserManager]] 上更改用户名密码的权限。"
 }
