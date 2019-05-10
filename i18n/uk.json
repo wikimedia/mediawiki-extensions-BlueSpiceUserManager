@@ -60,6 +60,8 @@
 	"bs-usermanager-title-multipleuserselected": "Обрано декілька користувачів",
 	"bs-usermanager-multipleuserselected": "Ви можете змінювати пароль лише для одного користувача водночас",
 	"bs-usermanager-invalid-groups": "Групи є недійсними",
+	"bs-usermanager-filter-only-activated-users": "Показати усіх активованих користувачів",
+	"bs-usermanager-filter-only-deactivated-users": "Показати усіх деактивованих користувачів",
 	"apihelp-bs-usermanager-group-store-description": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"bs-usermanager-own-password-change": "Ви збираєтесь змінити свій власний пароль. Ви автоматично вийдете із системи і потрапите на сторінку входу. Бажаєте продовжити?",
