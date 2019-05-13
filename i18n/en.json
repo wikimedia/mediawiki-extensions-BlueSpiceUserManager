@@ -64,6 +64,6 @@
 	"bs-usermanager-own-password-change": "You are about to change your own password. You will be logged out and redirected to login page. Do you want to continue?",
 	"action-usermanager-viewspecialpage": "view special page \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Access to the [[Special:UserManager]] special page",
-	"action-usermanager-editpassword": "change of user passwords",
-	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page."
+	"action-usermanager-editpassword": "change user passwords",
+	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page"
 }
