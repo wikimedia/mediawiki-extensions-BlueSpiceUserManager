@@ -43,6 +43,7 @@
 	"bs-usermanager-editpassword": "パスワードを変更",
 	"bs-usermanager-title-nouserselected": "利用者を選択していません",
 	"bs-usermanager-nouserselected": "利用者を選択してください",
-	"action-usermanager-viewspecialpage": "特別ページ「利用者マネージャー」の閲覧",
-	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用"
+	"action-usermanager-viewspecialpage": "特別ページ「{{int:usermanager}}」の閲覧",
+	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用",
+	"action-usermanager-editpassword": "利用者のパスワードの変更"
 }
