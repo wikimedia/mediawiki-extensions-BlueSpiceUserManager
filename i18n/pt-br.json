@@ -64,7 +64,7 @@
 	"apihelp-bs-usermanager-group-store-summary": "Fornece as tarefas do gerenciador de usuários api para o BlueSpice.",
 	"bs-usermanager-own-password-change": "Você está prestes a mudar sua própria senha. Você será desconectado e redirecionado para a página de login. Você quer continuar?",
 	"action-usermanager-viewspecialpage": "ver página especial \"{{int:usermanager}}\"",
-	"right-usermanager-viewspecialpage": "Concede acesso à página especial [[Special:UserManager]].",
-	"action-usermanager-editpassword": "mudança de senhas de usuários",
-	"right-usermanager-editpassword": "Permite alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]].",
+	"action-usermanager-editpassword": "alterar senhas de usuários",
+	"right-usermanager-editpassword": "Alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]]."
 }

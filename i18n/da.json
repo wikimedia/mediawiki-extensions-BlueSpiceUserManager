@@ -17,5 +17,5 @@
 	"bs-usermanager-editpassword": "Skift adgangskode",
 	"bs-usermanager-filter-only-activated-users": "Vis alle aktiverede brugere",
 	"bs-usermanager-filter-only-deactivated-users": "Vis alle deaktiverede brugere",
-	"action-usermanager-editpassword": "ændring af brugeres adgangskoder"
+	"action-usermanager-editpassword": "ændre brugeres adgangskoder"
 }

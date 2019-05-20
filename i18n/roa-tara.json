@@ -13,5 +13,7 @@
 	"bs-usermanager-titleeditdetails": "Cange l'utende",
 	"bs-usermanager-labelnewpassword": "Passuord",
 	"bs-usermanager-labelpasswordcheck": "Conferme 'a passuord",
-	"bs-usermanager-titledeleteuser": "Scangìlle l'utende"
+	"bs-usermanager-titledeleteuser": "Scangìlle l'utende",
+	"action-usermanager-viewspecialpage": "'ndruche 'a pàgena speciale \"{{int:usermanager}}\"",
+	"right-usermanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:UserManager]]"
 }

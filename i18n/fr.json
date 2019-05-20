@@ -67,7 +67,7 @@
 	"apihelp-bs-usermanager-group-store-summary": "Fournit l’API des tâches de gestion utilisateur pour BlueSpice.",
 	"bs-usermanager-own-password-change": "Vous allez changer votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion. Voulez-vous continuer ?",
 	"action-usermanager-viewspecialpage": "voir la page spéciale « {{int:usermanager}} »",
-	"right-usermanager-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:UserManager]].",
-	"action-usermanager-editpassword": "modification des mots de passe des utilisateurs",
-	"right-usermanager-editpassword": "Autorise la modification des mots de passe utilisateur sur la page spéciale [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Accès à la page spéciale [[Special:UserManager]]",
+	"action-usermanager-editpassword": "modification des mots de passe utilisateur",
+	"right-usermanager-editpassword": "Modifier les mots de passe utilisateur sur la page spéciale [[Special:UserManager]]"
 }

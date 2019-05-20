@@ -47,5 +47,6 @@
 	"bs-usermanager-filter-only-deactivated-users": "Mostra tutti gli utenti non attivi",
 	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?",
 	"action-usermanager-viewspecialpage": "visualizzare la pagina speciale \"{{int:usermanager}}\"",
+	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "cambiare una password utente"
 }

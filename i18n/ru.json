@@ -6,7 +6,8 @@
 			"Kareyac",
 			"Mailman",
 			"Kaganer",
-			"Vlad5250"
+			"Vlad5250",
+			"1233qwer1234qwer4"
 		]
 	},
 	"bs-usermanager-desc": "Интерфейс администрирования для добавления, правки и удаления пользователей",
@@ -27,6 +28,7 @@
 	"bs-usermanager-headerusername": "Имя участника",
 	"bs-usermanager-headerrealname": "Настоящее имя",
 	"bs-usermanager-headeremail": "Эл. почта",
+	"bs-usermanager-headerregistration": "Регистрация",
 	"bs-usermanager-headergroups": "Группы",
 	"bs-usermanager-titleadduser": "Добавить участника",
 	"bs-usermanager-titleeditdetails": "Редактировать данные участника",
@@ -45,5 +47,6 @@
 	"bs-usermanager-multipleuserselected": "Вы можете только изменить пароль только для одного пользователя одновременно",
 	"bs-usermanager-invalid-groups": "Группы не являются действительными",
 	"right-usermanager-viewspecialpage": "доступ к служебной странице [[Special:UserManager]]",
+	"action-usermanager-editpassword": "Изменить пароли участника",
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]]."
 }

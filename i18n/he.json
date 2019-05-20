@@ -3,7 +3,8 @@
 		"authors": [
 			"Guycn2",
 			"תומר ט",
-			"DmitTrix"
+			"DmitTrix",
+			"Erelon"
 		]
 	},
 	"bs-usermanager-desc": "ממשק ניהולי עבור הוספה, עריכה ומחיקה של משתמשים",
@@ -24,6 +25,7 @@
 	"bs-usermanager-headerusername": "שם משתמש",
 	"bs-usermanager-headerrealname": "שם אמיתי",
 	"bs-usermanager-headeremail": "דואר אלקטרוני",
+	"bs-usermanager-headerregistration": "רישום",
 	"bs-usermanager-headergroups": "קבוצות",
 	"bs-usermanager-titleadduser": "הוספת משתמש",
 	"bs-usermanager-titleeditdetails": "עריכת משתמש",
