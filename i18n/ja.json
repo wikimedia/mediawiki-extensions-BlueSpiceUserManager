@@ -4,7 +4,8 @@
 			"Shirayuki",
 			"Suchichi02",
 			"Suyama",
-			"Omotecho"
+			"Omotecho",
+			"Aefgh39622"
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
@@ -15,6 +16,7 @@
 	"bs-usermanager-invalid-realname": "本名が無効です。",
 	"bs-usermanager-invalid-uname": "利用者名が無効です。",
 	"bs-usermanager-invalid-email-gen": "メールアドレスが無効です。",
+	"bs-usermanager-label": "利用者マネージャー",
 	"bs-usermanager-user-added": "利用者を追加しました。",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|利用者}}|$1人}}を削除しました。",
 	"bs-usermanager-user-exists": "既に存在する利用者名です。",
@@ -22,6 +24,7 @@
 	"bs-usermanager-headerusername": "利用者名",
 	"bs-usermanager-headerrealname": "本名",
 	"bs-usermanager-headeremail": "メール",
+	"bs-usermanager-headerregistration": "登録",
 	"bs-usermanager-headergroups": "グループ",
 	"bs-usermanager-titleadduser": "利用者の追加",
 	"bs-usermanager-titleeditdetails": "利用者の編集",
@@ -40,6 +43,8 @@
 	"bs-usermanager-confirmenableuser": "{{GENDER:$1|利用者}} $1 を本当に有効にしますか?",
 	"bs-usermanager-titledisableuser": "利用者を無効にする",
 	"bs-usermanager-titleenableuser": "利用者を有効にする",
+	"usermanager": "利用者マネージャー",
+	"bs-usermanager-editgroups": "グループを編集",
 	"bs-usermanager-editpassword": "パスワードを変更",
 	"bs-usermanager-title-nouserselected": "利用者を選択していません",
 	"bs-usermanager-nouserselected": "利用者を選択してください",
