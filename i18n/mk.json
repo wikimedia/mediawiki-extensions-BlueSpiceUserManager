@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-usermanager-desc": "Администраторски посредник за додавање, измена и бришење на корисници",
@@ -16,7 +17,7 @@
 	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
 	"bs-usermanager-label": "Раководство со корисници",
 	"bs-usermanager-user-added": "Корисникот е додаден.",
-	"bs-usermanager-user-deleted": "Овој корисник е избришан.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Корисникот е избришан}}|$1 корисници се избришани}}.",
 	"bs-usermanager-user-exists": "Корисничкото име веќе постои.",
 	"bs-usermanager-save-successful": "Промените се зачувани.",
 	"bs-usermanager-headerusername": "Корисничко име",
