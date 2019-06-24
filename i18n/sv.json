@@ -3,7 +3,8 @@
 		"authors": [
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsgränssnittet för att lägga till, redigera och radera användare",
@@ -57,6 +58,8 @@
 	"bs-usermanager-title-multipleuserselected": "Flera användare är markerade",
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"bs-usermanager-invalid-groups": "Grupper är ogiltiga",
+	"bs-usermanager-filter-only-activated-users": "Visa alla aktiva användare",
+	"bs-usermanager-filter-only-deactivated-users": "Visa alla icke-aktiva användare",
 	"action-usermanager-viewspecialpage": "visa specialsidan \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
 	"action-usermanager-editpassword": "ändra en användares lösenord",

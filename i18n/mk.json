@@ -23,6 +23,7 @@
 	"bs-usermanager-headerusername": "Корисничко име",
 	"bs-usermanager-headerrealname": "Вистинско име",
 	"bs-usermanager-headeremail": "Е-пошта",
+	"bs-usermanager-headerregistration": "Регистрација",
 	"bs-usermanager-headergroups": "Групи",
 	"bs-usermanager-titleadduser": "Додај корисник",
 	"bs-usermanager-titleeditdetails": "Измени корисник",
@@ -31,5 +32,14 @@
 	"bs-usermanager-titledeleteuser": "Бришење на корисник",
 	"bs-usermanager-confirmdeleteuser": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете корисников|ги избришете овие $1 корисници}}?",
 	"bs-usermanager-groups-more": "... повеќе",
-	"bs-usermanager-no-self-desysop": "Не можете самите да си го одземете администраторското право."
+	"bs-usermanager-no-self-desysop": "Не можете самите да си го одземете администраторското право.",
+	"bs-usermanager-headerenabled": "Овозможен",
+	"bs-usermanager-endisable": "Овозможи/оневозможи",
+	"usermanager": "Раководство со корисници",
+	"bs-usermanager-editgroups": "Уреди групи",
+	"bs-usermanager-editpassword": "Смени лозинка",
+	"bs-usermanager-nouserselected": "Изберете корисник",
+	"bs-usermanager-filter-only-activated-users": "Прикажи ги сите овозможени корисници",
+	"bs-usermanager-filter-only-deactivated-users": "Прикажи ги сите оневозможени корисници",
+	"action-usermanager-editpassword": "промена на кориснички лозинки"
 }
