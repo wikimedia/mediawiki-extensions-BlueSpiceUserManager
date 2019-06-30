@@ -38,8 +38,10 @@
 	"usermanager": "Раководство со корисници",
 	"bs-usermanager-editgroups": "Уреди групи",
 	"bs-usermanager-editpassword": "Смени лозинка",
+	"bs-usermanager-title-nouserselected": "Не е избран корисник",
 	"bs-usermanager-nouserselected": "Изберете корисник",
 	"bs-usermanager-filter-only-activated-users": "Прикажи ги сите овозможени корисници",
 	"bs-usermanager-filter-only-deactivated-users": "Прикажи ги сите оневозможени корисници",
+	"action-usermanager-viewspecialpage": "погл. службената страница „{{int:usermanager}}“",
 	"action-usermanager-editpassword": "промена на кориснички лозинки"
 }
