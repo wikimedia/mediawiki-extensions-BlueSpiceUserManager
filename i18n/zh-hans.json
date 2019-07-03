@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"A Chinese Wikipedian",
 			"佛壁灯",
-			"科劳"
+			"科劳",
+			"神樂坂秀吉"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -38,8 +39,8 @@
 	"apihelp-bs-usermanager-tasks-description": "提供用于Checklist扩展的操作",
 	"apihelp-bs-usermanager-tasks-summary": "提供用于Checklist扩展的操作",
 	"bs-usermanager-no-self-block": "您不能禁用您自己。",
-	"bs-usermanager-block-error": "{{GENDER:$1|用户}}$1不能被禁用。",
-	"bs-usermanager-unblock-error": "{{GENDER:$1|用户}}$1不能被启用。",
+	"bs-usermanager-block-error": "{{GENDER:$1|用户}}$1不能禁用。",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|用户}}$1不能启用。",
 	"bs-usermanager-headerenabled": "已启用",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|用户}}$1已通过用户管理器禁用",
 	"bs-usermanager-user-disabled": "{{GENDER:$1|用户}}$1已被禁用。",
