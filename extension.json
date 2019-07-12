@@ -74,7 +74,10 @@
 	"ResourceModules": {
 		"ext.bluespice.userManager": {
 			"scripts": "bluespice.userManager.js",
-			"dependencies": "ext.bluespice.extjs",
+			"dependencies": [
+				"user.options",
+				"ext.bluespice.extjs"
+			],
 			"messages": [
 				"bs-usermanager-headerusername",
 				"bs-usermanager-headerrealname",
