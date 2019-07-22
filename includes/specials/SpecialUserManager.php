@@ -8,7 +8,6 @@ class SpecialUserManager extends \BlueSpice\SpecialPage {
 
 	/**
 	 *
-	 * @global OutputPage $this->getOutput()
 	 * @param string $parameter URL parameters to special page
 	 */
 	public function execute( $parameter ) {
