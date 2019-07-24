@@ -4,6 +4,14 @@
 			"Joetaras"
 		]
 	},
+	"bs-usermanager-idnotexist": "Stu utende non g'esiste.",
+	"bs-usermanager-invalid-pwd": "'A passuord non g'è valide.",
+	"bs-usermanager-invalid-realname": "'U nome vere non g'è valide.",
+	"bs-usermanager-invalid-uname": "'U nome utende non g'è valide.",
+	"bs-usermanager-invalid-email-gen": "'U 'ndirizze email non g'è valide.",
+	"bs-usermanager-label": "Gestore de l'utende",
+	"bs-usermanager-user-added": "L'utende ha state aggiunde.",
+	"bs-usermanager-save-successful": "Cangiaminde reggistrate.",
 	"bs-usermanager-headerusername": "Nome utende",
 	"bs-usermanager-headerrealname": "Nome vere",
 	"bs-usermanager-headeremail": "E-mail",
@@ -14,7 +22,20 @@
 	"bs-usermanager-labelnewpassword": "Passuord",
 	"bs-usermanager-labelpasswordcheck": "Conferme 'a passuord",
 	"bs-usermanager-titledeleteuser": "Scangìlle l'utende",
+	"bs-usermanager-confirmdeleteuser": "Sì secure de vulè ccu scangille {{PLURAL:$1|stu gruppe utende|ste gruppe utinde}}?",
+	"bs-usermanager-groups-more": "... de cchiù",
+	"bs-usermanager-block-error": "{{GENDER:$1|L'utende}} $1 non ge pò essere disabbilitate.",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|L'utende}} $1 non ge pò essere abbilitate.",
 	"bs-usermanager-headerenabled": "Abbilitate",
+	"bs-usermanager-titledisableuser": "Disabbilite utende",
+	"bs-usermanager-titleenableuser": "Abbilite utende",
+	"usermanager": "Gestore de l'utende",
+	"bs-usermanager-editgroups": "Cange le gruppe",
+	"bs-usermanager-editpassword": "Cange 'a password",
+	"bs-usermanager-editpassword-successful": "'A passuord ha state cangiate",
+	"bs-usermanager-title-nouserselected": "Nisciune utende scacchiate",
+	"bs-usermanager-nouserselected": "Pe piacere scacchie 'nu utende.",
 	"action-usermanager-viewspecialpage": "'ndruche 'a pàgena speciale \"{{int:usermanager}}\"",
-	"right-usermanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:UserManager]]"
+	"right-usermanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Cange le passuord de l'utende cu 'u gestore sus a pàgena speciale [[Special:UserManager]]"
 }
