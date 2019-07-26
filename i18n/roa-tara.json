@@ -4,6 +4,11 @@
 			"Joetaras"
 		]
 	},
+	"bs-usermanager-desc": "Inderfacce de amministrazione pe aggiungere, cangià e scangellà le utinde",
+	"bs-usermanager-admin-nodelete": "'U cunde de l'amministratore non ge pò essere scangellate.",
+	"bs-usermanager-self-nodelete": "Non ge puè scangellà 'u cunde tune.",
+	"bs-usermanager-db-error": "Ha assute 'n'errore de database.",
+	"bs-usermanager-enter-pwd": "Pe piacere mitte 'na passuord.",
 	"bs-usermanager-idnotexist": "Stu utende non g'esiste.",
 	"bs-usermanager-invalid-pwd": "'A passuord non g'è valide.",
 	"bs-usermanager-invalid-realname": "'U nome vere non g'è valide.",
@@ -11,6 +16,8 @@
 	"bs-usermanager-invalid-email-gen": "'U 'ndirizze email non g'è valide.",
 	"bs-usermanager-label": "Gestore de l'utende",
 	"bs-usermanager-user-added": "L'utende ha state aggiunde.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|L'{{GENDER:$2|utende}} ave|$1 utinde onne}} state scangellate.",
+	"bs-usermanager-user-exists": "'U nome de l'utende già esiste.",
 	"bs-usermanager-save-successful": "Cangiaminde reggistrate.",
 	"bs-usermanager-headerusername": "Nome utende",
 	"bs-usermanager-headerrealname": "Nome vere",
