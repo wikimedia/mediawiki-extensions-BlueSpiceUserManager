@@ -2,11 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Robin van der Vliet",
-			"Rafaneta"
+			"Rafaneta",
+			"Mirin"
 		]
 	},
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|La uzanto estis forigita|$1 uzantoj estis forigitaj}}.",
 	"bs-usermanager-headerusername": "Uzantnomo",
+	"bs-usermanager-headerrealname": "Vera nomo",
+	"bs-usermanager-titleadduser": "Aldoni uzanton",
+	"bs-usermanager-titleeditdetails": "Redakti uzanton",
+	"bs-usermanager-labelnewpassword": "Pasvorto",
+	"bs-usermanager-labelpasswordcheck": "Konfirmu pasvorton",
+	"bs-usermanager-titledeleteuser": "Forigi uzanton",
 	"bs-usermanager-editgroups": "Redakti grupojn",
 	"bs-usermanager-editpassword": "Ŝanĝi pasvorton",
 	"bs-usermanager-editpassword-successful": "La pasvorto estis sukcese ŝanĝita",
