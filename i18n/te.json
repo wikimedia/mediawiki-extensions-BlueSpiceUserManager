@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"bs-usermanager-headerusername": "వాడుకరి పేరు",
+	"bs-usermanager-headerrealname": "అసలు పేరు",
+	"bs-usermanager-headeremail": "ఈమెయిలు",
+	"bs-usermanager-headerregistration": "నమోదు",
+	"bs-usermanager-labelnewpassword": "సంకేతపదం"
+}

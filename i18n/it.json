@@ -35,7 +35,7 @@
 	"bs-usermanager-titledisableuser": "Disabilitare utente",
 	"bs-usermanager-titleenableuser": "Abilitare utente",
 	"usermanager": "Gestione utente",
-	"action-usermanager-viewspecialpage": "visualizzare la pagina speciale \"Gestione utente\"",
+	"action-usermanager-viewspecialpage": "visualizzare la pagina speciale \"{{int:usermanager}}\"",
 	"bs-usermanager-group-add-not-allowed": "Non ti è consentito aggiungere utenti al gruppo $1 .",
 	"bs-usermanager-group-remove-not-allowed": "Non ti è consentito rimuovere utenti dal gruppo $1 .",
 	"bs-usermanager-editgroups": "Modifica gruppi",
@@ -46,5 +46,7 @@
 	"bs-usermanager-invalid-groups": "I gruppi non sono validi",
 	"bs-usermanager-filter-only-activated-users": "Mostra tutti gli utenti attivi",
 	"bs-usermanager-filter-only-deactivated-users": "Mostra tutti gli utenti non attivi",
-	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?"
+	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?",
+	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
+	"action-usermanager-editpassword": "cambiare una password utente"
 }

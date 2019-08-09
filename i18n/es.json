@@ -48,7 +48,7 @@
 	"bs-usermanager-titledisableuser": "Desactivar usuario",
 	"bs-usermanager-titleenableuser": "Activar usuario",
 	"usermanager": "Gestor de usuarios",
-	"action-usermanager-viewspecialpage": "ver la página especial \"gestor de usuarios\"",
+	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"bs-usermanager-group-add-not-allowed": "No se te permite añadir usuarios al grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "No se te permite quitar usuarios del grupo $1",
 	"bs-usermanager-editgroups": "Editar grupos",

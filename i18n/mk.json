@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-usermanager-desc": "Администраторски посредник за додавање, измена и бришење на корисници",
@@ -16,7 +17,7 @@
 	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
 	"bs-usermanager-label": "Раководство со корисници",
 	"bs-usermanager-user-added": "Корисникот е додаден.",
-	"bs-usermanager-user-deleted": "Овој корисник е избришан.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Корисникот е избришан}}|$1 корисници се избришани}}.",
 	"bs-usermanager-user-exists": "Корисничкото име веќе постои.",
 	"bs-usermanager-save-successful": "Промените се зачувани.",
 	"bs-usermanager-headerusername": "Корисничко име",
@@ -30,5 +31,17 @@
 	"bs-usermanager-titledeleteuser": "Бришење на корисник",
 	"bs-usermanager-confirmdeleteuser": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете корисников|ги избришете овие $1 корисници}}?",
 	"bs-usermanager-groups-more": "... повеќе",
-	"bs-usermanager-no-self-desysop": "Не можете самите да си го одземете администраторското право."
+	"bs-usermanager-no-self-desysop": "Не можете самите да си го одземете администраторското право.",
+	"bs-usermanager-headerregistration": "Регистрација",
+	"bs-usermanager-headerenabled": "Овозможен",
+	"bs-usermanager-endisable": "Овозможи/оневозможи",
+	"usermanager": "Раководство со корисници",
+	"bs-usermanager-editgroups": "Уреди групи",
+	"bs-usermanager-editpassword": "Смени лозинка",
+	"bs-usermanager-title-nouserselected": "Не е избран корисник",
+	"bs-usermanager-nouserselected": "Изберете корисник",
+	"bs-usermanager-filter-only-activated-users": "Прикажи ги сите овозможени корисници",
+	"bs-usermanager-filter-only-deactivated-users": "Прикажи ги сите оневозможени корисници",
+	"action-usermanager-viewspecialpage": "погл. службената страница „{{int:usermanager}}“",
+	"action-usermanager-editpassword": "промена на кориснички лозинки"
 }

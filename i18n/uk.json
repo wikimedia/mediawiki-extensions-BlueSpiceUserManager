@@ -50,7 +50,7 @@
 	"bs-usermanager-titledisableuser": "Вимкнути користувача",
 	"bs-usermanager-titleenableuser": "Увімкнути користувача",
 	"usermanager": "Менеджер користувачів",
-	"action-usermanager-viewspecialpage": "Перегляд спеціальної сторінки «Менеджер користувачів»",
+	"action-usermanager-viewspecialpage": "перегляд спеціальної сторінки «{{int:usermanager}}»",
 	"bs-usermanager-group-add-not-allowed": "У Вас немає дозволу на додавання користувачів до групи $1",
 	"bs-usermanager-group-remove-not-allowed": "У Вас немає дозволу на вилучення користувачів із групи $1",
 	"bs-usermanager-editgroups": "Редагувати групи",
@@ -65,5 +65,8 @@
 	"apihelp-bs-usermanager-group-store-summary": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"bs-usermanager-own-password-change": "Ви збираєтесь змінити свій власний пароль. Ви автоматично вийдете із системи і потрапите на сторінку входу. Бажаєте продовжити?",
 	"right-usermanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:UserManager]]",
-	"right-usermanager-editpassword": "може змінювати паролі користувачів на спеціальній сторінці [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Змінювання паролів користувачів на спеціальній сторінці [[Special:UserManager]]",
+	"bs-usermanager-filter-only-activated-users": "Показати усіх активованих користувачів",
+	"bs-usermanager-filter-only-deactivated-users": "Показати усіх деактивованих користувачів",
+	"action-usermanager-editpassword": "змінювання паролів користувачів"
 }

@@ -48,7 +48,7 @@
 	"bs-usermanager-titledisableuser": "Desativar usuário",
 	"bs-usermanager-titleenableuser": "Ativar usuário",
 	"usermanager": "Administrador de usuários",
-	"action-usermanager-viewspecialpage": "ver página especial \"Administrador de usuários\"",
+	"action-usermanager-viewspecialpage": "ver página especial \"{{int:usermanager}}\"",
 	"bs-usermanager-group-add-not-allowed": "Não tem permissões para adicionar usuários ao grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "Não tem permissões para remover usuários do grupo $1",
 	"bs-usermanager-editgroups": "Editar grupos",
@@ -64,6 +64,7 @@
 	"apihelp-bs-usermanager-group-store-description": "Fornece a API de tarefas de gestão do usuário para o BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Fornece as tarefas do gerenciador de usuários api para o BlueSpice.",
 	"bs-usermanager-own-password-change": "Você está prestes a mudar sua própria senha. Você será desconectado e redirecionado para a página de login. Você quer continuar?",
-	"right-usermanager-viewspecialpage": "Concede acesso à página especial [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Permite alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]].",
+	"right-usermanager-editpassword": "Alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]].",
+	"action-usermanager-editpassword": "alterar senhas de usuários"
 }

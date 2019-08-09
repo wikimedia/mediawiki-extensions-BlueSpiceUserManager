@@ -50,7 +50,7 @@
 	"bs-usermanager-titledisableuser": "Benutzer deaktivieren",
 	"bs-usermanager-titleenableuser": "Benutzer aktivieren",
 	"usermanager": "Benutzerverwaltung",
-	"action-usermanager-viewspecialpage": "die Spezialseite „Benutzerverwaltung“ anzusehen",
+	"action-usermanager-viewspecialpage": "die Spezialseite „{{int:usermanager}}“ anzusehen",
 	"bs-usermanager-group-add-not-allowed": "Du bist nicht berechtigt, Benutzer zu der Gruppe $1 hinzuzufügen.",
 	"bs-usermanager-group-remove-not-allowed": "Du bist nicht berechtigt, Benutzer von der Gruppe $1 zu entfernen.",
 	"bs-usermanager-editgroups": "Gruppen bearbeiten",
@@ -66,6 +66,7 @@
 	"apihelp-bs-usermanager-group-store-description": "Stellt die UserManager-Aufgaben-API für BlueSpice bereit.",
 	"apihelp-bs-usermanager-group-store-summary": "Stellt die UserManager-Aufgaben-API für BlueSpice bereit.",
 	"bs-usermanager-own-password-change": "Du bist dabei, dein eigenes Passwort zu ändern. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet. Möchtest du fortfahren?",
-	"right-usermanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:UserManager]] gewähren.",
-	"right-usermanager-editpassword": "Die Änderung von Benutzer-Passwörtern mit dem Manager auf der Spezialseite [[Special:UserManager]] aktivieren."
+	"right-usermanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Änderung von Benutzer-Passwörtern mit dem Manager auf der Spezialseite [[Special:UserManager]]",
+	"action-usermanager-editpassword": "Benutzer-Passwörter zu ändern"
 }

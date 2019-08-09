@@ -18,7 +18,7 @@
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is ongeldig.",
 	"bs-usermanager-label": "Gebruikersbeheer",
 	"bs-usermanager-user-added": "De gebruiker is toegevoegd.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|De gebruiker is|$1 gebruikers zijn}} verwijderd.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|De {{GENDER:$2|gebruiker}} is|$1 gebruikers zijn}} verwijderd.",
 	"bs-usermanager-user-exists": "De gebruikersnaam bestaat al.",
 	"bs-usermanager-save-successful": "De wijzigingen zijn opgeslagen.",
 	"bs-usermanager-headerusername": "Gebruikersnaam",
@@ -46,7 +46,7 @@
 	"bs-usermanager-titledisableuser": "Gebruiker uitschakelen",
 	"bs-usermanager-titleenableuser": "Gebruiker inschakelen",
 	"usermanager": "Gebruikersbeheer",
-	"action-usermanager-viewspecialpage": "de speciale pagina \"User manager\" te bekijken",
+	"action-usermanager-viewspecialpage": "de speciale pagina \"{{int:usermanager}}\" te bekijken",
 	"bs-usermanager-editgroups": "Groepen bewerken",
 	"bs-usermanager-editpassword": "Wachtwoord wijzigen",
 	"bs-usermanager-editpassword-successful": "Het wachtwoord is succesvol gewijzigd",
@@ -54,5 +54,8 @@
 	"bs-usermanager-nouserselected": "Gelieve een gebruiker te selecteren",
 	"bs-usermanager-title-multipleuserselected": "Meerdere gebruikers zijn geselecteerd",
 	"bs-usermanager-multipleuserselected": "U kunt alleen het wachtwoord wijzigen voor één gebruiker tegelijk",
-	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig"
+	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig",
+	"bs-usermanager-headerregistration": "Registratie",
+	"bs-usermanager-filter-only-activated-users": "Toon alle geactiveerde gebruikers",
+	"bs-usermanager-filter-only-deactivated-users": "Toon alle gedeactiveerde gebruikers"
 }

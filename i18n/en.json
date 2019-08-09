@@ -31,7 +31,7 @@
 	"bs-usermanager-titledeleteuser": "Delete user",
 	"bs-usermanager-confirmdeleteuser": "Are you sure, you want to delete {{PLURAL:$1|this user|these $1 users}}?",
 	"bs-usermanager-groups-more": "... more",
-	"bs-usermanager-no-self-desysop" : "You cannot take away your own sysop right.",
+	"bs-usermanager-no-self-desysop": "You cannot take away your own sysop right.",
 	"apihelp-bs-usermanager-tasks-description": "Provides operations for Checklist extension",
 	"apihelp-bs-usermanager-tasks-summary": "Provides operations for Checklist extension",
 	"bs-usermanager-no-self-block": "You cannot disable yourself.",
@@ -62,8 +62,8 @@
 	"apihelp-bs-usermanager-group-store-description": "Provides the user manager tasks api for BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Provides the user manager tasks api for BlueSpice.",
 	"bs-usermanager-own-password-change": "You are about to change your own password. You will be logged out and redirected to login page. Do you want to continue?",
-	"action-usermanager-viewspecialpage": "view specialpage \"{{int:usermanager}}\"",
-	"right-usermanager-viewspecialpage": "Grants access to the [[Special:UserManager]] special page.",
-	"action-usermanager-editpassword": "change of user passwords",
-	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page."
+	"action-usermanager-viewspecialpage": "view special page \"{{int:usermanager}}\"",
+	"right-usermanager-viewspecialpage": "Access to the [[Special:UserManager]] special page",
+	"action-usermanager-editpassword": "change user passwords",
+	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page"
 }

@@ -4,7 +4,8 @@
 			"Shirayuki",
 			"Suchichi02",
 			"Suyama",
-			"Omotecho"
+			"Omotecho",
+			"Aefgh39622"
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
@@ -40,9 +41,14 @@
 	"bs-usermanager-confirmenableuser": "{{GENDER:$1|利用者}} $1 を本当に有効にしますか?",
 	"bs-usermanager-titledisableuser": "利用者を無効にする",
 	"bs-usermanager-titleenableuser": "利用者を有効にする",
-	"action-usermanager-viewspecialpage": "特別ページ「利用者マネージャー」の閲覧",
+	"action-usermanager-viewspecialpage": "特別ページ「{{int:usermanager}}」の閲覧",
 	"bs-usermanager-editpassword": "パスワードを変更",
 	"bs-usermanager-title-nouserselected": "利用者を選択していません",
 	"bs-usermanager-nouserselected": "利用者を選択してください",
-	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用"
+	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用",
+	"bs-usermanager-label": "利用者マネージャー",
+	"bs-usermanager-headerregistration": "登録",
+	"usermanager": "利用者マネージャー",
+	"bs-usermanager-editgroups": "グループを編集",
+	"action-usermanager-editpassword": "利用者のパスワードの変更"
 }
