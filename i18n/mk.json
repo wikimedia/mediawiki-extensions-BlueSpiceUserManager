@@ -43,5 +43,8 @@
 	"bs-usermanager-filter-only-activated-users": "Прикажи ги сите овозможени корисници",
 	"bs-usermanager-filter-only-deactivated-users": "Прикажи ги сите оневозможени корисници",
 	"action-usermanager-viewspecialpage": "погл. службената страница „{{int:usermanager}}“",
-	"action-usermanager-editpassword": "промена на кориснички лозинки"
+	"action-usermanager-editpassword": "промена на кориснички лозинки",
+	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Корисникот}} $1 е оневозможен преку UserManager",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|Корисникот}} $1 е оневозможен.",
+	"bs-usermanager-user-enabled": "{{GENDER:$1|Корисникот}} $1 е овозможен."
 }

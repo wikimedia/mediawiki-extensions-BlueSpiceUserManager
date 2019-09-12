@@ -56,5 +56,7 @@
 	"apihelp-bs-usermanager-group-store-summary": "BlueSpice를 위한 사용자 관리자 작업 API를 제공합니다.",
 	"bs-usermanager-own-password-change": "자신의 비밀번호를 변경하려고 합니다. 로그아웃된 다음 로그인 페이지로 넘어갑니다. 계속하시겠습니까?",
 	"right-usermanager-viewspecialpage": "[[Special:UserManager]] 특수 문서로 접근",
-	"action-usermanager-editpassword": "사용자 비밀번호를 바꾸기"
+	"action-usermanager-editpassword": "사용자 비밀번호를 바꾸기",
+	"bs-usermanager-filter-only-activated-users": "활성화된 사용자 모두 보기",
+	"bs-usermanager-filter-only-deactivated-users": "비활성화된 사용자 모두 보기"
 }
