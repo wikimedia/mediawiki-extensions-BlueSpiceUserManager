@@ -3,7 +3,8 @@
 		"authors": [
 			"Vitorvicentevalente",
 			"Mansil",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-usermanager-desc": "Interface de administração para adicionar, editar e eliminar utilizadores",
@@ -65,7 +66,7 @@
 	"apihelp-bs-usermanager-group-store-description": "Fornece a API de tarefas de gestão do utilizador para o BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Fornece a API de tarefas de gestão do utilizador para o BlueSpice.",
 	"bs-usermanager-own-password-change": "Está prestes a alterar a sua palavra-passe. Esta sessão será terminada e será redirecionado para a página de início de sessão. Quer continuar?",
-	"right-usermanager-viewspecialpage": "Concede acesso à página especial [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Permite alterar a palavra-passe dos utilizadores com o gestor na página especial [[Special:UserManager]].",
-	"action-usermanager-editpassword": "alteração da palavra-passe dos utilizadores"
+	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Altere as palavras-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]",
+	"action-usermanager-editpassword": "alterar palavras-passe dos utilizadores"
 }
