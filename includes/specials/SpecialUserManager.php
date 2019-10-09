@@ -1,22 +1,26 @@
 <?php
 
-class SpecialUserManager extends \BlueSpice\SpecialPage {
+use BlueSpice\Special\ManagerBase;
+
+class SpecialUserManager extends ManagerBase {
 
 	public function __construct() {
 		parent::__construct( 'UserManager', 'usermanager-viewspecialpage' );
 	}
 
 	/**
-	 *
-	 * @param string $parameter URL parameters to special page
+	 * @return string ID of the HTML element being added
 	 */
-	public function execute( $parameter ) {
-		parent::execute( $parameter );
-		$this->getOutput()->addModules( 'ext.bluespice.userManager' );
-		$this->getOutput()->addHTML(
-			Html::element( 'div',
-				[ 'id' => 'bs-usermanager-grid', 'class' => 'bs-manager-container' ] )
-		);
+	protected function getId() {
+		return 'bs-usermanager-grid';
 	}
 
+	/**
+	 * @return array
+	 */
+	protected function getModules() {
+		return [
+			'ext.bluespice.userManager'
+		];
+	}
 }

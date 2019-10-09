@@ -4,5 +4,6 @@
 			"StanProg"
 		]
 	},
-	"bs-usermanager-headerusername": "Потребителско име"
+	"bs-usermanager-headerusername": "Потребителско име",
+	"bs-usermanager-labelnewpassword": "Парола"
 }

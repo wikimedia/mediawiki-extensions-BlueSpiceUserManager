@@ -42,7 +42,7 @@
 	"bs-usermanager-titledisableuser": "Benotzer desaktivéieren",
 	"bs-usermanager-titleenableuser": "Benotzer aktivéieren",
 	"usermanager": "Gestionnaire vu Benotzer",
-	"action-usermanager-viewspecialpage": "Spezialsäit \"Gestioun vun de Benotzer\" weisen",
+	"action-usermanager-viewspecialpage": "Spezialsäit \"{{int:usermanager}}\" weisen",
 	"bs-usermanager-group-add-not-allowed": "Dir däerft keng Benotzer an de Grupp $1 dobäisetzen",
 	"bs-usermanager-group-remove-not-allowed": "Dir däerft keng Benotzer aus dem Grupp $1 eraushuelen",
 	"bs-usermanager-editgroups": "Gruppen änneren",
@@ -52,5 +52,6 @@
 	"bs-usermanager-nouserselected": "Sicht w.e.g. e Benotzer eraus",
 	"bs-usermanager-title-multipleuserselected": "Méi Benotzer sinn erausgesicht",
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
-	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel"
+	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel",
+	"action-usermanager-editpassword": "Benotzer-Passwierder änneren"
 }

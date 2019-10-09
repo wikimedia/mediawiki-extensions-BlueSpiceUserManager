@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-usermanager-save-successful": "Ændringer gemt.",
+	"bs-usermanager-headerusername": "Brugernavn",
+	"bs-usermanager-headerregistration": "Registrering",
+	"bs-usermanager-headergroups": "Grupper",
+	"bs-usermanager-titleadduser": "Tilføj bruger",
+	"bs-usermanager-titleeditdetails": "Rediger bruger",
+	"bs-usermanager-titledeleteuser": "Slet bruger",
+	"bs-usermanager-filter-only-activated-users": "Vis alle aktiverede brugere",
+	"bs-usermanager-filter-only-deactivated-users": "Vis alle deaktiverede brugere",
+	"bs-usermanager-idnotexist": "Denne bruger findes ikke.",
+	"bs-usermanager-invalid-uname": "Brugernavnet er ugyldigt.",
+	"bs-usermanager-titledisableuser": "Deaktiver bruger",
+	"bs-usermanager-editpassword": "Skift adgangskode",
+	"action-usermanager-editpassword": "ændre brugeres adgangskoder"
+}

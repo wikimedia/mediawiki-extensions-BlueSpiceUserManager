@@ -1,7 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"A Chinese Wikipedian",
+			"佛壁灯",
+			"科劳",
+			"神樂坂秀吉",
+			"予弦"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -34,8 +39,8 @@
 	"apihelp-bs-usermanager-tasks-description": "提供用于Checklist扩展的操作",
 	"apihelp-bs-usermanager-tasks-summary": "提供用于Checklist扩展的操作",
 	"bs-usermanager-no-self-block": "您不能禁用您自己。",
-	"bs-usermanager-block-error": "{{GENDER:$1|用户}}$1不能被禁用。",
-	"bs-usermanager-unblock-error": "{{GENDER:$1|用户}}$1不能被启用。",
+	"bs-usermanager-block-error": "{{GENDER:$1|用户}}$1不能禁用。",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|用户}}$1不能启用。",
 	"bs-usermanager-headerenabled": "已启用",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|用户}}$1已通过用户管理器禁用",
 	"bs-usermanager-user-disabled": "{{GENDER:$1|用户}}$1已被禁用。",
@@ -46,7 +51,7 @@
 	"bs-usermanager-titledisableuser": "禁用用户",
 	"bs-usermanager-titleenableuser": "启用用户",
 	"usermanager": "用户管理",
-	"action-usermanager-viewspecialpage": "查看特殊页面“用户管理”",
+	"action-usermanager-viewspecialpage": "查看页面“{{int:usermanager}}”",
 	"bs-usermanager-group-add-not-allowed": "您不被允许添加用户至用户组$1",
 	"bs-usermanager-group-remove-not-allowed": "您不被允许从用户组$1中移除用户",
 	"bs-usermanager-editgroups": "编辑组",
@@ -57,7 +62,13 @@
 	"bs-usermanager-title-multipleuserselected": "选择了多个用户",
 	"bs-usermanager-multipleuserselected": "您每次只能更改一位用户的密码",
 	"bs-usermanager-invalid-groups": "组无效",
+	"bs-usermanager-filter-only-activated-users": "显示所有激活的用户",
+	"bs-usermanager-filter-only-deactivated-users": "显示所有停用的用户",
 	"apihelp-bs-usermanager-group-store-description": "为BlueSpice提供用户管理器任务api。",
 	"apihelp-bs-usermanager-group-store-summary": "为BlueSpice提供用户管理器任务api。",
-	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？"
+	"bs-usermanager-own-password-change": "您即将更改您自己的密码。您将会退出，并重定向到登录页面。您希望继续么？",
+	"bs-usermanager-headerregistration": "注册",
+	"right-usermanager-viewspecialpage": "访问页面 [[Special:UserManager]] 的权限",
+	"action-usermanager-editpassword": "更改用户密码",
+	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码"
 }

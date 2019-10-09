@@ -19,5 +19,6 @@
 	"bs-usermanager-titleenableuser": "সক্রিয় ব্যবহারকারী",
 	"usermanager": "ব্যবহারকারী ব্যবস্থাপক",
 	"bs-usermanager-group-add-not-allowed": "আপনি $1 দলে ব্যবহারকারী যোগ করার জন্য অনুমিত নন",
-	"bs-usermanager-group-remove-not-allowed": "আপনি $1 দল থেকে ব্যবহারকারীদের সারানোর জন্য অনুমিত নন"
+	"bs-usermanager-group-remove-not-allowed": "আপনি $1 দল থেকে ব্যবহারকারীদের সারানোর জন্য অনুমিত নন",
+	"action-usermanager-viewspecialpage": "বিশেষ পাতা \"{{int:usermanager}}\" দেখার"
 }

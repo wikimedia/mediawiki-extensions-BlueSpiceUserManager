@@ -26,6 +26,7 @@
 	"bs-usermanager-headerusername": "Nom d’utilisateur",
 	"bs-usermanager-headerrealname": "Nom réel",
 	"bs-usermanager-headeremail": "Courriel",
+	"bs-usermanager-headerregistration": "Inscription",
 	"bs-usermanager-headergroups": "Groupes",
 	"bs-usermanager-titleadduser": "Ajouter un utilisateur",
 	"bs-usermanager-titleeditdetails": "Modifier un utilisateur",
@@ -50,7 +51,7 @@
 	"bs-usermanager-titledisableuser": "Désactiver l’utilisateur",
 	"bs-usermanager-titleenableuser": "Activer l’utilisateur",
 	"usermanager": "Gestionnaire des utilisateurs",
-	"action-usermanager-viewspecialpage": "Voir la page spéciale « Gestion des utilisateurs »",
+	"action-usermanager-viewspecialpage": "voir la page spéciale « {{int:usermanager}} »",
 	"bs-usermanager-group-add-not-allowed": "Vous n'êtes pas autorisé à ajouter des utilisateurs au groupe $1",
 	"bs-usermanager-group-remove-not-allowed": "Vous n'êtes pas autorisé à supprimer des utilisateurs du groupe $1",
 	"bs-usermanager-editgroups": "Modifier les groupes",
@@ -61,9 +62,12 @@
 	"bs-usermanager-title-multipleuserselected": "Plusieurs utilisateurs sont sélectionnés",
 	"bs-usermanager-multipleuserselected": "Vous ne pouvez changer de mot de passe que pour un utilisateur à la fois",
 	"bs-usermanager-invalid-groups": "Les groupes ne sont pas valides",
+	"bs-usermanager-filter-only-activated-users": "Afficher tous les utilisateurs activés",
+	"bs-usermanager-filter-only-deactivated-users": "Afficher tous les utilisateurs désactivés",
 	"apihelp-bs-usermanager-group-store-description": "Fournit une API BlueSpice aux taches de gestion utilisateur.",
 	"apihelp-bs-usermanager-group-store-summary": "Fournit l’API des tâches de gestion utilisateur pour BlueSpice.",
 	"bs-usermanager-own-password-change": "Vous allez changer votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion. Voulez-vous continuer ?",
-	"right-usermanager-viewspecialpage": "Donne les droits d'accès à la page spéciale [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Autorise la modification des mots de passe utilisateur sur la page spéciale [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Accès à la page spéciale [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Modifier les mots de passe utilisateur sur la page spéciale [[Special:UserManager]]",
+	"action-usermanager-editpassword": "modification des mots de passe utilisateur"
 }

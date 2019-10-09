@@ -3,7 +3,8 @@
 		"authors": [
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsgränssnittet för att lägga till, redigera och radera användare",
@@ -24,6 +25,7 @@
 	"bs-usermanager-headerusername": "Användarnamn",
 	"bs-usermanager-headerrealname": "Riktigt namn",
 	"bs-usermanager-headeremail": "E-post",
+	"bs-usermanager-headerregistration": "Registrering",
 	"bs-usermanager-headergroups": "Grupper",
 	"bs-usermanager-titleadduser": "Lägg till användare",
 	"bs-usermanager-titleeditdetails": "Redigera användare",
@@ -46,7 +48,7 @@
 	"bs-usermanager-titledisableuser": "Inaktivera användare",
 	"bs-usermanager-titleenableuser": "Aktivera användare",
 	"usermanager": "Användarhanterare",
-	"action-usermanager-viewspecialpage": "Visa specialsidan \"Användarhanterare\"",
+	"action-usermanager-viewspecialpage": "visa specialsidan \"{{int:usermanager}}\"",
 	"bs-usermanager-group-add-not-allowed": "Du har inte tillåtelse att lägga till användare i gruppen $1",
 	"bs-usermanager-group-remove-not-allowed": "Du har inte tillåtelse att ta bort användare från gruppen $1",
 	"bs-usermanager-editgroups": "Redigera grupper",
@@ -58,5 +60,8 @@
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"bs-usermanager-invalid-groups": "Grupper är ogiltiga",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Aktiverar ändring av användarlösenord med hanteraren på specialsidan [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Aktiverar ändring av användarlösenord med hanteraren på specialsidan [[Special:UserManager]].",
+	"bs-usermanager-filter-only-activated-users": "Visa alla aktiva användare",
+	"bs-usermanager-filter-only-deactivated-users": "Visa alla icke-aktiva användare",
+	"action-usermanager-editpassword": "ändra en användares lösenord"
 }
