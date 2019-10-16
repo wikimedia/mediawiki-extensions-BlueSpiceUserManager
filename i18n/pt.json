@@ -68,5 +68,5 @@
 	"action-usermanager-viewspecialpage": "ver página especial \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]]",
 	"action-usermanager-editpassword": "alterar palavras-passe dos utilizadores",
-	"right-usermanager-editpassword": "Altere as palavras-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Alterar as palavras-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]"
 }
