@@ -19,7 +19,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *
  * This file is part of BlueSpice MediaWiki
- * For further information visit https://bluespice.com
+ * For further information visit https://www.bluespice.com
  *
  * @author     Sebastian Ulbricht
  * @author     Stephan Muggli
@@ -308,9 +308,9 @@ class Extension extends \BlueSpice\Extension {
 		$block = new \Block();
 		$block->setTarget( $user );
 		$block->setBlocker( $performer );
-		$block->mReason = \wfMessage( 'bs-usermanager-log-user-disabled',
-			$user->getName() )->text();
-		$block->mExpiry = 'infinity';
+		$block->setReason( \wfMessage( 'bs-usermanager-log-user-disabled',
+			$user->getName() )->text() );
+		$block->setExpiry( 'infinity' );
 		$block->isCreateAccountBlocked( false );
 		$block->isUsertalkEditAllowed( true );
 		$block->isEmailBlocked( true );
