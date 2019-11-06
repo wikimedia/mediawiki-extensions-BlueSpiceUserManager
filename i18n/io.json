@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|La {{GENDER:$2|uzero}}|$1 uzeri}} efacesis.",
-	"bs-usermanager-invalid-groups": "La grupi esas nevalida"
+	"bs-usermanager-invalid-groups": "La grupi esas nevalida",
+	"bs-usermanager-endisable": "Permisar/despermisar"
 }
