@@ -61,5 +61,7 @@
 	"bs-usermanager-invalid-groups": "Los grupos no son válidos",
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
 	"right-usermanager-viewspecialpage": "Otorga acceso a la página especial [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Permite modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Permite modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]].",
+	"bs-usermanager-filter-only-activated-users": "Mostrar todas las cuentas activadas",
+	"bs-usermanager-filter-only-deactivated-users": "Mostrar todas las cuentas desactivadas"
 }
