@@ -32,6 +32,8 @@
 
 namespace BlueSpice\UserManager;
 
+use BlueSpice\Services;
+
 class Extension extends \BlueSpice\Extension {
 	/* These groups are not touched by the addtogroup tool */
 
@@ -140,8 +142,7 @@ class Extension extends \BlueSpice\Extension {
 
 		$status = \Status::newGood( $user );
 
-		$userManager = \MediaWiki\MediaWikiServices::getInstance()
-			->getService( 'BSExtensionFactory' )
+		$userManager = Services::getInstance()->getBSExtensionFactory()
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterAddUser',
@@ -271,8 +272,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 		}
 
-		$userManager = \MediaWiki\MediaWikiServices::getInstance()
-			->getService( 'BSExtensionFactory' )
+		$userManager = Services::getInstance()->getBSExtensionFactory()
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterEditUser',
@@ -400,8 +400,7 @@ class Extension extends \BlueSpice\Extension {
 			$status->merge( \Status::newFatal( 'bs-usermanager-db-error' ) );
 		}
 
-		$userManager = \MediaWiki\MediaWikiServices::getInstance()
-			->getService( 'BSExtensionFactory' )
+		$userManager = Services::getInstance()->getBSExtensionFactory()
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run( 'BSUserManagerAfterDeleteUser',
 			[
