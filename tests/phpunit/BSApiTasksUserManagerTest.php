@@ -13,14 +13,25 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  */
 class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-usermanager-tasks';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getTokens() {
 		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
+	/**
+	 * @covers \BSApiTasksUserManager::task_addUser
+	 */
 	public function testAddUser() {
 		$data = $this->executeTask( 'addUser', [
 			'userName' => 'SomeName',
@@ -42,6 +53,9 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		);
 	}
 
+	/**
+	 * @covers \BSApiTasksUserManager::task_editUser
+	 */
 	public function testEditUser() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'editUser', [
@@ -64,6 +78,9 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		);
 	}
 
+	/**
+	 * @covers \BSApiTasksUserManager::task_disableUser
+	 */
 	public function testDisableUser() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'disableUser', [
@@ -75,6 +92,9 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$this->assertTrue( $this->userIsBlocked( $userId ) );
 	}
 
+	/**
+	 * @covers \BSApiTasksUserManager::task_enableUser
+	 */
 	public function testEnableUser() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'enableUser', [
@@ -86,6 +106,9 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$this->assertFalse( $this->userIsBlocked( $userId ) );
 	}
 
+	/**
+	 * @covers \BSApiTasksUserManager::task_deleteUser
+	 */
 	public function testDeleteUser() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'deleteUser', [
@@ -97,7 +120,10 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$this->assertFalse( $this->existsInDb( $userId ) );
 	}
 
-	public function setUserGroups() {
+	/**
+	 * @covers \BSApiTasksUserManager::task_setUserGroups
+	 */
+	public function testSetUserGroups() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'addUser', [
 			'userIDs' => [ $userId ],
@@ -114,7 +140,10 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		);
 	}
 
-	public function editPassword() {
+	/**
+	 * @covers \BSApiTasksUserManager::task_editPassword
+	 */
+	public function testEditPassword() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
 		$data = $this->executeTask( 'addUser', [
 			'userID' => $userId,
@@ -125,6 +154,11 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$this->assertEquals( true, $data->success );
 	}
 
+	/**
+	 *
+	 * @param int $iId
+	 * @return bool
+	 */
 	protected function userIsBlocked( $iId ) {
 		$db = wfGetDB( DB_REPLICA );
 		$res = $db->select( 'ipblocks', [ 'ipb_user' ], [ 'ipb_user = ' . $iId ], wfGetCaller() );
@@ -135,6 +169,11 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		}
 	}
 
+	/**
+	 *
+	 * @param int $iId
+	 * @return bool
+	 */
 	protected function existsInDb( $iId ) {
 		$db = wfGetDB( DB_REPLICA );
 		$res = $db->select( 'user', [ 'user_id' ], [ 'user_id = ' . $iId ], wfGetCaller() );
