@@ -39,7 +39,7 @@
 	"bs-usermanager-no-self-block": "Kendinizi devre dışı bırakamazsınız.",
 	"bs-usermanager-block-error": "{{GENDER:$1|Kullanıcı}} $1 devre dışı bırakamaz.",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|Kullanıcı}} $1 devre dışı etkinleştiremez.",
-	"bs-usermanager-headerenabled": "Etkinleştirildi",
+	"bs-usermanager-headerenabled": "Etkin",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Kullanıcı}} $1, UserManager aracılığıyla devre dışı bırakıldı",
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Kullanıcı}} $1 devre dışı bırakıldı.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Kullanıcı}} $1 etkinleştirildi.",
