@@ -4,7 +4,8 @@
 			"Fitoschido",
 			"Macofe",
 			"Mor",
-			"Dgstranz"
+			"Dgstranz",
+			"DannyS712"
 		]
 	},
 	"bs-usermanager-desc": "Interfaz administrativa para añadir, editar y eliminar usuarios",
@@ -62,6 +63,6 @@
 	"bs-usermanager-filter-only-deactivated-users": "Mostrar todas las cuentas desactivadas",
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
-	"right-usermanager-viewspecialpage": "Otorga acceso a la página especial [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Permite modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]."
+	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]"
 }
