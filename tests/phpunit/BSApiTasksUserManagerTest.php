@@ -43,7 +43,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'groups' => [ 'sysop' ]
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertSelect(
 			'user',
@@ -68,7 +68,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'groups' => [ 'bureaucrat' ]
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertSelect(
 			'user',
@@ -87,7 +87,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'userID' => $userId
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertTrue( $this->userIsBlocked( $userId ) );
 	}
@@ -101,7 +101,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'userID' => $userId
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertFalse( $this->userIsBlocked( $userId ) );
 	}
@@ -115,7 +115,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'userIDs' => [ $userId ]
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertFalse( $this->existsInDb( $userId ) );
 	}
@@ -130,7 +130,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'groups' => [ 'bot' ]
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		$this->assertSelect(
 			'user_groups',
@@ -151,7 +151,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 			'rePassword' => 'pass1234'
 		] );
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 	}
 
 	/**

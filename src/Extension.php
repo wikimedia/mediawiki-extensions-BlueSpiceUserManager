@@ -296,7 +296,7 @@ class Extension extends \BlueSpice\Extension {
 	 * @return \Status
 	 */
 	public static function disableUser( \User $user, \User $performer, \Status &$status = null ) {
-		if ( is_null( $status ) ) {
+		if ( $status === null ) {
 			$status = \Status::newGood();
 		}
 		if ( $user->getId() == $performer->getId() ) {
@@ -340,7 +340,7 @@ class Extension extends \BlueSpice\Extension {
 	 * @return \Status
 	 */
 	public static function enableUser( \User $user, \User $performer, \Status &$status = null ) {
-		if ( is_null( $status ) ) {
+		if ( $status === null ) {
 			$status = \Status::newGood();
 		}
 
