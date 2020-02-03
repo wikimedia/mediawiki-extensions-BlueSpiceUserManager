@@ -33,6 +33,7 @@
 namespace BlueSpice\UserManager;
 
 use BlueSpice\Services;
+use Wikimedia\Rdbms\Database;
 
 class Extension extends \BlueSpice\Extension {
 	/* These groups are not touched by the addtogroup tool */
@@ -384,20 +385,25 @@ class Extension extends \BlueSpice\Extension {
 			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$dbw = \wfGetDB( \DB_MASTER );
-		$res = $dbw->delete( 'user', [ 'user_id' => $user->getId() ]
-		);
-		$res1 = $dbw->delete( 'user_groups', [ 'ug_user' => $user->getId() ]
-		);
-		$res2 = $dbw->delete( 'user_newtalk', [ 'user_id' => $user->getId() ]
-		);
-		$countUsers = $dbw->selectField( 'user', 'COUNT(*)', [] );
-		$res3 = $dbw->update( 'site_stats', [ 'ss_users' => $countUsers ],
-			[ 'ss_row_id' => 1 ]
-		);
+		$dbw = Services::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$fname = __METHOD__;
+		$section = $dbw->startAtomic( $fname, Database::ATOMIC_CANCELABLE );
+		try {
+			$dbw->delete( 'user', [ 'user_id' => $user->getId() ], $fname );
+			$dbw->delete( 'user_groups', [ 'ug_user' => $user->getId() ], $fname );
+			$dbw->delete( 'user_newtalk', [ 'user_id' => $user->getId() ], $fname );
+			$dbw->delete( 'user_properties', [ 'up_user' => $user->getId() ], $fname );
+			$countUsers = $dbw->selectField( 'user', 'COUNT(*)', [] );
+			$dbw->update(
+				'site_stats', [ 'ss_users' => $countUsers ],
+				[ 'ss_row_id' => 1 ], $fname
+			);
+			$dbw->endAtomic( $fname );
+		} catch ( \Exception $ex ) {
+			$dbw->cancelAtomic( $fname, $section );
 
-		if ( ( $res === false ) || ( $res1 === false ) || ( $res2 === false ) || ( $res3 === false ) ) {
 			$status->merge( \Status::newFatal( 'bs-usermanager-db-error' ) );
+			return $status;
 		}
 
 		$userManager = Services::getInstance()->getBSExtensionFactory()
