@@ -4,7 +4,8 @@
 			"Fitoschido",
 			"Macofe",
 			"Mor",
-			"Dgstranz"
+			"Dgstranz",
+			"DannyS712"
 		]
 	},
 	"bs-usermanager-desc": "Interfaz administrativa para añadir, editar y eliminar usuarios",
@@ -19,7 +20,7 @@
 	"bs-usermanager-invalid-email-gen": "La dirección de correo electrónico no es válida.",
 	"bs-usermanager-label": "Gestor de usuarios",
 	"bs-usermanager-user-added": "Se añadió el usuario.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|Se eliminó el usuario|Se eliminaron los usuarios}}.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|Se eliminó {{GENDER:$2|el usuario}}|Se eliminaron los usuarios}}.",
 	"bs-usermanager-user-exists": "El nombre de usuario ya existe.",
 	"bs-usermanager-save-successful": "Se guardaron los cambios.",
 	"bs-usermanager-headerusername": "Nombre de usuario",
@@ -60,8 +61,8 @@
 	"bs-usermanager-multipleuserselected": "Solo puedes cambiar la contraseña de un usuario cada vez",
 	"bs-usermanager-invalid-groups": "Los grupos no son válidos",
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
-	"right-usermanager-viewspecialpage": "Otorga acceso a la página especial [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Permite modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]].",
+	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
 	"bs-usermanager-filter-only-activated-users": "Mostrar todas las cuentas activadas",
 	"bs-usermanager-filter-only-deactivated-users": "Mostrar todas las cuentas desactivadas"
 }
