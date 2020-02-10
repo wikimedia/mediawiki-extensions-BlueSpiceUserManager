@@ -2,16 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Bjankuloski06",
-			"Vlad5250"
+			"Vlad5250",
+			"Violetova"
 		]
 	},
 	"bs-usermanager-desc": "Администраторски посредник за додавање, измена и бришење на корисници",
 	"bs-usermanager-admin-nodelete": "Администраторската сметка не може да се избрише.",
 	"bs-usermanager-self-nodelete": "Не можете да ја избришете вашата сметка.",
 	"bs-usermanager-db-error": "Се појави грешка во базата.",
-	"bs-usermanager-enter-pwd": "Внесете јавка.",
+	"bs-usermanager-enter-pwd": "Внесете лозинка.",
 	"bs-usermanager-idnotexist": "Овој корисник не постои.",
-	"bs-usermanager-invalid-pwd": "Јавката е неважечка.",
+	"bs-usermanager-invalid-pwd": "Лозинката е неважечка.",
 	"bs-usermanager-invalid-realname": "Вистинското име е неважечко.",
 	"bs-usermanager-invalid-uname": "Корисничкото име е неважечко.",
 	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
@@ -27,8 +28,8 @@
 	"bs-usermanager-headergroups": "Групи",
 	"bs-usermanager-titleadduser": "Додај корисник",
 	"bs-usermanager-titleeditdetails": "Измени корисник",
-	"bs-usermanager-labelnewpassword": "Јавка",
-	"bs-usermanager-labelpasswordcheck": "Потврдете ја јавката",
+	"bs-usermanager-labelnewpassword": "Лозинка",
+	"bs-usermanager-labelpasswordcheck": "Потврдете ја лозинката",
 	"bs-usermanager-titledeleteuser": "Бришење на корисник",
 	"bs-usermanager-confirmdeleteuser": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете корисников|ги избришете овие $1 корисници}}?",
 	"bs-usermanager-groups-more": "... повеќе",
@@ -40,11 +41,11 @@
 	"bs-usermanager-endisable": "Овозможи/оневозможи",
 	"usermanager": "Раководство со корисници",
 	"bs-usermanager-editgroups": "Уреди групи",
-	"bs-usermanager-editpassword": "Смени јавка",
+	"bs-usermanager-editpassword": "Смени лозинка",
 	"bs-usermanager-title-nouserselected": "Не е избран корисник",
 	"bs-usermanager-nouserselected": "Изберете корисник",
 	"bs-usermanager-filter-only-activated-users": "Прикажи ги сите овозможени корисници",
 	"bs-usermanager-filter-only-deactivated-users": "Прикажи ги сите оневозможени корисници",
 	"action-usermanager-viewspecialpage": "погл. службената страница „{{int:usermanager}}“",
-	"action-usermanager-editpassword": "промена на кориснички јавки"
+	"action-usermanager-editpassword": "промена на кориснички лозинки"
 }
