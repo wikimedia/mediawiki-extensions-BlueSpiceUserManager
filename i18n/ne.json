@@ -3,7 +3,8 @@
 		"authors": [
 			"बिप्लब आनन्द",
 			"Drjpoudel",
-			"सरोज कुमार ढकाल"
+			"सरोज कुमार ढकाल",
+			"पर्वत सुबेदी"
 		]
 	},
 	"bs-usermanager-desc": "प्रयोगकर्ताहरू जोड्ने, सम्पादन गर्ने तथा मेट्ने प्रवन्धक अवतरण",
@@ -32,5 +33,7 @@
 	"bs-usermanager-titledeleteuser": "प्रयोगकर्ता मेट्ने",
 	"bs-usermanager-confirmdeleteuser": "के तपाईं {{PLURAL:$1|यो प्रयोगकर्ता|यी $1 प्रयोगकर्ताहर}}लाई मेट्न चाहनुहुन्छ?",
 	"bs-usermanager-groups-more": "...अझै",
-	"bs-usermanager-no-self-desysop": "तपाईँ आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।"
+	"bs-usermanager-no-self-desysop": "तपाईँ आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।",
+	"bs-usermanager-endisable": "सक्षम/असक्षम",
+	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू"
 }
