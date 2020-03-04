@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Soued031"
 		]
 	},
 	"bs-usermanager-admin-nodelete": "Den Administrateurs'-Benotzerkont kann net geläscht ginn.",
 	"bs-usermanager-self-nodelete": "Dir kënnt Äre Benotzerkont net läschen.",
 	"bs-usermanager-db-error": "Et ass en Datebankfeeler geschitt.",
-	"bs-usermanager-enter-pwd": "Gitt w.e.g. e Passwuert an.",
+	"bs-usermanager-enter-pwd": "Gitt wgl. e Passwuert an.",
 	"bs-usermanager-idnotexist": "Dëse Benotzer gëtt et net.",
 	"bs-usermanager-invalid-pwd": "D'Passwuert ass net valabel.",
 	"bs-usermanager-invalid-realname": "De richtegen Numm ass net valabel.",
@@ -49,7 +50,7 @@
 	"bs-usermanager-editpassword": "Passwuert änneren",
 	"bs-usermanager-editpassword-successful": "D'Passwuert gouf geännert",
 	"bs-usermanager-title-nouserselected": "Kee Benotzer erausgesicht",
-	"bs-usermanager-nouserselected": "Sicht w.e.g. e Benotzer eraus",
+	"bs-usermanager-nouserselected": "Sicht wgl. e Benotzer eraus",
 	"bs-usermanager-title-multipleuserselected": "Méi Benotzer sinn erausgesicht",
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
 	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel",
