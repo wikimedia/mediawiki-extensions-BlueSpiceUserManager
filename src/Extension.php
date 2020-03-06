@@ -143,7 +143,7 @@ class Extension extends \BlueSpice\Extension {
 
 		$status = \Status::newGood( $user );
 
-		$userManager = Services::getInstance()->getBSExtensionFactory()
+		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterAddUser',
@@ -273,7 +273,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 		}
 
-		$userManager = Services::getInstance()->getBSExtensionFactory()
+		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterEditUser',
@@ -406,7 +406,7 @@ class Extension extends \BlueSpice\Extension {
 			return $status;
 		}
 
-		$userManager = Services::getInstance()->getBSExtensionFactory()
+		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run( 'BSUserManagerAfterDeleteUser',
 			[
