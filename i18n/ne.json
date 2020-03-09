@@ -25,6 +25,7 @@
 	"bs-usermanager-headerusername": "प्रयोगकर्ता नाम",
 	"bs-usermanager-headerrealname": "वास्तविक नाम",
 	"bs-usermanager-headeremail": "इमेल",
+	"bs-usermanager-headerregistration": "दर्ता",
 	"bs-usermanager-headergroups": "समूहहरू",
 	"bs-usermanager-titleadduser": "प्रयोगर्ता जोड्ने",
 	"bs-usermanager-titleeditdetails": "प्रयोगकर्ता सम्पादन गर्ने",
