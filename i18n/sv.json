@@ -4,7 +4,8 @@
 			"Jopparn",
 			"Lokal Profil",
 			"WikiPhoenix",
-			"Mjälten"
+			"Mjälten",
+			"Technic2"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsgränssnittet för att lägga till, redigera och radera användare",
@@ -63,5 +64,5 @@
 	"action-usermanager-viewspecialpage": "visa specialsidan \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
-	"right-usermanager-editpassword": "Aktiverar ändring av användarlösenord med hanteraren på specialsidan [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]"
 }
