@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"DannyS712",
+			"Dgstranz",
 			"Fitoschido",
 			"Macofe",
-			"Mor",
-			"Dgstranz",
-			"DannyS712"
+			"Mor"
 		]
 	},
 	"bs-usermanager-desc": "Interfaz administrativa para añadir, editar y eliminar usuarios",

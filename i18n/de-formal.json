@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli",
-			"Hwboehm"
+			"Hwboehm",
+			"Stephan Muggli"
 		]
 	},
 	"bs-usermanager-self-nodelete": "Sie können nicht Ihr Benutzerkonto löschen.",

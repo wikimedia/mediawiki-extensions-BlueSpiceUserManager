@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"SnowedEarth",
-			"Ltrlg",
 			"Grind24",
-			"Wladek92",
-			"Thibaut120094"
+			"Ltrlg",
+			"SnowedEarth",
+			"Thibaut120094",
+			"Wladek92"
 		]
 	},
 	"bs-usermanager-desc": "Interface d’administration pour ajouter, modifier et supprimer des utilisateurs",

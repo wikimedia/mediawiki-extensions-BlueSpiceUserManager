@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"SPQRobin"
 		]
 	},
 	"bs-usermanager-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van gebruikers",

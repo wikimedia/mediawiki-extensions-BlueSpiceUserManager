@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet",
+			"Mirin",
 			"Rafaneta",
-			"Mirin"
+			"Robin van der Vliet"
 		]
 	},
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|La uzanto estis forigita|$1 uzantoj estis forigitaj}}.",

@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
-			"Mansil",
 			"Hamilton Abreu",
-			"Mansil alfalb"
+			"Mansil",
+			"Mansil alfalb",
+			"Vitorvicentevalente"
 		]
 	},
 	"bs-usermanager-desc": "Interface de administração para adicionar, editar e eliminar utilizadores",
