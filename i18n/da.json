@@ -6,6 +6,7 @@
 	},
 	"bs-usermanager-idnotexist": "Denne bruger findes ikke.",
 	"bs-usermanager-invalid-uname": "Brugernavnet er ugyldigt.",
+	"bs-usermanager-invalid-email-gen": "Denne e-mailadresse er ugyldig.",
 	"bs-usermanager-save-successful": "Ændringer gemt.",
 	"bs-usermanager-headerusername": "Brugernavn",
 	"bs-usermanager-headerregistration": "Registrering",
