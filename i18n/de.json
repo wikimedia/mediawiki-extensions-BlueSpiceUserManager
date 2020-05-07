@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Hwboehm",
 			"Metalhead64",
-			"Umherirrender",
-			"Hwboehm"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umherirrender"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",

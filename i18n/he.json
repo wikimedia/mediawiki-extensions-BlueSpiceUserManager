@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2",
-			"תומר ט",
 			"DmitTrix",
 			"Erelon",
-			"Steeve815"
+			"Guycn2",
+			"Steeve815",
+			"תומר ט"
 		]
 	},
 	"bs-usermanager-desc": "ממשק ניהולי עבור הוספה, עריכה ומחיקה של משתמשים",

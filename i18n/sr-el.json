@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-usermanager-headeremail": "Imejl",
 	"bs-usermanager-filter-only-activated-users": "Prikaži sve aktivirane korisnike",
 	"bs-usermanager-filter-only-deactivated-users": "Prikaži sve deaktivirane korisnike",
