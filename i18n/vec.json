@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cusolotto"
+			"Cusolotto",
+			"Fierodelveneto"
 		]
 	},
-	"bs-usermanager-own-password-change": "Te se drio cambiar la to password. Te butarema fora e te sarè reinderixato al login. Continuar?"
+	"bs-usermanager-own-password-change": "Te se drio canbiar la to ciave. Te vegnarè fato ndar fora e de sèvito te vegnarè rimandà a ła pàjina par logarse. Vuto sévitar el canbio?"
 }
