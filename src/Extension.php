@@ -437,9 +437,12 @@ class Extension extends \BlueSpice\Extension {
 			return \Status::newFatal( 'bs-usermanager-no-self-desysop' );
 		}
 
+		$oldUGMs = $user->getGroupMemberships();
 		$currentGroups = $user->getGroups();
 		$addGroups = array_diff( $groups, $currentGroups );
 		$removeGroups = array_diff( $currentGroups, $groups );
+		$reallyAdd = [];
+		$reallyRemove = [];
 
 		$changeableGroups = $loggedInUser->changeableGroups();
 
@@ -453,6 +456,7 @@ class Extension extends \BlueSpice\Extension {
 			) {
 				return \Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
 			}
+			$reallyAdd[] = $group;
 			$user->addGroup( $group );
 		}
 		foreach ( $removeGroups as $group ) {
@@ -466,10 +470,20 @@ class Extension extends \BlueSpice\Extension {
 			) {
 				return \Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
 			}
+			$reallyRemove[] = $group;
 			$user->removeGroup( $group );
 		}
 
 		$status = \Status::newGood( $user );
+		\Hooks::run( 'UserGroupsChanged', [
+			$user,
+			$reallyAdd,
+			$reallyRemove,
+			$loggedInUser,
+			'',
+			$oldUGMs,
+			$user->getGroupMemberships()
+		] );
 		\Hooks::run( 'BSUserManagerAfterSetGroups',
 			[
 			$user,
