@@ -24,6 +24,7 @@ Ext.define( 'BS.UserManager.dialog.AddUser', {
 			labelWidth: 130,
 			labelAlign: 'right',
 			name: 'username',
+			id: this.id + '-username',
 			allowBlank: false
 		});
 		this.tfPassword = Ext.create( 'Ext.form.TextField', {
@@ -32,6 +33,7 @@ Ext.define( 'BS.UserManager.dialog.AddUser', {
 			labelWidth: 130,
 			labelAlign: 'right',
 			name: 'pass',
+			id: this.id + '-pass',
 			allowBlank: false
 		});
 		this.tfRePassword = Ext.create( 'Ext.form.TextField', {
@@ -40,28 +42,34 @@ Ext.define( 'BS.UserManager.dialog.AddUser', {
 			labelWidth: 130,
 			labelAlign: 'right',
 			name: 'repass',
+			id: this.id + '-repass',
 			allowBlank: false
 		});
 		this.tfEmail = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message('bs-usermanager-headeremail').plain(),
 			labelWidth: 130,
 			labelAlign: 'right',
-			name: 'email'
+			name: 'email',
+			id: this.id + '-email',
 		});
 		this.tfRealName = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message('bs-usermanager-headerrealname').plain(),
 			labelWidth: 130,
 			labelAlign: 'right',
-			name: 'realname'
+			name: 'realname',
+			id: this.id + '-realname',
 		});
 		this.tfEnabled = Ext.create( 'Ext.form.Checkbox', {
 			fieldLabel: mw.message('bs-usermanager-headerenabled').plain(),
 			labelWidth: 130,
 			labelAlign: 'right',
 			name: 'enabled',
+			id: this.id + '-enabled',
 			checked: true
 		});
-		this.cbGroups = new BS.UserManager.form.field.GroupList();
+		this.cbGroups = new BS.UserManager.form.field.GroupList({
+			id: this.id + '-groups'
+		});
 
 		return [
 			this.tfUserName,

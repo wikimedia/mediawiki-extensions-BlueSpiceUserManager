@@ -278,7 +278,8 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	onBtnAddClick: function( oButton, oEvent ) {
 		if ( !this.dlgUserAdd ) {
 			this.dlgUserAdd = new BS.UserManager.dialog.AddUser({
-				strGroups: this.strGroups
+				strGroups: this.strGroups,
+				id: 'bs-usermanager-adduser-dialog'
 			});
 			this.dlgUserAdd.on( 'ok', this.onDlgUserAddOk, this );
 		}
