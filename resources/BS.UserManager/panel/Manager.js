@@ -263,17 +263,18 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		}
 		return icon.format( 'bs-tick.png' );
 	},
-	onGrdMainRowClick: function( oSender, iRowIndex, oEvent ) {
-		this.callParent(arguments);
-		/*
-		 * We override base class functionality which disables edit button on
-		 * multi selection
-		 */
-		this.btnEdit.enable();
-		this.btnEditGroups.enable();
-		if( this.btnEditPassword ) {
-			this.btnEditPassword.enable();
+	onGrdMainSelectionChange: function( sender, records, opts ) {
+		this.callParent( arguments );
+		this.btnEditGroups.disable();
+		this.btnEditPassword.disable()
+		if ( !records || records.length < 1 ) {
+			return;
 		}
+		this.btnEditGroups.enable();
+		if ( records.length !== 1 ) {
+			return;
+		}
+		this.btnEditPassword.enable();
 	},
 	onBtnAddClick: function( oButton, oEvent ) {
 		if ( !this.dlgUserAdd ) {
