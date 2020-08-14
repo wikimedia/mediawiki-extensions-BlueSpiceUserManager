@@ -15,6 +15,8 @@
 			'BS.UserManager',
 			bs.em.paths.get( 'BlueSpiceUserManager' ) + '/resources/BS.UserManager'
 		);
+
+		var bsTaskAPIPermissions = mw.config.get( 'bsTaskAPIPermissions' );
 		Ext.create( 'BS.UserManager.panel.Manager', {
 			renderTo: 'bs-usermanager-grid',
 			operationPermissions: {
