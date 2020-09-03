@@ -32,7 +32,7 @@
 
 namespace BlueSpice\UserManager;
 
-use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\Database;
 
 class Extension extends \BlueSpice\Extension {
@@ -143,7 +143,7 @@ class Extension extends \BlueSpice\Extension {
 
 		$status = \Status::newGood( $user );
 
-		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
+		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterAddUser',
@@ -273,7 +273,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 		}
 
-		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
+		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run(
 			'BSUserManagerAfterEditUser',
@@ -385,7 +385,7 @@ class Extension extends \BlueSpice\Extension {
 			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$dbw = Services::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
 		$fname = __METHOD__;
 		$section = $dbw->startAtomic( $fname, Database::ATOMIC_CANCELABLE );
 		try {
@@ -406,7 +406,7 @@ class Extension extends \BlueSpice\Extension {
 			return $status;
 		}
 
-		$userManager = Services::getInstance()->getService( 'BSExtensionFactory' )
+		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		\Hooks::run( 'BSUserManagerAfterDeleteUser',
 			[
