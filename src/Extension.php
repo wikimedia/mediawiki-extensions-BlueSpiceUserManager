@@ -110,7 +110,10 @@ class Extension extends \BlueSpice\Extension {
 		$user->setToken();
 
 		if ( !empty( $password ) ) {
-			$user->setPassword( $password );
+			$status->merge( $user->changeAuthenticationData( [
+				'password' => $password,
+				'retype' => $password,
+			] ) );
 		}
 		if ( !empty( $metaData['email'] ) ) {
 			$user->setEmail( $metaData['email'] );
@@ -204,8 +207,13 @@ class Extension extends \BlueSpice\Extension {
 			return $status;
 		}
 
-		$user->setPassword( $password );
-		$user->saveSettings();
+		$status->merge( $user->changeAuthenticationData( [
+			'password' => $password,
+			'retype' => $password ] )
+		);
+		if ( $status->isOk() ) {
+			$user->saveSettings();
+		}
 
 		return $status;
 	}
