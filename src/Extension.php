@@ -32,7 +32,11 @@
 
 namespace BlueSpice\UserManager;
 
+use MediaWiki\Auth\PasswordAuthenticationRequest;
+use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
+use Status;
+use User;
 use Wikimedia\Rdbms\Database;
 
 class Extension extends \BlueSpice\Extension {
@@ -54,79 +58,38 @@ class Extension extends \BlueSpice\Extension {
 		$tmpDomain = isset( $_SESSION['wsDomain'] ) ? $_SESSION['wsDomain'] : '';
 		$_SESSION['wsDomain'] = 'local';
 
-		$status = \Status::newGood();
+		$status = Status::newGood();
 
 		if ( !$performer ) {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 
-		$userName = ucfirst( $userName );
-		$user = \User::newFromName( $userName, true );
-		if ( !$user ) {
-			return \Status::newFatal( 'bs-usermanager-invalid-uname' );
+		$authManager = MediaWikiServices::getInstance()->getAuthManager();
+		$authRequest = new PasswordAuthenticationRequest();
+
+		$authRequest->username = $userName;
+		if ( !empty( $metaData['password'] ) ) {
+			$authRequest->password = $metaData['password'];
 		}
-		if ( $user->getId() !== 0 ) {
-			return \Status::newFatal( 'bs-usermanager-user-exists' );
+		if ( !empty( $metaData['repassword'] ) ) {
+			$authRequest->retype = $metaData['repassword'];
+		}
+		$authResponse = $authManager->beginAccountCreation( $performer, [ $authRequest ], '' );
+
+		$user = User::newFromName( $userName, true );
+
+		if ( $authResponse->status === $authResponse::PASS ) {
+			$status = Status::newGood( $user );
+		} else {
+			return Status::newFatal( $authResponse->message );
 		}
 
-		$password = $metaData['password'];
-		if ( !empty( $metaData['password'] ) || $bNew ) {
-			if ( !$user->isValidPassword( $password ) ) {
-				$newStatus = \Status::newFatal( 'bs-usermanager-invalid-pwd' );
-				$status->merge( $newStatus );
-			}
-			if ( strtolower( $user->getName() ) == strtolower( $password ) ) {
-				$newStatus = \Status::newFatal( 'password-name-match' );
-				$status->merge( $newStatus );
-			}
-			$sRePass = $metaData['repassword'];
-			if ( !isset( $sRePass ) || $password !== $sRePass ) {
-				$newStatus = \Status::newFatal( 'badretype' );
-				$status->merge( $newStatus );
-			}
-		}
+		// Refresh user object after user creation
+		$user = User::newFromName( $userName, true );
 
-		if ( !empty( $metaData['realname'] ) ) {
-			if ( strpos( $metaData['realname'], '\\' ) ) {
-				$newStatus = \Status::newFatal(
-						'bs-usermanager-invalid-realname'
-				);
-				$status->merge( $newStatus );
-			}
-		}
-		if ( !empty( $metaData['email'] ) ) {
-			if ( \Sanitizer::validateEmail( $metaData['email'] ) === false ) {
-				$newStatus = \Status::newFatal(
-						'bs-usermanager-invalid-email-gen'
-				);
-				$status->merge( $newStatus );
-			}
-		}
-		if ( !$status->isOK() ) {
-			return $status;
-		}
+		$status = self::editUser( $user, $metaData );
 
-		$user->addToDatabase();
 		$user->setToken();
-
-		if ( !empty( $password ) ) {
-			$status->merge( $user->changeAuthenticationData( [
-				'password' => $password,
-				'retype' => $password,
-			] ) );
-		}
-		if ( !empty( $metaData['email'] ) ) {
-			$user->setEmail( $metaData['email'] );
-		} else {
-			$user->setEmail( '' );
-		}
-		if ( !empty( $metaData['realname'] ) ) {
-			$user->setRealName( $metaData['realname'] );
-		} else {
-			$user->setRealName( '' );
-		}
-
-		$user->saveSettings();
 
 		if ( isset( $metaData['enabled'] ) ) {
 			if ( $metaData['enabled'] === false && !$user->isBlocked() ) {
@@ -143,8 +106,6 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$_SESSION['wsDomain'] = $tmpDomain;
-
-		$status = \Status::newGood( $user );
 
 		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
@@ -173,7 +134,7 @@ class Extension extends \BlueSpice\Extension {
 	 * @return \Status
 	 */
 	public static function editPassword( \User $user, $passwordData = [], \User $performer = null ) {
-		$status = \Status::newGood();
+		$status = Status::newGood();
 
 		if ( !$performer ) {
 			$performer = \RequestContext::getMain()->getUser();
@@ -182,23 +143,23 @@ class Extension extends \BlueSpice\Extension {
 		$password = $passwordData['password'];
 
 		if ( empty( $passwordData['password'] ) ) {
-			$newStatus = \Status::newFatal( 'bs-usermanager-invalid-pwd' );
+			$newStatus = Status::newFatal( 'bs-usermanager-invalid-pwd' );
 			$status->merge( $newStatus );
 			return $status;
 		}
 
 		if ( !empty( $passwordData['password'] ) ) {
 			if ( !$user->isValidPassword( $password ) ) {
-				$newStatus = \Status::newFatal( 'bs-usermanager-invalid-pwd' );
+				$newStatus = Status::newFatal( 'bs-usermanager-invalid-pwd' );
 				$status->merge( $newStatus );
 			}
 			if ( strtolower( $user->getName() ) == strtolower( $password ) ) {
-				$newStatus = \Status::newFatal( 'password-name-match' );
+				$newStatus = Status::newFatal( 'password-name-match' );
 				$status->merge( $newStatus );
 			}
 			$rePassword = $passwordData['repassword'];
 			if ( !isset( $rePassword ) || $password !== $rePassword ) {
-				$newStatus = \Status::newFatal( 'badretype' );
+				$newStatus = Status::newFatal( 'badretype' );
 				$status->merge( $newStatus );
 			}
 		}
@@ -228,7 +189,7 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function editUser( \User $user, $metaData = [],
 		$createIfNotExists = false, \User $performer = null ) {
-		$status = \Status::newGood();
+		$status = Status::newGood();
 
 		if ( !$performer ) {
 			$performer = \RequestContext::getMain()->getUser();
@@ -236,7 +197,7 @@ class Extension extends \BlueSpice\Extension {
 
 		if ( !empty( $metaData['realname'] ) ) {
 			if ( strpos( $metaData['realname'], '\\' ) ) {
-				$newStatus = \Status::newFatal(
+				$newStatus = Status::newFatal(
 						'bs-usermanager-invalid-realname'
 				);
 				$status->merge( $newStatus );
@@ -244,7 +205,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 		if ( !empty( $metaData['email'] ) ) {
 			if ( \Sanitizer::validateEmail( $metaData['email'] ) === false ) {
-				$newStatus = \Status::newFatal(
+				$newStatus = Status::newFatal(
 						'bs-usermanager-invalid-email-gen'
 				);
 				$status->merge( $newStatus );
@@ -268,12 +229,12 @@ class Extension extends \BlueSpice\Extension {
 		$user->saveSettings();
 
 		if ( isset( $metaData['enabled'] ) ) {
-			if ( $metaData['enabled'] === false && !$user->isBlocked() ) {
+			if ( $metaData['enabled'] === false && $user->getBlock() === null ) {
 				$status = self::disableUser( $user, $performer, $status );
 				if ( !$status->isGood() ) {
 					return $status;
 				}
-			} elseif ( $metaData['enabled'] === true && $user->isBlocked() ) {
+			} elseif ( $metaData['enabled'] === true && $user->getBlock() !== null ) {
 				$status = self::enableUser( $user, $performer, $status );
 				if ( !$status->isGood() ) {
 					return $status;
@@ -294,7 +255,7 @@ class Extension extends \BlueSpice\Extension {
 			]
 		);
 
-		return \Status::newGood( $user );
+		return Status::newGood( $user );
 	}
 
 	/**
@@ -306,25 +267,26 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function disableUser( \User $user, \User $performer, \Status &$status = null ) {
 		if ( $status === null ) {
-			$status = \Status::newGood();
+			$status = Status::newGood();
 		}
 		if ( $user->getId() == $performer->getId() ) {
 			$status->setResult( false );
 			$status->fatal( 'bs-usermanager-no-self-block' );
 			return $status;
 		}
+
 		# Create block object.
-		$block = new \Block();
-		$block->setTarget( $user );
+		$block = new DatabaseBlock();
 		$block->setBlocker( $performer );
-		$block->setReason( \wfMessage( 'bs-usermanager-log-user-disabled',
-			$user->getName() )->text() );
+		$block->setTarget( $user );
 		$block->setExpiry( 'infinity' );
+		$block->setReason( \wfMessage( 'bs-usermanager-log-user-disabled', $user->getName() )->text() );
+		$block->isEmailBlocked( true );
 		$block->isCreateAccountBlocked( false );
 		$block->isUsertalkEditAllowed( true );
-		$block->isEmailBlocked( true );
 		$block->isHardblock( true );
 		$block->isAutoblocking( false );
+
 		$reason = [ 'hookaborted' ];
 		if ( !\Hooks::run( 'BlockIp', [ &$block, &$performer, &$reason ] ) ) {
 			$status->setResult( false );
@@ -350,10 +312,10 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function enableUser( \User $user, \User $performer, \Status &$status = null ) {
 		if ( $status === null ) {
-			$status = \Status::newGood();
+			$status = Status::newGood();
 		}
 
-		$block = \Block::newFromTarget( $user );
+		$block = DatabaseBlock::newFromTarget( $user );
 		$block->setBlocker( $performer );
 		$blockStatus = $block->delete();
 		if ( !$blockStatus ) {
@@ -372,21 +334,21 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function deleteUser( \User $user, \User $performer = null ) {
 		if ( $user->getId() == 0 ) {
-			return \Status::newFatal( 'bs-usermanager-idnotexist' );
+			return Status::newFatal( 'bs-usermanager-idnotexist' );
 		}
 
 		if ( $user->getId() == 1 ) {
-			return \Status::newFatal( 'bs-usermanager-admin-nodelete' );
+			return Status::newFatal( 'bs-usermanager-admin-nodelete' );
 		}
 
 		if ( !$performer ) {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 		if ( $user->getId() == $performer->getId() ) {
-			return \Status::newFatal( 'bs-usermanager-self-nodelete' );
+			return Status::newFatal( 'bs-usermanager-self-nodelete' );
 		}
 
-		$status = \Status::newGood( $user );
+		$status = Status::newGood( $user );
 		$user->load( \User::READ_LATEST );
 		if ( $user->getUserPage()->exists() ) {
 			$userPageArticle = new \Article( $user->getUserPage() );
@@ -410,7 +372,7 @@ class Extension extends \BlueSpice\Extension {
 		} catch ( \Exception $ex ) {
 			$dbw->cancelAtomic( $fname, $section );
 
-			$status->merge( \Status::newFatal( 'bs-usermanager-db-error' ) );
+			$status->merge( Status::newFatal( 'bs-usermanager-db-error' ) );
 			return $status;
 		}
 
@@ -442,7 +404,7 @@ class Extension extends \BlueSpice\Extension {
 			&& in_array( 'sysop', $loggedInUser->getEffectiveGroups() )
 			&& !in_array( 'sysop', $groups );
 		if ( $checkSelfSysopRemove ) {
-			return \Status::newFatal( 'bs-usermanager-no-self-desysop' );
+			return Status::newFatal( 'bs-usermanager-no-self-desysop' );
 		}
 
 		$oldUGMs = $user->getGroupMemberships();
@@ -462,7 +424,7 @@ class Extension extends \BlueSpice\Extension {
 				!in_array( $group, $changeableGroups['add'] ) &&
 				( !$attemptChangeSelf || !in_array( $group, $changeableGroups['add-self'] ) )
 			) {
-				return \Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
+				return Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
 			}
 			$reallyAdd[] = $group;
 			$user->addGroup( $group );
@@ -476,13 +438,13 @@ class Extension extends \BlueSpice\Extension {
 				!in_array( $group, $changeableGroups['remove'] ) &&
 				( !$attemptChangeSelf || !in_array( $group, $changeableGroups['remove-self'] ) )
 			) {
-				return \Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
+				return Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
 			}
 			$reallyRemove[] = $group;
 			$user->removeGroup( $group );
 		}
 
-		$status = \Status::newGood( $user );
+		$status = Status::newGood( $user );
 		\Hooks::run( 'UserGroupsChanged', [
 			$user,
 			$reallyAdd,
@@ -505,5 +467,4 @@ class Extension extends \BlueSpice\Extension {
 		$user->invalidateCache();
 		return $status;
 	}
-
 }
