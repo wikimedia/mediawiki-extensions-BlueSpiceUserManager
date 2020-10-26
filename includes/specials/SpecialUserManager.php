@@ -23,4 +23,13 @@ class SpecialUserManager extends ManagerBase {
 			'ext.bluespice.userManager'
 		];
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getJSVars() {
+		return [
+			'bsUserManagerForceResetLink' => $this->getConfig()->get( 'UserManagerForceResetLink' )
+		];
+	}
 }

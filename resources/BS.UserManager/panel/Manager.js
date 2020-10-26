@@ -330,7 +330,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 	onBtnEditPasswordClick: function(oButton, oEvent) {
 		var selectedRows = this.grdMain.getSelectionModel().getSelection();
-		if ( selectedRows.length == 0 ) {
+		if ( selectedRows.length === 0 ) {
 			bs.util.alert( 'UMnoneselected', { text: mw.message( 'bs-usermanager-nouserselected' ).plain(), titleMsg: 'bs-usermanager-title-nouserselected' } );
 			return;
 		}
@@ -340,10 +340,11 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			return;
 		}
 
-		if ( !this.dlgPassword ) {
-			this.dlgPassword = new BS.UserManager.dialog.Password({});
-			this.dlgPassword.on( 'ok', this.onDlgPasswordEditOk, this );
-		}
+		this.dlgPassword = new BS.UserManager.dialog.Password( {
+			hasEmail: selectedRows[0].getData().user_email !== '',
+			forceReset: mw.config.get( 'bsUserManagerForceResetLink' )
+		} );
+		this.dlgPassword.on( 'ok', this.onDlgPasswordEditOk, this );
 		this.active = 'edit-password';
 		this.dlgPassword.setData( selectedRows[0].getData() );
 		this.dlgPassword.show();
@@ -368,10 +369,10 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			selectedUser
 		);
 
-		if ( !this.dlgPassword ) {
-			this.dlgPassword = new BS.UserManager.dialog.Password({});
-			this.dlgPassword.on( 'ok', this.onDlgPasswordEditOk, this );
-		}
+		this.dlgPassword = new BS.UserManager.dialog.Password( {
+			hasEmail: selectedUser.getData().user_email !== '',
+			forceReset: mw.config.get( 'bsUserManagerForceResetLink' )
+		} );
 		this.active = 'edit-password';
 
 		this.dlgPassword.setData( selectedUser.getData() );
@@ -382,7 +383,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		this.grdMain.getSelectionModel().select(
 			selectedUser
 		);
-		if ( selectedUser.get( 'enabled' ) ) {;
+		if ( selectedUser.get( 'enabled' ) ) {
 			this.onBtnDisableClick( this.btnDisable, {} );
 		} else {
 			this.onBtnEnableClick( this.btnDisable, {} );
@@ -561,10 +562,11 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		});
 	},
 	onDlgPasswordEditOk: function( data, user ) {
-		var data = {
+		data = {
 			userID: user.user_id,
-			password: user.user_password,
-			rePassword: user.user_repassword,
+			password: user.user_password || false,
+			rePassword: user.user_repassword || false,
+			strategy: user.strategy
 		};
 
 		var me = this;

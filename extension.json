@@ -109,7 +109,10 @@
 				"bs-usermanager-invalid-groups",
 				"bs-usermanager-own-password-change",
 				"bs-usermanager-filter-only-activated-users",
-				"bs-usermanager-filter-only-deactivated-users"
+				"bs-usermanager-filter-only-deactivated-users",
+				"bs-usermanager-label-password-change-strategy",
+				"bs-usermanager-label-password-change-strategy-reset",
+				"bs-usermanager-label-password-change-strategy-pw"
 			]
 		}
 	},
@@ -125,6 +128,12 @@
 	"AvailableRights": [
 		"usermanager-viewspecialpage"
 	],
+	"config_prefix": "bsg",
+	"config": {
+		"UserManagerForceResetLink": {
+			"value": false
+		}
+	},
 	"load_composer_autoloader" : true,
 	"manifest_version": 2
 }

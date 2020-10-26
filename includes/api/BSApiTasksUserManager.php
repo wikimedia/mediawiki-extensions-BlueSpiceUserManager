@@ -184,7 +184,8 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 				[
 					'userID' => 12,
 					'password' => 'new1234',
-					'rePassword' => 'new1234'
+					'rePassword' => 'new1234',
+					'strategy' => 'password'
 				]
 			],
 			'params' => [
@@ -196,10 +197,15 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 				'password' => [
 					'desc' => '',
 					'type' => 'string',
-					'required' => true
+					'required' => false
 				],
 				'rePassword' => [
 					'desc' => '',
+					'type' => 'string',
+					'required' => false
+				],
+				'strategy' => [
+					'desc' => 'Type of reset to perform. "reset" or "password"',
 					'type' => 'string',
 					'required' => true
 				]
@@ -303,14 +309,19 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	protected function task_editPassword( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
-		$aPassword['password'] = $oTaskData->password;
-		$aPassword['repassword'] = $oTaskData->rePassword;
+		$data = [
+			'strategy' => $oTaskData->strategy
+		];
+		if ( $data['strategy'] === 'password' ) {
+			$data['password'] = $oTaskData->password;
+			$data['repassword'] = $oTaskData->rePassword;
+		}
 
 		$oUser = User::newFromID( $oTaskData->userID );
 
 		$oStatus = \BlueSpice\UserManager\Extension::editPassword(
 			$oUser,
-			$aPassword,
+			$data,
 			$this->getUser()
 		);
 

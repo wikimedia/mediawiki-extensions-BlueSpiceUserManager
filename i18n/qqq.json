@@ -67,5 +67,9 @@
 	"action-usermanager-viewspecialpage": "Label for denied page access, with name of special page\n{{doc-action|usermanager-viewspecialpage}}",
 	"right-usermanager-viewspecialpage": "Grants access to the [[Special:UserManager]] special page.\n{{doc-right|usermanager-viewspecialpage}}",
 	"action-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-action|usermanager-editpassword}}",
-	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-right|usermanager-editpassword}}"
+	"right-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-right|usermanager-editpassword}}",
+	"bs-usermanager-label-password-change-strategy": "Label for the radio group on password change strategy",
+	"bs-usermanager-label-password-change-strategy-reset": "Label for the \"reset\" option on password change strategy",
+	"bs-usermanager-label-password-change-strategy-pw": "Label for the \"password\" option on password change strategy",
+	"bs-usermanager-no-mail": "Error message when attemping to send password reset mail to a user without email"
 }
