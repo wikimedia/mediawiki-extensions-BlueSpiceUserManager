@@ -32,9 +32,12 @@
 
 namespace BlueSpice\UserManager;
 
-use MediaWiki\Auth\PasswordAuthenticationRequest;
+use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
+use MediaWiki\Auth\UserDataAuthenticationRequest;
+use MediaWiki\Auth\UsernameAuthenticationRequest;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
+use MWTimestamp;
 use Status;
 use User;
 use Wikimedia\Rdbms\Database;
@@ -53,72 +56,65 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function addUser( $userName, $metaData = [], \User $performer = null ) {
 		// This is to overcome username case issues with custom AuthPlugin (i.e. LDAPAuth)
-		// LDAPAuth woud otherwise turn the username to first-char-upper-rest-lower-case
+		// LDAPAuth would otherwise turn the username to first-char-upper-rest-lower-case
 		// At the end of this method we switch $_SESSION['wsDomain'] back again
 		$tmpDomain = isset( $_SESSION['wsDomain'] ) ? $_SESSION['wsDomain'] : '';
 		$_SESSION['wsDomain'] = 'local';
-
-		$status = Status::newGood();
 
 		if ( !$performer ) {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 
 		$authManager = MediaWikiServices::getInstance()->getAuthManager();
-		$authRequest = new PasswordAuthenticationRequest();
 
-		$authRequest->username = $userName;
-		if ( !empty( $metaData['password'] ) ) {
-			$authRequest->password = $metaData['password'];
-		}
-		if ( !empty( $metaData['repassword'] ) ) {
-			$authRequest->retype = $metaData['repassword'];
-		}
-		$authResponse = $authManager->beginAccountCreation( $performer, [ $authRequest ], '' );
+		$usernameReq = new UsernameAuthenticationRequest();
+		$usernameReq->username = $userName;
 
-		$user = User::newFromName( $userName, true );
+		$userDataReq = new UserDataAuthenticationRequest();
+		$userDataReq->email = $metaData['email'] ?? '';
+		$userDataReq->realname = $metaData['realname'] ?? '';
+		$userDataReq->username = $userName;
 
-		if ( $authResponse->status === $authResponse::PASS ) {
-			$status = Status::newGood( $user );
-		} else {
+		$tempPassReq = new TemporaryPasswordAuthenticationRequest();
+		$tempPassReq->username = $userName;
+		$tempPassReq->password = $metaData['password'] ?? '';
+		$tempPassReq->mailpassword = isset( $metaData['email'] );
+
+		$authResponse = $authManager->beginAccountCreation( $performer, [
+			$usernameReq,
+			$userDataReq,
+			$tempPassReq
+		], '' );
+
+		if ( $authResponse->status !== $authResponse::PASS ) {
 			return Status::newFatal( $authResponse->message );
 		}
 
-		// Refresh user object after user creation
 		$user = User::newFromName( $userName, true );
-
-		$status = self::editUser( $user, $metaData );
-
-		$user->setToken();
-
-		if ( isset( $metaData['enabled'] ) ) {
-			if ( $metaData['enabled'] === false && !$user->isBlocked() ) {
-				$status = self::disableUser( $user, $performer, $status );
-				if ( !$status->isGood() ) {
-					return $status;
-				}
-			} elseif ( $metaData['enabled'] === true && $user->isBlocked() ) {
-				$status = self::enableUser( $user, $performer, $status );
-				if ( !$status->isGood() ) {
-					return $status;
-				}
-			}
+		if ( $user->getEmail() ) {
+			// Auto-verify mail address, since user already used it for first login
+			$user->setEmailAuthenticationTimestamp( MWTimestamp::now() );
+			$user->saveSettings();
 		}
 
+		$status = static::setBlock( $metaData, $user, $performer );
+		if ( !$status->isOK() ) {
+			return $status;
+		}
+
+		$status = Status::newGood( $user );
 		$_SESSION['wsDomain'] = $tmpDomain;
 
-		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
+		$services = MediaWikiServices::getInstance();
+		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
-		\Hooks::run(
-			'BSUserManagerAfterAddUser',
-			[
+		$services->getHookContainer()->run( 'BSUserManagerAfterAddUser', [
 			$userManager,
 			$user,
 			$metaData,
 			&$status,
 			$performer
-			]
-		);
+		] );
 
 		$siteStatsUpdate = new \SiteStatsUpdate( 0, 0, 0, 0, 1 );
 		$siteStatsUpdate->doUpdate();
@@ -131,7 +127,7 @@ class Extension extends \BlueSpice\Extension {
 	 * @param \User $user
 	 * @param array $passwordData
 	 * @param \User|null $performer
-	 * @return \Status
+	 * @return \Status|\StatusValue
 	 */
 	public static function editPassword( \User $user, $passwordData = [], \User $performer = null ) {
 		$status = Status::newGood();
@@ -140,8 +136,17 @@ class Extension extends \BlueSpice\Extension {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 
-		$password = $passwordData['password'];
+		$strategy = $passwordData['strategy'];
 
+		if ( $strategy === 'reset' ) {
+			if ( $user->canReceiveEmail() ) {
+				return Status::newFatal( 'bs-usermanager-no-mail' );
+			}
+			$passwordReset = MediaWikiServices::getInstance()->getPasswordReset();
+			return $passwordReset->execute( $performer, $user->getName(), $user->getEmail() );
+		}
+
+		$password = $passwordData['password'];
 		if ( empty( $passwordData['password'] ) ) {
 			$newStatus = Status::newFatal( 'bs-usermanager-invalid-pwd' );
 			$status->merge( $newStatus );
@@ -164,14 +169,11 @@ class Extension extends \BlueSpice\Extension {
 			}
 		}
 
-		if ( !$status->isOK() ) {
-			return $status;
-		}
-
 		$status->merge( $user->changeAuthenticationData( [
 			'password' => $password,
 			'retype' => $password ] )
 		);
+
 		if ( $status->isOk() ) {
 			$user->saveSettings();
 		}
@@ -187,8 +189,9 @@ class Extension extends \BlueSpice\Extension {
 	 * @param \User|null $performer
 	 * @return \Status
 	 */
-	public static function editUser( \User $user, $metaData = [],
-		$createIfNotExists = false, \User $performer = null ) {
+	public static function editUser(
+		\User $user, $metaData = [], $createIfNotExists = false, \User $performer = null
+	) {
 		$status = Status::newGood();
 
 		if ( !$performer ) {
@@ -217,6 +220,7 @@ class Extension extends \BlueSpice\Extension {
 
 		if ( !empty( $metaData['email'] ) ) {
 			$user->setEmail( $metaData['email'] );
+			$user->setEmailAuthenticationTimestamp( MWTimestamp::now() );
 		} else {
 			$user->setEmail( '' );
 		}
@@ -228,34 +232,40 @@ class Extension extends \BlueSpice\Extension {
 
 		$user->saveSettings();
 
-		if ( isset( $metaData['enabled'] ) ) {
-			if ( $metaData['enabled'] === false && $user->getBlock() === null ) {
-				$status = self::disableUser( $user, $performer, $status );
-				if ( !$status->isGood() ) {
-					return $status;
-				}
-			} elseif ( $metaData['enabled'] === true && $user->getBlock() !== null ) {
-				$status = self::enableUser( $user, $performer, $status );
-				if ( !$status->isGood() ) {
-					return $status;
-				}
-			}
-		}
+		$status = static::setBlock( $metaData, $user, $performer );
 
-		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
+		$services = MediaWikiServices::getInstance();
+		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
-		\Hooks::run(
-			'BSUserManagerAfterEditUser',
-			[
+
+		$services->getHookContainer()->run( 'BSUserManagerAfterEditUser', [
 			$userManager,
 			$user,
 			$metaData,
 			&$status,
 			$performer,
-			]
-		);
+		] );
 
 		return Status::newGood( $user );
+	}
+
+	/**
+	 * @param array $data
+	 * @param User $user
+	 * @param User $performer
+	 * @return Status|null
+	 */
+	protected static function setBlock( array $data, User $user, User $performer ) {
+		if ( !isset( $data['enabled'] ) ) {
+			return Status::newGood();
+		}
+		if ( $data['enabled'] === false && $user->getBlock() === null ) {
+			return self::disableUser( $user, $performer, $status );
+		} elseif ( $data['enabled'] === true && $user->getBlock() !== null ) {
+			return self::enableUser( $user, $performer, $status );
+		}
+
+		return Status::newGood();
 	}
 
 	/**
