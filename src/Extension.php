@@ -139,7 +139,7 @@ class Extension extends \BlueSpice\Extension {
 		$strategy = $passwordData['strategy'];
 
 		if ( $strategy === 'reset' ) {
-			if ( $user->canReceiveEmail() ) {
+			if ( !$user->canReceiveEmail() ) {
 				return Status::newFatal( 'bs-usermanager-no-mail' );
 			}
 			$passwordReset = MediaWikiServices::getInstance()->getPasswordReset();

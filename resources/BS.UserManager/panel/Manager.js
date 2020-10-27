@@ -374,6 +374,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			forceReset: mw.config.get( 'bsUserManagerForceResetLink' )
 		} );
 		this.active = 'edit-password';
+		this.dlgPassword.on( 'ok', this.onDlgPasswordEditOk, this );
 
 		this.dlgPassword.setData( selectedUser.getData() );
 		this.dlgPassword.show();
@@ -607,7 +608,6 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 	doChangePassword: function( data ) {
 		var result = $.Deferred();
-
 		var me = this;
 		var cfg = {//copy from bluespice.api.js
 			failure: function( response, module, task, $dfd, cfg ) {
@@ -628,6 +628,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				);
 			}
 		};
+
 		bs.api.tasks.exec(
 			'usermanager',
 			'editPassword',
