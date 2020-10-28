@@ -224,7 +224,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			'editUser' => [ 'wikiadmin' ],
 			'disableUser' => [ 'wikiadmin' ],
 			'enableUser' => [ 'wikiadmin' ],
-			'deleteUser' => [ 'wikiadmin' ],
+			'deleteUser' => [ 'wikiadmin', 'usermanager-deleteuser' ],
 			'setUserGroups' => [ 'userrights' ],
 			'editPassword' => [ 'wikiadmin', 'usermanager-editpassword' ]
 		];
@@ -442,7 +442,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	/**
 	 * Enables an User.
 	 * @param stdClass $oTaskData
-	 * @return stdClass Standard tasks API return
+	 * @return \BlueSpice\Api\Response\Standard Standard tasks API return
 	 */
 	protected function task_enableUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();

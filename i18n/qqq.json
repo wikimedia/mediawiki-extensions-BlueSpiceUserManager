@@ -71,5 +71,7 @@
 	"bs-usermanager-label-password-change-strategy": "Label for the radio group on password change strategy",
 	"bs-usermanager-label-password-change-strategy-reset": "Label for the \"reset\" option on password change strategy",
 	"bs-usermanager-label-password-change-strategy-pw": "Label for the \"password\" option on password change strategy",
-	"bs-usermanager-no-mail": "Error message when attemping to send password reset mail to a user without email"
+	"bs-usermanager-no-mail": "Error message when attemping to send password reset mail to a user without email",
+	"action-usermanager-deleteuser": "{{doc-action|usermanager-deleteuser}}",
+	"right-usermanager-deleteuser": "{{doc-right|usermanager-deleteuser}}"
 }
