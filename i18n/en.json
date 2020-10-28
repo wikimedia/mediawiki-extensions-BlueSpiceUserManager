@@ -69,5 +69,7 @@
 	"bs-usermanager-label-password-change-strategy": "Method",
 	"bs-usermanager-label-password-change-strategy-reset": "Send password reset link to user",
 	"bs-usermanager-label-password-change-strategy-pw": "Change password directly",
-	"bs-usermanager-no-mail": "Selected user does not have confirmed email address"
+	"bs-usermanager-no-mail": "Selected user does not have confirmed email address",
+	"action-usermanager-deleteuser": "delete users",
+    "right-usermanager-deleteuser": "Deleting a user over Special:UserManager"
 }

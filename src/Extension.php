@@ -78,7 +78,7 @@ class Extension extends \BlueSpice\Extension {
 		$tempPassReq = new TemporaryPasswordAuthenticationRequest();
 		$tempPassReq->username = $userName;
 		$tempPassReq->password = $metaData['password'] ?? '';
-		$tempPassReq->mailpassword = isset( $metaData['email'] );
+		$tempPassReq->mailpassword = !empty( $metaData['email'] );
 
 		$authResponse = $authManager->beginAccountCreation( $performer, [
 			$usernameReq,
@@ -233,6 +233,9 @@ class Extension extends \BlueSpice\Extension {
 		$user->saveSettings();
 
 		$status = static::setBlock( $metaData, $user, $performer );
+		if ( !$status->isOK() ) {
+			return $status;
+		}
 
 		$services = MediaWikiServices::getInstance();
 		$userManager = $services->getService( 'BSExtensionFactory' )
@@ -326,12 +329,24 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$block = DatabaseBlock::newFromTarget( $user );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$reason = [];
+		if ( !$hookContainer->run( 'UnblockUser', [ $block, $performer, &$reason ] ) ) {
+			$status->setResult( false );
+			$status->fatal( $reason[0] ?? 'bs-usermanager-unblock-error', $user->getName() );
+
+			return $status;
+
+		}
+
 		$block->setBlocker( $performer );
 		$blockStatus = $block->delete();
+
 		if ( !$blockStatus ) {
 			$status->setResult( false );
 			$status->fatal( 'bs-usermanager-unblock-error', $user->getName() );
 		}
+
 		return $status;
 	}
 

@@ -656,6 +656,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 	reloadStore: function() {
 		this.strMain.reload();
+		$( 'body' ).trigger( 'BSUserManagerStoreReload' );
 	},
 	showDlgAgain: function() {
 		if ( this.active === 'add' ) {

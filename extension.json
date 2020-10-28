@@ -38,6 +38,10 @@
 						"admin",
 						"maintenanceadmin"
 					]
+				},
+				"usermanager-deleteuser": {
+					"type": "global",
+					"roles": []
 				}
 			}
 		}
@@ -122,11 +126,13 @@
 	},
 	"GroupPermissions": {
 		"sysop": {
-			"usermanager-viewspecialpage": true
+			"usermanager-viewspecialpage": true,
+			"usermanager-deleteuser": false
 		}
 	},
 	"AvailableRights": [
-		"usermanager-viewspecialpage"
+		"usermanager-viewspecialpage",
+		"usermanager-deleteuser"
 	],
 	"config_prefix": "bsg",
 	"config": {
