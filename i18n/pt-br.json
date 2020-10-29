@@ -66,5 +66,11 @@
 	"action-usermanager-viewspecialpage": "ver página especial \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]].",
 	"action-usermanager-editpassword": "alterar senhas de usuários",
-	"right-usermanager-editpassword": "Alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]].",
+	"bs-usermanager-label-password-change-strategy": "Método",
+	"bs-usermanager-label-password-change-strategy-reset": "Enviar link de redefinição de senha para o usuário",
+	"bs-usermanager-label-password-change-strategy-pw": "Alterar a senha diretamente",
+	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado",
+	"action-usermanager-deleteuser": "excluir usuários",
+	"right-usermanager-deleteuser": "Excluindo um usuário em Special:UserManager"
 }
