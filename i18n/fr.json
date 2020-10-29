@@ -6,6 +6,7 @@
 			"Ltrlg",
 			"SnowedEarth",
 			"Thibaut120094",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
@@ -70,5 +71,11 @@
 	"action-usermanager-viewspecialpage": "voir la page spéciale « {{int:usermanager}} »",
 	"right-usermanager-viewspecialpage": "Accès à la page spéciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "modification des mots de passe utilisateur",
-	"right-usermanager-editpassword": "Modifier les mots de passe utilisateur sur la page spéciale [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Modifier les mots de passe utilisateur sur la page spéciale [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Méthode",
+	"bs-usermanager-label-password-change-strategy-reset": "Envoyer le lien de réinitialisation du mot de passe à l’utilisateur",
+	"bs-usermanager-label-password-change-strategy-pw": "Modifier directement le mot de passe",
+	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie",
+	"action-usermanager-deleteuser": "supprimer des utilisateurs",
+	"right-usermanager-deleteuser": "Suppression d’un utilisateur depuis Special:UserManager"
 }
