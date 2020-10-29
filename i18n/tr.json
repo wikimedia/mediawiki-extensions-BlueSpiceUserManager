@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"Sayginer",
 			"Violetanka"
 		]
@@ -67,5 +68,9 @@
 	"action-usermanager-viewspecialpage": "\"{{int:usermanager}}\" özel sayfayı görüntüle",
 	"right-usermanager-viewspecialpage": "[[Special:UserManager]] özel sayfasına erişin",
 	"action-usermanager-editpassword": "kullanıcı parolasını değiştir",
-	"right-usermanager-editpassword": "[[Special:UserManager]] özel sayfasındaki yönetici ile kullanıcı parolalarını değiştirin"
+	"right-usermanager-editpassword": "[[Special:UserManager]] özel sayfasındaki yönetici ile kullanıcı parolalarını değiştirin",
+	"bs-usermanager-label-password-change-strategy": "Yöntem",
+	"bs-usermanager-label-password-change-strategy-reset": "Kullanıcıya parola sıfırlama bağlantısını gönder",
+	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
+	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok"
 }
