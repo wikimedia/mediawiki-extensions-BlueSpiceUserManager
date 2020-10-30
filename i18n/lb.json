@@ -54,5 +54,6 @@
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
 	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel",
 	"action-usermanager-viewspecialpage": "Spezialsäit \"{{int:usermanager}}\" weisen",
-	"action-usermanager-editpassword": "Benotzer-Passwierder änneren"
+	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
+	"action-usermanager-deleteuser": "Benotzer läschen"
 }

@@ -31,7 +31,7 @@
 	"bs-usermanager-titleeditdetails": "Kullanıcıyı düzenle",
 	"bs-usermanager-labelnewpassword": "Parola",
 	"bs-usermanager-labelpasswordcheck": "Parolayı onayla",
-	"bs-usermanager-titledeleteuser": "Kullanıcı sil",
+	"bs-usermanager-titledeleteuser": "Kullanıcıyı sil",
 	"bs-usermanager-confirmdeleteuser": "{{PLURAL:$1|Bu kullanıcıyı|bu $1 kullanıcıları}} silmek istediğinizden emin misiniz?",
 	"bs-usermanager-groups-more": "... fazlası",
 	"bs-usermanager-no-self-desysop": "Kendi hizmetinizi doğru şekilde kaldıramazsınız.",
@@ -72,5 +72,7 @@
 	"bs-usermanager-label-password-change-strategy": "Yöntem",
 	"bs-usermanager-label-password-change-strategy-reset": "Kullanıcıya parola sıfırlama bağlantısını gönder",
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
-	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok"
+	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
+	"action-usermanager-deleteuser": "kullanıcılarını sil",
+	"right-usermanager-deleteuser": "Special:UserManager yerine bir kullanıcıyı silme"
 }
