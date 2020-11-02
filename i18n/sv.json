@@ -64,5 +64,6 @@
 	"action-usermanager-viewspecialpage": "visa specialsidan \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
-	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
+	"action-usermanager-deleteuser": "radera användare"
 }
