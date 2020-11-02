@@ -301,7 +301,12 @@ class Extension extends \BlueSpice\Extension {
 		$block->isAutoblocking( false );
 
 		$reason = [ 'hookaborted' ];
-		if ( !\Hooks::run( 'BlockIp', [ &$block, &$performer, &$reason ] ) ) {
+		$res = MediaWikiServices::getInstance()->getHookContainer()->run( 'BlockIp', [
+			&$block,
+			&$performer,
+			&$reason
+		] );
+		if ( !$res ) {
 			$status->setResult( false );
 			$status->fatal( $reason );
 			return $status;
@@ -403,13 +408,15 @@ class Extension extends \BlueSpice\Extension {
 
 		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
-		\Hooks::run( 'BSUserManagerAfterDeleteUser',
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSUserManagerAfterDeleteUser',
 			[
-			$userManager,
-			$user,
-			&$status,
-			$performer,
-		] );
+				$userManager,
+				$user,
+				&$status,
+				$performer,
+			]
+		);
 
 		return $status;
 	}
@@ -470,7 +477,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$status = Status::newGood( $user );
-		\Hooks::run( 'UserGroupsChanged', [
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'UserGroupsChanged', [
 			$user,
 			$reallyAdd,
 			$reallyRemove,
@@ -479,15 +486,17 @@ class Extension extends \BlueSpice\Extension {
 			$oldUGMs,
 			$user->getGroupMemberships()
 		] );
-		\Hooks::run( 'BSUserManagerAfterSetGroups',
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSUserManagerAfterSetGroups',
 			[
-			$user,
-			$groups,
-			$addGroups,
-			$removeGroups,
-			self::$excludegroups,
-			&$status
-		] );
+				$user,
+				$groups,
+				$addGroups,
+				$removeGroups,
+				self::$excludegroups,
+				&$status
+			]
+		);
 
 		$user->invalidateCache();
 		return $status;
