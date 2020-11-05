@@ -203,6 +203,20 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			arrItems.push( this.btnEditPassword );
 		}
 
+		if(this.opPermitted('disableuser') || this.opPermitted('enableuser')){
+			this.btnEnDisableUser = new Ext.Button({
+				id: this.getId()+'-btn-endisable-user',
+				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_block.png',
+				iconCls: 'btn'+this.tbarHeight,
+				tooltip: mw.message('bs-usermanager-endisable').plain(),
+				height: 50,
+				width: 52,
+				disabled: true
+			});
+			this.btnEnDisableUser.on( 'click', this.onBtnEnDisableClick, this );
+			arrItems.push( this.btnEnDisableUser );
+		}
+
 		return arrItems;
 	},
 	makeRowActions: function() {
@@ -267,10 +281,12 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		this.callParent( arguments );
 		this.btnEditGroups.disable();
 		this.btnEditPassword.disable()
+		this.btnEnDisableUser.disable();
 		if ( !records || records.length < 1 ) {
 			return;
 		}
 		this.btnEditGroups.enable();
+		this.btnEnDisableUser.enable();
 		if ( records.length !== 1 ) {
 			return;
 		}
@@ -385,9 +401,16 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			selectedUser
 		);
 		if ( selectedUser.get( 'enabled' ) ) {
-			this.onBtnDisableClick( this.btnDisable, {} );
+			this.onBtnDisableClick( this.btnDisableUser, {} );
 		} else {
-			this.onBtnEnableClick( this.btnDisable, {} );
+			this.onBtnEnableClick( this.btnEnDisableUser, {} );
+		}
+	},
+	onBtnEnDisableClick: function( oButton, oEvent ) {
+		if ( this.grdMain.getSelectionModel().getSelection()[0].get( 'enabled' ) ) {
+			this.onBtnDisableClick( this.btnEnDisable, {} );
+		} else {
+			this.onBtnEnableClick( this.btnEnDisable, {} );
 		}
 	},
 	onBtnDisableClick: function( oButton, oEvent ) {
@@ -396,7 +419,6 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			{
 				text: mw.msg(
 					'bs-usermanager-confirmdisableuser',
-					this.grdMain.getSelectionModel().getSelection()[0].get( 'user_name' ),
 					this.grdMain.getSelectionModel().getSelection().length
 				),
 				title: mw.message( 'bs-usermanager-titledisableuser' ).plain()
@@ -414,7 +436,6 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			{
 				text: mw.msg(
 					'bs-usermanager-confirmenableuser',
-					this.grdMain.getSelectionModel().getSelection()[0].get( 'user_name' ),
 					this.grdMain.getSelectionModel().getSelection().length
 				),
 				title: mw.message( 'bs-usermanager-titleenableuser' ).plain()
