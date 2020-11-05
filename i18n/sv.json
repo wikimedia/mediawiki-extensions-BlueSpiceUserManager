@@ -64,5 +64,6 @@
 	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
 	"bs-usermanager-filter-only-activated-users": "Visa alla aktiva användare",
 	"bs-usermanager-filter-only-deactivated-users": "Visa alla icke-aktiva användare",
-	"action-usermanager-editpassword": "ändra en användares lösenord"
+	"action-usermanager-editpassword": "ändra en användares lösenord",
+	"action-usermanager-deleteuser": "radera användare"
 }

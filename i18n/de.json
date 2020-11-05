@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwboehm",
 			"Metalhead64",
+			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender"
 		]
@@ -68,5 +69,11 @@
 	"bs-usermanager-own-password-change": "Du bist dabei, dein eigenes Passwort zu ändern. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet. Möchtest du fortfahren?",
 	"right-usermanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Änderung von Benutzer-Passwörtern mit dem Manager auf der Spezialseite [[Special:UserManager]]",
-	"action-usermanager-editpassword": "Benutzer-Passwörter zu ändern"
+	"action-usermanager-editpassword": "Benutzer-Passwörter zu ändern",
+	"bs-usermanager-label-password-change-strategy": "Methode",
+	"bs-usermanager-label-password-change-strategy-reset": "Link zum Zurücksetzen des Passworts an den Nutzer schicken",
+	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
+	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
+	"action-usermanager-deleteuser": "Benutzer zu löschen",
+	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen"
 }

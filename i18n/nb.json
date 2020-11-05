@@ -65,5 +65,11 @@
 	"apihelp-bs-usermanager-group-store-summary": "Tilbyr et API for brukerbehandlingsoppgaver for BlueSpice.",
 	"bs-usermanager-own-password-change": "Du er i ferd med å endre ditt eget passord. Du vil bli logget ut og omdirigert til innloggingssiden. Ønsker du å fortsette?",
 	"action-usermanager-viewspecialpage": "vise spesialsiden «{{int:usermanager}}»",
-	"action-usermanager-editpassword": "endre brukerpassord"
+	"action-usermanager-editpassword": "endre brukerpassord",
+	"bs-usermanager-label-password-change-strategy": "Metode",
+	"bs-usermanager-label-password-change-strategy-reset": "Send lenke for tilbakestilling av passord til brukeren",
+	"bs-usermanager-label-password-change-strategy-pw": "Endre passord direkte",
+	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse",
+	"action-usermanager-deleteuser": "slette brukere",
+	"right-usermanager-deleteuser": "Slette en bruker via Special:UserManager"
 }

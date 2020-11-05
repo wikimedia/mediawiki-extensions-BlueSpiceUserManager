@@ -65,5 +65,11 @@
 	"action-usermanager-viewspecialpage": "view special page \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Access to the [[Special:UserManager]] special page",
 	"action-usermanager-editpassword": "change user passwords",
-	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page"
+	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page",
+	"bs-usermanager-label-password-change-strategy": "Method",
+	"bs-usermanager-label-password-change-strategy-reset": "Send password reset link to user",
+	"bs-usermanager-label-password-change-strategy-pw": "Change password directly",
+	"bs-usermanager-no-mail": "Selected user does not have confirmed email address",
+	"action-usermanager-deleteuser": "delete users",
+	"right-usermanager-deleteuser": "Deleting a user over Special:UserManager"
 }

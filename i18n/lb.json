@@ -54,5 +54,6 @@
 	"bs-usermanager-title-multipleuserselected": "Méi Benotzer sinn erausgesicht",
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
 	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel",
-	"action-usermanager-editpassword": "Benotzer-Passwierder änneren"
+	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
+	"action-usermanager-deleteuser": "Benotzer läschen"
 }
