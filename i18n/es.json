@@ -5,6 +5,7 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Macofe",
+			"MarcoAurelio",
 			"Mor"
 		]
 	},
@@ -64,5 +65,6 @@
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
-	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
+	"action-usermanager-deleteuser": "eliminar usuarios"
 }
