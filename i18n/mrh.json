@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teitei Para"
+		]
+	},
+	"bs-usermanager-confirmdisableuser": "{{PLURAL:$1|He hmâhtuhpa|He $1 hmâhtuhpazy}} he na khaw hmeihseih tlai awma?",
+	"bs-usermanager-confirmenableuser": "{{PLURAL:$1|He hmâhtuhpa|He $1 hmâhtuhpazy}} he na pahy hmeihseih tlai awma?"
+}
