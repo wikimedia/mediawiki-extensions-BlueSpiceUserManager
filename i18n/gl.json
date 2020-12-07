@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ArenaL5",
 			"Banjo",
 			"Elisardojm"
 		]
@@ -17,7 +18,7 @@
 	"bs-usermanager-invalid-email-gen": "O enderezo de correo electrónico non é válido.",
 	"bs-usermanager-label": "Administrador de usuarios",
 	"bs-usermanager-user-added": "O usuario foi engadido.",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|Borouse o usuario|Borráronse $1 usuarios}}.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|Borrouse {{GENDER:$2|o usuario|a usuaria|o/a usuario/a}}|Borráronse $1 usuarios}}.",
 	"bs-usermanager-user-exists": "O nome de usuario xa existe.",
 	"bs-usermanager-save-successful": "Gardáronse os cambios.",
 	"bs-usermanager-headerusername": "Nome de usuario",
@@ -59,5 +60,5 @@
 	"bs-usermanager-invalid-groups": "Os grupos non son válidos",
 	"apihelp-bs-usermanager-group-store-description": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
-	"action-usermanager-viewspecialpage": "ver a páxina especial \"Administrador de usuarios\""
+	"action-usermanager-viewspecialpage": "ver a páxina especial \"{{int:usermanager}}\""
 }

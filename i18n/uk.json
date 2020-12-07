@@ -3,6 +3,7 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Piramidion",
+			"Renamerr",
 			"Vlad5250",
 			"Ата"
 		]
@@ -45,8 +46,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Користувача|Користувачку}} $1 вимкнено.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Користувача|Користувачку}} $1 увімкнено.",
 	"bs-usermanager-endisable": "Увімкнути/вимкнути",
-	"bs-usermanager-confirmdisableuser": "Ви справді хочете вимкнути {{GENDER:$1|користувача|користувачку}} $1?",
-	"bs-usermanager-confirmenableuser": "Ви справді хочете увімкнути {{GENDER:$1|користувача|користувачку}} $1?",
+	"bs-usermanager-confirmdisableuser": "Ви справді хочете вимкнути {{PLURAL:$1|цього користувача|цих $1 користувачів}}?",
+	"bs-usermanager-confirmenableuser": "Ви справді хочете увімкнути {{PLURAL:$1|цього користувача|цих $1 користувачів}}?",
 	"bs-usermanager-titledisableuser": "Вимкнути користувача",
 	"bs-usermanager-titleenableuser": "Увімкнути користувача",
 	"usermanager": "Менеджер користувачів",
