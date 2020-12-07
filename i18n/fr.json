@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Florian COLLIN",
 			"Gomoko",
 			"Grind24",
 			"Ltrlg",
@@ -48,8 +49,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|L’utilisateur $1 a été désactivé|L’utilisatrice $1 a été désactivée}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|L’utilisateur $1 a été activé|L’utilisatrice $1 a été activée}}.",
 	"bs-usermanager-endisable": "Activer/Désactiver",
-	"bs-usermanager-confirmdisableuser": "Voulez-vous vraiment désactiver {{GENDER:$1|l’utilisateur|l’utilisatrice}} $1 ?",
-	"bs-usermanager-confirmenableuser": "Voulez-vous vraiment activer {{GENDER:$1|l’utilisateur|l’utilisatrice}} $1 ?",
+	"bs-usermanager-confirmdisableuser": "Êtes-vous sûr de vouloir supprimer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
+	"bs-usermanager-confirmenableuser": "Êtes-vous sûr de vouloir activer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-titledisableuser": "Désactiver l’utilisateur",
 	"bs-usermanager-titleenableuser": "Activer l’utilisateur",
 	"usermanager": "Gestionnaire des utilisateurs",

@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Babamamadidiane",
-			"Lancine.kounfantoh.fofana"
+			"Lancine.kounfantoh.fofana",
+			"MuratTheTurkish"
 		]
 	},
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER|ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ $2}} ߟߋ߬ ߓߘߊ߫|ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ $1 ߟߎ߬}} ߓߘߊ߫ ߖߏ߰ߛߌ߬."
+	"bs-usermanager-user-deleted": "{{:$2|PLURAL:$1|{{GENDER|ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ $2}} ߟߋ߬ ߓߘߊ߫|ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ $1 ߟߎ߬}} ߓߘߊ߫ ߖߏ߰ߛߌ߬."
 }

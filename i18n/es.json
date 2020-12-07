@@ -5,6 +5,7 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Macofe",
+			"MarcoAurelio",
 			"Mor"
 		]
 	},
@@ -64,5 +65,6 @@
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
 	"bs-usermanager-filter-only-activated-users": "Mostrar todas las cuentas activadas",
-	"bs-usermanager-filter-only-deactivated-users": "Mostrar todas las cuentas desactivadas"
+	"bs-usermanager-filter-only-deactivated-users": "Mostrar todas las cuentas desactivadas",
+	"action-usermanager-deleteuser": "eliminar usuarios"
 }
