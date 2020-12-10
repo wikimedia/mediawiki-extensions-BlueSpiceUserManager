@@ -5,6 +5,7 @@
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Tkarcher",
 			"Umherirrender"
 		]
 	},
@@ -46,8 +47,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 wurde deaktiviert.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 wurde aktiviert.",
 	"bs-usermanager-endisable": "Aktivieren/Deaktivieren",
-	"bs-usermanager-confirmdisableuser": "Möchtest du wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 deaktivieren?",
-	"bs-usermanager-confirmenableuser": "Möchtest du wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 aktivieren?",
+	"bs-usermanager-confirmdisableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} deaktivieren?",
+	"bs-usermanager-confirmenableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} aktivieren?",
 	"bs-usermanager-titledisableuser": "Benutzer deaktivieren",
 	"bs-usermanager-titleenableuser": "Benutzer aktivieren",
 	"usermanager": "Benutzerverwaltung",
