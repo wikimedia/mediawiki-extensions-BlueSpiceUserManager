@@ -69,5 +69,6 @@
 	"action-usermanager-viewspecialpage": "عرض الصفحة الخاصة \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:UserManager]]",
 	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين",
-	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]]."
+	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]].",
+	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة"
 }
