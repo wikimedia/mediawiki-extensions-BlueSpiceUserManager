@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aefgh39622",
+			"LaMagiaaa",
 			"Omotecho",
 			"Shirayuki",
 			"Suchichi02",
@@ -41,7 +42,7 @@
 	"bs-usermanager-user-enabled": "{{GENDER:$1|利用者}} $1 を有効にしました。",
 	"bs-usermanager-endisable": "有効/無効",
 	"bs-usermanager-confirmdisableuser": "{{PLURAL:$1|この利用者|これらの $1 名の利用者}}を本当に削除しますか?",
-	"bs-usermanager-confirmenableuser": "本当に{{plural:$1|this user|these $1 users}}を有効にしますか？",
+	"bs-usermanager-confirmenableuser": "本当に{{plural:$1|この利用者|これらの $1 名の利用者}}を有効にしますか？",
 	"bs-usermanager-titledisableuser": "利用者を無効にする",
 	"bs-usermanager-titleenableuser": "利用者を有効にする",
 	"usermanager": "利用者マネージャー",
