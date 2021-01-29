@@ -31,8 +31,10 @@ class BSApiChangeableGroupStore extends BSApiGroupStore {
 	 */
 	protected function makeData( $sQuery = '' ) {
 		$aData = parent::makeData( $sQuery );
+		$userGroupManager = $this->getServices()->getUserGroupManager();
+		$currentUser = $this->getUser();
 		$aChangeableData = [];
-		$aChangeableGroups = $this->getUser()->changeableGroups();
+		$aChangeableGroups = $userGroupManager->getGroupsChangeableBy( $currentUser );
 		$aChangeableGroupsMerged = array_unique( array_merge(
 			$aChangeableGroups['add'],
 			$aChangeableGroups['add-self'],
