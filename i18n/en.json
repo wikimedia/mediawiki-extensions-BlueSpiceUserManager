@@ -42,8 +42,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|The user}} $1 was disabled.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|The user}} $1 was enabled.",
 	"bs-usermanager-endisable": "Enable/disable",
-	"bs-usermanager-confirmdisableuser": "Do you really want to disable {{GENDER:$1|the user}} $1?",
-	"bs-usermanager-confirmenableuser": "Do you really want to enable {{GENDER:$1|the user}} $1?",
+	"bs-usermanager-confirmdisableuser": "Do you really want to disable {{PLURAL:$1|this user|these $1 users}}?",
+	"bs-usermanager-confirmenableuser": "Do you really want to enable {{PLURAL:$1|this user|these $1 users}}?",
 	"bs-usermanager-titledisableuser": "Disable user",
 	"bs-usermanager-titleenableuser": "Enable user",
 	"usermanager": "User manager",
@@ -65,5 +65,11 @@
 	"action-usermanager-viewspecialpage": "view special page \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Access to the [[Special:UserManager]] special page",
 	"action-usermanager-editpassword": "change user passwords",
-	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page"
+	"right-usermanager-editpassword": "Change user passwords with the manager on the [[Special:UserManager]] special page",
+	"bs-usermanager-label-password-change-strategy": "Method",
+	"bs-usermanager-label-password-change-strategy-reset": "Send password reset link to user",
+	"bs-usermanager-label-password-change-strategy-pw": "Change password directly",
+	"bs-usermanager-no-mail": "Selected user does not have confirmed email address",
+	"action-usermanager-deleteuser": "delete users",
+	"right-usermanager-deleteuser": "Deleting a user over Special:UserManager"
 }

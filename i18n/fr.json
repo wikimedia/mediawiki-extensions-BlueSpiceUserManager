@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Florian COLLIN",
 			"Gomoko",
-			"SnowedEarth",
-			"Ltrlg",
 			"Grind24",
-			"Wladek92",
-			"Thibaut120094"
+			"Ltrlg",
+			"SnowedEarth",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"bs-usermanager-desc": "Interface d’administration pour ajouter, modifier et supprimer des utilisateurs",
@@ -47,8 +49,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|L’utilisateur $1 a été désactivé|L’utilisatrice $1 a été désactivée}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|L’utilisateur $1 a été activé|L’utilisatrice $1 a été activée}}.",
 	"bs-usermanager-endisable": "Activer/Désactiver",
-	"bs-usermanager-confirmdisableuser": "Voulez-vous vraiment désactiver {{GENDER:$1|l’utilisateur|l’utilisatrice}} $1 ?",
-	"bs-usermanager-confirmenableuser": "Voulez-vous vraiment activer {{GENDER:$1|l’utilisateur|l’utilisatrice}} $1 ?",
+	"bs-usermanager-confirmdisableuser": "Êtes-vous sûr de vouloir supprimer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
+	"bs-usermanager-confirmenableuser": "Êtes-vous sûr de vouloir activer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-titledisableuser": "Désactiver l’utilisateur",
 	"bs-usermanager-titleenableuser": "Activer l’utilisateur",
 	"usermanager": "Gestionnaire des utilisateurs",
@@ -70,5 +72,11 @@
 	"bs-usermanager-own-password-change": "Vous allez changer votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion. Voulez-vous continuer ?",
 	"right-usermanager-viewspecialpage": "Accès à la page spéciale [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Modifier les mots de passe utilisateur sur la page spéciale [[Special:UserManager]]",
-	"action-usermanager-editpassword": "modification des mots de passe utilisateur"
+	"action-usermanager-editpassword": "modification des mots de passe utilisateur",
+	"bs-usermanager-label-password-change-strategy": "Méthode",
+	"bs-usermanager-label-password-change-strategy-reset": "Envoyer le lien de réinitialisation du mot de passe à l’utilisateur",
+	"bs-usermanager-label-password-change-strategy-pw": "Modifier directement le mot de passe",
+	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie",
+	"action-usermanager-deleteuser": "supprimer des utilisateurs",
+	"right-usermanager-deleteuser": "Suppression d’un utilisateur depuis Special:UserManager"
 }

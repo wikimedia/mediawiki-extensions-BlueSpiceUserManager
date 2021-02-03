@@ -58,5 +58,7 @@
 	"right-usermanager-viewspecialpage": "[[Special:UserManager]] 특수 문서로 접근",
 	"action-usermanager-editpassword": "사용자 비밀번호를 바꾸기",
 	"bs-usermanager-filter-only-activated-users": "활성화된 사용자 모두 보기",
-	"bs-usermanager-filter-only-deactivated-users": "비활성화된 사용자 모두 보기"
+	"bs-usermanager-filter-only-deactivated-users": "비활성화된 사용자 모두 보기",
+	"bs-usermanager-label-password-change-strategy-reset": "비밀번호 재설정 링크를 사용자에게 보내기",
+	"action-usermanager-deleteuser": "사용자 삭제"
 }

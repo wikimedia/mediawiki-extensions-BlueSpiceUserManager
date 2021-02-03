@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
 			"Andriykopanytsia",
 			"Piramidion",
-			"Vlad5250"
+			"Renamerr",
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"bs-usermanager-desc": "Адміністративний інтерфейс для додавання, редагування та видалення користувачів",
@@ -45,8 +46,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Користувача|Користувачку}} $1 вимкнено.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Користувача|Користувачку}} $1 увімкнено.",
 	"bs-usermanager-endisable": "Увімкнути/вимкнути",
-	"bs-usermanager-confirmdisableuser": "Ви справді хочете вимкнути {{GENDER:$1|користувача|користувачку}} $1?",
-	"bs-usermanager-confirmenableuser": "Ви справді хочете увімкнути {{GENDER:$1|користувача|користувачку}} $1?",
+	"bs-usermanager-confirmdisableuser": "Ви справді хочете вимкнути {{PLURAL:$1|цього користувача|цих $1 користувачів}}?",
+	"bs-usermanager-confirmenableuser": "Ви справді хочете увімкнути {{PLURAL:$1|цього користувача|цих $1 користувачів}}?",
 	"bs-usermanager-titledisableuser": "Вимкнути користувача",
 	"bs-usermanager-titleenableuser": "Увімкнути користувача",
 	"usermanager": "Менеджер користувачів",
@@ -64,7 +65,7 @@
 	"apihelp-bs-usermanager-group-store-description": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Забезпечує API завдань з управління користувачами для BlueSpice.",
 	"bs-usermanager-own-password-change": "Ви збираєтесь змінити свій власний пароль. Ви автоматично вийдете із системи і потрапите на сторінку входу. Бажаєте продовжити?",
-	"right-usermanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:UserManager]]",
+	"right-usermanager-viewspecialpage": "Доступ до спеціальної сторінки [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Змінювання паролів користувачів на спеціальній сторінці [[Special:UserManager]]",
 	"bs-usermanager-filter-only-activated-users": "Показати усіх активованих користувачів",
 	"bs-usermanager-filter-only-deactivated-users": "Показати усіх деактивованих користувачів",

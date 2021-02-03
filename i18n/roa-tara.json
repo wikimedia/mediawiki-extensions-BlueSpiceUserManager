@@ -42,8 +42,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|L'utende}} $1 ha state disabbilitate.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|L'utende}} $1 ha state abbilitate.",
 	"bs-usermanager-endisable": "Abbilite/disabbilite",
-	"bs-usermanager-confirmdisableuser": "Avveramende vuè ccu disabbilite {{GENDER:$1|l'utende}} $1?",
-	"bs-usermanager-confirmenableuser": "Avveramende vuè ccu abbilite{{GENDER:$1|l'utende}} $1?",
+	"bs-usermanager-confirmdisableuser": "Avveramende vuè ccu disabbilite {{PLURAL:$1|stu utende|ste $1 utinde}}?",
+	"bs-usermanager-confirmenableuser": "Avveramende vuè ccu abbilite {{PLURAL:$1|stu utende|ste $1 utinde}}?",
 	"bs-usermanager-titledisableuser": "Disabbilite utende",
 	"bs-usermanager-titleenableuser": "Abbilite utende",
 	"usermanager": "Gestore de l'utende",
@@ -65,5 +65,11 @@
 	"action-usermanager-viewspecialpage": "'ndruche 'a pàgena speciale \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "cange le passuord de l'utende",
-	"right-usermanager-editpassword": "Cange le passuord de l'utende cu 'u gestore sus a pàgena speciale [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Cange le passuord de l'utende cu 'u gestore sus a pàgena speciale [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Metode",
+	"bs-usermanager-label-password-change-strategy-reset": "Manne 'u collegamende pe azzerà 'a password a l'utende",
+	"bs-usermanager-label-password-change-strategy-pw": "Cange 'a password direttamende",
+	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email",
+	"action-usermanager-deleteuser": "scangìlle le utinde",
+	"right-usermanager-deleteuser": "Stoche a scangelle 'n'utende sus a Special:UserManager"
 }

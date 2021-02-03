@@ -31,7 +31,7 @@
 	"bs-usermanager-block-error": "{{GENDER:$1|Käyttäjää}} $1 ei voida poistaa.",
 	"bs-usermanager-headerenabled": "Käytössä",
 	"bs-usermanager-endisable": "Ota käyttöön/poista käytöstä",
-	"bs-usermanager-confirmdisableuser": "Haluatko todella poistaa {{GENDER:$1|käyttäjän}} $1?",
+	"bs-usermanager-confirmdisableuser": "Haluatko todella poistaa {{PLURAL:$1|tämän käyttäjän|nämä $1 käyttäjää}}?",
 	"bs-usermanager-editgroups": "Muokkaa ryhmiä",
 	"bs-usermanager-editpassword": "Vaihda salasana",
 	"bs-usermanager-editpassword-successful": "Salasana on vaihdettu onnistuneesti",

@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aefgh39622",
+			"LaMagiaaa",
+			"Omotecho",
 			"Shirayuki",
 			"Suchichi02",
 			"Suyama",
-			"Omotecho",
-			"Aefgh39622"
+			"つぶあん派"
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
@@ -37,8 +39,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|利用者}} $1 を無効にしました。",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|利用者}} $1 を有効にしました。",
 	"bs-usermanager-endisable": "有効/無効",
-	"bs-usermanager-confirmdisableuser": "{{GENDER:$1|利用者}} $1 を本当に無効にしますか?",
-	"bs-usermanager-confirmenableuser": "{{GENDER:$1|利用者}} $1 を本当に有効にしますか?",
+	"bs-usermanager-confirmdisableuser": "{{PLURAL:$1|この利用者|これらの $1 名の利用者}}を本当に削除しますか?",
+	"bs-usermanager-confirmenableuser": "本当に{{plural:$1|この利用者|これらの $1 名の利用者}}を有効にしますか？",
 	"bs-usermanager-titledisableuser": "利用者を無効にする",
 	"bs-usermanager-titleenableuser": "利用者を有効にする",
 	"action-usermanager-viewspecialpage": "特別ページ「{{int:usermanager}}」の閲覧",

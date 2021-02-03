@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Hwboehm",
 			"Metalhead64",
-			"Umherirrender",
-			"Hwboehm"
+			"Mglaser",
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Tkarcher",
+			"Umherirrender"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
@@ -45,8 +47,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 wurde deaktiviert.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Der Benutzer|Die Benutzerin}} $1 wurde aktiviert.",
 	"bs-usermanager-endisable": "Aktivieren/Deaktivieren",
-	"bs-usermanager-confirmdisableuser": "Möchtest du wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 deaktivieren?",
-	"bs-usermanager-confirmenableuser": "Möchtest du wirklich {{GENDER:$1|den Benutzer|die Benutzerin}} $1 aktivieren?",
+	"bs-usermanager-confirmdisableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} deaktivieren?",
+	"bs-usermanager-confirmenableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} aktivieren?",
 	"bs-usermanager-titledisableuser": "Benutzer deaktivieren",
 	"bs-usermanager-titleenableuser": "Benutzer aktivieren",
 	"usermanager": "Benutzerverwaltung",
@@ -68,5 +70,11 @@
 	"bs-usermanager-own-password-change": "Du bist dabei, dein eigenes Passwort zu ändern. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet. Möchtest du fortfahren?",
 	"right-usermanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Änderung von Benutzer-Passwörtern mit dem Manager auf der Spezialseite [[Special:UserManager]]",
-	"action-usermanager-editpassword": "Benutzer-Passwörter zu ändern"
+	"action-usermanager-editpassword": "Benutzer-Passwörter zu ändern",
+	"bs-usermanager-label-password-change-strategy": "Methode",
+	"bs-usermanager-label-password-change-strategy-reset": "Link zum Zurücksetzen des Passworts an den Nutzer schicken",
+	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
+	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
+	"action-usermanager-deleteuser": "Benutzer zu löschen",
+	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen"
 }

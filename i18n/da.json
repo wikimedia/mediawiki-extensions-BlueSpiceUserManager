@@ -17,5 +17,15 @@
 	"bs-usermanager-invalid-uname": "Brugernavnet er ugyldigt.",
 	"bs-usermanager-titledisableuser": "Deaktiver bruger",
 	"bs-usermanager-editpassword": "Skift adgangskode",
-	"action-usermanager-editpassword": "ændre brugeres adgangskoder"
+	"action-usermanager-editpassword": "ændre brugeres adgangskoder",
+	"bs-usermanager-enter-pwd": "Indtast venligst en adgangskode.",
+	"bs-usermanager-invalid-email-gen": "Denne e-mailadresse er ugyldig.",
+	"bs-usermanager-user-added": "Brugeren blev tilføjet",
+	"bs-usermanager-headerenabled": "Aktiveret",
+	"bs-usermanager-endisable": "Aktiver/deaktiver",
+	"bs-usermanager-titleenableuser": "Aktiver bruger",
+	"bs-usermanager-group-add-not-allowed": "Du har ikke tilladelse til at tilføje brugere til gruppen $1",
+	"bs-usermanager-editgroups": "Rediger grupper",
+	"bs-usermanager-label-password-change-strategy": "Metode",
+	"action-usermanager-deleteuser": "slet brugere"
 }

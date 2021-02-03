@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Adriana Lioni",
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"bs-usermanager-desc": "Interface de administração para adicionar, editar e excluir usuários",
@@ -43,8 +44,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|O usuário $1 foi desativado|A usuária $1 foi desativada}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|O usuário $1 foi ativado|A usuária $1 foi ativada}}.",
 	"bs-usermanager-endisable": "Ativar/desativar",
-	"bs-usermanager-confirmdisableuser": "Pretende realmente desativar {{GENDER:$1|o usuário|a usuária $1}} $1.",
-	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{GENDER:$1|o usuário|a usuária $1}} $1.",
+	"bs-usermanager-confirmdisableuser": "Tem a certeza de que pretende eliminar {{PLURAL:$1|este usuário|estes usuários}}?",
+	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{PLURAL:$1|esse usuário|esses usuários $1}}.",
 	"bs-usermanager-titledisableuser": "Desativar usuário",
 	"bs-usermanager-titleenableuser": "Ativar usuário",
 	"usermanager": "Administrador de usuários",
@@ -66,5 +67,11 @@
 	"bs-usermanager-own-password-change": "Você está prestes a mudar sua própria senha. Você será desconectado e redirecionado para a página de login. Você quer continuar?",
 	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]].",
 	"right-usermanager-editpassword": "Alterar a senha dos usuários com o gerenciador na página especial [[Special:UserManager]].",
-	"action-usermanager-editpassword": "alterar senhas de usuários"
+	"action-usermanager-editpassword": "alterar senhas de usuários",
+	"bs-usermanager-label-password-change-strategy": "Método",
+	"bs-usermanager-label-password-change-strategy-reset": "Enviar link de redefinição de senha para o usuário",
+	"bs-usermanager-label-password-change-strategy-pw": "Alterar a senha diretamente",
+	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado",
+	"action-usermanager-deleteuser": "excluir usuários",
+	"right-usermanager-deleteuser": "Excluindo um usuário em Special:UserManager"
 }

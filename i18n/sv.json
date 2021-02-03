@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Boivie",
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix",
-			"Mjälten"
+			"Mjälten",
+			"Technic2",
+			"WikiPhoenix"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsgränssnittet för att lägga till, redigera och radera användare",
@@ -43,8 +45,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Användaren}} $1 inaktiverades.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Användaren}} $1 aktiverades.",
 	"bs-usermanager-endisable": "Aktivera/inaktivera",
-	"bs-usermanager-confirmdisableuser": "Vill du inaktivera {{GENDER:$1|användaren}} $1?",
-	"bs-usermanager-confirmenableuser": "Vill du verkligen aktivera {{GENDER:$1|användaren}} $1?",
+	"bs-usermanager-confirmdisableuser": "Vill du verkligen inaktivera {{PLURAL:$1|denna användare|dessa $1 användare}}?",
+	"bs-usermanager-confirmenableuser": "Vill du verkligen aktivera {{PLURAL:$1|denna användare|dessa $1 användare}}?",
 	"bs-usermanager-titledisableuser": "Inaktivera användare",
 	"bs-usermanager-titleenableuser": "Aktivera användare",
 	"usermanager": "Användarhanterare",
@@ -60,8 +62,9 @@
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"bs-usermanager-invalid-groups": "Grupper är ogiltiga",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
-	"right-usermanager-editpassword": "Aktiverar ändring av användarlösenord med hanteraren på specialsidan [[Special:UserManager]].",
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
 	"bs-usermanager-filter-only-activated-users": "Visa alla aktiva användare",
 	"bs-usermanager-filter-only-deactivated-users": "Visa alla icke-aktiva användare",
-	"action-usermanager-editpassword": "ändra en användares lösenord"
+	"action-usermanager-editpassword": "ändra en användares lösenord",
+	"action-usermanager-deleteuser": "radera användare"
 }

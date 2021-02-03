@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"سامي الرحيلي",
+			"Meno25",
 			"Moud hosny",
-			"محمد أحمد عبد الفتاح",
 			"ديفيد",
-			"Meno25"
+			"سامي الرحيلي",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-usermanager-desc": "واجهة الإدارة لإضافة وتحرير وحذف المستخدمين",
@@ -69,5 +69,6 @@
 	"bs-usermanager-own-password-change": "أنت على وشك تغيير كلمة المرور الخاصة بك. سيتم خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول، هل تريد الاستمرار؟",
 	"right-usermanager-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:UserManager]]",
 	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]].",
-	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين"
+	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين",
+	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة"
 }
