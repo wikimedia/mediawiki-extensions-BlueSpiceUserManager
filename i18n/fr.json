@@ -19,7 +19,7 @@
 	"bs-usermanager-idnotexist": "Cet utilisateur n’existe pas.",
 	"bs-usermanager-invalid-pwd": "Le mot de passe n’est pas valide.",
 	"bs-usermanager-invalid-realname": "Le nom réel n’est pas valide.",
-	"bs-usermanager-invalid-uname": "Le nom d’utilisateur n’est pas valide.",
+	"bs-usermanager-invalid-uname": "Le nom d’utilisateur est incorrect.",
 	"bs-usermanager-invalid-email-gen": "L’adresse de courriel n’est pas valide.",
 	"bs-usermanager-label": "Gestionnaire des utilisateurs",
 	"bs-usermanager-user-added": "L’utilisateur a été ajouté.",
