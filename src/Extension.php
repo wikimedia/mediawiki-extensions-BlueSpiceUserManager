@@ -70,7 +70,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$password = $metaData['password'];
-		if ( !empty( $metaData['password'] ) || $bNew ) {
+		if ( !empty( $metaData['password'] ) ) {
 			if ( !$user->isValidPassword( $password ) ) {
 				$newStatus = \Status::newFatal( 'bs-usermanager-invalid-pwd' );
 				$status->merge( $newStatus );
