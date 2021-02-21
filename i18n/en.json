@@ -31,7 +31,7 @@
 	"bs-usermanager-titledeleteuser": "Delete user",
 	"bs-usermanager-confirmdeleteuser": "Are you sure, you want to delete {{PLURAL:$1|this user|these $1 users}}?",
 	"bs-usermanager-groups-more": "... more",
-	"bs-usermanager-no-self-desysop" : "You cannot take away your own sysop right.",
+	"bs-usermanager-no-self-desysop": "You cannot take away your own sysop right.",
 	"apihelp-bs-usermanager-tasks-description": "Provides operations for Checklist extension",
 	"apihelp-bs-usermanager-tasks-summary": "Provides operations for Checklist extension",
 	"bs-usermanager-no-self-block": "You cannot disable yourself.",
