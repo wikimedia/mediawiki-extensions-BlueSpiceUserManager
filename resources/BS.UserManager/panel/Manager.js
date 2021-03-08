@@ -174,6 +174,8 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 
 	makeTbarItems: function() {
 		var arrItems = this.callParent(arguments);
+
+		this.btnEditGroups = new Ext.Component();
 		if(this.opPermitted('usergroups')){
 			this.btnEditGroups = new Ext.Button({
 				id: this.getId()+'-btn-edit-groups',
@@ -189,6 +191,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			arrItems.push( this.btnEditGroups );
 		}
 
+		this.btnEditPassword = new Ext.Component();
 		if(this.opPermitted('editpassword')) {
 			this.btnEditPassword = new Ext.Button({
 				id: this.getId()+'-btn-edit-password',
