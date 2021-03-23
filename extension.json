@@ -74,6 +74,9 @@
 	"ResourceModules": {
 		"ext.bluespice.userManager": {
 			"scripts": "bluespice.userManager.js",
+			"styles": {
+				"bluespice.userManager.less": {}
+			},
 			"dependencies": [
 				"user.options",
 				"ext.bluespice.extjs"
