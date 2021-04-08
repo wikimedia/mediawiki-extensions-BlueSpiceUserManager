@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-usermanager-enter-pwd": "Калі ласка, увядзіце пароль.",
+	"bs-usermanager-save-successful": "Зьмяненьні захаваныя.",
+	"bs-usermanager-headerrealname": "Сапраўднае імя",
+	"bs-usermanager-headeremail": "Электронная пошта",
+	"bs-usermanager-labelnewpassword": "Пароль",
+	"bs-usermanager-labelpasswordcheck": "Пацьвердзіць пароль",
+	"bs-usermanager-editpassword": "Зьмяніць пароль",
+	"bs-usermanager-editpassword-successful": "Пароль пасьпяховы зьменены",
+	"bs-usermanager-label-password-change-strategy": "Спосаб"
+}

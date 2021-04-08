@@ -8,5 +8,6 @@
 	"bs-usermanager-invalid-groups": "La grupi esas nevalida",
 	"bs-usermanager-endisable": "Permisar/despermisar",
 	"bs-usermanager-groups-more": "... plusa",
-	"bs-usermanager-headerusername": "Uzeronomo"
+	"bs-usermanager-headerusername": "Uzeronomo",
+	"bs-usermanager-titleeditdetails": "Redaktar uzero"
 }
