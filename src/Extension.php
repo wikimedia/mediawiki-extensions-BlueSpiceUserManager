@@ -385,7 +385,7 @@ class Extension extends \BlueSpice\Extension {
 			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$fname = __METHOD__;
 		$section = $dbw->startAtomic( $fname, Database::ATOMIC_CANCELABLE );
 		try {
