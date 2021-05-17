@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Lorelai87",
 			"Martinligabue",
@@ -30,7 +31,7 @@
 	"bs-usermanager-titledeleteuser": "Cancella utente",
 	"apihelp-bs-usermanager-tasks-description": "Fornisce operazioni per l'estensione Checklist",
 	"apihelp-bs-usermanager-tasks-summary": "Fornisce operazioni per l'estensione Checklist",
-	"bs-usermanager-no-self-block": "Non è possibile disattivare se stessi.",
+	"bs-usermanager-no-self-block": "Non è possibile disattivare sé stessi.",
 	"bs-usermanager-endisable": "Abilita/disabilita",
 	"bs-usermanager-titledisableuser": "Disabilitare utente",
 	"bs-usermanager-titleenableuser": "Abilitare utente",
@@ -48,5 +49,6 @@
 	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?",
 	"action-usermanager-viewspecialpage": "visualizzare la pagina speciale \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
-	"action-usermanager-editpassword": "cambiare una password utente"
+	"action-usermanager-editpassword": "cambiare una password utente",
+	"bs-usermanager-label-password-change-strategy": "Metodo"
 }
