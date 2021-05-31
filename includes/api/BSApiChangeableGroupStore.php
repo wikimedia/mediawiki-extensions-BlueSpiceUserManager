@@ -24,6 +24,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  *
  */
+
+use MediaWiki\MediaWikiServices;
+
 class BSApiChangeableGroupStore extends BSApiGroupStore {
 	/**
 	 * @param string $sQuery
@@ -32,7 +35,8 @@ class BSApiChangeableGroupStore extends BSApiGroupStore {
 	protected function makeData( $sQuery = '' ) {
 		$aData = parent::makeData( $sQuery );
 		$aChangeableData = [];
-		$aChangeableGroups = $this->getUser()->changeableGroups();
+		$userGroupManager = MediaWikiServices::getInstance()->getUserGroupManager();
+		$aChangeableGroups = $userGroupManager->getGroupsChangeableBy( $this->getUser() );
 		$aChangeableGroupsMerged = array_unique( array_merge(
 			$aChangeableGroups['add'],
 			$aChangeableGroups['add-self'],
