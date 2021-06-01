@@ -432,21 +432,24 @@ class Extension extends \BlueSpice\Extension {
 		$loggedInUser = \RequestContext::getMain()->getUser();
 		$attemptChangeSelf = $loggedInUser->getId() == $user->getId();
 
+		$services = MediaWikiServices::getInstance();
+		$userGroupManager = $services->getUserGroupManager();
+
 		$checkSelfSysopRemove = $attemptChangeSelf
-			&& in_array( 'sysop', $loggedInUser->getEffectiveGroups() )
+			&& in_array( 'sysop', $userGroupManager->getUserEffectiveGroups( $loggedInUser ) )
 			&& !in_array( 'sysop', $groups );
 		if ( $checkSelfSysopRemove ) {
 			return Status::newFatal( 'bs-usermanager-no-self-desysop' );
 		}
 
-		$oldUGMs = $user->getGroupMemberships();
-		$currentGroups = $user->getGroups();
+		$oldUGMs = $userGroupManager->getUserGroupMemberships( $user );
+		$currentGroups = $userGroupManager->getUserGroups( $user );
 		$addGroups = array_diff( $groups, $currentGroups );
 		$removeGroups = array_diff( $currentGroups, $groups );
 		$reallyAdd = [];
 		$reallyRemove = [];
 
-		$changeableGroups = $loggedInUser->changeableGroups();
+		$changeableGroups = $userGroupManager->getGroupsChangeableBy( $loggedInUser );
 
 		foreach ( $addGroups as $group ) {
 			if ( in_array( $group, self::$excludegroups ) ) {
@@ -459,7 +462,7 @@ class Extension extends \BlueSpice\Extension {
 				return Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
 			}
 			$reallyAdd[] = $group;
-			$user->addGroup( $group );
+			$userGroupManager->addUserToGroup( $user, $group );
 		}
 		foreach ( $removeGroups as $group ) {
 			if ( in_array( $group, self::$excludegroups ) ) {
@@ -473,20 +476,20 @@ class Extension extends \BlueSpice\Extension {
 				return Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
 			}
 			$reallyRemove[] = $group;
-			$user->removeGroup( $group );
+			$userGroupManager->removeUserFromGroup( $user, $group );
 		}
 
 		$status = Status::newGood( $user );
-		MediaWikiServices::getInstance()->getHookContainer()->run( 'UserGroupsChanged', [
+		$services->getHookContainer()->run( 'UserGroupsChanged', [
 			$user,
 			$reallyAdd,
 			$reallyRemove,
 			$loggedInUser,
 			'',
 			$oldUGMs,
-			$user->getGroupMemberships()
+			$userGroupManager->getGroupMemberships( $user )
 		] );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$services->getHookContainer()->run(
 			'BSUserManagerAfterSetGroups',
 			[
 				$user,

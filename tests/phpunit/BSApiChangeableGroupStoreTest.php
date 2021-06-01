@@ -44,7 +44,10 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 			'wgGroupsAddToSelf' => [ 'groupchanger' => $aChangeableGroups ],
 			'wgGroupsRemoveFromSelf' => [ 'groupchanger' => $aChangeableGroups ]
 		] );
-		$this->getTestUser( 'uploader' )->getUser()->addGroup( 'groupchanger' );
+		$this->getServiceContainer()->getUserGroupManager()->addUserToGroup(
+			$this->getTestUser( 'uploader' )->getUser(),
+			'groupchanger'
+		);
 	}
 
 	public function provideSingleFilterData() {
