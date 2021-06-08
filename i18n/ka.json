@@ -9,5 +9,6 @@
 	},
 	"bs-usermanager-no-self-desysop": "თქვენ არ შეგიძლიათ საკუთარი ადმინისტრატორის სტატუსის მოხსნა.",
 	"bs-usermanager-endisable": "ჩართვა/გამორთვა",
-	"bs-usermanager-groups-more": "... მეტი"
+	"bs-usermanager-groups-more": "... მეტი",
+	"bs-usermanager-headerusername": "მომხმარებლის სახელი"
 }
