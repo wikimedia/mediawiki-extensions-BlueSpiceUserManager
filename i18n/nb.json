@@ -42,8 +42,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Brukeren}} $1 ble deaktivert.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Brukeren}} $1 ble aktivert.",
 	"bs-usermanager-endisable": "Aktiver/deaktiver",
-	"bs-usermanager-confirmdisableuser": "Ønsker du å deaktivere {{GENDER:$1|brukeren}} $1?",
-	"bs-usermanager-confirmenableuser": "Ønsker du å aktivere {{GENDER:$1|brukeren}} $1?",
+	"bs-usermanager-confirmdisableuser": "Ønsker du å deaktivere {{PLURAL:$1|denne brukeren|disse $1 brukerne}}?",
+	"bs-usermanager-confirmenableuser": "Ønsker du å aktivere {{PLURAL:$1|denne brukeren|disse $1 brukerne}}?",
 	"bs-usermanager-titledisableuser": "Deaktiver bruker",
 	"bs-usermanager-titleenableuser": "Aktiver bruker",
 	"usermanager": "Brukerbehandler",
@@ -65,5 +65,11 @@
 	"action-usermanager-viewspecialpage": "vise spesialsiden «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Tilgang til spesialsiden [[Special:UserManager]].",
 	"action-usermanager-editpassword": "endre brukerpassord",
-	"right-usermanager-editpassword": "Endring av brukerpassord med behandleren på spesialsiden [[Special:UserManager]]."
+	"right-usermanager-editpassword": "Endring av brukerpassord med behandleren på spesialsiden [[Special:UserManager]].",
+	"bs-usermanager-label-password-change-strategy": "Metode",
+	"bs-usermanager-label-password-change-strategy-reset": "Send lenke for tilbakestilling av passord til brukeren",
+	"bs-usermanager-label-password-change-strategy-pw": "Endre passord direkte",
+	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse",
+	"action-usermanager-deleteuser": "slette brukere",
+	"right-usermanager-deleteuser": "Slette en bruker via Special:UserManager"
 }

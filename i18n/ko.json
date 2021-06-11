@@ -58,5 +58,7 @@
 	"bs-usermanager-own-password-change": "자신의 비밀번호를 변경하려고 합니다. 로그아웃된 다음 로그인 페이지로 넘어갑니다. 계속하시겠습니까?",
 	"action-usermanager-viewspecialpage": "특수 문서 \"{{int:usermanager}}\" 보기",
 	"right-usermanager-viewspecialpage": "[[Special:UserManager]] 특수 문서로 접근",
-	"action-usermanager-editpassword": "사용자 비밀번호를 바꾸기"
+	"action-usermanager-editpassword": "사용자 비밀번호를 바꾸기",
+	"bs-usermanager-label-password-change-strategy-reset": "비밀번호 재설정 링크를 사용자에게 보내기",
+	"action-usermanager-deleteuser": "사용자 삭제"
 }

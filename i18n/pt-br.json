@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriana Lioni",
 			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
 			"Felipe L. Ewald"
 		]
 	},
@@ -43,8 +45,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|O usuário $1 foi desativado|A usuária $1 foi desativada}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|O usuário $1 foi ativado|A usuária $1 foi ativada}}.",
 	"bs-usermanager-endisable": "Ativar/desativar",
-	"bs-usermanager-confirmdisableuser": "Pretende realmente desativar {{GENDER:$1|o usuário|a usuária $1}} $1.",
-	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{GENDER:$1|o usuário|a usuária $1}} $1.",
+	"bs-usermanager-confirmdisableuser": "Tem a certeza de que pretende eliminar {{PLURAL:$1|este usuário|estes usuários}}?",
+	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{PLURAL:$1|esse usuário|esses usuários $1}}.",
 	"bs-usermanager-titledisableuser": "Desativar usuário",
 	"bs-usermanager-titleenableuser": "Ativar usuário",
 	"usermanager": "Administrador de usuários",

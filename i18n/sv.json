@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Boivie",
 			"Jopparn",
 			"Lokal Profil",
 			"Mjälten",
@@ -44,8 +45,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|Användaren}} $1 inaktiverades.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|Användaren}} $1 aktiverades.",
 	"bs-usermanager-endisable": "Aktivera/inaktivera",
-	"bs-usermanager-confirmdisableuser": "Vill du inaktivera {{GENDER:$1|användaren}} $1?",
-	"bs-usermanager-confirmenableuser": "Vill du verkligen aktivera {{GENDER:$1|användaren}} $1?",
+	"bs-usermanager-confirmdisableuser": "Vill du verkligen inaktivera {{PLURAL:$1|denna användare|dessa $1 användare}}?",
+	"bs-usermanager-confirmenableuser": "Vill du verkligen aktivera {{PLURAL:$1|denna användare|dessa $1 användare}}?",
 	"bs-usermanager-titledisableuser": "Inaktivera användare",
 	"bs-usermanager-titleenableuser": "Aktivera användare",
 	"usermanager": "Användarhanterare",
@@ -64,5 +65,6 @@
 	"action-usermanager-viewspecialpage": "visa specialsidan \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:UserManager]].",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
-	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
+	"action-usermanager-deleteuser": "radera användare"
 }

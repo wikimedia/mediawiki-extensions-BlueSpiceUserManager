@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ahrada2016",
 			"Oromoo",
 			"Tumsaa"
 		]
@@ -8,7 +9,7 @@
 	"bs-usermanager-db-error": "Dogoggorri daataabeezii uummame.",
 	"bs-usermanager-idnotexist": "Fayyadamaan akkanaa hin jiru.",
 	"bs-usermanager-invalid-realname": "Maqaan dhugaa kun sirrii miti.",
-	"bs-usermanager-user-deleted": "Fayyadamaan kun balleeffamee jira.",
+	"bs-usermanager-user-deleted": "{{PLURAL:|{{GENDER:$2|fayyadamaa}}$1|jiran keessaa fayyadamtoonni $1}} balleeffamaniiru.",
 	"bs-usermanager-save-successful": "Jijjiiramni olkaawwamee jira.",
 	"bs-usermanager-headerrealname": "Maqaa Dhugaa",
 	"bs-usermanager-headeremail": "Imeelii",

@@ -5,6 +5,7 @@
 			"Dgstranz",
 			"Fitoschido",
 			"Macofe",
+			"MarcoAurelio",
 			"Mor"
 		]
 	},
@@ -44,8 +45,8 @@
 	"bs-usermanager-user-disabled": "Se desactivó {{GENDER:$1|al usuario|a la usuaria}} $1.",
 	"bs-usermanager-user-enabled": "Se activó {{GENDER:$1|al usuario|a la usuaria}} $1.",
 	"bs-usermanager-endisable": "Activar/desactivar",
-	"bs-usermanager-confirmdisableuser": "¿Realmente quieres desactivar {{GENDER:$1|al usuario|a la usuaria}} $1?",
-	"bs-usermanager-confirmenableuser": "¿Realmente quieres activar {{GENDER:$1|al usuario|a la usuaria}} $1?",
+	"bs-usermanager-confirmdisableuser": "¿Quieres realmente desactivar a {{PLURAL:$1|este usuario|$1 usuarios}}?",
+	"bs-usermanager-confirmenableuser": "¿Quieres realmente activar a {{PLURAL:$1|este usuario|estos $1 usuarios}}?",
 	"bs-usermanager-titledisableuser": "Desactivar usuario",
 	"bs-usermanager-titleenableuser": "Activar usuario",
 	"usermanager": "Gestor de usuarios",
@@ -64,5 +65,6 @@
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
-	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
+	"action-usermanager-deleteuser": "eliminar usuarios"
 }
