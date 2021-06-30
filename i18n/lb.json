@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Les Meloures",
 			"Robby",
 			"Soued031"
 		]
@@ -22,7 +23,7 @@
 	"bs-usermanager-headerrealname": "Richtegen Numm",
 	"bs-usermanager-headeremail": "E-Mail",
 	"bs-usermanager-headergroups": "Gruppen",
-	"bs-usermanager-titleadduser": "Benotzer dobäisetzen",
+	"bs-usermanager-titleadduser": "Benotzer derbäisetzen",
 	"bs-usermanager-titleeditdetails": "Benotzer änneren",
 	"bs-usermanager-labelnewpassword": "Passwuert",
 	"bs-usermanager-labelpasswordcheck": "Passwuert confirméieren",
