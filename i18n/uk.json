@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Piramidion",
 			"Renamerr",
 			"Vlad5250",
@@ -69,5 +70,8 @@
 	"action-usermanager-viewspecialpage": "перегляд спеціальної сторінки «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Доступ до спеціальної сторінки [[Special:UserManager]]",
 	"action-usermanager-editpassword": "змінювання паролів користувачів",
-	"right-usermanager-editpassword": "Змінювання паролів користувачів на спеціальній сторінці [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Змінювання паролів користувачів на спеціальній сторінці [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Метод",
+	"bs-usermanager-label-password-change-strategy-reset": "Надіслати користувачеві посилання для скидання пароля",
+	"action-usermanager-deleteuser": "видалити користувачів"
 }
