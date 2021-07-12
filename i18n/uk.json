@@ -73,5 +73,8 @@
 	"right-usermanager-editpassword": "Змінювання паролів користувачів на спеціальній сторінці [[Special:UserManager]]",
 	"bs-usermanager-label-password-change-strategy": "Метод",
 	"bs-usermanager-label-password-change-strategy-reset": "Надіслати користувачеві посилання для скидання пароля",
-	"action-usermanager-deleteuser": "видалити користувачів"
+	"bs-usermanager-label-password-change-strategy-pw": "Змінюйте пароль безпосередньо",
+	"bs-usermanager-no-mail": "Вибраний користувач не має підтвердженої адреси електронної пошти",
+	"action-usermanager-deleteuser": "видалити користувачів",
+	"right-usermanager-deleteuser": "Видалення користувача через Special:UserManager"
 }

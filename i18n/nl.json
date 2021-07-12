@@ -3,6 +3,7 @@
 		"authors": [
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"SPQRobin"
 		]
 	},
@@ -42,8 +43,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|De gebruiker}} $1 is uitgeschakeld.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|De gebruiker}} $1 is ingeschakeld.",
 	"bs-usermanager-endisable": "In/uitschakelen",
-	"bs-usermanager-confirmdisableuser": "Weet u zeker dat u {{GENDER:$1|de gebruiker}} $1 wilt uitschakelen?",
-	"bs-usermanager-confirmenableuser": "Weet u zeker dat u {{GENDER:$1|de gebruiker}} $1 wilt inschakelen?",
+	"bs-usermanager-confirmdisableuser": "Weet u zeker dat u deze {{PLURAL:$1|gebruiker|$1 gebruikers}} wilt deactiveren?",
+	"bs-usermanager-confirmenableuser": "Weet u zeker dat u deze {{PLURAL:$1|gebruiker|$1 gebruikers}} wilt activeren?",
 	"bs-usermanager-titledisableuser": "Gebruiker uitschakelen",
 	"bs-usermanager-titleenableuser": "Gebruiker inschakelen",
 	"usermanager": "Gebruikersbeheer",
