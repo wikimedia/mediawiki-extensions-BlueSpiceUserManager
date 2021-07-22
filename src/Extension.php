@@ -334,6 +334,13 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$block = DatabaseBlock::newFromTarget( $user );
+		if ( !$block ) {
+			// fallback whenever the Block could not be created because the user
+			// is invalid in some form due to unknown reasons. ERM:25175
+			$status->setResult( false );
+			$status->fatal( 'bs-usermanager-unblock-error', $user->getName() );
+			return $status;
+		}
 		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 		$reason = [];
 		if ( !$hookContainer->run( 'UnblockUser', [ $block, $performer, &$reason ] ) ) {
