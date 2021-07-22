@@ -346,6 +346,13 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$block = \Block::newFromTarget( $user );
+		if ( !$block ) {
+			// fallback whenever the Block could not be created because the user
+			// is invalid in some form due to unknown reasons. ERM:25175
+			$status->setResult( false );
+			$status->fatal( 'bs-usermanager-unblock-error', $user->getName() );
+			return $status;
+		}
 		$block->setBlocker( $performer );
 		$blockStatus = $block->delete();
 		if ( !$blockStatus ) {
