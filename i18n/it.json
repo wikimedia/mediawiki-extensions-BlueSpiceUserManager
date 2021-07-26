@@ -29,6 +29,7 @@
 	"bs-usermanager-labelnewpassword": "Password",
 	"bs-usermanager-labelpasswordcheck": "Conferma password",
 	"bs-usermanager-titledeleteuser": "Cancella utente",
+	"bs-usermanager-groups-more": "...altro",
 	"apihelp-bs-usermanager-tasks-description": "Fornisce operazioni per l'estensione Checklist",
 	"apihelp-bs-usermanager-tasks-summary": "Fornisce operazioni per l'estensione Checklist",
 	"bs-usermanager-no-self-block": "Non è possibile disattivare sé stessi.",
