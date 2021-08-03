@@ -50,5 +50,6 @@
 	"bs-usermanager-own-password-change": "Sei in procinto di cambiare la tua password. Sarai fatto uscire e in seguito reindirizzato alla pagina login. Vuoi continuare?",
 	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "cambiare una password utente",
-	"bs-usermanager-label-password-change-strategy": "Metodo"
+	"bs-usermanager-label-password-change-strategy": "Metodo",
+	"bs-usermanager-groups-more": "...altro"
 }
