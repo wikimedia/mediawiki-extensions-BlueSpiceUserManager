@@ -60,5 +60,11 @@
 	"bs-usermanager-filter-only-activated-users": "활성화된 사용자 모두 보기",
 	"bs-usermanager-filter-only-deactivated-users": "비활성화된 사용자 모두 보기",
 	"bs-usermanager-label-password-change-strategy-reset": "비밀번호 재설정 링크를 사용자에게 보내기",
-	"action-usermanager-deleteuser": "사용자 삭제"
+	"action-usermanager-deleteuser": "사용자 삭제",
+	"bs-usermanager-desc": "사용자의 추가, 편집, 삭제를 위한 관리 인터페이스",
+	"bs-usermanager-confirmdeleteuser": "{{PLURAL:$1|이 사용자를|이 사용자 $1명을}} 정말 삭제하시겠습니까?",
+	"bs-usermanager-no-self-desysop": "자신의 관리자 권한을 스스로 철회할 수 없습니다.",
+	"bs-usermanager-label-password-change-strategy-pw": "직접 비밀번호 변경",
+	"bs-usermanager-no-mail": "선택된 사용자는 확인된 이메일 주소가 없습니다",
+	"right-usermanager-deleteuser": "Special:UserManager를 통한 사용자 삭제"
 }
