@@ -6,9 +6,11 @@
 			"Lorelai87",
 			"Martinligabue",
 			"Sarah Bernabei",
-			"Selven"
+			"Selven",
+			"Stefano"
 		]
 	},
+	"bs-usermanager-self-nodelete": "Non puoi eliminare il tuo account.",
 	"bs-usermanager-db-error": "Si è verificato un errore sul database.",
 	"bs-usermanager-enter-pwd": "Si prega di inserire una password.",
 	"bs-usermanager-idnotexist": "Questo utente non esiste.",
@@ -23,6 +25,7 @@
 	"bs-usermanager-headerusername": "Nome utente",
 	"bs-usermanager-headerrealname": "Nome vero",
 	"bs-usermanager-headeremail": "Email",
+	"bs-usermanager-headerregistration": "Registrazione",
 	"bs-usermanager-headergroups": "Gruppi",
 	"bs-usermanager-titleadduser": "Aggiungi utente",
 	"bs-usermanager-titleeditdetails": "Modifica utente",
@@ -33,6 +36,7 @@
 	"apihelp-bs-usermanager-tasks-description": "Fornisce operazioni per l'estensione Checklist",
 	"apihelp-bs-usermanager-tasks-summary": "Fornisce operazioni per l'estensione Checklist",
 	"bs-usermanager-no-self-block": "Non è possibile disattivare sé stessi.",
+	"bs-usermanager-headerenabled": "Abilitato",
 	"bs-usermanager-endisable": "Abilita/disabilita",
 	"bs-usermanager-titledisableuser": "Disabilitare utente",
 	"bs-usermanager-titleenableuser": "Abilitare utente",
@@ -44,6 +48,7 @@
 	"bs-usermanager-editpassword-successful": "La password è stata cambiata",
 	"bs-usermanager-title-nouserselected": "Nessun utente selezionato",
 	"bs-usermanager-nouserselected": "Si prega di selezionare un utente",
+	"bs-usermanager-title-multipleuserselected": "Sono stati selezionati più account",
 	"bs-usermanager-invalid-groups": "I gruppi non sono validi",
 	"bs-usermanager-filter-only-activated-users": "Mostra tutti gli utenti attivi",
 	"bs-usermanager-filter-only-deactivated-users": "Mostra tutti gli utenti non attivi",
@@ -51,5 +56,7 @@
 	"action-usermanager-viewspecialpage": "visualizzare la pagina speciale \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "cambiare una password utente",
-	"bs-usermanager-label-password-change-strategy": "Metodo"
+	"bs-usermanager-label-password-change-strategy": "Metodo",
+	"bs-usermanager-label-password-change-strategy-reset": "Invia all'utente link per reset della password",
+	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email"
 }
