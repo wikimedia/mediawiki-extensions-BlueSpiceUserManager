@@ -274,11 +274,11 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 	renderIcon: function( value ) {
 		//TODO: make CSS class icon
-		var icon = '<img src="' + mw.config.get( "wgScriptPath" ) + '/extensions/BlueSpiceFoundation/resources/bluespice/images/{0}"/>';
+		var icon = '<img src="' + mw.config.get( "wgScriptPath" ) + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-{0}.png" alt="Icon {0}"/>';
 		if ( value === false ) {
-			return icon.format( 'bs-cross.png' );
+			return icon.format( 'cross' );
 		}
-		return icon.format( 'bs-tick.png' );
+		return icon.format( 'tick' );
 	},
 	onGrdMainSelectionChange: function( sender, records, opts ) {
 		this.callParent( arguments );
