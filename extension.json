@@ -137,6 +137,14 @@
 		"usermanager-viewspecialpage",
 		"usermanager-deleteuser"
 	],
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\UserManager\\HookHandler\\Main"
+		}
+	},
+	"Hooks": {
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+	},
 	"config_prefix": "bsg",
 	"config": {
 		"UserManagerForceResetLink": {
