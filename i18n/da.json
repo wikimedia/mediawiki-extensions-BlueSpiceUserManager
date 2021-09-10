@@ -27,5 +27,7 @@
 	"bs-usermanager-group-add-not-allowed": "Du har ikke tilladelse til at tilføje brugere til gruppen $1",
 	"bs-usermanager-editgroups": "Rediger grupper",
 	"bs-usermanager-label-password-change-strategy": "Metode",
-	"action-usermanager-deleteuser": "slet brugere"
+	"action-usermanager-deleteuser": "slet brugere",
+	"bs-usermanager-labelnewpassword": "Adgangskode",
+	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode"
 }

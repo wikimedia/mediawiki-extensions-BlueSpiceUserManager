@@ -6,7 +6,8 @@
 			"Lorelai87",
 			"Martinligabue",
 			"Sarah Bernabei",
-			"Selven"
+			"Selven",
+			"Stefano"
 		]
 	},
 	"bs-usermanager-db-error": "Si è verificato un errore sul database.",
@@ -51,5 +52,11 @@
 	"right-usermanager-viewspecialpage": "Accede alla pagina speciale [[Special:UserManager]]",
 	"action-usermanager-editpassword": "cambiare una password utente",
 	"bs-usermanager-label-password-change-strategy": "Metodo",
-	"bs-usermanager-groups-more": "...altro"
+	"bs-usermanager-groups-more": "...altro",
+	"bs-usermanager-self-nodelete": "Non puoi eliminare il tuo account.",
+	"bs-usermanager-headerregistration": "Registrazione",
+	"bs-usermanager-headerenabled": "Abilitato",
+	"bs-usermanager-title-multipleuserselected": "Sono stati selezionati più account",
+	"bs-usermanager-label-password-change-strategy-reset": "Invia all'utente link per reset della password",
+	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email"
 }
