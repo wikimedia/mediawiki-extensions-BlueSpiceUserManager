@@ -5,6 +5,7 @@
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
+			"נדב ס",
 			"תומר ט"
 		]
 	},
@@ -45,8 +46,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|המשתמש $1 בוטל|המשתמשת $1 בוטלה}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|המשתמש $1 הופעל|המשתמשת $1 הופעלה}}.",
 	"bs-usermanager-endisable": "הפעלה/ביטול",
-	"bs-usermanager-confirmdisableuser": "האם ברצונך לבטל את חשבון המשתמש של $1?",
-	"bs-usermanager-confirmenableuser": "האם ברצונך להפעיל את חשבון המשתמש של $1?",
+	"bs-usermanager-confirmdisableuser": "האם ברצונך לבטל את {{PLURAL:$1|חשבון המשתמש הזה|$1 חשבונות המשתמשים האלו}}?",
+	"bs-usermanager-confirmenableuser": "האם ברצונך להפעיל את {{PLURAL:$1|חשבון המשתמש הזה|$1 חשבונות המשתמשים האלו}}?",
 	"bs-usermanager-titledisableuser": "ביטול משתמש",
 	"bs-usermanager-titleenableuser": "הפעלת משתמש",
 	"usermanager": "ניהול משתמשים",

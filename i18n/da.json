@@ -29,5 +29,6 @@
 	"bs-usermanager-label-password-change-strategy": "Metode",
 	"action-usermanager-deleteuser": "slet brugere",
 	"bs-usermanager-labelnewpassword": "Adgangskode",
-	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode"
+	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode",
+	"bs-usermanager-user-exists": "Brugernavnet findes allerede."
 }

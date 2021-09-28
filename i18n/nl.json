@@ -4,6 +4,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Romaine",
 			"SPQRobin"
 		]
 	},
@@ -58,5 +59,11 @@
 	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig",
 	"bs-usermanager-headerregistration": "Registratie",
 	"bs-usermanager-filter-only-activated-users": "Toon alle geactiveerde gebruikers",
-	"bs-usermanager-filter-only-deactivated-users": "Toon alle gedeactiveerde gebruikers"
+	"bs-usermanager-filter-only-deactivated-users": "Toon alle gedeactiveerde gebruikers",
+	"action-usermanager-editpassword": "gebruikerswachtwoorden wijzigen",
+	"bs-usermanager-label-password-change-strategy": "Methode",
+	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
+	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
+	"action-usermanager-deleteuser": "gebruikers te verwijderen",
+	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager"
 }
