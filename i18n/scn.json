@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-usermanager-headerusername": "Nomu utenti",
+	"bs-usermanager-headergroups": "Gruppi",
 	"bs-usermanager-titledeleteuser": "Cancella utenti"
 }
