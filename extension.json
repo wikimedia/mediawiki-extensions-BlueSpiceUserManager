@@ -138,12 +138,12 @@
 		"usermanager-deleteuser"
 	],
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\UserManager\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"config_prefix": "bsg",
 	"config": {
