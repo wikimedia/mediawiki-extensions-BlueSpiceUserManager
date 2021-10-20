@@ -27,5 +27,8 @@
 	"action-usermanager-editpassword": "ændre brugeres adgangskoder",
 	"bs-usermanager-enter-pwd": "Indtast venligst en adgangskode.",
 	"bs-usermanager-label-password-change-strategy": "Metode",
-	"action-usermanager-deleteuser": "slet brugere"
+	"action-usermanager-deleteuser": "slet brugere",
+	"bs-usermanager-user-exists": "Brugernavnet findes allerede.",
+	"bs-usermanager-labelnewpassword": "Adgangskode",
+	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode"
 }

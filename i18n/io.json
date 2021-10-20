@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JSantos",
 			"Joao Xavier"
 		]
 	},
@@ -9,5 +10,6 @@
 	"bs-usermanager-groups-more": "... plusa",
 	"bs-usermanager-endisable": "Permisar/despermisar",
 	"bs-usermanager-invalid-groups": "La grupi esas nevalida",
-	"bs-usermanager-titleeditdetails": "Redaktar uzero"
+	"bs-usermanager-titleeditdetails": "Redaktar uzero",
+	"bs-usermanager-headeremail": "E-posto"
 }
