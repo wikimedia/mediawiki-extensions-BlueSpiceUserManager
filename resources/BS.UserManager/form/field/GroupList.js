@@ -5,8 +5,16 @@ Ext.define( 'BS.UserManager.form.field.GroupList', {
 	apiFields: [
 		{ name: 'type', defaultValue: 'group' },
 		'group_name',
+		'group_type',
 		'displayname'
 	],
+	apiStoreConfig: {
+		filters: [{
+			property: 'group_type',
+			type: 'list',
+			value: [ 'custom', 'core-minimal', 'extension-minimal' ]
+		}]
+	},
 	inputDisplayField: 'displayname',
 	listDisplayField: 'displayname',
 	idProperty: 'group_name',
