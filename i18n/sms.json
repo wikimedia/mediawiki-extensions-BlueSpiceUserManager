@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
-	"bs-usermanager-headeremail": "E-pååʹšt"
+	"bs-usermanager-headeremail": "E-pååʹšt",
+	"bs-usermanager-invalid-uname": "Õõʹnninõmm lij vââǥǥlaž.",
+	"bs-usermanager-headerusername": "Õõʹnninõmm"
 }
