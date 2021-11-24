@@ -4,7 +4,8 @@
 			"Ajam",
 			"Dalba",
 			"FarsiNevis",
-			"Reza1615"
+			"Reza1615",
+			"Jeeputer"
 		]
 	},
 	"bs-usermanager-desc": "میانای مدیریتی برای افزودن و ویرایش و حذف کاربران",
@@ -42,8 +43,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|کاربر}} $1 غیر فعال شد.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|کاربر}} $1 فعال شد.",
 	"bs-usermanager-endisable": "فعال‌سازی/ غیرفعال‌سازی",
-	"bs-usermanager-confirmdisableuser": "آیا واقعاً می‌خواهید {{GENDER:$1|کاربر}} $1 را غیر فعال کنید؟",
-	"bs-usermanager-confirmenableuser": "آیا واقعاً می‌خواهید {{GENDER:$1|کاربر}} $1 را فعال کنید؟",
+	"bs-usermanager-confirmdisableuser": "آیا واقعاً می‌خواهید {{PLURAL:$1|این کاربر|این $1 کاربر}} را غیر فعال کنید؟",
+	"bs-usermanager-confirmenableuser": "آیا واقعاً می‌خواهید {{PLURAL:$1|این کاربر|این $1 کاربر}} را فعال کنید؟",
 	"bs-usermanager-titledisableuser": "غیرفعال‌سازی کاربر",
 	"bs-usermanager-titleenableuser": "فعال‌سازی کاربر",
 	"usermanager": "مدیر کاربران",

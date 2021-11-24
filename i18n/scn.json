@@ -4,5 +4,27 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"bs-usermanager-headerusername": "Nomu utenti"
+	"bs-usermanager-enter-pwd": "Pi favuri nzirisci na password.",
+	"bs-usermanager-idnotexist": "St'utenti nun esisti.",
+	"bs-usermanager-invalid-pwd": "La password nun è vàlidda.",
+	"bs-usermanager-invalid-realname": "Lu nomu veru nun è vàliddu",
+	"bs-usermanager-invalid-uname": "Lu nomu utenti nun è vàliddu.",
+	"bs-usermanager-invalid-email-gen": "Lu nnirizzu email nun è vàliddu.",
+	"bs-usermanager-user-added": "L'utenti fu agghiunciutu.",
+	"bs-usermanager-headerusername": "Nomu utenti",
+	"bs-usermanager-headerrealname": "Nomu veru",
+	"bs-usermanager-headeremail": "Email",
+	"bs-usermanager-headergroups": "Gruppi",
+	"bs-usermanager-titleadduser": "Agghiunci utenti",
+	"bs-usermanager-titleeditdetails": "Cancia utenti",
+	"bs-usermanager-labelnewpassword": "Password",
+	"bs-usermanager-labelpasswordcheck": "Cunferma password",
+	"bs-usermanager-titledeleteuser": "Cancella utenti",
+	"bs-usermanager-confirmdeleteuser": "Sî sicuri di vuliri cancillari {{PLURAL:$1|stu|sti $1}} utenti?",
+	"bs-usermanager-groups-more": "... àutru",
+	"bs-usermanager-editgroups": "Cancia gruppi",
+	"bs-usermanager-editpassword": "Cancia la password",
+	"bs-usermanager-invalid-groups": "Li gruppi nun sugnu vàliddi",
+	"action-usermanager-viewspecialpage": "taliari la pàggina spiciali \"{{int:usermanager}}\"",
+	"action-usermanager-deleteuser": "cancillari utenti"
 }

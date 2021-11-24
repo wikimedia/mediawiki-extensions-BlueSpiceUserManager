@@ -4,7 +4,8 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
-			"SPQRobin"
+			"SPQRobin",
+			"Romaine"
 		]
 	},
 	"bs-usermanager-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van gebruikers",
@@ -58,5 +59,11 @@
 	"bs-usermanager-invalid-groups": "Groepen zijn ongeldig",
 	"bs-usermanager-filter-only-activated-users": "Toon alle geactiveerde gebruikers",
 	"bs-usermanager-filter-only-deactivated-users": "Toon alle gedeactiveerde gebruikers",
-	"action-usermanager-viewspecialpage": "de speciale pagina \"{{int:usermanager}}\" te bekijken"
+	"action-usermanager-viewspecialpage": "de speciale pagina \"{{int:usermanager}}\" te bekijken",
+	"action-usermanager-editpassword": "gebruikerswachtwoorden wijzigen",
+	"bs-usermanager-label-password-change-strategy": "Methode",
+	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
+	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
+	"action-usermanager-deleteuser": "gebruikers te verwijderen",
+	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager"
 }
