@@ -7,5 +7,9 @@
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
 	"bs-usermanager-headeremail": "E-pååʹšt",
 	"bs-usermanager-invalid-uname": "Õõʹnninõmm lij vââǥǥlaž.",
-	"bs-usermanager-headerusername": "Õõʹnninõmm"
+	"bs-usermanager-headerusername": "Õõʹnninõmm",
+	"bs-usermanager-invalid-pwd": "Peittsääʹnn lij vââǥǥlaž.",
+	"bs-usermanager-invalid-email-gen": "E-pååʹštaddrõs lij vââǥǥlaž.",
+	"bs-usermanager-save-successful": "Muttsid ruõʹǩǩeš.",
+	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\""
 }
