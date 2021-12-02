@@ -18,6 +18,7 @@
 	"bs-usermanager-invalid-uname": "Text for the username is invalid.",
 	"bs-usermanager-invalid-email-gen": "Text for the email adresse is invalid.",
 	"bs-usermanager-label": "Anchor text for user manager\n{{Identical|User manager}}",
+	"bs-usermanager-text": "Label for global actions menu entry",
 	"bs-usermanager-user-added": "Text for the user has been added.",
 	"bs-usermanager-user-deleted": "Text for the user has been deleted.Parameters:\n* $1 - Number of users that have been deleted.\n* $2 - The gender of user if $1 has only one user",
 	"bs-usermanager-user-exists": "Text for the username already exists.",

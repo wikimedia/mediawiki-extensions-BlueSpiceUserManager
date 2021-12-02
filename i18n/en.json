@@ -15,6 +15,7 @@
 	"bs-usermanager-invalid-uname": "The username is invalid.",
 	"bs-usermanager-invalid-email-gen": "The email address is invalid.",
 	"bs-usermanager-label": "User manager",
+	"bs-usermanager-text": "Users",
 	"bs-usermanager-user-added": "The user has been added.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|The {{GENDER:$2|user}} has|$1 users have}} been deleted.",
 	"bs-usermanager-user-exists": "The username already exists.",

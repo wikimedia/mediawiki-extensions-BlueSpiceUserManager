@@ -42,7 +42,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getText(): Message {
-		return Message::newFromKey( 'bs-usermanager-label' );
+		return Message::newFromKey( 'bs-usermanager-text' );
 	}
 
 	/**
@@ -56,6 +56,6 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
-		return Message::newFromKey( 'bs-usermanager-label' );
+		return Message::newFromKey( 'bs-usermanager-text' );
 	}
 }
