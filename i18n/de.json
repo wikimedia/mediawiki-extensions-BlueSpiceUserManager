@@ -20,6 +20,7 @@
 	"bs-usermanager-invalid-uname": "Der Benutzername ist unzulässig.",
 	"bs-usermanager-invalid-email-gen": "Die E-Mail-Adresse ist unzulässig.",
 	"bs-usermanager-label": "Benutzerverwaltung",
+	"bs-usermanager-text": "Benutzer",
 	"bs-usermanager-user-added": "Der Benutzer wurde hinzugefügt.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Der Benutzer|Die Benutzerin}} wurde|$1 Benutzer wurden}} gelöscht.",
 	"bs-usermanager-user-exists": "Der Benutzername ist schon vorhanden.",
