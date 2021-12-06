@@ -22,6 +22,7 @@
 	"bs-usermanager-invalid-uname": "Le nom d’utilisateur est incorrect.",
 	"bs-usermanager-invalid-email-gen": "L’adresse de courriel n’est pas valide.",
 	"bs-usermanager-label": "Gestionnaire des utilisateurs",
+	"bs-usermanager-text": "Utilisateurs",
 	"bs-usermanager-user-added": "L’utilisateur a été ajouté.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|L’utilisat{{GENDER:$2|eur|rice}} a|$1 utilisateurs ont}} été supprimé{{PLURAL:$1|{{GENDER:$2||e}}|s}}.",
 	"bs-usermanager-user-exists": "Le nom d’utilisateur existe déjà.",

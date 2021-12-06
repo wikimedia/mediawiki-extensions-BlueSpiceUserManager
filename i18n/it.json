@@ -18,6 +18,7 @@
 	"bs-usermanager-invalid-realname": "Il nome vero non è valido.",
 	"bs-usermanager-invalid-uname": "Il nome utente non è valido.",
 	"bs-usermanager-invalid-email-gen": "L'indirizzo email non è valido.",
+	"bs-usermanager-text": "Utenti",
 	"bs-usermanager-user-added": "L'utente è stato aggiunto.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|L'{{GENDER:$2|utente}} è stato cancellato.|$1 utenti sono stati cancellati.}}",
 	"bs-usermanager-user-exists": "Il nome utente esiste già.",

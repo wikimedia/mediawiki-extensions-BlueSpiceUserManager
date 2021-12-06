@@ -16,6 +16,7 @@
 	"bs-usermanager-invalid-uname": "사용자 이름이 올바르지 않습니다.",
 	"bs-usermanager-invalid-email-gen": "이메일 주소가 올바르지 않습니다.",
 	"bs-usermanager-label": "사용자 관리자",
+	"bs-usermanager-text": "사용자",
 	"bs-usermanager-user-added": "사용자가 추가되었습니다.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|사용자}}가|사용자 $1명이}} 삭제되었습니다.",
 	"bs-usermanager-user-exists": "이 사용자 이름은 이미 존재합니다.",
