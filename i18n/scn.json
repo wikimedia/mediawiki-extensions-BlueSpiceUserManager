@@ -26,5 +26,6 @@
 	"bs-usermanager-editpassword": "Cancia la password",
 	"bs-usermanager-invalid-groups": "Li gruppi nun sugnu vàliddi",
 	"action-usermanager-viewspecialpage": "taliari la pàggina spiciali \"{{int:usermanager}}\"",
-	"action-usermanager-deleteuser": "cancillari utenti"
+	"action-usermanager-deleteuser": "cancillari utenti",
+	"bs-usermanager-text": "Utenti"
 }

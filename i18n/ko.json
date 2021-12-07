@@ -66,5 +66,6 @@
 	"bs-usermanager-no-self-desysop": "자신의 관리자 권한을 스스로 철회할 수 없습니다.",
 	"bs-usermanager-label-password-change-strategy-pw": "직접 비밀번호 변경",
 	"bs-usermanager-no-mail": "선택된 사용자는 확인된 이메일 주소가 없습니다",
-	"right-usermanager-deleteuser": "Special:UserManager를 통한 사용자 삭제"
+	"right-usermanager-deleteuser": "Special:UserManager를 통한 사용자 삭제",
+	"bs-usermanager-text": "사용자"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz"
 		]
 	},
@@ -39,5 +40,6 @@
 	"bs-usermanager-nouserselected": "Valitse käyttäjä",
 	"bs-usermanager-title-multipleuserselected": "Useita käyttäjiä on valittu",
 	"bs-usermanager-multipleuserselected": "Voit muuttaa salasanan vain yhdelle käyttäjälle kerrallaan",
-	"bs-usermanager-invalid-groups": "Ryhmät eivät kelpaa"
+	"bs-usermanager-invalid-groups": "Ryhmät eivät kelpaa",
+	"bs-usermanager-text": "Käyttäjät"
 }
