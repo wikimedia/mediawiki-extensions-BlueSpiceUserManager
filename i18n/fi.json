@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz"
 		]
 	},
@@ -12,6 +13,7 @@
 	"bs-usermanager-invalid-realname": "Oikea nimi on virheellinen.",
 	"bs-usermanager-invalid-uname": "Käyttäjänimi on virheellinen.",
 	"bs-usermanager-invalid-email-gen": "Sähköpostiosoite on virheellinen.",
+	"bs-usermanager-text": "Käyttäjät",
 	"bs-usermanager-user-added": "Käyttäjä on lisätty.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|käyttäjä}} on|$1 käyttäjää on}} poistettu.",
 	"bs-usermanager-user-exists": "Nimiavaruus on jo olemassa.",
