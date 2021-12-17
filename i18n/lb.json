@@ -15,6 +15,7 @@
 	"bs-usermanager-invalid-realname": "De richtegen Numm ass net valabel.",
 	"bs-usermanager-invalid-uname": "De Benotzernumm ass net valabel.",
 	"bs-usermanager-invalid-email-gen": "D'E-Mail-Adress ass net valabel.",
+	"bs-usermanager-text": "Benotzer",
 	"bs-usermanager-user-added": "De Benotzer gouf dobäigesat.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|De Benotzer gouf|$1 Benotzer goufe}} geläscht.",
 	"bs-usermanager-user-exists": "De Benotzernumm gëtt et schonn.",
