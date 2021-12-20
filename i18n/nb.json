@@ -15,6 +15,7 @@
 	"bs-usermanager-invalid-uname": "Brukernavnet er ugyldig.",
 	"bs-usermanager-invalid-email-gen": "Epostadressen er ugyldig.",
 	"bs-usermanager-label": "Brukerbehandler",
+	"bs-usermanager-text": "Brukere",
 	"bs-usermanager-user-added": "Brukeren har blitt lagt til.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Brukeren}}|$1 brukere}} har blitt slettet.",
 	"bs-usermanager-user-exists": "Brukernavnet finnes allerede.",
