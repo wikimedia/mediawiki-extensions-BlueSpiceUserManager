@@ -19,6 +19,7 @@
 	"bs-usermanager-invalid-uname": "De gebruikersnaam is ongeldig.",
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is ongeldig.",
 	"bs-usermanager-label": "Gebruikersbeheer",
+	"bs-usermanager-text": "Gebruikers",
 	"bs-usermanager-user-added": "De gebruiker is toegevoegd.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|De {{GENDER:$2|gebruiker}} is|$1 gebruikers zijn}} verwijderd.",
 	"bs-usermanager-user-exists": "De gebruikersnaam bestaat al.",
