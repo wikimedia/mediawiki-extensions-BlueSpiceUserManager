@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"MuratTheTurkish",
 			"Sayginer",
 			"Violetanka"
@@ -18,6 +19,7 @@
 	"bs-usermanager-invalid-uname": "Kullanıcı adı geçersiz.",
 	"bs-usermanager-invalid-email-gen": "E-posta adresi geçersiz.",
 	"bs-usermanager-label": "Kullanıcı yöneticisi",
+	"bs-usermanager-text": "Kullanıcılar",
 	"bs-usermanager-user-added": "Kullanıcı eklendi.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Kullanıcı}}|$1 kullanıcı}} silindi.",
 	"bs-usermanager-user-exists": "Bu kullanıcı adı zaten mevcut.",
