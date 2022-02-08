@@ -20,6 +20,7 @@
 	"bs-usermanager-invalid-uname": "Неприпустиме ім'я користувача.",
 	"bs-usermanager-invalid-email-gen": "Адреса електронної пошти недійсна.",
 	"bs-usermanager-label": "Менеджер користувачів",
+	"bs-usermanager-text": "Користувачі",
 	"bs-usermanager-user-added": "Користувача було додано.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|$1 {{GENDER:$2|користувача}}|$1 користувачів}} вилучено.",
 	"bs-usermanager-user-exists": "Ім'я користувача вже існує.",
