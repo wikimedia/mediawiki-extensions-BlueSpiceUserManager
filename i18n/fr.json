@@ -34,7 +34,7 @@
 	"bs-usermanager-titleadduser": "Ajouter un utilisateur",
 	"bs-usermanager-titleeditdetails": "Modifier un utilisateur",
 	"bs-usermanager-labelnewpassword": "Mot de passe",
-	"bs-usermanager-labelpasswordcheck": "Confirmer le mot de passe",
+	"bs-usermanager-labelpasswordcheck": "Confirmez le mot de passe",
 	"bs-usermanager-titledeleteuser": "Supprimer l’utilisateur",
 	"bs-usermanager-confirmdeleteuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-groups-more": "... plus",
