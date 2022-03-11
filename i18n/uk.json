@@ -3,6 +3,7 @@
 		"authors": [
 			"Andriykopanytsia",
 			"DDPAT",
+			"Ice bulldog",
 			"Piramidion",
 			"Renamerr",
 			"Vlad5250",
@@ -76,5 +77,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Змінюйте пароль безпосередньо",
 	"bs-usermanager-no-mail": "Вибраний користувач не має підтвердженої адреси електронної пошти",
 	"action-usermanager-deleteuser": "видалити користувачів",
-	"right-usermanager-deleteuser": "Видалення користувача через Special:UserManager"
+	"right-usermanager-deleteuser": "Видалення користувача через Special:UserManager",
+	"bs-usermanager-text": "Користувачі"
 }

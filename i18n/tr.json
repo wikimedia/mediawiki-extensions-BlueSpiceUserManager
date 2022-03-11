@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"MuratTheTurkish",
 			"Sayginer",
 			"Violetanka"
@@ -74,5 +75,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
 	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
 	"action-usermanager-deleteuser": "kullanıcılarını sil",
-	"right-usermanager-deleteuser": "Special:UserManager yerine bir kullanıcıyı silme"
+	"right-usermanager-deleteuser": "Special:UserManager yerine bir kullanıcıyı silme",
+	"bs-usermanager-text": "Kullanıcılar"
 }

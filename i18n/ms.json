@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Tofeiku"
 		]
 	},
-	"bs-usermanager-groups-more": "... selanjutnya"
+	"bs-usermanager-groups-more": "... selanjutnya",
+	"bs-usermanager-text": "Pengguna"
 }

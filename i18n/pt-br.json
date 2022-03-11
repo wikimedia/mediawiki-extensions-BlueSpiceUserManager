@@ -74,5 +74,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Alterar a senha diretamente",
 	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado",
 	"action-usermanager-deleteuser": "excluir usuários",
-	"right-usermanager-deleteuser": "Excluindo um usuário em Special:UserManager"
+	"right-usermanager-deleteuser": "Excluindo um usuário em Special:UserManager",
+	"bs-usermanager-text": "Usuários"
 }

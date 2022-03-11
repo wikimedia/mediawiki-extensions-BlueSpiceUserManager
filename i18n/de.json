@@ -76,5 +76,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
 	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
 	"action-usermanager-deleteuser": "Benutzer zu löschen",
-	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen"
+	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen",
+	"bs-usermanager-text": "Benutzer"
 }

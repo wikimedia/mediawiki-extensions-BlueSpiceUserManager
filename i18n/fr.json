@@ -34,7 +34,7 @@
 	"bs-usermanager-titleadduser": "Ajouter un utilisateur",
 	"bs-usermanager-titleeditdetails": "Modifier un utilisateur",
 	"bs-usermanager-labelnewpassword": "Mot de passe",
-	"bs-usermanager-labelpasswordcheck": "Confirmer le mot de passe",
+	"bs-usermanager-labelpasswordcheck": "Confirmez le mot de passe",
 	"bs-usermanager-titledeleteuser": "Supprimer l’utilisateur",
 	"bs-usermanager-confirmdeleteuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-groups-more": "... plus",
@@ -78,5 +78,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Modifier directement le mot de passe",
 	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie",
 	"action-usermanager-deleteuser": "supprimer des utilisateurs",
-	"right-usermanager-deleteuser": "Suppression d’un utilisateur depuis Special:UserManager"
+	"right-usermanager-deleteuser": "Suppression d’un utilisateur depuis Special:UserManager",
+	"bs-usermanager-text": "Utilisateurs"
 }

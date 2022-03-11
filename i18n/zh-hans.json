@@ -5,6 +5,7 @@
 			"A Retired User",
 			"Func",
 			"Liuxinyu970226",
+			"Tranve",
 			"Yfdyh000",
 			"予弦",
 			"佛壁灯",
@@ -13,8 +14,8 @@
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
-	"bs-usermanager-admin-nodelete": "管理员账户不能删除。",
-	"bs-usermanager-self-nodelete": "您不能删除您的账户。",
+	"bs-usermanager-admin-nodelete": "管理员账号不能删除。",
+	"bs-usermanager-self-nodelete": "您不能删除您的账号。",
 	"bs-usermanager-db-error": "发生数据库错误。",
 	"bs-usermanager-enter-pwd": "请输入密码。",
 	"bs-usermanager-idnotexist": "此用户不存在。",

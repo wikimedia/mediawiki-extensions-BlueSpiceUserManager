@@ -58,5 +58,6 @@
 	"bs-usermanager-headerenabled": "Abilitato",
 	"bs-usermanager-title-multipleuserselected": "Sono stati selezionati più account",
 	"bs-usermanager-label-password-change-strategy-reset": "Invia all'utente link per reset della password",
-	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email"
+	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email",
+	"bs-usermanager-text": "Utenti"
 }

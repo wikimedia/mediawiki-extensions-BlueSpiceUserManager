@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"Moud hosny",
 			"ديفيد",
@@ -71,5 +72,7 @@
 	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]].",
 	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين",
 	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة",
-	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم"
+	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم",
+	"bs-usermanager-text": "المستخدمون",
+	"bs-usermanager-label-password-change-strategy": "الطريقة"
 }

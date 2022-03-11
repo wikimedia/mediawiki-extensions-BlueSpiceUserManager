@@ -71,5 +71,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Endre passord direkte",
 	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse",
 	"action-usermanager-deleteuser": "slette brukere",
-	"right-usermanager-deleteuser": "Slette en bruker via Special:UserManager"
+	"right-usermanager-deleteuser": "Slette en bruker via Special:UserManager",
+	"bs-usermanager-text": "Brukere"
 }

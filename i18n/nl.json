@@ -65,5 +65,6 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
 	"action-usermanager-deleteuser": "gebruikers te verwijderen",
-	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager"
+	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager",
+	"bs-usermanager-text": "Gebruikers"
 }

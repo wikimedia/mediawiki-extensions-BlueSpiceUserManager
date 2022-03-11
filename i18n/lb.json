@@ -57,5 +57,6 @@
 	"bs-usermanager-invalid-groups": "Gruppe sinn net valabel",
 	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
 	"bs-usermanager-label-password-change-strategy": "Method",
-	"action-usermanager-deleteuser": "Benotzer läschen"
+	"action-usermanager-deleteuser": "Benotzer läschen",
+	"bs-usermanager-text": "Benotzer"
 }
