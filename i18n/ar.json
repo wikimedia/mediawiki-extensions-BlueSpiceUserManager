@@ -5,7 +5,8 @@
 			"Moud hosny",
 			"ديفيد",
 			"سامي الرحيلي",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"FiberAhmed"
 		]
 	},
 	"bs-usermanager-desc": "واجهة الإدارة لإضافة وتحرير وحذف المستخدمين",
@@ -19,6 +20,7 @@
 	"bs-usermanager-invalid-uname": "اسم المستخدم غير صالح.",
 	"bs-usermanager-invalid-email-gen": "عنوان البريد الإلكتروني غير صالح.",
 	"bs-usermanager-label": "مدير المستخدم",
+	"bs-usermanager-text": "المستخدمون",
 	"bs-usermanager-user-added": "تمت إضافة المستخدم.",
 	"bs-usermanager-user-deleted": "لقد تم حذف {{PLURAL:$1|{{GENDER:$2|مستخدم|مستخدمة}}|$1 مستخدمين}}.",
 	"bs-usermanager-user-exists": "اسم المستخدم موجود بالفعل.",
@@ -70,6 +72,7 @@
 	"right-usermanager-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:UserManager]]",
 	"action-usermanager-editpassword": "تغيير كلمات سر المستخدمين",
 	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]].",
-	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة",
-	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم"
+	"bs-usermanager-label-password-change-strategy": "الطريقة",
+	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم",
+	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة"
 }

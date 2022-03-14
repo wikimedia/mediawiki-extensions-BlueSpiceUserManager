@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
+	"bs-usermanager-headerusername": "Kevtteenommâ",
 	"bs-usermanager-editpassword": "Molso syelisääni"
 }
