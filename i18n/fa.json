@@ -11,7 +11,7 @@
 	},
 	"bs-usermanager-desc": "میانای مدیریتی برای افزودن و ویرایش و حذف کاربران",
 	"bs-usermanager-admin-nodelete": "حساب مدیریت را نمی‌توان حذف کرد.",
-	"bs-usermanager-self-nodelete": "شما نمی‌توانید حساب کاربری‌تان را حذف کنید.",
+	"bs-usermanager-self-nodelete": "شما نمی‌توانید حسابتان را حذف کنید.",
 	"bs-usermanager-enter-pwd": "لطفاً یک گذرواژه وارد کنید.",
 	"bs-usermanager-idnotexist": "این کاربر وجود ندارد.",
 	"bs-usermanager-invalid-pwd": "گذرواژه نامعتبر است.",
