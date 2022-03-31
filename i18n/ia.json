@@ -15,6 +15,7 @@
 	"bs-usermanager-invalid-uname": "Le nomine de usator non es valide.",
 	"bs-usermanager-invalid-email-gen": "Le adresse de e-mail non es valide.",
 	"bs-usermanager-label": "Gestor de usatores",
+	"bs-usermanager-text": "Usatores",
 	"bs-usermanager-user-added": "Le usator ha essite addite.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|Le {{GENDER:$2|usator}}|$1 usatores}} ha essite delite.",
 	"bs-usermanager-user-exists": "Le nomine de usator jam existe.",
