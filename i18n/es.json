@@ -3,6 +3,7 @@
 		"authors": [
 			"DannyS712",
 			"Dgstranz",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio",
@@ -20,6 +21,7 @@
 	"bs-usermanager-invalid-uname": "El nombre de usuario no es válido.",
 	"bs-usermanager-invalid-email-gen": "La dirección de correo electrónico no es válida.",
 	"bs-usermanager-label": "Gestor de usuarios",
+	"bs-usermanager-text": "Usuarios",
 	"bs-usermanager-user-added": "Se añadió el usuario.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|Se eliminó {{GENDER:$2|el usuario}}|Se eliminaron los usuarios}}.",
 	"bs-usermanager-user-exists": "El nombre de usuario ya existe.",
@@ -66,5 +68,6 @@
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Método",
 	"action-usermanager-deleteuser": "eliminar usuarios"
 }
