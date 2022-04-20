@@ -282,18 +282,18 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 	},
 	onGrdMainSelectionChange: function( sender, records, opts ) {
 		this.callParent( arguments );
-		this.btnEditGroups.disable();
-		this.btnEditPassword.disable()
-		this.btnEnDisableUser.disable();
+		this.btnEditGroups && this.btnEditGroups.disable();
+		this.btnEditPassword && this.btnEditPassword.disable();
+		this.btnEnDisableUser && this.btnEnDisableUser.disable();
 		if ( !records || records.length < 1 ) {
 			return;
 		}
-		this.btnEditGroups.enable();
-		this.btnEnDisableUser.enable();
+		this.btnEditGroups && this.btnEditGroups.enable();
+		this.btnEnDisableUser && this.btnEnDisableUser.enable();
 		if ( records.length !== 1 ) {
 			return;
 		}
-		this.btnEditPassword.enable();
+		this.btnEditPassword && this.btnEditPassword.enable();
 	},
 	onBtnAddClick: function( oButton, oEvent ) {
 		if ( !this.dlgUserAdd ) {
