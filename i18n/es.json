@@ -3,6 +3,7 @@
 		"authors": [
 			"DannyS712",
 			"Dgstranz",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio",
@@ -66,5 +67,11 @@
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
-	"action-usermanager-deleteuser": "eliminar usuarios"
+	"action-usermanager-deleteuser": "eliminar usuarios",
+	"bs-usermanager-text": "Usuarios",
+	"action-usermanager-editpassword": "cambiar la contraseña de un usuario",
+	"bs-usermanager-label-password-change-strategy": "Método",
+	"bs-usermanager-label-password-change-strategy-reset": "Enviar enlace de restablecimiento de contraseña al usuario",
+	"bs-usermanager-label-password-change-strategy-pw": "Cambiar la contraseña directamente",
+	"bs-usermanager-no-mail": "El usuario seleccionado no tiene una dirección de correo electrónico confirmada"
 }

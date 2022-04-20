@@ -3,6 +3,7 @@
 		"authors": [
 			"DmitTrix",
 			"Erelon",
+			"Ex-Diktator",
 			"Guycn2",
 			"Steeve815",
 			"נדב ס",
@@ -68,5 +69,6 @@
 	"apihelp-bs-usermanager-group-store-summary": "אספקת API עבור המשימות של הרחבת ניהול המשתמשים של BlueSpice.",
 	"bs-usermanager-own-password-change": "{{GENDER:|אתה עומד|את עומדת|אתם עומדים}} לשנות את הסיסמה {{GENDER:|שלך|שלך|שלכם}}. פעולה זו תגרום לכך {{GENDER:|שתוצא מחשבונך ותועבר|שתוצאי מחשבונך ותועברי|שתוצאו מחשבונכם ותועברו}} לדף הכניסה לחשבון. האם {{GENDER:|ברצונך|ברצונך|ברצונכם}} להמשיך?",
 	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"{{int:usermanager}}\"",
-	"action-usermanager-editpassword": "שינוי סיסמאות המשתמש"
+	"action-usermanager-editpassword": "שינוי סיסמאות המשתמש",
+	"action-usermanager-deleteuser": "מחיקת משתמשים"
 }
