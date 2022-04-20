@@ -6,7 +6,8 @@
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio",
-			"Mor"
+			"Mor",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-usermanager-desc": "Interfaz administrativa para añadir, editar y eliminar usuarios",
@@ -65,6 +66,11 @@
 	"bs-usermanager-own-password-change": "Estás por cambiar tu propia contraseña. La sesión finalizará y se te redirigirá a la página de acceso. ¿Quieres continuar?",
 	"action-usermanager-viewspecialpage": "ver la página especial «{{int:usermanager}}»",
 	"right-usermanager-viewspecialpage": "Acceso a la página especial [[Special:UserManager]]",
+	"action-usermanager-editpassword": "cambiar la contraseña de un usuario",
 	"right-usermanager-editpassword": "Modificar las contraseñas de los usuarios a través del gestor de la página especial [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Método",
+	"bs-usermanager-label-password-change-strategy-reset": "Enviar enlace de restablecimiento de contraseña al usuario",
+	"bs-usermanager-label-password-change-strategy-pw": "Cambiar la contraseña directamente",
+	"bs-usermanager-no-mail": "El usuario seleccionado no tiene una dirección de correo electrónico confirmada",
 	"action-usermanager-deleteuser": "eliminar usuarios"
 }
