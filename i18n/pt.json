@@ -18,6 +18,7 @@
 	"bs-usermanager-invalid-uname": "O nome de utilizador é inválido.",
 	"bs-usermanager-invalid-email-gen": "O endereço de correio eletrónico é inválido.",
 	"bs-usermanager-label": "Administrador de utilizadores",
+	"bs-usermanager-text": "Utilizadores",
 	"bs-usermanager-user-added": "O utilizador foi adicionado.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|O utilizador foi eliminado|A utilizadora foi eliminada}}|$1 utilizadores foram eliminados}}.",
 	"bs-usermanager-user-exists": "O nome de utilizador já existe.",
@@ -45,8 +46,8 @@
 	"bs-usermanager-user-disabled": "{{GENDER:$1|O utilizador $1 foi desativado|A utilizadora $1 foi desativada}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|O utilizador $1 foi ativado|A utilizadora $1 foi ativada}}.",
 	"bs-usermanager-endisable": "Ativar/desativar",
-	"bs-usermanager-confirmdisableuser": "Pretende realmente desativar {{GENDER:$1|o utilizador|a utilizadora $1}} $1.",
-	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{GENDER:$1|o utilizador|a utilizadora $1}} $1.",
+	"bs-usermanager-confirmdisableuser": "Pretende realmente desativar {{PLURAL:$1|este utilizador|estes $1 utilizadores}}?",
+	"bs-usermanager-confirmenableuser": "Pretende realmente ativar {{PLURAL:$1|este utilizador|estes $1 utilizadores}}?",
 	"bs-usermanager-titledisableuser": "Desativar utilizador",
 	"bs-usermanager-titleenableuser": "Ativar utilizador",
 	"usermanager": "Administrador de utilizadores",
@@ -68,5 +69,11 @@
 	"action-usermanager-viewspecialpage": "ver página especial \"{{int:usermanager}}\"",
 	"right-usermanager-viewspecialpage": "Acesso à página especial [[Special:UserManager]]",
 	"action-usermanager-editpassword": "alterar palavras-passe dos utilizadores",
-	"right-usermanager-editpassword": "Alterar as palavras-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Alterar as palavras-passe dos utilizadores com o gestor na página especial [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "Método",
+	"bs-usermanager-label-password-change-strategy-reset": "Enviar hiperligação de redefinição da palavra-passe ao utilizador",
+	"bs-usermanager-label-password-change-strategy-pw": "Alterar a palavra-passe diretamente",
+	"bs-usermanager-no-mail": "O utilizador selecionado não tem endereço de correio eletrónico confirmado",
+	"action-usermanager-deleteuser": "eliminar utilizadores",
+	"right-usermanager-deleteuser": "Eliminar um utilizador usando Special:UserManager"
 }
