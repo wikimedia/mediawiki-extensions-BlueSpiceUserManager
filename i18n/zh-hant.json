@@ -21,6 +21,7 @@
 	"bs-usermanager-invalid-uname": "使用者名稱無效。",
 	"bs-usermanager-invalid-email-gen": "電子郵件地址無效。",
 	"bs-usermanager-label": "使用者管理",
+	"bs-usermanager-text": "使用者",
 	"bs-usermanager-user-added": "已新增使用者。",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|使用者}}|$1 個使用者}}已被刪除。",
 	"bs-usermanager-user-exists": "使用者已存在。",
