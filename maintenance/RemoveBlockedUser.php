@@ -113,5 +113,5 @@ class RemoveBlockedUser extends BSMaintenance {
 	}
 }
 
-$maintClass = 'RemoveBlockedUser';
+$maintClass = RemoveBlockedUser::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
