@@ -143,7 +143,8 @@
 		}
 	},
 	"Hooks": {
-		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback"
 	},
 	"config_prefix": "bsg",
 	"config": {
