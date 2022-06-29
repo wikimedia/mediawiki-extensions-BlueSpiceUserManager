@@ -220,6 +220,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 			arrItems.push( this.btnEnDisableUser );
 		}
 
+		mw.hook( 'usermanager.toolbar.init' ).fire( arrItems );
 		return arrItems;
 	},
 	makeRowActions: function() {
