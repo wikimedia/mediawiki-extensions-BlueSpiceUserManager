@@ -77,5 +77,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "直接更改密碼",
 	"bs-usermanager-no-mail": "所選的使用者沒有已確認的電子郵件地址",
 	"action-usermanager-deleteuser": "刪除使用者",
-	"right-usermanager-deleteuser": "透過 Special:UserManager 刪除使用者"
+	"right-usermanager-deleteuser": "透過 Special:UserManager 刪除使用者",
+	"bs-usermanager-text": "使用者"
 }
