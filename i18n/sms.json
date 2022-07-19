@@ -13,5 +13,8 @@
 	"bs-usermanager-headeremail": "E-pååʹšt",
 	"bs-usermanager-titleadduser": "Lââʹzzet õõʹnni",
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
-	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\""
+	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\"",
+	"bs-usermanager-headergroups": "Joouk",
+	"bs-usermanager-titledeleteuser": "Jaukkâd õõʹnni",
+	"bs-usermanager-editpassword": "Vaajât peittsääʹn"
 }
