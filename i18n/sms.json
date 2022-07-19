@@ -15,5 +15,6 @@
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
 	"bs-usermanager-titledeleteuser": "Jaukkâd õõʹnni",
 	"bs-usermanager-editpassword": "Vaajât peittsääʹn",
-	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\""
+	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\"",
+	"bs-usermanager-headergroups": "Joouk"
 }
