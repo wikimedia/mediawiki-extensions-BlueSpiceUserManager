@@ -15,7 +15,7 @@
 	"bs-usermanager-admin-nodelete": "Le compte administrateur ne peut pas être supprimé.",
 	"bs-usermanager-self-nodelete": "Vous ne pouvez pas supprimer votre compte.",
 	"bs-usermanager-db-error": "Une erreur de base de données s’est produite.",
-	"bs-usermanager-enter-pwd": "Veuillez entrer un mot de passe.",
+	"bs-usermanager-enter-pwd": "Veuillez saisir un mot de passe.",
 	"bs-usermanager-idnotexist": "Cet utilisateur n’existe pas.",
 	"bs-usermanager-invalid-pwd": "Le mot de passe n’est pas valide.",
 	"bs-usermanager-invalid-realname": "Le vrai nom n’est pas valide.",
