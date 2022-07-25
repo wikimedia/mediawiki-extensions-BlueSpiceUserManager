@@ -8,6 +8,7 @@
 	"bs-usermanager-invalid-pwd": "Peittsääʹnn lij vââǥǥlaž.",
 	"bs-usermanager-invalid-uname": "Õõʹnninõmm lij vââǥǥlaž.",
 	"bs-usermanager-invalid-email-gen": "E-pååʹštaddrõs lij vââǥǥlaž.",
+	"bs-usermanager-text": "Õõʹnni",
 	"bs-usermanager-save-successful": "Muttsid ruõʹǩǩeš.",
 	"bs-usermanager-headerusername": "Õõʹnninõmm",
 	"bs-usermanager-headeremail": "E-pååʹšt",
@@ -16,5 +17,6 @@
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
 	"bs-usermanager-titledeleteuser": "Jaukkâd õõʹnni",
 	"bs-usermanager-editpassword": "Vaajât peittsääʹn",
-	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\""
+	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\"",
+	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed"
 }
