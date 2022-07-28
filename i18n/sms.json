@@ -18,5 +18,6 @@
 	"bs-usermanager-titledeleteuser": "Jaukkâd õõʹnni",
 	"bs-usermanager-editpassword": "Vaajât peittsääʹn",
 	"bs-usermanager-text": "Õõʹnni",
-	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed"
+	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed",
+	"bs-usermanager-titleeditdetails": "Muuʹtt õõʹnni"
 }
