@@ -5,6 +5,7 @@
 			"A Retired User",
 			"Diskdance",
 			"Func",
+			"Lakejason0",
 			"Liuxinyu970226",
 			"Tranve",
 			"Yfdyh000",
@@ -75,5 +76,9 @@
 	"action-usermanager-viewspecialpage": "查看页面“{{int:usermanager}}”",
 	"right-usermanager-viewspecialpage": "访问页面 [[Special:UserManager]] 的权限",
 	"action-usermanager-editpassword": "更改用户密码",
-	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码"
+	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码",
+	"bs-usermanager-text": "用户",
+	"bs-usermanager-label-password-change-strategy": "方法",
+	"bs-usermanager-label-password-change-strategy-reset": "向用户发送密码重置链接",
+	"bs-usermanager-label-password-change-strategy-pw": "直接更改密码"
 }
