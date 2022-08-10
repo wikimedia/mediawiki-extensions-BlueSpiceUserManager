@@ -10,7 +10,9 @@
 			"予弦",
 			"佛壁灯",
 			"神樂坂秀吉",
-			"科劳"
+			"科劳",
+			"Diskdance",
+			"Lakejason0"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -24,6 +26,7 @@
 	"bs-usermanager-invalid-uname": "用户名无效。",
 	"bs-usermanager-invalid-email-gen": "邮件地址无效。",
 	"bs-usermanager-label": "用户管理",
+	"bs-usermanager-text": "用户",
 	"bs-usermanager-user-added": "用户已添加。",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|用户}}|$1个用户}}已删除。",
 	"bs-usermanager-user-exists": "用户已存在。",
@@ -74,5 +77,8 @@
 	"action-usermanager-viewspecialpage": "查看页面“{{int:usermanager}}”",
 	"right-usermanager-viewspecialpage": "访问页面 [[Special:UserManager]] 的权限",
 	"action-usermanager-editpassword": "更改用户密码",
-	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码"
+	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码",
+	"bs-usermanager-label-password-change-strategy": "方法",
+	"bs-usermanager-label-password-change-strategy-reset": "向用户发送密码重置链接",
+	"bs-usermanager-label-password-change-strategy-pw": "直接更改密码"
 }
