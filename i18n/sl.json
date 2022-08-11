@@ -4,6 +4,8 @@
 			"Eleassar"
 		]
 	},
+	"bs-usermanager-headerusername": "Uporabniško ime",
+	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-groups-more": "... več",
 	"bs-usermanager-nouserselected": "Prosimo, izberite uporabnika"
 }
