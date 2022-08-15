@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pacha Tchernof",
 			"פוילישער"
 		]
 	},
+	"bs-usermanager-labelpasswordcheck": "באַשטעטיקן פאַסוואָרט",
 	"bs-usermanager-groups-more": "... נאך",
-	"bs-usermanager-headerenabled": "אַקטיוויזירט"
+	"bs-usermanager-headerenabled": "אַקטיוויזירט",
+	"bs-usermanager-editpassword": "טוישן פאַסווארט"
 }
