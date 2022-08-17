@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Huñvreüs"
 		]
 	},
 	"bs-usermanager-admin-nodelete": "Ne c'haller ket dilemel kont ar merour.",
@@ -15,7 +16,7 @@
 	"bs-usermanager-invalid-email-gen": "Direizh eo ar chomlec'h postel.",
 	"bs-usermanager-label": "Merout implijerien",
 	"bs-usermanager-user-added": "Ouzhpennet eo bet an implijer.",
-	"bs-usermanager-user-deleted": "Dilamet eo bet an implijer.",
+	"bs-usermanager-user-deleted": "Dilamet eo bet {{PLURAL:$1|an implijer{{GENDER:$2||ez}}|$1 implijer}}.",
 	"bs-usermanager-user-exists": "An anv implijer zo anezhañ dija.",
 	"bs-usermanager-save-successful": "Kemmoù enrollet.",
 	"bs-usermanager-headerusername": "Anv implijer",

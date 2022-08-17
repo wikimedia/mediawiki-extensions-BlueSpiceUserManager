@@ -12,7 +12,8 @@
 			"神樂坂秀吉",
 			"科劳",
 			"Diskdance",
-			"Lakejason0"
+			"Lakejason0",
+			"Wzl19371"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -80,5 +81,8 @@
 	"right-usermanager-editpassword": "在[[Special:UserManager]]上更改用户密码",
 	"bs-usermanager-label-password-change-strategy": "方法",
 	"bs-usermanager-label-password-change-strategy-reset": "向用户发送密码重置链接",
-	"bs-usermanager-label-password-change-strategy-pw": "直接更改密码"
+	"bs-usermanager-label-password-change-strategy-pw": "直接更改密码",
+	"bs-usermanager-no-mail": "所选用户没有已确认的电子邮件地址",
+	"action-usermanager-deleteuser": "删除用户",
+	"right-usermanager-deleteuser": "使用Special:UserManager删除用户"
 }

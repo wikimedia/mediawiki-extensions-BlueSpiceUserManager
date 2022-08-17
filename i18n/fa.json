@@ -19,6 +19,7 @@
 	"bs-usermanager-invalid-uname": "نام کاربری نامعتبر است.",
 	"bs-usermanager-invalid-email-gen": "نشانی ایمیل نامعتبر است.",
 	"bs-usermanager-label": "مدیر کاربران",
+	"bs-usermanager-text": "کاربران",
 	"bs-usermanager-user-added": "کاربر مورد نظر افزوده شد.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|کاربر}}|$1 کاربر}} حذف شد.",
 	"bs-usermanager-user-exists": "این نام کاربری از قبل وجود دارد.",
