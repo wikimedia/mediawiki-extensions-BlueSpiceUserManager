@@ -65,7 +65,8 @@ class Extension extends \BlueSpice\Extension {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 
-		$authManager = MediaWikiServices::getInstance()->getAuthManager();
+		$services = MediaWikiServices::getInstance();
+		$authManager = $services->getAuthManager();
 
 		$usernameReq = new UsernameAuthenticationRequest();
 		$usernameReq->username = $userName;
@@ -105,7 +106,6 @@ class Extension extends \BlueSpice\Extension {
 		$status = Status::newGood( $user );
 		$_SESSION['wsDomain'] = $tmpDomain;
 
-		$services = MediaWikiServices::getInstance();
 		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		$services->getHookContainer()->run( 'BSUserManagerAfterAddUser', [
@@ -392,7 +392,9 @@ class Extension extends \BlueSpice\Extension {
 			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$services = MediaWikiServices::getInstance();
+		$dbw = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+
 		$fname = __METHOD__;
 		$section = $dbw->startAtomic( $fname, Database::ATOMIC_CANCELABLE );
 		try {
@@ -413,10 +415,9 @@ class Extension extends \BlueSpice\Extension {
 			return $status;
 		}
 
-		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
+		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSUserManagerAfterDeleteUser',
+		$services->getHookContainer()->run( 'BSUserManagerAfterDeleteUser',
 			[
 				$userManager,
 				$user,
@@ -438,6 +439,8 @@ class Extension extends \BlueSpice\Extension {
 	public static function setGroups( \User $user, $groups = [] ) {
 		$loggedInUser = \RequestContext::getMain()->getUser();
 		$attemptChangeSelf = $loggedInUser->getId() == $user->getId();
+		$services = MediaWikiServices::getInstance();
+		$userGroupManager = $services->getUserGroupManager();
 
 		$services = MediaWikiServices::getInstance();
 		$userGroupManager = $services->getUserGroupManager();
@@ -494,7 +497,7 @@ class Extension extends \BlueSpice\Extension {
 			$loggedInUser,
 			'',
 			$oldUGMs,
-			$userGroupManager->getGroupMemberships( $user )
+			$userGroupManager->getUserGroupMemberships( $user )
 		] );
 		$services->getHookContainer()->run(
 			'BSUserManagerAfterSetGroups',

@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Tests\BSApiExtJSStoreTestBase;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group medium
@@ -44,10 +45,9 @@ class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 			'wgGroupsAddToSelf' => [ 'groupchanger' => $aChangeableGroups ],
 			'wgGroupsRemoveFromSelf' => [ 'groupchanger' => $aChangeableGroups ]
 		] );
-		$this->getServiceContainer()->getUserGroupManager()->addUserToGroup(
-			$this->getTestUser( 'uploader' )->getUser(),
-			'groupchanger'
-		);
+		$userGroupManager = MediaWikiServices::getInstance()->getUserGroupManager();
+		$user = $this->getTestUser( 'uploader' )->getUser();
+		$userGroupManager->addUserToGroup( $user, 'groupchanger' );
 	}
 
 	public function provideSingleFilterData() {
