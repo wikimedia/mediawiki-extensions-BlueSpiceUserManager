@@ -65,7 +65,8 @@ class Extension extends \BlueSpice\Extension {
 			$performer = \RequestContext::getMain()->getUser();
 		}
 
-		$authManager = MediaWikiServices::getInstance()->getAuthManager();
+		$services = MediaWikiServices::getInstance();
+		$authManager = $services->getAuthManager();
 
 		$usernameReq = new UsernameAuthenticationRequest();
 		$usernameReq->username = $userName;
@@ -105,7 +106,6 @@ class Extension extends \BlueSpice\Extension {
 		$status = Status::newGood( $user );
 		$_SESSION['wsDomain'] = $tmpDomain;
 
-		$services = MediaWikiServices::getInstance();
 		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
 		$services->getHookContainer()->run( 'BSUserManagerAfterAddUser', [
@@ -392,7 +392,8 @@ class Extension extends \BlueSpice\Extension {
 			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$services = MediaWikiServices::getInstance();
+		$dbw = $services->getDBLoadBalancer()->getConnection( DB_MASTER );
 		$fname = __METHOD__;
 		$section = $dbw->startAtomic( $fname, Database::ATOMIC_CANCELABLE );
 		try {
@@ -413,10 +414,9 @@ class Extension extends \BlueSpice\Extension {
 			return $status;
 		}
 
-		$userManager = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
+		$userManager = $services->getService( 'BSExtensionFactory' )
 			->getExtension( 'BlueSpiceUserManager' );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
-			'BSUserManagerAfterDeleteUser',
+		$services->getHookContainer()->run( 'BSUserManagerAfterDeleteUser',
 			[
 				$userManager,
 				$user,
@@ -438,16 +438,18 @@ class Extension extends \BlueSpice\Extension {
 	public static function setGroups( \User $user, $groups = [] ) {
 		$loggedInUser = \RequestContext::getMain()->getUser();
 		$attemptChangeSelf = $loggedInUser->getId() == $user->getId();
+		$services = MediaWikiServices::getInstance();
+		$userGroupManager = $services->getUserGroupManager();
 
 		$checkSelfSysopRemove = $attemptChangeSelf
-			&& in_array( 'sysop', $loggedInUser->getEffectiveGroups() )
+			&& in_array( 'sysop', $userGroupManager->getUserEffectiveGroups( $loggedInUser ) )
 			&& !in_array( 'sysop', $groups );
 		if ( $checkSelfSysopRemove ) {
 			return Status::newFatal( 'bs-usermanager-no-self-desysop' );
 		}
 
-		$oldUGMs = $user->getGroupMemberships();
-		$currentGroups = $user->getGroups();
+		$oldUGMs = $userGroupManager->getUserGroupMemberships( $user );
+		$currentGroups = $userGroupManager->getUserGroups( $user );
 		$addGroups = array_diff( $groups, $currentGroups );
 		$removeGroups = array_diff( $currentGroups, $groups );
 		$reallyAdd = [];
@@ -466,7 +468,7 @@ class Extension extends \BlueSpice\Extension {
 				return Status::newFatal( 'bs-usermanager-group-add-not-allowed', $group );
 			}
 			$reallyAdd[] = $group;
-			$user->addGroup( $group );
+			$userGroupManager->addUserToGroup( $user, $group );
 		}
 		foreach ( $removeGroups as $group ) {
 			if ( in_array( $group, self::$excludegroups ) ) {
@@ -480,20 +482,20 @@ class Extension extends \BlueSpice\Extension {
 				return Status::newFatal( 'bs-usermanager-group-remove-not-allowed', $group );
 			}
 			$reallyRemove[] = $group;
-			$user->removeGroup( $group );
+			$userGroupManager->removeUserFromGroup( $user, $group );
 		}
 
 		$status = Status::newGood( $user );
-		MediaWikiServices::getInstance()->getHookContainer()->run( 'UserGroupsChanged', [
+		$services->getHookContainer()->run( 'UserGroupsChanged', [
 			$user,
 			$reallyAdd,
 			$reallyRemove,
 			$loggedInUser,
 			'',
 			$oldUGMs,
-			$user->getGroupMemberships()
+			$userGroupManager->getUserGroupMemberships( $user )
 		] );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$services->getHookContainer()->run(
 			'BSUserManagerAfterSetGroups',
 			[
 				$user,
