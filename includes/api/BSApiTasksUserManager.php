@@ -408,6 +408,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$oReturn = $this->makeStandardReturn();
 
 		$userFactory = $this->services->getUserFactory();
+		$userOptionsLookup = $this->services->getUserOptionsLookup();
 		foreach ( $oTaskData->userIDs as $sUserID ) {
 			$oUser = $userFactory->newFromID( $sUserID );
 			$oStatus = \BlueSpice\UserManager\Extension::deleteUser( $oUser, $this->getUser() );
@@ -423,7 +424,10 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$msg->params( $idCount );
 		if ( $idCount === 1 ) {
 			$msg->params(
-				$userFactory->newFromID( $oTaskData->userIDs[0] )->getOption( 'gender' )
+				$userOptionsLookup->getOption(
+					$userFactory->newFromID( $oTaskData->userIDs[0] ),
+					'gender'
+				)
 			);
 		}
 		$oReturn->message = $msg->text();
