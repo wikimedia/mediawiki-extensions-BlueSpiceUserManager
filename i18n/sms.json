@@ -18,6 +18,7 @@
 	"bs-usermanager-labelnewpassword": "Peittsääʹnn",
 	"bs-usermanager-titledeleteuser": "Jaukkâd õõʹnni",
 	"bs-usermanager-editpassword": "Vaajât peittsääʹn",
+	"bs-usermanager-nouserselected": "Vaʹlljed õõʹnni",
 	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\"",
 	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed"
 }
