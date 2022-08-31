@@ -38,7 +38,7 @@
 	"bs-usermanager-log-user-disabled": "ব্যবহারকারী-ব্যবস্থাপক {{GENDER:$1|ব্যবহারকারী}} $1কে নিষ্ক্রয় করেছেন",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|ব্যবহারকারী}} $1কে সক্রিয় করা হয়েছে।",
 	"bs-usermanager-endisable": "সক্রিয়/নিষ্ক্রিয়",
-	"bs-usermanager-confirmdisableuser": "আপনি কি সত্যি {{GENDER:$1|ব্যবহারকারী}} $1কে নিষ্ক্রয় করতে চান?",
+	"bs-usermanager-confirmdisableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} নিষ্ক্রয় করতে চান?",
 	"bs-usermanager-confirmenableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} সক্রিয় করতে চান?",
 	"bs-usermanager-titledisableuser": "নিষ্ক্রয় ব্যবহারকারী",
 	"bs-usermanager-titleenableuser": "সক্রিয় ব্যবহারকারী",
