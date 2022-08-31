@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bada Kaji",
 			"Drjpoudel",
 			"पर्वत सुबेदी",
 			"बिप्लब आनन्द",
@@ -37,5 +38,6 @@
 	"bs-usermanager-no-self-desysop": "तपाईँ आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।",
 	"bs-usermanager-endisable": "सक्षम/असक्षम",
 	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू",
-	"bs-usermanager-title-nouserselected": "कुनैपनि प्रयाेगकर्ता छानिएकाे छैन"
+	"bs-usermanager-title-nouserselected": "कुनैपनि प्रयाेगकर्ता छानिएकाे छैन",
+	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्"
 }
