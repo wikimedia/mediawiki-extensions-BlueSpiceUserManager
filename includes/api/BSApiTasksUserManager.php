@@ -213,6 +213,20 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		]
 	];
 
+	/** @var MediaWikiServices */
+	private $services = null;
+
+	/**
+	 * DEPRECATED!
+	 * @param ApiMain $mainModule
+	 * @param string $moduleName Name of this module
+	 * @param string $modulePrefix Prefix to use for parameter names
+	 */
+	public function __construct( \ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
+		$this->services = $this->getServices();
+	}
+
 	/**
 	 * Returns an array of tasks and their required permissions
 	 * array( 'taskname' => array('read', 'edit') )
@@ -317,7 +331,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			$data['repassword'] = $oTaskData->rePassword;
 		}
 
-		$oUser = User::newFromID( $oTaskData->userID );
+		$oUser = $this->services->getUserFactory()->newFromID( $oTaskData->userID );
 
 		$oStatus = \BlueSpice\UserManager\Extension::editPassword(
 			$oUser,
@@ -351,7 +365,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 				'bs-usermanager-invalid-uname'
 			)->plain();
 		}
-		$oUser = User::newFromID( $oTaskData->userID );
+		$oUser = $this->services->getUserFactory()->newFromID( $oTaskData->userID );
 
 		$aMetaData = [];
 
@@ -393,8 +407,9 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	protected function task_deleteUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
+		$userFactory = $this->services->getUserFactory();
 		foreach ( $oTaskData->userIDs as $sUserID ) {
-			$oUser = User::newFromID( $sUserID );
+			$oUser = $userFactory->newFromID( $sUserID );
 			$oStatus = \BlueSpice\UserManager\Extension::deleteUser( $oUser, $this->getUser() );
 			if ( !$oStatus->isOK() ) {
 				$oReturn->message = $oStatus->getMessage()->parse();
@@ -408,7 +423,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		$msg->params( $idCount );
 		if ( $idCount === 1 ) {
 			$msg->params(
-				User::newFromID( $oTaskData->userIDs[0] )->getOption( 'gender' )
+				$userFactory->newFromID( $oTaskData->userIDs[0] )->getOption( 'gender' )
 			);
 		}
 		$oReturn->message = $msg->text();
@@ -424,7 +439,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	protected function task_disableUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
-		$oUser = User::newFromID( $oTaskData->userID );
+		$oUser = $this->services->getUserFactory()->newFromID( $oTaskData->userID );
 
 		$oPerformer = $this->getUser();
 		$oStatus = \BlueSpice\UserManager\Extension::disableUser( $oUser, $oPerformer );
@@ -447,7 +462,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 	protected function task_enableUser( $oTaskData ) {
 		$oReturn = $this->makeStandardReturn();
 
-		$oUser = User::newFromID( $oTaskData->userID );
+		$oUser = $this->services->getUserFactory()->newFromID( $oTaskData->userID );
 
 		$oPerformer = $this->getUser();
 		$oStatus = \BlueSpice\UserManager\Extension::enableUser( $oUser, $oPerformer );
@@ -482,8 +497,9 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 			)->plain();
 		}
 		$oStatus = Status::newGood();
+		$userFactory = $this->services->getUserFactory();
 		foreach ( $oTaskData->userIDs as $sUserID ) {
-			$oUser = User::newFromID( $sUserID );
+			$oUser = $userFactory->newFromID( $sUserID );
 			$oStatus->merge( \BlueSpice\UserManager\Extension::setGroups(
 				$oUser,
 				$oTaskData->groups
