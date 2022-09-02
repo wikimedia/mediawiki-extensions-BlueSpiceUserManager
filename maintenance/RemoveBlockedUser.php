@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\UserManager\Extension as UserManager;
+use MediaWiki\MediaWikiServices;
 
 /**
  * Maintenance script to delete all blocked user from databse
@@ -44,11 +45,12 @@ class RemoveBlockedUser extends BSMaintenance {
 
 			$allUser = $this->getAllUserFromDB();
 
+			$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 			foreach ( $allUser as $user ) {
 				$id = $user['id'];
 				$name = $user['name'];
 
-				$currentUser = User::newFromId( $id );
+				$currentUser = $userFactory->newFromId( $id );
 				if ( !$currentUser->isBlocked() ) {
 					continue;
 				}
