@@ -213,20 +213,6 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		]
 	];
 
-	/** @var MediaWikiServices */
-	private $services = null;
-
-	/**
-	 * DEPRECATED!
-	 * @param ApiMain $mainModule
-	 * @param string $moduleName Name of this module
-	 * @param string $modulePrefix Prefix to use for parameter names
-	 */
-	public function __construct( \ApiMain $mainModule, $moduleName, $modulePrefix = '' ) {
-		parent::__construct( $mainModule, $moduleName, $modulePrefix );
-		$this->services = $this->getServices();
-	}
-
 	/**
 	 * Returns an array of tasks and their required permissions
 	 * array( 'taskname' => array('read', 'edit') )
