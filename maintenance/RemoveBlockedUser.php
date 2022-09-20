@@ -30,7 +30,8 @@ class RemoveBlockedUser extends BSMaintenance {
 	 */
 	public function execute() {
 		$performerName = $this->getOption( 'user' );
-		$performer = User::newFromName( $performerName );
+		$performer = MediaWikiServices::getInstance()->getUserFactory()
+			->newFromName( $performerName );
 
 		if ( $performer->getId() !== 0 ) {
 			$force = false;
