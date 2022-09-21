@@ -8,5 +8,6 @@
 	"bs-usermanager-nouserselected": "Prosimo, izberite uporabnika",
 	"bs-usermanager-headerusername": "Uporabniško ime",
 	"bs-usermanager-headergroups": "Skupine",
-	"bs-usermanager-headerenabled": "Omogočeno"
+	"bs-usermanager-headerenabled": "Omogočeno",
+	"bs-usermanager-text": "Uporabniki"
 }
