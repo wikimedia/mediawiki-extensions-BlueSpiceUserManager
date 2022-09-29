@@ -11,7 +11,7 @@
 	},
 	"bs-usermanager-desc": "प्रयोगकर्ताहरू जोड्ने, सम्पादन गर्ने तथा मेट्ने प्रवन्धक अवतरण",
 	"bs-usermanager-admin-nodelete": "प्रवन्धक खाता मेट्न सकिदैन।",
-	"bs-usermanager-self-nodelete": "तपाईँ आफ्नो खाता मेटाउन सक्नुहुन्न।",
+	"bs-usermanager-self-nodelete": "तपाईं आफ्नो खाता मेटाउन सक्नुहुन्न।",
 	"bs-usermanager-db-error": "डेटावेसमा त्रुटि उत्पन्न भयो।",
 	"bs-usermanager-enter-pwd": "कृपया पासवर्ड हाल्नुहोस्।",
 	"bs-usermanager-idnotexist": "यो प्रयोगकर्ता अस्तित्वमा छैन।",
