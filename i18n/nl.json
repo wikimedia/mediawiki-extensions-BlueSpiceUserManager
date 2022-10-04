@@ -66,5 +66,15 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
 	"action-usermanager-deleteuser": "gebruikers te verwijderen",
-	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager"
+	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager",
+	"apihelp-bs-usermanager-tasks-description": "Voorziet in bewerkingen voor de uitbreiding Checklist (controlelijsten)",
+	"apihelp-bs-usermanager-tasks-summary": "Voorziet in bewerkingen voor de uitbreiding Checklist (controlelijsten)",
+	"bs-usermanager-group-add-not-allowed": "U mag geen gebruikers toevoegen aan de groep $1",
+	"bs-usermanager-group-remove-not-allowed": "U mag geen gebruikers verwijderen uit de groep $1",
+	"apihelp-bs-usermanager-group-store-description": "Voorziet in de API voor gebruikersbeheertaken voor BlueSpice.",
+	"apihelp-bs-usermanager-group-store-summary": "Voorziet in de API voor gebruikersbeheertaken voor BlueSpice.",
+	"bs-usermanager-own-password-change": "U staat op het punt uw eigen wachtwoord te wijzigen. U wordt afgemeld en doorgestuurd naar de aanmeldpagina. Wilt u doorgaan?",
+	"right-usermanager-viewspecialpage": "Toegang tot de speciale pagina [[Special:UserManager]]",
+	"right-usermanager-editpassword": "Gebruikerswachtwoorden wijzigen met de speciale beheerpagina [[Special:UserManager]]",
+	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres"
 }
