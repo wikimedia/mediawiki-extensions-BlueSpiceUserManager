@@ -9,5 +9,6 @@
 	"bs-usermanager-headerusername": "Uporabniško ime",
 	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-headerenabled": "Omogočeno",
-	"bs-usermanager-text": "Uporabniki"
+	"bs-usermanager-text": "Uporabniki",
+	"bs-usermanager-titleeditdetails": "Uredi uporabnika"
 }
