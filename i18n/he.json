@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"DmitTrix",
 			"Erelon",
 			"Ex-Diktator",
@@ -21,6 +22,7 @@
 	"bs-usermanager-invalid-uname": "שם המשתמש אינו תקין.",
 	"bs-usermanager-invalid-email-gen": "כתובת הדוא\"ל אינה תקינה.",
 	"bs-usermanager-label": "ניהול משתמשים",
+	"bs-usermanager-text": "משתמשים",
 	"bs-usermanager-user-added": "המשתמש נוסף.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|המשתמש נמחק|המשתמשת נמחקה}}|$1 משתמשים נמחקו}}",
 	"bs-usermanager-user-exists": "שם המשתמש כבר קיים.",
@@ -69,6 +71,13 @@
 	"apihelp-bs-usermanager-group-store-summary": "אספקת API עבור המשימות של הרחבת ניהול המשתמשים של BlueSpice.",
 	"bs-usermanager-own-password-change": "{{GENDER:|אתה עומד|את עומדת|אתם עומדים}} לשנות את הסיסמה {{GENDER:|שלך|שלך|שלכם}}. פעולה זו תגרום לכך {{GENDER:|שתוצא מחשבונך ותועבר|שתוצאי מחשבונך ותועברי|שתוצאו מחשבונכם ותועברו}} לדף הכניסה לחשבון. האם {{GENDER:|ברצונך|ברצונך|ברצונכם}} להמשיך?",
 	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"{{int:usermanager}}\"",
+	"right-usermanager-viewspecialpage": "גישה לדף המיוחד [[Special:UserManager]]",
 	"action-usermanager-editpassword": "שינוי סיסמאות המשתמש",
-	"action-usermanager-deleteuser": "מחיקת משתמשים"
+	"right-usermanager-editpassword": "שינוי סיסמאות משתמש עם המנהל בדף המיוחד [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "שיטה",
+	"bs-usermanager-label-password-change-strategy-reset": "לשלוח קישור לאיפוס סיסמה למשתמש",
+	"bs-usermanager-label-password-change-strategy-pw": "לשנות סיסמה ישירות",
+	"bs-usermanager-no-mail": "למשתמש שנבחר אין כתובת דוא\"ל מאושרת",
+	"action-usermanager-deleteuser": "מחיקת משתמשים",
+	"right-usermanager-deleteuser": "מחיקת משתמש דרך Special:UserManager"
 }
