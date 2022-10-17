@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"DmitTrix",
 			"Erelon",
 			"Ex-Diktator",
@@ -70,5 +71,13 @@
 	"bs-usermanager-own-password-change": "{{GENDER:|אתה עומד|את עומדת|אתם עומדים}} לשנות את הסיסמה {{GENDER:|שלך|שלך|שלכם}}. פעולה זו תגרום לכך {{GENDER:|שתוצא מחשבונך ותועבר|שתוצאי מחשבונך ותועברי|שתוצאו מחשבונכם ותועברו}} לדף הכניסה לחשבון. האם {{GENDER:|ברצונך|ברצונך|ברצונכם}} להמשיך?",
 	"action-usermanager-viewspecialpage": "לצפות בדף המיוחד \"{{int:usermanager}}\"",
 	"action-usermanager-editpassword": "שינוי סיסמאות המשתמש",
-	"action-usermanager-deleteuser": "מחיקת משתמשים"
+	"action-usermanager-deleteuser": "מחיקת משתמשים",
+	"bs-usermanager-text": "משתמשים",
+	"right-usermanager-viewspecialpage": "גישה לדף המיוחד [[Special:UserManager]]",
+	"right-usermanager-editpassword": "שינוי סיסמאות משתמש עם המנהל בדף המיוחד [[Special:UserManager]]",
+	"bs-usermanager-label-password-change-strategy": "שיטה",
+	"bs-usermanager-label-password-change-strategy-reset": "לשלוח קישור לאיפוס סיסמה למשתמש",
+	"bs-usermanager-label-password-change-strategy-pw": "לשנות סיסמה ישירות",
+	"bs-usermanager-no-mail": "למשתמש שנבחר אין כתובת דוא\"ל מאושרת",
+	"right-usermanager-deleteuser": "מחיקת משתמש דרך Special:UserManager"
 }
