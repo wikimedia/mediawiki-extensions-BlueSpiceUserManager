@@ -30,5 +30,6 @@
 	"action-usermanager-deleteuser": "slet brugere",
 	"bs-usermanager-user-exists": "Brugernavnet findes allerede.",
 	"bs-usermanager-labelnewpassword": "Adgangskode",
-	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode"
+	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode",
+	"bs-usermanager-text": "Brugere"
 }
