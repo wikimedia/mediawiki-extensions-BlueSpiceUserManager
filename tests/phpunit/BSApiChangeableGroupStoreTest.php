@@ -10,6 +10,7 @@ use MediaWiki\MediaWikiServices;
  * @group BlueSpiceExtensions
  * @group BlueSpiceUserManager
  * @group Database
+ * @covers BSApiChangeableGroupStore
  */
 class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 

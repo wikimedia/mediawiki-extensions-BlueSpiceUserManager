@@ -10,6 +10,7 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group BlueSpiceExtensions
  * @group BlueSpiceUserManager
  * @group Database
+ * @covers BSApiTasksUserManager
  */
 class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 
