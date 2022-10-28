@@ -52,7 +52,7 @@ class RemoveBlockedUser extends BSMaintenance {
 				$name = $user['name'];
 
 				$currentUser = $userFactory->newFromId( $id );
-				if ( !$currentUser->isBlocked() ) {
+				if ( !$currentUser->getBlock() ) {
 					continue;
 				}
 
