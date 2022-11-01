@@ -49,8 +49,8 @@
 	"bs-usermanager-user-disabled": "{{الجنس:$1|المستخدم}}$1 تم تعطيله",
 	"bs-usermanager-user-enabled": "تم تمكين {{GENDER:$1|المستخدم|المستخدمة}} $1 عبر مدير مستخدم.",
 	"bs-usermanager-endisable": "تمكين/تعطيل",
-	"bs-usermanager-confirmdisableuser": "هل تريد حقا تعطيل {{GENDER:$1|المستخدم|المستخدمة}} $1؟",
-	"bs-usermanager-confirmenableuser": "هل تريد حقا تمكين {{GENDER:$1|المستخدم|المستخدمة}} $1؟",
+	"bs-usermanager-confirmdisableuser": "هل تريد حقًا تعطيل {{PLURAL:$1| هذا المستخدم | هؤلاء $1 مستخدم}}؟",
+	"bs-usermanager-confirmenableuser": "هل تريد حقًا تمكين {{PLURAL:$1| هذا المستخدم | هؤلاء $1 مستخدم}}؟",
 	"bs-usermanager-titledisableuser": "تعطيل المستخدم",
 	"bs-usermanager-titleenableuser": "تمكين مستخدم",
 	"usermanager": "مدير المستخدم",
@@ -75,5 +75,8 @@
 	"right-usermanager-editpassword": "تغيير كلمات مرور المستخدم المدير في الصفحة الخاصة [[Special:UserManager]].",
 	"bs-usermanager-label-password-change-strategy": "الطريقة",
 	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم",
-	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة"
+	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة",
+	"bs-usermanager-no-mail": "المستخدم المحدد ليس لديه عنوان بريد إلكتروني مؤكد",
+	"action-usermanager-deleteuser": "حذف المستخدمين",
+	"right-usermanager-deleteuser": "حذف مستخدم عبر Special: UserManager"
 }
