@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
 		]
 	},
 	"bs-usermanager-text": "Մասնակիցներ",
+	"bs-usermanager-headerusername": "Օգտանուն",
 	"bs-usermanager-headergroups": "Խմբեր"
 }
