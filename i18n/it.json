@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Lorelai87",
 			"Martinligabue",
 			"Sarah Bernabei",
@@ -59,5 +60,14 @@
 	"bs-usermanager-title-multipleuserselected": "Sono stati selezionati più account",
 	"bs-usermanager-label-password-change-strategy-reset": "Invia all'utente link per reset della password",
 	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email",
-	"bs-usermanager-text": "Utenti"
+	"bs-usermanager-text": "Utenti",
+	"bs-usermanager-admin-nodelete": "L'utenza dell'amministratore non può essere eliminato.",
+	"bs-usermanager-confirmdeleteuser": "Sei sicuro di voler cancellare {{PLURAL:$1|questo utente|questi utenti}}?",
+	"bs-usermanager-block-error": "{{GENDER:$1|L'utente}} $1 non può essere disabilitato.",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|L'utente}} $1 non può essere abilitato.",
+	"bs-usermanager-log-user-disabled": "{{GENDER:$1|L'utente}} $1 è stato disabilitato tramite UserManager",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|L'utente}} $1 è stato disabilitato.",
+	"bs-usermanager-confirmdisableuser": "Vuoi davvero disabilitare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
+	"bs-usermanager-confirmenableuser": "Vuoi davvero abilitare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
+	"bs-usermanager-multipleuserselected": "È possibile modificare la password solo per un utente alla volta"
 }
