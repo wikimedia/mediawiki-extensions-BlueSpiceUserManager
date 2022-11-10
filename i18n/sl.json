@@ -6,6 +6,7 @@
 	},
 	"bs-usermanager-text": "Uporabniki",
 	"bs-usermanager-headerusername": "Uporabniško ime",
+	"bs-usermanager-headeremail": "E-pošta",
 	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-titleeditdetails": "Uredi uporabnika",
 	"bs-usermanager-groups-more": "... več",
