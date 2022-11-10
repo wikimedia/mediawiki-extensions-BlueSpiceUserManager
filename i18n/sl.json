@@ -10,5 +10,6 @@
 	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-headerenabled": "Omogočeno",
 	"bs-usermanager-text": "Uporabniki",
-	"bs-usermanager-titleeditdetails": "Uredi uporabnika"
+	"bs-usermanager-titleeditdetails": "Uredi uporabnika",
+	"bs-usermanager-headeremail": "E-pošta"
 }
