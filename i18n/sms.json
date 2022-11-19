@@ -20,5 +20,6 @@
 	"bs-usermanager-text": "Õõʹnni",
 	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed",
 	"bs-usermanager-titleeditdetails": "Muuʹtt õõʹnni",
-	"bs-usermanager-nouserselected": "Vaʹlljed õõʹnni"
+	"bs-usermanager-nouserselected": "Vaʹlljed õõʹnni",
+	"bs-usermanager-labelpasswordcheck": "Priim peittsääʹn"
 }
