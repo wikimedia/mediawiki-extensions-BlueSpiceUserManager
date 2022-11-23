@@ -11,5 +11,6 @@
 	"bs-usermanager-headerenabled": "Omogočeno",
 	"bs-usermanager-text": "Uporabniki",
 	"bs-usermanager-titleeditdetails": "Uredi uporabnika",
-	"bs-usermanager-headeremail": "E-pošta"
+	"bs-usermanager-headeremail": "E-pošta",
+	"bs-usermanager-labelnewpassword": "Geslo"
 }
