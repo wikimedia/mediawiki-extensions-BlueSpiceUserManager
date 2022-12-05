@@ -182,6 +182,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_group.png',
 				iconCls: 'btn'+this.tbarHeight,
 				tooltip:  mw.message('bs-usermanager-editgroups').plain(),
+				ariaLabel:  mw.message('bs-usermanager-editgroups').plain(),
 				height: 50,
 				width: 52,
 				disabled: true
@@ -198,6 +199,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_password.png',
 				iconCls: 'btn'+this.tbarHeight,
 				tooltip: mw.message('bs-usermanager-editpassword').plain(),
+				ariaLabel:  mw.message('bs-usermanager-editpassword').plain(),
 				height: 50,
 				width: 52,
 				disabled: true
@@ -212,6 +214,7 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 				icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-btn_block.png',
 				iconCls: 'btn'+this.tbarHeight,
 				tooltip: mw.message('bs-usermanager-endisable').plain(),
+				ariaLabel:  mw.message('bs-usermanager-endisable').plain(),
 				height: 50,
 				width: 52,
 				disabled: true
