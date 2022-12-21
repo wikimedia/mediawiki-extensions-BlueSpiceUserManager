@@ -71,5 +71,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Cange 'a password direttamende",
 	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email",
 	"action-usermanager-deleteuser": "scangìlle le utinde",
-	"right-usermanager-deleteuser": "Stoche a scangelle 'n'utende sus a Special:UserManager"
+	"right-usermanager-deleteuser": "Stoche a scangelle 'n'utende sus a Special:UserManager",
+	"bs-usermanager-text": "Utinde"
 }
