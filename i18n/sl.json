@@ -12,5 +12,6 @@
 	"bs-usermanager-text": "Uporabniki",
 	"bs-usermanager-titleeditdetails": "Uredi uporabnika",
 	"bs-usermanager-headeremail": "E-pošta",
-	"bs-usermanager-labelnewpassword": "Geslo"
+	"bs-usermanager-labelnewpassword": "Geslo",
+	"bs-usermanager-titleadduser": "Dodaj uporabnika"
 }
