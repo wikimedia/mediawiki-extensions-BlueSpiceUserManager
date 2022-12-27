@@ -15,6 +15,7 @@
 	"bs-usermanager-invalid-uname": "'U nome utende non g'è valide.",
 	"bs-usermanager-invalid-email-gen": "'U 'ndirizze email non g'è valide.",
 	"bs-usermanager-label": "Gestore de l'utende",
+	"bs-usermanager-text": "Utinde",
 	"bs-usermanager-user-added": "L'utende ha state aggiunde.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|L'{{GENDER:$2|utende}} ave|$1 utinde onne}} state scangellate.",
 	"bs-usermanager-user-exists": "'U nome de l'utende già esiste.",
