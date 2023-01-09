@@ -5,7 +5,9 @@
 		]
 	},
 	"bs-usermanager-text": "Uporabniki",
+	"bs-usermanager-user-added": "Uporabnik je dodan.",
 	"bs-usermanager-headerusername": "Uporabniško ime",
+	"bs-usermanager-headerrealname": "Pravo ime",
 	"bs-usermanager-headeremail": "E-pošta",
 	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-titleadduser": "Dodaj uporabnika",
