@@ -14,5 +14,7 @@
 	"bs-usermanager-headeremail": "E-pošta",
 	"bs-usermanager-labelnewpassword": "Geslo",
 	"bs-usermanager-titleadduser": "Dodaj uporabnika",
-	"bs-usermanager-editpassword": "Sprememba gesla"
+	"bs-usermanager-editpassword": "Sprememba gesla",
+	"bs-usermanager-user-added": "Uporabnik je dodan.",
+	"bs-usermanager-headerrealname": "Pravo ime"
 }
