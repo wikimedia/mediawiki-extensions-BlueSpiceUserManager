@@ -5,7 +5,9 @@
 		]
 	},
 	"bs-usermanager-text": "Uporabniki",
+	"bs-usermanager-user-added": "Uporabnik je dodan.",
 	"bs-usermanager-headerusername": "Uporabniško ime",
+	"bs-usermanager-headerrealname": "Pravo ime",
 	"bs-usermanager-headeremail": "E-pošta",
 	"bs-usermanager-headergroups": "Skupine",
 	"bs-usermanager-titleadduser": "Dodaj uporabnika",
@@ -13,5 +15,6 @@
 	"bs-usermanager-labelnewpassword": "Geslo",
 	"bs-usermanager-groups-more": "... več",
 	"bs-usermanager-headerenabled": "Omogočeno",
+	"bs-usermanager-editpassword": "Sprememba gesla",
 	"bs-usermanager-nouserselected": "Prosimo, izberite uporabnika"
 }
