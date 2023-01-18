@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
 			"Yupik"
 		]
 	},
 	"bs-usermanager-headeremail": "E-poastačujuhus",
+	"bs-usermanager-titleadduser": "Lasit geavaheaddji",
 	"bs-usermanager-labelnewpassword": "Beassansátni",
 	"bs-usermanager-labelpasswordcheck": "Nanne beassansáni",
 	"bs-usermanager-editpassword": "Rievdat beassansáni"
