@@ -4,6 +4,7 @@
 			"BaRaN6161 TURK",
 			"Can",
 			"MuratTheTurkish",
+			"Rapsar",
 			"Sayginer",
 			"Violetanka"
 		]
@@ -54,7 +55,7 @@
 	"usermanager": "Kullanıcı yöneticisi",
 	"bs-usermanager-group-add-not-allowed": "$1 grubuna kullanıcı ekleme izniniz yok",
 	"bs-usermanager-group-remove-not-allowed": "$1 grubundaki kullanıcıları kaldırmanıza izniniz yok",
-	"bs-usermanager-editgroups": "Grupları düzenle",
+	"bs-usermanager-editgroups": "Grupları değiştir",
 	"bs-usermanager-editpassword": "Parolayı değiştir",
 	"bs-usermanager-editpassword-successful": "Parola başarıyla değiştirildi",
 	"bs-usermanager-title-nouserselected": "Hiçbir kullanıcı seçilmedi",
