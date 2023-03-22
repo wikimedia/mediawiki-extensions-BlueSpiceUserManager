@@ -16,17 +16,17 @@
 			bs.em.paths.get( 'BlueSpiceUserManager' ) + '/resources/BS.UserManager'
 		);
 
-		var bsTaskAPIPermissions = mw.config.get( 'bsTaskAPIPermissions' );
+		var bsgTaskAPIPermissions = mw.config.get( 'bsgTaskAPIPermissions' );
 		Ext.create( 'BS.UserManager.panel.Manager', {
 			renderTo: 'bs-usermanager-grid',
 			operationPermissions: {
-				'create': bsTaskAPIPermissions.usermanager.addUser,
-				'delete': bsTaskAPIPermissions.usermanager.deleteUser,
-				'disableuser': bsTaskAPIPermissions.usermanager.disableUser,
-				'usergroups': bsTaskAPIPermissions.usermanager.setUserGroups,
-				'editpassword': bsTaskAPIPermissions.usermanager.editPassword,
-				'update': bsTaskAPIPermissions.usermanager.editUser,
-				'enableuser': bsTaskAPIPermissions.usermanager.enableUser
+				'create': bsgTaskAPIPermissions.usermanager.addUser,
+				'delete': bsgTaskAPIPermissions.usermanager.deleteUser,
+				'disableuser': bsgTaskAPIPermissions.usermanager.disableUser,
+				'usergroups': bsgTaskAPIPermissions.usermanager.setUserGroups,
+				'editpassword': bsgTaskAPIPermissions.usermanager.editPassword,
+				'update': bsgTaskAPIPermissions.usermanager.editUser,
+				'enableuser': bsgTaskAPIPermissions.usermanager.enableUser
 			}
 		} );
 	} );
