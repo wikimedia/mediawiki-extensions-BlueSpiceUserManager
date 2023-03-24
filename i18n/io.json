@@ -11,5 +11,6 @@
 	"bs-usermanager-endisable": "Permisar/despermisar",
 	"bs-usermanager-invalid-groups": "La grupi esas nevalida",
 	"bs-usermanager-titleeditdetails": "Redaktar uzero",
-	"bs-usermanager-headeremail": "E-posto"
+	"bs-usermanager-headeremail": "E-posto",
+	"bs-usermanager-labelnewpassword": "Pasovorto"
 }
