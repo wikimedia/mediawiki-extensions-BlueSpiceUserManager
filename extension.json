@@ -119,7 +119,9 @@
 				"bs-usermanager-filter-only-deactivated-users",
 				"bs-usermanager-label-password-change-strategy",
 				"bs-usermanager-label-password-change-strategy-reset",
-				"bs-usermanager-label-password-change-strategy-pw"
+				"bs-usermanager-label-password-change-strategy-pw",
+				"bs-usermanager-icon-bool-true-aria-label",
+				"bs-usermanager-icon-bool-false-aria-label"
 			]
 		}
 	},
