@@ -277,12 +277,13 @@ Ext.define( 'BS.UserManager.panel.Manager', {
 		return value.toLocaleString( mw.user.options.get( 'language' ) );
 	},
 	renderIcon: function( value ) {
-		//TODO: make CSS class icon
-		var icon = '<img src="' + mw.config.get( "wgScriptPath" ) + '/extensions/BlueSpiceFoundation/resources/bluespice/images/bs-{0}.png" alt="Icon {0}"/>';
+		var icon = '<span class="bs-usermanager-column-bool-{0}" aria-label="{1}"></span>';
 		if ( value === false ) {
-			return icon.format( 'cross' );
+			var iconAriaLabel = mw.message( 'bs-usermanager-icon-bool-false-aria-label' ).text()
+			return icon.format( 'false', iconAriaLabel );
 		}
-		return icon.format( 'tick' );
+		var iconAriaLabel = mw.message( 'bs-usermanager-icon-bool-true-aria-label' ).text()
+		return icon.format( 'true', iconAriaLabel );
 	},
 	onGrdMainSelectionChange: function( sender, records, opts ) {
 		this.callParent( arguments );
