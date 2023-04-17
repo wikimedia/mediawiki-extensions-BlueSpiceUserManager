@@ -37,6 +37,7 @@ use MediaWiki\Auth\UserDataAuthenticationRequest;
 use MediaWiki\Auth\UsernameAuthenticationRequest;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserNameUtils;
 use MWTimestamp;
 use Status;
 use User;
@@ -91,7 +92,7 @@ class Extension extends \BlueSpice\Extension {
 			return Status::newFatal( $authResponse->message );
 		}
 
-		$user = $services->getUserFactory()->newFromName( $userName, true );
+		$user = $services->getUserFactory()->newFromName( $userName, UserNameUtils::RIGOR_CREATABLE );
 		if ( $user->getEmail() ) {
 			// Auto-verify mail address, since user already used it for first login
 			$user->setEmailAuthenticationTimestamp( MWTimestamp::now() );
