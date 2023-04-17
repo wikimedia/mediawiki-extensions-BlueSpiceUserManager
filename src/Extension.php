@@ -91,7 +91,8 @@ class Extension extends \BlueSpice\Extension {
 			return Status::newFatal( $authResponse->message );
 		}
 
-		$user = $services->getUserFactory()->newFromName( $userName, true );
+		$userFactory = $services->getUserFactory();
+		$user = $userFactory->newFromName( $userName, $userFactory::RIGOR_CREATABLE );
 		if ( $user->getEmail() ) {
 			// Auto-verify mail address, since user already used it for first login
 			$user->setEmailAuthenticationTimestamp( MWTimestamp::now() );
