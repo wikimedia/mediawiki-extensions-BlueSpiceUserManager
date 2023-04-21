@@ -72,5 +72,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Cambiar directemente le contrasigno",
 	"bs-usermanager-no-mail": "Le usator seligite non ha un adresse de e-mail confirmate",
 	"action-usermanager-deleteuser": "deler usatores",
-	"right-usermanager-deleteuser": "Deler un usator via Special:UserManager"
+	"right-usermanager-deleteuser": "Deler un usator via Special:UserManager",
+	"bs-usermanager-icon-bool-true-aria-label": "marcate",
+	"bs-usermanager-icon-bool-false-aria-label": "non marcate"
 }
