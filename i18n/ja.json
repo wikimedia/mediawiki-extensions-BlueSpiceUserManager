@@ -7,7 +7,8 @@
 			"Shirayuki",
 			"Suchichi02",
 			"Suyama",
-			"つぶあん派"
+			"つぶあん派",
+			"MathXplore"
 		]
 	},
 	"bs-usermanager-desc": "利用者を追加/編集/削除するための管理インターフェイス",
@@ -52,5 +53,6 @@
 	"bs-usermanager-nouserselected": "利用者を選択してください",
 	"action-usermanager-viewspecialpage": "特別ページ「{{int:usermanager}}」の閲覧",
 	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用",
-	"action-usermanager-editpassword": "利用者のパスワードの変更"
+	"action-usermanager-editpassword": "利用者のパスワードの変更",
+	"bs-usermanager-icon-bool-true-aria-label": "チェック済み"
 }
