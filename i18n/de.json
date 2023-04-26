@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwboehm",
+			"Lukasaiko",
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
@@ -77,5 +78,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
 	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
 	"action-usermanager-deleteuser": "Benutzer zu löschen",
-	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen"
+	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen",
+	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt"
 }

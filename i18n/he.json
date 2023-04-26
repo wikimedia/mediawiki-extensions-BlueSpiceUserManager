@@ -79,5 +79,7 @@
 	"bs-usermanager-label-password-change-strategy-reset": "לשלוח קישור לאיפוס סיסמה למשתמש",
 	"bs-usermanager-label-password-change-strategy-pw": "לשנות סיסמה ישירות",
 	"bs-usermanager-no-mail": "למשתמש שנבחר אין כתובת דוא\"ל מאושרת",
-	"right-usermanager-deleteuser": "מחיקת משתמש דרך Special:UserManager"
+	"right-usermanager-deleteuser": "מחיקת משתמש דרך Special:UserManager",
+	"bs-usermanager-icon-bool-true-aria-label": "מסומן",
+	"bs-usermanager-icon-bool-false-aria-label": "לא מסומן"
 }
