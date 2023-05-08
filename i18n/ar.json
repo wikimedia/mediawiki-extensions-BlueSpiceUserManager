@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"FiberAhmed",
 			"Meno25",
 			"Moud hosny",
@@ -78,5 +79,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة",
 	"bs-usermanager-no-mail": "المستخدم المحدد ليس لديه عنوان بريد إلكتروني مؤكد",
 	"action-usermanager-deleteuser": "حذف المستخدمين",
-	"right-usermanager-deleteuser": "حذف مستخدم عبر Special: UserManager"
+	"right-usermanager-deleteuser": "حذف مستخدم عبر Special: UserManager",
+	"bs-usermanager-icon-bool-true-aria-label": "مفحوص",
+	"bs-usermanager-icon-bool-false-aria-label": "غير مفحوص"
 }
