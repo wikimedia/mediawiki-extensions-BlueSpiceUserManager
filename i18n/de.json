@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DraconicDark",
 			"Hwboehm",
 			"Lukasaiko",
 			"Metalhead64",
@@ -79,5 +80,6 @@
 	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
 	"action-usermanager-deleteuser": "Benutzer zu löschen",
 	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen",
-	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt"
+	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt",
+	"bs-usermanager-icon-bool-false-aria-label": "nicht ausgewählt"
 }
