@@ -71,5 +71,6 @@
 	"bs-usermanager-confirmenableuser": "Vuoi davvero abilitare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
 	"bs-usermanager-multipleuserselected": "È possibile modificare la password solo per un utente alla volta",
 	"bs-usermanager-icon-bool-true-aria-label": "selezionato",
-	"bs-usermanager-icon-bool-false-aria-label": "deselezionato"
+	"bs-usermanager-icon-bool-false-aria-label": "deselezionato",
+	"right-usermanager-deleteuser": "Cancella un utente con Special:UserManager"
 }
