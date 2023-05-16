@@ -75,5 +75,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Alterar a palavra-passe diretamente",
 	"bs-usermanager-no-mail": "O utilizador selecionado não tem endereço de correio eletrónico confirmado",
 	"action-usermanager-deleteuser": "eliminar utilizadores",
-	"right-usermanager-deleteuser": "Eliminar um utilizador usando Special:UserManager"
+	"right-usermanager-deleteuser": "Eliminar um utilizador usando Special:UserManager",
+	"bs-usermanager-icon-bool-true-aria-label": "verificado",
+	"bs-usermanager-icon-bool-false-aria-label": "não verificado"
 }

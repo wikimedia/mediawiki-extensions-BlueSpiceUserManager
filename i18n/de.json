@@ -7,7 +7,9 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Tkarcher",
 			"Umherirrender",
-			"Lukasaiko"
+			"Lukasaiko",
+			"DraconicDark",
+			"Justman10000"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
@@ -79,5 +81,6 @@
 	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
 	"action-usermanager-deleteuser": "Benutzer zu löschen",
 	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen",
-	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt"
+	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt",
+	"bs-usermanager-icon-bool-false-aria-label": "nicht ausgewählt"
 }
