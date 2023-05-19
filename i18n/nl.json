@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Romaine",
@@ -66,7 +67,7 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
 	"action-usermanager-deleteuser": "gebruikers te verwijderen",
-	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager",
+	"right-usermanager-deleteuser": "Een gebruiker verwijderen via Special:UserManager",
 	"apihelp-bs-usermanager-tasks-description": "Voorziet in bewerkingen voor de uitbreiding Checklist (controlelijsten)",
 	"apihelp-bs-usermanager-tasks-summary": "Voorziet in bewerkingen voor de uitbreiding Checklist (controlelijsten)",
 	"bs-usermanager-group-add-not-allowed": "U mag geen gebruikers toevoegen aan de groep $1",
