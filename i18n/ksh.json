@@ -30,6 +30,5 @@
 	"bs-usermanager-titledeleteuser": "Metmaacher fottschmiiße",
 	"bs-usermanager-confirmdeleteuser": "Wells De verhaftesch {{PLURAL:$1|heh dä|heh di $1|keine}} Metmaacher fottschmiiße?",
 	"bs-usermanager-groups-more": "…&nbsp;mih",
-	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme.",
-	"apihelp-bs-usermanager-tasks-description": "Livvert Operazjuhne för et Zohsazprojramm <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">Checklist </code>"
+	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme."
 }

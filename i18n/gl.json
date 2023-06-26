@@ -33,7 +33,6 @@
 	"bs-usermanager-confirmdeleteuser": "¿Está seguro de querer eliminar {{PLURAL:$1|este usuario|estes usuarios}}?",
 	"bs-usermanager-groups-more": "... mais",
 	"bs-usermanager-no-self-desysop": "Non pode retirar o permiso de \"sysop\" a sí mesmo.",
-	"apihelp-bs-usermanager-tasks-description": "Proporciona operacións para a extensión Checklist",
 	"apihelp-bs-usermanager-tasks-summary": "Proporciona operacións para a extensión Checklist",
 	"bs-usermanager-no-self-block": "Non pode desactivarse a si mesmo.",
 	"bs-usermanager-block-error": "Non se puido desactivar {{GENDER:$1|ó usuario|á usuaria}} $1.",
@@ -58,7 +57,6 @@
 	"bs-usermanager-title-multipleuserselected": "Seleccionáronse múltiples usuarios",
 	"bs-usermanager-multipleuserselected": "Só podes cambiar o contrasinal dun usuario ó mesmo tempo",
 	"bs-usermanager-invalid-groups": "Os grupos non son válidos",
-	"apihelp-bs-usermanager-group-store-description": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
 	"apihelp-bs-usermanager-group-store-summary": "Proporciona unha API de tarefas de xestión de usuario para BlueSpice.",
 	"action-usermanager-viewspecialpage": "ver a páxina especial \"{{int:usermanager}}\""
 }

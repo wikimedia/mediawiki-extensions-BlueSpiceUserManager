@@ -35,7 +35,6 @@
 	"bs-usermanager-confirmdeleteuser": "Ar tikrai norite ištrinti {{PLURAL:$1|šį vartotoją|šiuos vartotojus}}?",
 	"bs-usermanager-groups-more": "... daugiau",
 	"bs-usermanager-no-self-desysop": "Jūs negalite atimti savo paties sysop teisės.",
-	"apihelp-bs-usermanager-tasks-description": "Suteikia operacijas Checklist plėtiniui",
 	"bs-usermanager-no-self-block": "Negali išjungti savęs.",
 	"bs-usermanager-block-error": "Nepavyko išjungti {{GENDER:$1|vartotojo|vartotojos}} $1.",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|Vartotojas $1 negali būti įjungtas|Vartotoja $1 negali būti įjungta}}",

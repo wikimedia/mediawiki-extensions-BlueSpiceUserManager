@@ -39,7 +39,6 @@
 	"bs-usermanager-confirmdeleteuser": "您是否要刪除{{PLURAL:$1|此名使用者|這 $1 個使用者}}？",
 	"bs-usermanager-groups-more": "... 更多",
 	"bs-usermanager-no-self-desysop": "您不能移除您自己的系統操作權限。",
-	"apihelp-bs-usermanager-tasks-description": "提供用於 Checklist 擴充功能的操作",
 	"apihelp-bs-usermanager-tasks-summary": "提供用於 Checklist 擴充功能的操作",
 	"bs-usermanager-no-self-block": "您不能停用您自己。",
 	"bs-usermanager-block-error": "{{GENDER:$1|使用者}} $1 無法被停用。",
@@ -66,7 +65,6 @@
 	"bs-usermanager-invalid-groups": "群組無效",
 	"bs-usermanager-filter-only-activated-users": "顯示全部活躍的使用者",
 	"bs-usermanager-filter-only-deactivated-users": "顯示全部停用的使用者",
-	"apihelp-bs-usermanager-group-store-description": "為 BlueSpice 提供使用者管理任務 API。",
 	"apihelp-bs-usermanager-group-store-summary": "為 BlueSpice 提供使用者管理任務 API。",
 	"bs-usermanager-own-password-change": "您將要更改您自己的密碼。您之後會被登出，並重新導向到登入頁面。您要繼續嗎？",
 	"action-usermanager-viewspecialpage": "檢視特殊頁面「{{int:usermanager}}」",
@@ -78,5 +76,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "直接更改密碼",
 	"bs-usermanager-no-mail": "所選的使用者沒有已確認的電子郵件地址",
 	"action-usermanager-deleteuser": "刪除使用者",
-	"right-usermanager-deleteuser": "透過 Special:UserManager 刪除使用者"
+	"right-usermanager-deleteuser": "透過 Special:UserManager 刪除使用者",
+	"bs-usermanager-icon-bool-true-aria-label": "已勾選",
+	"bs-usermanager-icon-bool-false-aria-label": "取消勾選"
 }
