@@ -3,7 +3,6 @@
 use BlueSpice\Tests\BSApiTasksTestBase;
 
 /**
- * @group Broken
  * @group large
  * @group API
  * @group BlueSpice
@@ -37,8 +36,8 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$data = $this->executeTask( 'addUser', [
 			'userName' => 'SomeName',
 			'realname' => 'Some Name',
-			'password' => 'pass123',
-			'rePassword' => 'pass123',
+			'password' => 'Pass123',
+			'rePassword' => 'Pass123',
 			'email' => 'example@localhost.com',
 			'enabled' => true,
 			'groups' => [ 'sysop' ]
@@ -62,8 +61,8 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 		$data = $this->executeTask( 'editUser', [
 			'userID' => $userId,
 			'realname' => 'Some Other Name',
-			'password' => 'pass123',
-			'rePassword' => 'pass123',
+			'password' => 'Pass123',
+			'rePassword' => 'Pass123',
 			'email' => 'example@localhost.com',
 			'enabled' => true,
 			'groups' => [ 'bureaucrat' ]
@@ -94,6 +93,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	}
 
 	/**
+	 * @group Broken
 	 * @covers \BSApiTasksUserManager::task_enableUser
 	 */
 	public function testEnableUser() {
@@ -108,6 +108,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	}
 
 	/**
+	 * @group Broken
 	 * @covers \BSApiTasksUserManager::task_deleteUser
 	 */
 	public function testDeleteUser() {
@@ -126,7 +127,7 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	 */
 	public function testSetUserGroups() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
-		$data = $this->executeTask( 'addUser', [
+		$data = $this->executeTask( 'setUserGroups', [
 			'userIDs' => [ $userId ],
 			'groups' => [ 'bot' ]
 		] );
@@ -142,14 +143,16 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	}
 
 	/**
+	 * @group Broken
 	 * @covers \BSApiTasksUserManager::task_editPassword
 	 */
 	public function testEditPassword() {
 		$userId = self::$users[ 'uploader' ]->getUser()->getId();
-		$data = $this->executeTask( 'addUser', [
+		$data = $this->executeTask( 'editPassword', [
 			'userID' => $userId,
-			'password' => 'pass1234',
-			'rePassword' => 'pass1234'
+			'password' => 'Pass12345',
+			'rePassword' => 'Pass12345',
+			'strategy' => 'password'
 		] );
 
 		$this->assertTrue( $data->success );
