@@ -77,5 +77,7 @@
 	"bs-usermanager-own-password-change": "U staat op het punt uw eigen wachtwoord te wijzigen. U wordt afgemeld en doorgestuurd naar de aanmeldpagina. Wilt u doorgaan?",
 	"right-usermanager-viewspecialpage": "Toegang tot de speciale pagina [[Special:UserManager]]",
 	"right-usermanager-editpassword": "Gebruikerswachtwoorden wijzigen met de speciale beheerpagina [[Special:UserManager]]",
-	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres"
+	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres",
+	"bs-usermanager-icon-bool-true-aria-label": "aangevinkt",
+	"bs-usermanager-icon-bool-false-aria-label": "niet aangevinkt"
 }
