@@ -2,6 +2,7 @@ Ext.define( 'BS.UserManager.form.field.GroupList', {
 	extend: 'BS.form.field.ItemList',
 	fieldLabel:  mw.message('bs-usermanager-headergroups').plain(),
 	apiStore: 'bs-usermanager-group-store',
+	minChars: 2,
 	apiFields: [
 		{ name: 'type', defaultValue: 'group' },
 		'group_name',
