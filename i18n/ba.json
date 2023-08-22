@@ -3,7 +3,8 @@
 		"authors": [
 			"Sagan",
 			"Азат Хәлилов",
-			"Ләйсән"
+			"Ләйсән",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"bs-usermanager-desc": "Ҡулланыусыларҙы өҫтәү һәм юйыу өсөн хакимиәт интерфейсы",
@@ -18,7 +19,7 @@
 	"bs-usermanager-invalid-email-gen": "Электрон почтаның ярамаған адресы.",
 	"bs-usermanager-label": "Иҫәп яҙмалары менән идара итеү",
 	"bs-usermanager-user-added": "Ҡатнашыусы өҫтәлде.",
-	"bs-usermanager-user-deleted": "Ҡатнашыусы юйылды.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|Был {{GENDER:$2|ҡатнашыусы}}}} юйылды.",
 	"bs-usermanager-user-exists": "Бындай исемле ҡатнашыусы юҡ.",
 	"bs-usermanager-save-successful": "Үҙгәртеүҙәр һаҡланды.",
 	"bs-usermanager-headerusername": "Ҡулланыусы исеме",
