@@ -4,7 +4,8 @@
 			"Adriana Lioni",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Stephanyb76"
 		]
 	},
 	"bs-usermanager-desc": "Interface de administração para adicionar, editar e excluir usuários",
@@ -73,5 +74,5 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Alterar a senha diretamente",
 	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado",
 	"action-usermanager-deleteuser": "excluir usuários",
-	"right-usermanager-deleteuser": "Excluindo um usuário em Special:UserManager"
+	"right-usermanager-deleteuser": "Excluir um usuário em Special:UserManager"
 }
