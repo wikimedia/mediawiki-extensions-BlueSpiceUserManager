@@ -4,9 +4,30 @@
 			"Умар"
 		]
 	},
+	"bs-usermanager-db-error": "Хаамийн базан гӀалат даьлла.",
+	"bs-usermanager-enter-pwd": "Дехар до, йазйе пароль.",
+	"bs-usermanager-idnotexist": "Иштта декъашхо вац(йац).",
+	"bs-usermanager-invalid-pwd": "Пароль нийса йац.",
+	"bs-usermanager-label": "Аккаунташна урхалладар",
+	"bs-usermanager-text": "Декъашхой",
+	"bs-usermanager-user-added": "Декъашхо тӀетоьхна.",
+	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Декъашхо дӀаваьккхина.|Декъашхо дӀайаьккхина.}}|$1 декъашхой дӀабаьхна}}",
 	"bs-usermanager-headerusername": "Декъашхочун цӀе",
 	"bs-usermanager-headeremail": "Электронан пошт",
 	"bs-usermanager-headergroups": "Тобанаш",
+	"bs-usermanager-titleadduser": "ТӀетоха декъашхо",
 	"bs-usermanager-labelnewpassword": "Пароль",
-	"bs-usermanager-groups-more": "... дукхо"
+	"bs-usermanager-titledeleteuser": "ДӀайаккха аккаунт",
+	"bs-usermanager-confirmdeleteuser": "Хьуна бакъалла а лаьий {{PLURAL:$1|хӀара декъашхо дӀаваккха(йаккха)|хӀара $1 декъашхой дӀабаха}}?",
+	"bs-usermanager-groups-more": "... дукхо",
+	"bs-usermanager-editgroups": "Тобанаш тайар",
+	"bs-usermanager-editpassword": "Хийца пароль",
+	"bs-usermanager-editpassword-successful": "Пароль кхиамца хийцина",
+	"bs-usermanager-title-nouserselected": "Декъашхо хаьржина вац(йац)",
+	"bs-usermanager-nouserselected": "Дехар до, харжа декъашхо",
+	"bs-usermanager-title-multipleuserselected": "Массийта декъашхо хаьржина",
+	"right-usermanager-viewspecialpage": "белхан [[Special:UserManager]] агӀонна тӀекхачар",
+	"action-usermanager-editpassword": "Декъашхочун паролаш хийца",
+	"right-usermanager-editpassword": "белхан [[Special:UserManager]] агӀонгахь мега декъашхойн паролаш хийца.",
+	"action-usermanager-deleteuser": "ДӀайаккха аккаунт"
 }
