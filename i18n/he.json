@@ -40,7 +40,7 @@
 	"bs-usermanager-groups-more": "... עוד",
 	"bs-usermanager-no-self-desysop": "אין באפשרותך להסיר את הרשאות מפעיל המערכת של עצמך.",
 	"apihelp-bs-usermanager-tasks-description": "אספקת פעולות עבור הרחבת רשימות הבדיקה (Checklist)",
-	"apihelp-bs-usermanager-tasks-summary": "אספקת פעולות עבור הרחבת רשימות הבדיקה (Checklist)",
+	"apihelp-bs-usermanager-tasks-summary": "אספקת פעולות עבור ההרחבת Checklist",
 	"bs-usermanager-no-self-block": "אין באפשרותך לבטל את החשבון שלך.",
 	"bs-usermanager-block-error": "לא ניתן היה לבטל את חשבון המשתמש של $1.",
 	"bs-usermanager-unblock-error": "לא ניתן היה להפעיל את חשבון המשתמש של $1.",
