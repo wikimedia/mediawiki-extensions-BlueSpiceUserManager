@@ -3,12 +3,12 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Lorelai87",
 			"Martinligabue",
 			"Sarah Bernabei",
 			"Selven",
-			"Stefano",
-			"GpieroMW"
+			"Stefano"
 		]
 	},
 	"bs-usermanager-admin-nodelete": "L'utenza dell'amministratore non può essere eliminato.",
@@ -71,5 +71,6 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Invia all'utente link per reset della password",
 	"bs-usermanager-no-mail": "L'utente selezionato non ha confermato l'indirizzo email",
 	"bs-usermanager-icon-bool-true-aria-label": "selezionato",
-	"bs-usermanager-icon-bool-false-aria-label": "deselezionato"
+	"bs-usermanager-icon-bool-false-aria-label": "deselezionato",
+	"right-usermanager-deleteuser": "Cancella un utente con Special:UserManager"
 }
