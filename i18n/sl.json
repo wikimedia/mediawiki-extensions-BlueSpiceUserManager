@@ -72,7 +72,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Neposredna sprememba gesla",
 	"bs-usermanager-no-mail": "Izbrani uporabnik nima potrjenega e-poštnega naslova",
 	"action-usermanager-deleteuser": "brisanje uporabnikov",
-	"right-usermanager-deleteuser": "Brisanje uporabnikov na Special:UserManager",
+	"right-usermanager-deleteuser": "Izbris uporabnika s Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "obkljukano",
 	"bs-usermanager-icon-bool-false-aria-label": "odkljukano"
 }

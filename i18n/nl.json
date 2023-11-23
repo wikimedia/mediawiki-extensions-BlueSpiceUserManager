@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Romaine",
@@ -76,5 +77,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
 	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres",
 	"action-usermanager-deleteuser": "gebruikers te verwijderen",
-	"right-usermanager-deleteuser": "Gebruiker verwijderen via Special:UserManager"
+	"right-usermanager-deleteuser": "Een gebruiker verwijderen via Special:UserManager",
+	"bs-usermanager-icon-bool-true-aria-label": "aangevinkt",
+	"bs-usermanager-icon-bool-false-aria-label": "niet aangevinkt"
 }
