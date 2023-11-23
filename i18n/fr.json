@@ -79,7 +79,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Modifier directement le mot de passe",
 	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie",
 	"action-usermanager-deleteuser": "supprimer des utilisateurs",
-	"right-usermanager-deleteuser": "Suppression d’un utilisateur depuis Special:UserManager",
+	"right-usermanager-deleteuser": "Supprimer un utilisateur depuis Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "coché",
 	"bs-usermanager-icon-bool-false-aria-label": "décoché"
 }

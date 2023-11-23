@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"DraconicDark",
 			"Hwboehm",
+			"Justman10000",
+			"Lukasaiko",
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Tkarcher",
-			"Umherirrender",
-			"Lukasaiko",
-			"DraconicDark",
-			"Justman10000"
+			"Umherirrender"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
@@ -80,7 +80,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
 	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
 	"action-usermanager-deleteuser": "Benutzer zu löschen",
-	"right-usermanager-deleteuser": "Einen Nutzer über Spezial:Benutzerverwaltung löschen",
+	"right-usermanager-deleteuser": "Einen Benutzer über Special:UserManager löschen",
 	"bs-usermanager-icon-bool-true-aria-label": "ausgewählt",
 	"bs-usermanager-icon-bool-false-aria-label": "nicht ausgewählt"
 }
