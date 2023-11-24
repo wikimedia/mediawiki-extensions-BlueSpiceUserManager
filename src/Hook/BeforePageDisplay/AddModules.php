@@ -9,7 +9,7 @@ class AddModules extends BeforePageDisplay {
 
 	protected function skipProcessing() {
 		$title = $this->getContext()->getTitle();
-		if ( !$title->isSpecialPage( 'UserManager' ) ) {
+		if ( !$title->isSpecial( 'UserManager' ) ) {
 			return true;
 		}
 		return false;
