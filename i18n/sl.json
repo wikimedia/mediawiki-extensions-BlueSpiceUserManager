@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"bs-usermanager-desc": "Administratorski vmesnik za dodajanje, urejanje in brisanje uporabnikov",
@@ -35,12 +36,12 @@
 	"bs-usermanager-no-self-desysop": "Sebi ne morete odvzeti administratorskih pravic.",
 	"apihelp-bs-usermanager-tasks-summary": "Zagotavlja operacije za razširitev Checklist",
 	"bs-usermanager-no-self-block": "Sebe ne morete onemogočiti.",
-	"bs-usermanager-block-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} $1 ni bilo mogoče onemogočiti.",
-	"bs-usermanager-unblock-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} $1 ni bilo mogoče omogočiti.",
+	"bs-usermanager-block-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika/ce}} $1 ni bilo mogoče onemogočiti.",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika/ce}} $1 ni bilo mogoče omogočiti.",
 	"bs-usermanager-headerenabled": "Omogočeno",
-	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} $1 je {{GENDER:$1|bil onemogočen|bila onemogočena|bil_a onemogočen_a}} z upraviteljem uporabnikov.",
-	"bs-usermanager-user-disabled": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} $1 je {{GENDER:$1|bil onemogočen|bila onemogočena|bil_a onemogočen_a}}",
-	"bs-usermanager-user-enabled": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} $1 je {{GENDER:$1|bil omogočen|bila omogočena|bil_a omogočen_a}}",
+	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik/ca}} $1 je {{GENDER:$1|bil onemogočen|bila onemogočena|bil/a onemogočen/a}} z upraviteljem uporabnikov.",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik/ca}} $1 je {{GENDER:$1|bil onemogočen|bila onemogočena|bil/a onemogočen/a}}.",
+	"bs-usermanager-user-enabled": "{{GENDER:$1|Uporabnik|Uporabnica|Uporabnik/ca}} $1 je {{GENDER:$1|bil omogočen|bila omogočena|bil/a omogočen/a}}.",
 	"bs-usermanager-endisable": "Omogoči/onemogoči",
 	"bs-usermanager-confirmdisableuser": "Ali res želite onemogočiti {{PLURAL:$1|tega uporabnika|teh $1 uporabnikov}}?",
 	"bs-usermanager-confirmenableuser": "Ali res želite omogočiti {{PLURAL:$1|tega uporabnika|teh $1 uporabnikov}}?",
