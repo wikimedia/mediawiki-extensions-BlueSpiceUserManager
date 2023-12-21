@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Darellur",
+			"Odder",
 			"Rail",
 			"Railfail536"
 		]
@@ -43,5 +44,5 @@
 	"bs-usermanager-own-password-change": "Zamierzasz zmienić swoje hasło. Zostaniesz wylogowany i przekierowany na stronę logowania. Czy chcesz kontynuować?",
 	"action-usermanager-viewspecialpage": "wyświetlania strony specjalnej „{{int:usermanager}}”",
 	"right-usermanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:UserManager]].",
-	"action-usermanager-editpassword": "zmianiania haseł użytkowników"
+	"action-usermanager-editpassword": "zmiany haseł użytkowników"
 }
