@@ -4,7 +4,8 @@
 			"Chrumps",
 			"Darellur",
 			"Rail",
-			"Railfail536"
+			"Railfail536",
+			"Odder"
 		]
 	},
 	"bs-usermanager-desc": "Interfejs administracyjny do dodawania, edytowania i usuwania użytkowników",
@@ -43,5 +44,5 @@
 	"bs-usermanager-own-password-change": "Zamierzasz zmienić swoje hasło. Zostaniesz wylogowany i przekierowany na stronę logowania. Czy chcesz kontynuować?",
 	"action-usermanager-viewspecialpage": "wyświetlania strony specjalnej „{{int:usermanager}}”",
 	"right-usermanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:UserManager]].",
-	"action-usermanager-editpassword": "zmianiania haseł użytkowników"
+	"action-usermanager-editpassword": "zmiany haseł użytkowników"
 }
