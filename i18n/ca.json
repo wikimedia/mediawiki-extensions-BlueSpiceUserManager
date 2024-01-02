@@ -3,6 +3,7 @@
 		"authors": [
 			"Edustus",
 			"Fitoschido",
+			"SMP",
 			"Vfc"
 		]
 	},
@@ -15,5 +16,6 @@
 	"bs-usermanager-labelnewpassword": "Contrasenya",
 	"bs-usermanager-labelpasswordcheck": "Confirma la contrasenya",
 	"bs-usermanager-groups-more": "... més",
-	"action-usermanager-viewspecialpage": "veure la pàgina especial «{{int:usermanager}}»"
+	"action-usermanager-viewspecialpage": "veure la pàgina especial «{{int:usermanager}}»",
+	"right-usermanager-viewspecialpage": "Accedir a la pàgina especial [[Special:UserManager]]"
 }
