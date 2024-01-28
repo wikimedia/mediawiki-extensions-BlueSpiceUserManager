@@ -5,6 +5,7 @@
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
+			"Mitte27",
 			"Okras",
 			"Striking Blue",
 			"Vlad5250"
@@ -48,5 +49,6 @@
 	"bs-usermanager-invalid-groups": "Группы не являются действительными",
 	"right-usermanager-viewspecialpage": "доступ к служебной странице [[Special:UserManager]]",
 	"action-usermanager-editpassword": "Изменить пароли участника",
-	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]]."
+	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
+	"bs-usermanager-text": "Пользователи"
 }
