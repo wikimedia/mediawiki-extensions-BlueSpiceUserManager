@@ -5,6 +5,7 @@
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
+			"Mitte27",
 			"Okras",
 			"Striking Blue",
 			"Vlad5250"
@@ -21,6 +22,7 @@
 	"bs-usermanager-invalid-uname": "Такое имя участника недопустимо.",
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
 	"bs-usermanager-label": "Управление учётными записями",
+	"bs-usermanager-text": "Пользователи",
 	"bs-usermanager-user-added": "Участник был добавлен.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Участник был удалён.|Участница была удалена.}}|$1 участника были удалёны.|$1 участников были удалёны.}}",
 	"bs-usermanager-user-exists": "Такое имя участника уже существует.",
