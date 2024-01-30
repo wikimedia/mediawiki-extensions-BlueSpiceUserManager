@@ -386,14 +386,17 @@ class Extension extends \BlueSpice\Extension {
 			return Status::newFatal( 'bs-usermanager-self-nodelete' );
 		}
 
+		$services = MediaWikiServices::getInstance();
 		$status = Status::newGood( $user );
 		$user->load( \User::READ_LATEST );
-		if ( $user->getUserPage()->exists() ) {
-			$userPageArticle = new \Article( $user->getUserPage() );
-			$userPageArticle->doDelete( \wfMessage( 'bs-usermanager-db-error' )->plain() );
+		$userpage = $user->getUserPage();
+		if ( $userpage->exists() ) {
+			$wikiPage = $services->getWikiPageFactory()->newFromTitle( $userpage );
+			$deletePage = $services->getDeletePageFactory()
+				->newDeletePage( $wikiPage, $performer );
+			$deletePage->deleteIfAllowed( wfMessage( 'bs-usermanager-db-error' )->plain() );
 		}
 
-		$services = MediaWikiServices::getInstance();
 		$dbw = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$fname = __METHOD__;
