@@ -7,6 +7,7 @@
 			"LNDDYL",
 			"Liuxinyu970226",
 			"Sanmosa",
+			"Winston Sung",
 			"Xiplus"
 		]
 	},
@@ -60,7 +61,7 @@
 	"bs-usermanager-editpassword": "變更密碼",
 	"bs-usermanager-editpassword-successful": "密碼已成功更改",
 	"bs-usermanager-title-nouserselected": "未選擇使用者",
-	"bs-usermanager-nouserselected": "請選擇一名使用者",
+	"bs-usermanager-nouserselected": "請選取使用者",
 	"bs-usermanager-title-multipleuserselected": "已選多名使用者",
 	"bs-usermanager-multipleuserselected": "您一次僅能更改一位使用者的密碼",
 	"bs-usermanager-invalid-groups": "群組無效",
