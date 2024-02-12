@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bashkorttan",
 			"Sagan",
 			"Азат Хәлилов",
 			"З. ӘЙЛЕ",
@@ -10,7 +11,7 @@
 	"bs-usermanager-desc": "Ҡатнашыусыларҙы өҫтәү, төҙәтеү һәм юйыу өсөн хаким интерфейсы",
 	"bs-usermanager-admin-nodelete": "Хакимдың иҫәп яҙмаһын юйып булмай.",
 	"bs-usermanager-self-nodelete": "Һеҙ үҙегеҙҙең иҫәп яҙмаһын юя алмайһығыҙ.",
-	"bs-usermanager-db-error": "Викидатала хата килеп сыҡты.",
+	"bs-usermanager-db-error": "Мәғлүмәт базаһында хата килеп сыҡты.",
 	"bs-usermanager-enter-pwd": "Серһүҙҙе яҙығыҙ.",
 	"bs-usermanager-idnotexist": "Был ҡатнашыусы юҡ.",
 	"bs-usermanager-invalid-pwd": "Серһүҙ дөрөҫ түгел.",
