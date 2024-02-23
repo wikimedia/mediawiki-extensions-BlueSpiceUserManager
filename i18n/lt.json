@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Eitvys200",
+			"Homo",
 			"Nokeoo",
 			"Zygimantus"
 		]
@@ -16,7 +17,7 @@
 	"bs-usermanager-invalid-realname": "Tikrasis vardas yra neteisingas.",
 	"bs-usermanager-invalid-uname": "Vartotojo vardas yra neteisingas.",
 	"bs-usermanager-invalid-email-gen": "El. pašto adresas yra neteisingas.",
-	"bs-usermanager-label": "Vartotojų tvarkytojas",
+	"bs-usermanager-label": "Naudotojų tvarkyklė",
 	"bs-usermanager-text": "Naudotojai",
 	"bs-usermanager-user-added": "Vartotojas buvo pridėtas.",
 	"bs-usermanager-user-deleted": "{{PLURAL:$1|{{GENDER:$2|Naudotojas buvo ištrintas|Naudotoja buvo ištrinta|Naudotojas buvo ištrintas}}|$1 naudotojai buvo ištrinti}}.",
