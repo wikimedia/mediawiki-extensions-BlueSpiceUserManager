@@ -302,7 +302,8 @@ class Extension extends \BlueSpice\Extension {
 		$block->isAutoblocking( false );
 
 		$reason = [ 'hookaborted' ];
-		$res = MediaWikiServices::getInstance()->getHookContainer()->run( 'BlockIp', [
+		$services = MediaWikiServices::getInstance();
+		$res = $services->getHookContainer()->run( 'BlockIp', [
 			&$block,
 			&$performer,
 			&$reason
@@ -314,7 +315,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		# Try to insert block. Is there a conflicting block?
-		$blockStatus = $block->insert();
+		$blockStatus = $services->getDatabaseBlockStore()->insertBlock( $block );
 		if ( !$blockStatus ) {
 			$status->setResult( false );
 			$status->fatal( 'bs-usermanager-block-error', $user->getName() );
@@ -342,7 +343,8 @@ class Extension extends \BlueSpice\Extension {
 			$status->fatal( 'bs-usermanager-unblock-error', $user->getName() );
 			return $status;
 		}
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$services = MediaWikiServices::getInstance();
+		$hookContainer = $services->getHookContainer();
 		$reason = [];
 		if ( !$hookContainer->run( 'UnblockUser', [ $block, $performer, &$reason ] ) ) {
 			$status->setResult( false );
@@ -353,7 +355,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		$block->setBlocker( $performer );
-		$blockStatus = $block->delete();
+		$blockStatus = $services->getDatabaseBlockStore()->deleteBlock( $block );
 
 		if ( !$blockStatus ) {
 			$status->setResult( false );
