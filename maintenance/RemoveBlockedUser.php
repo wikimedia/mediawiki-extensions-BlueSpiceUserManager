@@ -75,7 +75,7 @@ class RemoveBlockedUser extends BSMaintenance {
 	 * @return array
 	 */
 	private function getAllUserFromDB() {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->getDB( DB_REPLICA );
 		$res = $dbr->select(
 			'user',
 			[

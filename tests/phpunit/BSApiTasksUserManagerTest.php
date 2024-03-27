@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Tests\BSApiTasksTestBase;
+use MediaWiki\MediaWikiServices;
 
 /**
  * @group large
@@ -164,8 +165,14 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	 * @return bool
 	 */
 	protected function userIsBlocked( $iId ) {
-		$db = wfGetDB( DB_REPLICA );
-		$res = $db->select( 'ipblocks', [ 'ipb_user' ], [ 'ipb_user = ' . $iId ], wfGetCaller() );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
+		$res = $dbr->select(
+			'ipblocks',
+			[ 'ipb_user' ],
+			[ 'ipb_user = ' . $iId ],
+			wfGetCaller()
+		);
 		if ( $res->numRows() === 0 ) {
 			return false;
 		} else {
@@ -179,8 +186,14 @@ class BSApiTasksUserManagerTest extends BSApiTasksTestBase {
 	 * @return bool
 	 */
 	protected function existsInDb( $iId ) {
-		$db = wfGetDB( DB_REPLICA );
-		$res = $db->select( 'user', [ 'user_id' ], [ 'user_id = ' . $iId ], wfGetCaller() );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_REPLICA );
+		$res = $dbr->select(
+			'user',
+			[ 'user_id' ],
+			[ 'user_id = ' . $iId ],
+			wfGetCaller()
+		);
 		if ( $res->numRows() === 0 ) {
 			return false;
 		} else {
