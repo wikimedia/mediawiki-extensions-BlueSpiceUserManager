@@ -20,7 +20,7 @@
 	"bs-usermanager-user-added": "Uporabnik je dodan.",
 	"bs-usermanager-user-deleted": "Izbrisanih je bilo $1 {{PLURAL:$1|{{GENDER:$2|uporabnikovih|uporabničinih|uporabnikovih_činih}}}} prispevkov.",
 	"bs-usermanager-user-exists": "To uporabniško ime že obstaja.",
-	"bs-usermanager-save-successful": "Spremembe shranjene.",
+	"bs-usermanager-save-successful": "Spremembe so shranjene.",
 	"bs-usermanager-headerusername": "Uporabniško ime",
 	"bs-usermanager-headerrealname": "Pravo ime",
 	"bs-usermanager-headeremail": "E-pošta",
