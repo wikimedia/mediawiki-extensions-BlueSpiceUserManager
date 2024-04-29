@@ -46,7 +46,7 @@
 	"bs-usermanager-log-user-disabled": "Log text when user was disabled via UserManager.\n\n* $1 is the username - use for GENDER distinction",
 	"bs-usermanager-user-disabled": "Success message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when the user was disabled.\n\n* $1 is the username of the user affected by the action - use for GENDER distinction",
 	"bs-usermanager-user-enabled": "Success message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when the user was enabled.\n\n* $1 is the username of the user affected by the action - use for GENDER distinction",
-	"bs-usermanager-endisable": "Action button label for enable/disable action\n{{Identical|Enable}}\n{{Identical|Disable}}",
+	"bs-usermanager-endisable": "Action button label for enable\/disable action\n{{Identical|Enable}}\n{{Identical|Disable}}",
 	"bs-usermanager-confirmdisableuser": "Text in confirmation dialogue for disabling a user.",
 	"bs-usermanager-confirmenableuser": "Text in confirmation dialogue for enabling a user.",
 	"bs-usermanager-titledisableuser": "Window title for disable user",
