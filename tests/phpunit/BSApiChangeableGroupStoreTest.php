@@ -14,7 +14,7 @@ use MediaWiki\MediaWikiServices;
  */
 class BSApiChangeableGroupStoreTest extends BSApiExtJSStoreTestBase {
 
-	protected $iFixtureTotal = 3;
+	protected int $iFixtureTotal = 3;
 
 	protected function getStoreSchema() {
 		return [
