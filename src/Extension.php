@@ -38,6 +38,7 @@ use MediaWiki\Auth\UsernameAuthenticationRequest;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\MediaWikiServices;
 use MWTimestamp;
+use SiteStatsUpdate;
 use Status;
 use User;
 use Wikimedia\Rdbms\Database;
@@ -117,7 +118,7 @@ class Extension extends \BlueSpice\Extension {
 			$performer
 		] );
 
-		$siteStatsUpdate = new \SiteStatsUpdate( 0, 0, 0, 0, 1 );
+		$siteStatsUpdate = SiteStatsUpdate::factory( [ 'users' => 1 ] );
 		$siteStatsUpdate->doUpdate();
 
 		return $status;
