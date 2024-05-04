@@ -44,8 +44,11 @@ use User;
 use Wikimedia\Rdbms\Database;
 
 class Extension extends \BlueSpice\Extension {
-	/* These groups are not touched by the addtogroup tool */
-
+	/**
+	 * These groups are not touched by the addtogroup tool
+	 *
+	 * @var array
+	 */
 	protected static $excludegroups = [ '*', 'user', 'autoconfirmed', 'emailconfirmed' ];
 
 	/**
