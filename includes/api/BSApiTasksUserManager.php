@@ -38,7 +38,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 		'addUser' => [
 			'examples' => [
 				[
-					'username' => 'someUserName',
+					'userName' => 'someUserName',
 					'realname' => 'Some User',
 					'email' => 'user@example.com',
 					'password' => 'pass1234',
@@ -48,7 +48,7 @@ class BSApiTasksUserManager extends BSApiTasksBase {
 				]
 			],
 			'params' => [
-				'username' => [
+				'userName' => [
 					'desc' => '',
 					'type' => 'string',
 					'required' => true
