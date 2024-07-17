@@ -8,7 +8,8 @@
 			"Mitte27",
 			"Okras",
 			"Striking Blue",
-			"Vlad5250"
+			"Vlad5250",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-usermanager-desc": "Интерфейс администрирования для добавления, правки и удаления пользователей",
@@ -50,5 +51,11 @@
 	"right-usermanager-viewspecialpage": "доступ к служебной странице [[Special:UserManager]]",
 	"action-usermanager-editpassword": "Изменить пароли участника",
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
-	"bs-usermanager-text": "Пользователи"
+	"bs-usermanager-text": "Пользователи",
+	"usermanager": "Управление учётными записями",
+	"bs-usermanager-group-remove-not-allowed": "Вам не разрешено удалять пользователей из группы $1",
+	"bs-usermanager-filter-only-activated-users": "Показать всех активированных пользователей",
+	"bs-usermanager-filter-only-deactivated-users": "Показать всех деактивированных пользователей",
+	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
+	"action-usermanager-deleteuser": "удалить пользователей"
 }
