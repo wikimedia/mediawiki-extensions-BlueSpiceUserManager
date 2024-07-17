@@ -56,5 +56,6 @@
 	"right-usermanager-viewspecialpage": "特別ページ [[Special:UserManager]] を利用",
 	"action-usermanager-editpassword": "利用者のパスワードの変更",
 	"bs-usermanager-icon-bool-true-aria-label": "チェック済み",
-	"action-usermanager-deleteuser": "利用者を削除"
+	"action-usermanager-deleteuser": "利用者の削除",
+	"right-usermanager-deleteuser": "Special:UserManager で利用者を削除"
 }
