@@ -32,6 +32,7 @@
 
 namespace BlueSpice\UserManager;
 
+use IDBAccessObject;
 use MediaWiki\Auth\TemporaryPasswordAuthenticationRequest;
 use MediaWiki\Auth\UserDataAuthenticationRequest;
 use MediaWiki\Auth\UsernameAuthenticationRequest;
@@ -394,7 +395,7 @@ class Extension extends \BlueSpice\Extension {
 
 		$services = MediaWikiServices::getInstance();
 		$status = Status::newGood( $user );
-		$user->load( \User::READ_LATEST );
+		$user->load( IDBAccessObject::READ_LATEST );
 		$userpage = $user->getUserPage();
 		if ( $userpage->exists() ) {
 			$wikiPage = $services->getWikiPageFactory()->newFromTitle( $userpage );
