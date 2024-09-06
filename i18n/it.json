@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"Dream Indigo",
 			"GpieroMW",
 			"Lorelai87",
 			"Martinligabue",
@@ -15,7 +16,7 @@
 	"bs-usermanager-self-nodelete": "Non puoi eliminare il tuo account.",
 	"bs-usermanager-db-error": "Si è verificato un errore sul database.",
 	"bs-usermanager-enter-pwd": "Si prega di inserire una password.",
-	"bs-usermanager-idnotexist": "Questo utente non esiste.",
+	"bs-usermanager-idnotexist": "Quest'utente non esiste.",
 	"bs-usermanager-invalid-pwd": "La password non è valida.",
 	"bs-usermanager-invalid-realname": "Il nome vero non è valido.",
 	"bs-usermanager-invalid-uname": "Il nome utente non è valido.",
