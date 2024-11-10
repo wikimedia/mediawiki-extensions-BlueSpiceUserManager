@@ -12,6 +12,7 @@
 			"Yfdyh000",
 			"予弦",
 			"佛壁灯",
+			"沈澄心",
 			"神樂坂秀吉",
 			"科劳"
 		]
@@ -84,5 +85,7 @@
 	"bs-usermanager-label-password-change-strategy-pw": "直接更改密码",
 	"bs-usermanager-no-mail": "所选用户没有已确认的电子邮件地址",
 	"action-usermanager-deleteuser": "删除用户",
-	"right-usermanager-deleteuser": "使用Special:UserManager删除用户"
+	"right-usermanager-deleteuser": "使用Special:UserManager删除用户",
+	"bs-usermanager-icon-bool-true-aria-label": "已勾选",
+	"bs-usermanager-icon-bool-false-aria-label": "未勾选"
 }
