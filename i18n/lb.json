@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"bs-usermanager-admin-nodelete": "Den Administrateurs'-Benotzerkont kann net geläscht ginn.",
@@ -33,12 +34,12 @@
 	"bs-usermanager-groups-more": "... méi",
 	"bs-usermanager-no-self-desysop": "Dir kënnt Iech net Är eegen Administrateur-Rechter ewechhuelen.",
 	"bs-usermanager-no-self-block": "Dir kënnt Iech net selwer desaktivéieren.",
-	"bs-usermanager-block-error": "{{GENDER:$1|De Benotzer}} $1 konnt net desaktivéiert ginn.",
-	"bs-usermanager-unblock-error": "{{GENDER:$1|De Benotzer}} $1 konnt net desaktivéiert ginn.",
+	"bs-usermanager-block-error": "{{GENDER:$1|De Benotzer|D'Benotzerin}} $1 konnt net desaktivéiert ginn.",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|De Benotzer|D'Benotzerin}} $1 konnt net desaktivéiert ginn.",
 	"bs-usermanager-headerenabled": "Aktivéiert",
-	"bs-usermanager-log-user-disabled": "{{GENDER:$1|De Benotzer}} $1 gouf mat UserManager desaktivéiert",
-	"bs-usermanager-user-disabled": "{{GENDER:$1|De Benotzer}} $1 gouf desaktivéiert.",
-	"bs-usermanager-user-enabled": "{{GENDER:$1|De Benotzer}} $1 gouf desaktivéiert.",
+	"bs-usermanager-log-user-disabled": "{{GENDER:$1|De Benotzer|D'Benotzerin}} $1 gouf mat UserManager desaktivéiert",
+	"bs-usermanager-user-disabled": "{{GENDER:$1|De Benotzer|D'Benotzerin}} $1 gouf desaktivéiert.",
+	"bs-usermanager-user-enabled": "{{GENDER:$1|De Benotzer|D'Benotzerin}} $1 gouf desaktivéiert.",
 	"bs-usermanager-endisable": "Aktivéieren/Desaktivéieren",
 	"bs-usermanager-confirmdisableuser": "Wëllt Dir {{PLURAL:$1|dëse|dës $1}} Benotzer wierklech desaktivéieren?",
 	"bs-usermanager-confirmenableuser": "Wëllt Dir {{GENDER:$1|de Benotzer}} $1 wierklech aktivéieren?",
