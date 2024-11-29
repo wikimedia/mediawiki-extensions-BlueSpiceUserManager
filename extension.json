@@ -23,14 +23,6 @@
 				"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
 			},
 			"PermissionRegistry": {
-				"usermanager-viewspecialpage": {
-					"type": "global",
-					"roles": [
-						"accountmanager",
-						"admin",
-						"maintenanceadmin"
-					]
-				},
 				"usermanager-editpassword": {
 					"type": "global",
 					"roles": [
@@ -38,29 +30,24 @@
 						"admin",
 						"maintenanceadmin"
 					]
-				},
-				"usermanager-deleteuser": {
-					"type": "global",
-					"roles": []
 				}
 			}
 		}
 	},
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.43.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 4.3"
 		}
 	},
 	"SpecialPages": {
-		"UserManager": "SpecialUserManager"
+		"UserManager": {
+			"class": "BlueSpice\\UserManager\\Special\\UserManager",
+			"services": [ "ConfigFactory" ]
+		}
 	},
 	"ExtensionMessagesFiles": {
-		"UserManagerAlias": "includes/specials/SpecialUserManager.alias.php"
-	},
-	"APIModules": {
-		"bs-usermanager-tasks": "BSApiTasksUserManager",
-		"bs-usermanager-group-store": "BSApiChangeableGroupStore"
+		"UserManagerAlias": "SpecialUserManager.alias.php"
 	},
 	"MessagesDirs": {
 		"UserManager": [
@@ -71,19 +58,31 @@
 		"BlueSpice\\UserManager\\": "src/"
 	},
 	"AutoloadClasses": {
-		"BSApiTasksUserManager": "includes/api/BSApiTasksUserManager.php",
 		"BSApiChangeableGroupStore": "includes/api/BSApiChangeableGroupStore.php",
 		"SpecialUserManager": "includes/specials/SpecialUserManager.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.userManager": {
-			"scripts": "bluespice.userManager.js",
+			"scripts": [
+				"ui/UserDetailsPanel.js",
+				"ui/dialog/EditUserDialog.js",
+				"ui/dialog/EditGroupsDialog.js",
+				"ui/dialog/AddUserDialog.js",
+				"ui/dialog/ResetPasswordDialog.js",
+				"ui/UserManagerPanel.js",
+				"bluespice.userManager.js"
+			],
 			"styles": {
 				"bluespice.userManager.less": {}
 			},
 			"dependencies": [
+				"ext.oOJSPlus.managerPanel",
 				"user.options",
-				"ext.bluespice.extjs"
+				"ext.bluespice",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-editing-core",
+				"ext.oOJSPlus.data"
 			],
 			"messages": [
 				"bs-usermanager-headerusername",
@@ -108,20 +107,14 @@
 				"bs-usermanager-titleenableuser",
 				"bs-usermanager-editgroups",
 				"bs-usermanager-editpassword",
-				"bs-usermanager-editpassword-successful",
-				"bs-usermanager-title-nouserselected",
-				"bs-usermanager-nouserselected",
-				"bs-usermanager-title-multipleuserselected",
-				"bs-usermanager-multipleuserselected",
-				"bs-usermanager-invalid-groups",
-				"bs-usermanager-own-password-change",
-				"bs-usermanager-filter-only-activated-users",
-				"bs-usermanager-filter-only-deactivated-users",
 				"bs-usermanager-label-password-change-strategy",
 				"bs-usermanager-label-password-change-strategy-reset",
 				"bs-usermanager-label-password-change-strategy-pw",
-				"bs-usermanager-icon-bool-true-aria-label",
-				"bs-usermanager-icon-bool-false-aria-label"
+				"bs-usermanager-save",
+				"bs-usermanager-cancel",
+				"bs-usermanager-showdisabled",
+				"bs-usermanager-disabled",
+				"bs-usermanager-warning-password-change-own"
 			]
 		}
 	},
@@ -131,19 +124,58 @@
 	},
 	"GroupPermissions": {
 		"sysop": {
-			"usermanager-viewspecialpage": true,
-			"usermanager-deleteuser": false
+			"usermanager-editpassword": true
 		}
 	},
 	"AvailableRights": [
-		"usermanager-viewspecialpage",
-		"usermanager-deleteuser"
+		"usermanager-editpassword"
 	],
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface"
 		}
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"RestRoutes": [
+		{
+			"method": "PUT",
+			"path": "/bs-usermanager/v1/user/{username}",
+			"class": "\\BlueSpice\\UserManager\\Rest\\AddUserHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/user/{username}",
+			"class": "\\BlueSpice\\UserManager\\Rest\\UpdateUserHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "PUT",
+			"path": "/bs-usermanager/v1/block",
+			"class": "\\BlueSpice\\UserManager\\Rest\\BlockUsersHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "DELETE",
+			"path": "/bs-usermanager/v1/block",
+			"class": "\\BlueSpice\\UserManager\\Rest\\UnblockUsersHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "PUT",
+			"path": "/bs-usermanager/v1/groups",
+			"class": "\\BlueSpice\\UserManager\\Rest\\SetGroupsHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/password/{username}",
+			"class": "\\BlueSpice\\UserManager\\Rest\\ChangePasswordHandler",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		}
+	],
 	"Hooks": {
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback"
