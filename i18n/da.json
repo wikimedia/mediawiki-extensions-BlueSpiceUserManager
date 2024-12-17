@@ -4,14 +4,10 @@
 			"Saederup92"
 		]
 	},
-	"bs-usermanager-enter-pwd": "Indtast venligst en adgangskode.",
 	"bs-usermanager-idnotexist": "Denne bruger findes ikke.",
-	"bs-usermanager-invalid-uname": "Brugernavnet er ugyldigt.",
 	"bs-usermanager-invalid-email-gen": "Denne e-mailadresse er ugyldig.",
 	"bs-usermanager-text": "Brugere",
-	"bs-usermanager-user-added": "Brugeren blev tilføjet",
 	"bs-usermanager-user-exists": "Brugernavnet findes allerede.",
-	"bs-usermanager-save-successful": "Ændringer gemt.",
 	"bs-usermanager-headerusername": "Brugernavn",
 	"bs-usermanager-headerregistration": "Registrering",
 	"bs-usermanager-headergroups": "Grupper",
@@ -19,7 +15,6 @@
 	"bs-usermanager-titleeditdetails": "Rediger bruger",
 	"bs-usermanager-labelnewpassword": "Adgangskode",
 	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode",
-	"bs-usermanager-titledeleteuser": "Slet bruger",
 	"bs-usermanager-headerenabled": "Aktiveret",
 	"bs-usermanager-endisable": "Aktiver/deaktiver",
 	"bs-usermanager-titledisableuser": "Deaktiver bruger",
@@ -27,9 +22,6 @@
 	"bs-usermanager-group-add-not-allowed": "Du har ikke tilladelse til at tilføje brugere til gruppen $1",
 	"bs-usermanager-editgroups": "Rediger grupper",
 	"bs-usermanager-editpassword": "Skift adgangskode",
-	"bs-usermanager-filter-only-activated-users": "Vis alle aktiverede brugere",
-	"bs-usermanager-filter-only-deactivated-users": "Vis alle deaktiverede brugere",
 	"action-usermanager-editpassword": "ændre brugeres adgangskoder",
-	"bs-usermanager-label-password-change-strategy": "Metode",
-	"action-usermanager-deleteuser": "slet brugere"
+	"bs-usermanager-label-password-change-strategy": "Metode"
 }
