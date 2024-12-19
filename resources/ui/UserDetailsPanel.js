@@ -10,7 +10,7 @@ bs.usermanager.ui.UserDetailsPanel = function( cfg ) {
 	this.username = cfg.username || '';
 	this.realName = cfg.realName || '';
 	this.email = cfg.email || '';
-	this.enabled = cfg.enabled || false;
+	this.enabled = typeof cfg.enabled !== undefined ? cfg.enabled : true;
 	this.groups = cfg.groups || [];
 	this.$overlay = cfg.$overlay || true;
 };
@@ -18,13 +18,13 @@ bs.usermanager.ui.UserDetailsPanel = function( cfg ) {
 OO.inheritClass( bs.usermanager.ui.UserDetailsPanel, OO.ui.PanelLayout );
 
 bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function() {
-
 	this.usernameInput = new OO.ui.TextInputWidget( {
 		value: this.username,
 		classes: [ 'um-username' ],
 		disabled: !this.isCreation,
 		required: this.isCreation
 	} );
+	this.usernameInput.connect( this, { change: 'validateOnChange' } );
 	this.realNameInput = new OO.ui.TextInputWidget( {
 		value: this.realName,
 		classes: [ 'um-realname' ]
@@ -35,12 +35,10 @@ bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function() {
 		classes: [ 'um-email' ],
 		type: 'email'
 	} );
-	this.enabledCheckbox = new OO.ui.CheckboxInputWidget( {
-		selected: this.enabled,
-		classes: [ 'um-enabled' ]
-	} );
+	this.emailInput.connect( this, { change: 'validateOnChange' } );
 	this.groupInput = new OOJSPlus.ui.widget.GroupMultiSelectWidget( {
 		$overlay: this.$overlay,
+		groupTypes: [ 'core-minimal', 'explicit', 'custom', 'extension-minimal' ]
 	} );
 	this.groupInput.setValue( this.groups );
 	this.groupInput.connect( this, { change: function() { this.emit( 'change' ); } } );
@@ -65,10 +63,6 @@ bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function() {
 			label: mw.msg( 'bs-usermanager-headeremail' ),
 			align: 'left'
 		} ),
-		new OO.ui.FieldLayout( this.enabledCheckbox, {
-			label: mw.msg( 'bs-usermanager-headerenabled' ),
-			align: 'left'
-		} ),
 		new OO.ui.FieldLayout( this.groupInput, {
 			label: mw.msg( 'bs-usermanager-headergroups' ),
 			align: 'left'
@@ -84,9 +78,18 @@ bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = async function() {
 		username: this.usernameInput.getValue(),
 		realName: this.realNameInput.getValue(),
 		email: this.emailInput.getValue(),
-		enabled: this.enabledCheckbox.isSelected(),
+		enabled: this.enabled,
 		groups: this.groupInput.getValue()
 	};
+};
+
+bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = async function() {
+	try {
+		await this.getValidData();
+		this.emit( 'validityCheck', true );
+	} catch ( e ) {
+		this.emit( 'validityCheck', false );
+	}
 };
 
 bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = async function( fields ) {

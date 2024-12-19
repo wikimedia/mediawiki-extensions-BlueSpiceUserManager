@@ -21,7 +21,17 @@ bs.usermanager.ui.dialog.EditUserDialog.static.actions = [
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.initialize = function() {
 	bs.usermanager.ui.dialog.EditUserDialog.parent.prototype.initialize.call( this );
-	this.content = new bs.usermanager.ui.UserDetailsPanel( {
+	this.content = this.getContentPanel();
+	this.content.connect( this, {
+		change: 'updateSize',
+		validityCheck: 'onValidityCheck'
+	} );
+	this.content.initialize();
+	this.$body.append( this.content.$element );
+};
+
+bs.usermanager.ui.dialog.EditUserDialog.prototype.getContentPanel = function() {
+	return new bs.usermanager.ui.UserDetailsPanel( {
 		isCreation: this.isCreation,
 		username: this.username,
 		realName: this.realName,
@@ -30,9 +40,10 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.initialize = function() {
 		groups: this.groups,
 		$overlay: this.$overlay
 	} );
-	this.content.connect( this, { change: 'updateSize' } );
-	this.content.initialize();
-	this.$body.append( this.content.$element );
+};
+
+bs.usermanager.ui.dialog.EditUserDialog.prototype.onValidityCheck = function( valid ) {
+	this.actions.setAbilities( { save: valid } );
 };
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.getActionProcess = function( action ) {
@@ -75,7 +86,7 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.getValidData = async function(
 bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = async function( data ) {
 	var dfd = $.Deferred();
 	$.ajax( {
-		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/' + this.username,
+		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/edit/' + this.username,
 		method: 'POST',
 		data: JSON.stringify( data ),
 		dataType: 'json',

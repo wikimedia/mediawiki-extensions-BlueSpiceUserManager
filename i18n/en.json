@@ -29,8 +29,8 @@
 	"bs-usermanager-endisable": "Enable/disable",
 	"bs-usermanager-confirmdisableuser": "Do you really want to disable {{PLURAL:$1|this user|these $1 users}}?",
 	"bs-usermanager-confirmenableuser": "Do you really want to enable {{PLURAL:$1|this user|these $1 users}}?",
-	"bs-usermanager-titledisableuser": "Disable user",
-	"bs-usermanager-titleenableuser": "Enable user",
+	"bs-usermanager-titledisableuser": "Block user",
+	"bs-usermanager-titleenableuser": "Unblock user",
 	"usermanager": "User manager",
 	"bs-usermanager-group-add-not-allowed": "You are not allowed to add users to group $1",
 	"bs-usermanager-group-remove-not-allowed": "You are not allowed to remove users from group $1",
@@ -45,8 +45,11 @@
 	"bs-usermanager-no-mail": "Selected user does not have confirmed email address",
 	"bs-usermanager-save": "Save",
 	"bs-usermanager-cancel": "Cancel",
-	"bs-usermanager-showdisabled": "Show disabled users",
+	"bs-usermanager-showdisabled": "Show blocked users",
 	"bs-usermanager-disabled": "Disabled",
 	"bs-usermanager-missing-param": "Missing parameter: $1",
-	"bs-usermanager-warning-password-change-own": "You are changing your own password. You will be logged out and redirected to the login page."
+	"bs-usermanager-warning-password-change-own": "You are changing your own password. You will be logged out and redirected to the login page.",
+	"bs-usermanager-showenabled": "Show active users",
+	"bs-usermanager-mass-enable": "Unblock users",
+	"bs-usermanager-mass-disable": "Block users"
 }
