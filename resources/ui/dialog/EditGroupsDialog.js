@@ -67,8 +67,8 @@ bs.usermanager.ui.dialog.EditGroupsDialog.prototype.getActionProcess = function(
 bs.usermanager.ui.dialog.EditGroupsDialog.prototype.saveData = async function( data ) {
 	var dfd = $.Deferred();
 	$.ajax( {
-		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups',
-		method: 'PUT',
+		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/set',
+		method: 'POST',
 		data: JSON.stringify( data ),
 		dataType: 'json',
 		contentType: 'application/json'

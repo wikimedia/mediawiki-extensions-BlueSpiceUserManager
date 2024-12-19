@@ -65,6 +65,7 @@
 		"ext.bluespice.userManager": {
 			"scripts": [
 				"ui/UserDetailsPanel.js",
+				"ui/AddUserPanel.js",
 				"ui/dialog/EditUserDialog.js",
 				"ui/dialog/EditGroupsDialog.js",
 				"ui/dialog/AddUserDialog.js",
@@ -114,7 +115,10 @@
 				"bs-usermanager-cancel",
 				"bs-usermanager-showdisabled",
 				"bs-usermanager-disabled",
-				"bs-usermanager-warning-password-change-own"
+				"bs-usermanager-warning-password-change-own",
+				"bs-usermanager-showenabled",
+				"bs-usermanager-mass-enable",
+				"bs-usermanager-mass-disable"
 			]
 		}
 	},
@@ -140,32 +144,32 @@
 	],
 	"RestRoutes": [
 		{
-			"method": "PUT",
-			"path": "/bs-usermanager/v1/user/{username}",
+			"method": "POST",
+			"path": "/bs-usermanager/v1/user/create/{username}",
 			"class": "\\BlueSpice\\UserManager\\Rest\\AddUserHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		},
 		{
 			"method": "POST",
-			"path": "/bs-usermanager/v1/user/{username}",
+			"path": "/bs-usermanager/v1/user/edit/{username}",
 			"class": "\\BlueSpice\\UserManager\\Rest\\UpdateUserHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		},
 		{
-			"method": "PUT",
-			"path": "/bs-usermanager/v1/block",
+			"method": "POST",
+			"path": "/bs-usermanager/v1/block/create",
 			"class": "\\BlueSpice\\UserManager\\Rest\\BlockUsersHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		},
 		{
-			"method": "DELETE",
-			"path": "/bs-usermanager/v1/block",
+			"method": "POST",
+			"path": "/bs-usermanager/v1/block/delete",
 			"class": "\\BlueSpice\\UserManager\\Rest\\UnblockUsersHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		},
 		{
-			"method": "PUT",
-			"path": "/bs-usermanager/v1/groups",
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/set",
 			"class": "\\BlueSpice\\UserManager\\Rest\\SetGroupsHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		},
