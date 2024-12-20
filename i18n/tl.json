@@ -5,8 +5,5 @@
 			"Jojit fb"
 		]
 	},
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|Ang manunulak na ito|$1 Ang mga manunulak}} ay ipinatanggal.",
-	"bs-usermanager-editpassword-successful": "Ang password ay nabago ng matagumpay",
-	"bs-usermanager-title-multipleuserselected": "Maraming manunulak ang pinili",
 	"bs-usermanager-multipleuserselected": "Mababago mo lang ang password ng paisa-isa sa bawat tagagamit"
 }

@@ -6,12 +6,9 @@
 		]
 	},
 	"bs-usermanager-text": "Uzeri",
-	"bs-usermanager-user-deleted": "{{PLURAL:$1|La {{GENDER:$2|uzero}}|$1 uzeri}} efacesis.",
 	"bs-usermanager-headerusername": "Uzeronomo",
 	"bs-usermanager-headeremail": "E-posto",
 	"bs-usermanager-titleeditdetails": "Redaktar uzero",
 	"bs-usermanager-labelnewpassword": "Pasovorto",
-	"bs-usermanager-groups-more": "... plusa",
-	"bs-usermanager-endisable": "Permisar/despermisar",
-	"bs-usermanager-invalid-groups": "La grupi esas nevalida"
+	"bs-usermanager-endisable": "Permisar/despermisar"
 }
