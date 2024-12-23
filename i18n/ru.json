@@ -36,5 +36,7 @@
 	"bs-usermanager-multipleuserselected": "Вы можете только изменить пароль только для одного пользователя одновременно",
 	"action-usermanager-editpassword": "Изменить пароли участника",
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
-	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую"
+	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
+	"bs-usermanager-save": "Сохранить",
+	"bs-usermanager-cancel": "Отмена"
 }

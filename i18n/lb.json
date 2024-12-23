@@ -40,5 +40,6 @@
 	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
 	"bs-usermanager-label-password-change-strategy": "Method",
 	"bs-usermanager-save": "Späicheren",
-	"bs-usermanager-cancel": "Ofbriechen"
+	"bs-usermanager-cancel": "Ofbriechen",
+	"bs-usermanager-disabled": "Desaktivéiert"
 }

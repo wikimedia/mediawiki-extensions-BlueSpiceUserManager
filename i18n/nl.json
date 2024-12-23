@@ -47,5 +47,11 @@
 	"bs-usermanager-label-password-change-strategy": "Methode",
 	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
-	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres"
+	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres",
+	"bs-usermanager-save": "Opslaan",
+	"bs-usermanager-cancel": "Annuleren",
+	"bs-usermanager-showdisabled": "Gedeactiveerde gebruikers tonen",
+	"bs-usermanager-disabled": "Gedeactiveerd",
+	"bs-usermanager-missing-param": "Ontbrekende parameter: $1",
+	"bs-usermanager-warning-password-change-own": "U wijzigt uw eigen wachtwoord. U wordt uitgelogd en doorgestuurd naar de aanmeldpagina."
 }

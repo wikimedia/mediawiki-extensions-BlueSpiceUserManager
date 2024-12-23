@@ -42,6 +42,7 @@
 	"bs-usermanager-editpassword": "Промени лозинку",
 	"bs-usermanager-multipleuserselected": "Можете изменити лозинку само једном кориснику у исто време",
 	"bs-usermanager-label-password-change-strategy": "Начин",
+	"bs-usermanager-save": "Сачувај",
 	"bs-usermanager-cancel": "Откажи",
 	"bs-usermanager-disabled": "Онемогућено"
 }

@@ -5,6 +5,7 @@
 			"Gomoko",
 			"Grind24",
 			"Ltrlg",
+			"Mahabarata",
 			"SnowedEarth",
 			"Thibaut120094",
 			"Verdy p",
@@ -49,5 +50,11 @@
 	"bs-usermanager-label-password-change-strategy": "Méthode",
 	"bs-usermanager-label-password-change-strategy-reset": "Envoyer le lien de réinitialisation du mot de passe à l’utilisateur",
 	"bs-usermanager-label-password-change-strategy-pw": "Modifier directement le mot de passe",
-	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie"
+	"bs-usermanager-no-mail": "L’utilisateur sélectionné n’a pas confirmé son adresse de messagerie",
+	"bs-usermanager-save": "Enregistrer",
+	"bs-usermanager-cancel": "Annuler",
+	"bs-usermanager-showdisabled": "Afficher les utilisateurs désactivés",
+	"bs-usermanager-disabled": "Désactivé",
+	"bs-usermanager-missing-param": "Paramètre manquant : $1",
+	"bs-usermanager-warning-password-change-own": "Vous modifiez votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion."
 }
