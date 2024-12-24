@@ -38,5 +38,8 @@
 	"bs-usermanager-editpassword": "Passwuert änneren",
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
 	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
-	"bs-usermanager-label-password-change-strategy": "Method"
+	"bs-usermanager-label-password-change-strategy": "Method",
+	"bs-usermanager-save": "Späicheren",
+	"bs-usermanager-cancel": "Ofbriechen",
+	"bs-usermanager-disabled": "Desaktivéiert"
 }
