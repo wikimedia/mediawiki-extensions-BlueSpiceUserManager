@@ -4,6 +4,7 @@
 			"Cabal"
 		]
 	},
+	"bs-usermanager-text": "ਵਰਤੋਂਕਾਰ",
 	"bs-usermanager-labelnewpassword": "ਲੰਘ-ਸ਼ਬਦ",
 	"bs-usermanager-labelpasswordcheck": "ਪਾਰਸ਼ਬਦ ਦੀ ਤਸਦੀਕ ਕਰੋ",
 	"bs-usermanager-editpassword": "ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
