@@ -7,9 +7,11 @@
 	},
 	"bs-usermanager-text": "Geavaheaddjit",
 	"bs-usermanager-headerusername": "Geavaheaddjinamma",
+	"bs-usermanager-headerrealname": "Albma namma",
 	"bs-usermanager-headeremail": "E-poastačujuhus",
 	"bs-usermanager-titleadduser": "Lasit geavaheaddji",
 	"bs-usermanager-labelnewpassword": "Beassansátni",
 	"bs-usermanager-labelpasswordcheck": "Nanne beassansáni",
-	"bs-usermanager-editpassword": "Molsso beassansáni"
+	"bs-usermanager-editpassword": "Molsso beassansáni",
+	"bs-usermanager-save": "Vurke"
 }
