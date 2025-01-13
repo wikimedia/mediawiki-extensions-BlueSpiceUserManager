@@ -11,5 +11,6 @@
 	"bs-usermanager-titleadduser": "Lasseet kevttee",
 	"bs-usermanager-labelpasswordcheck": "Nonnii syelisääni",
 	"bs-usermanager-editpassword": "Molso syelisääni",
-	"bs-usermanager-save": "Vuorkkii"
+	"bs-usermanager-save": "Vuorkkii",
+	"bs-usermanager-disabled": "Meddâlistum kiävtust"
 }
