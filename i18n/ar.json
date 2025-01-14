@@ -49,5 +49,11 @@
 	"bs-usermanager-label-password-change-strategy": "الطريقة",
 	"bs-usermanager-label-password-change-strategy-reset": "إرسال وصلة إعادة ضبط كلمة المرور إلى المستخدم",
 	"bs-usermanager-label-password-change-strategy-pw": "تغيير كلمة المرور مباشرة",
-	"bs-usermanager-no-mail": "المستخدم المحدد ليس لديه عنوان بريد إلكتروني مؤكد"
+	"bs-usermanager-no-mail": "المستخدم المحدد ليس لديه عنوان بريد إلكتروني مؤكد",
+	"bs-usermanager-save": "حفظ",
+	"bs-usermanager-cancel": "إلغاء",
+	"bs-usermanager-showdisabled": "إظهار المستخدمين المعوقين",
+	"bs-usermanager-disabled": "عاجز",
+	"bs-usermanager-missing-param": "المعلمة المفقودة: $1",
+	"bs-usermanager-warning-password-change-own": "أنت تقوم بتغيير كلمة المرور الخاصة بك. سيتم تسجيل خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول."
 }
