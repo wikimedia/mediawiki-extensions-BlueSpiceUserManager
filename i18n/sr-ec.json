@@ -66,5 +66,8 @@
 	"apihelp-bs-usermanager-group-store-description": "Даје кориснички менаџер задатака api за BlueSpice.",
 	"bs-usermanager-label-password-change-strategy": "Начин",
 	"bs-usermanager-icon-bool-true-aria-label": "проверено",
-	"bs-usermanager-icon-bool-false-aria-label": "непроверено"
+	"bs-usermanager-icon-bool-false-aria-label": "непроверено",
+	"bs-usermanager-save": "Сачувај",
+	"bs-usermanager-cancel": "Откажи",
+	"bs-usermanager-disabled": "Онемогућено"
 }

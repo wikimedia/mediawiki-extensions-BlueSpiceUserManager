@@ -81,5 +81,11 @@
 	"action-usermanager-deleteuser": "מחיקת משתמשים",
 	"right-usermanager-deleteuser": "מחיקת משתמש דרך Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "מסומן",
-	"bs-usermanager-icon-bool-false-aria-label": "לא מסומן"
+	"bs-usermanager-icon-bool-false-aria-label": "לא מסומן",
+	"bs-usermanager-save": "שמירה",
+	"bs-usermanager-cancel": "ביטול",
+	"bs-usermanager-showdisabled": "הצגת משתמשים מושבתים",
+	"bs-usermanager-disabled": "כבוי",
+	"bs-usermanager-missing-param": "פרמטר חסר: $1",
+	"bs-usermanager-warning-password-change-own": "{{GENDER:|אתה|את}} משנה את הסיסמה של עצמך. {{GENDER:|תנותק ותועבר|תנותקי ותועברי}} לדף הכניסה."
 }

@@ -57,5 +57,7 @@
 	"bs-usermanager-filter-only-activated-users": "Показать всех активированных пользователей",
 	"bs-usermanager-filter-only-deactivated-users": "Показать всех деактивированных пользователей",
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
-	"action-usermanager-deleteuser": "удалить пользователей"
+	"action-usermanager-deleteuser": "удалить пользователей",
+	"bs-usermanager-save": "Сохранить",
+	"bs-usermanager-cancel": "Отмена"
 }

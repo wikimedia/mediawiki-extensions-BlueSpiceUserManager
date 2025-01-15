@@ -81,5 +81,11 @@
 	"action-usermanager-deleteuser": "حذف المستخدمين",
 	"right-usermanager-deleteuser": "حذف مستخدم عبر Special: UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "مفحوص",
-	"bs-usermanager-icon-bool-false-aria-label": "غير مفحوص"
+	"bs-usermanager-icon-bool-false-aria-label": "غير مفحوص",
+	"bs-usermanager-save": "حفظ",
+	"bs-usermanager-cancel": "إلغاء",
+	"bs-usermanager-showdisabled": "إظهار المستخدمين المعوقين",
+	"bs-usermanager-disabled": "عاجز",
+	"bs-usermanager-missing-param": "المعلمة المفقودة: $1",
+	"bs-usermanager-warning-password-change-own": "أنت تقوم بتغيير كلمة المرور الخاصة بك. سيتم تسجيل خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول."
 }

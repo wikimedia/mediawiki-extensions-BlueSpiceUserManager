@@ -5,6 +5,7 @@
 			"Gomoko",
 			"Grind24",
 			"Ltrlg",
+			"Mahabarata",
 			"SnowedEarth",
 			"Thibaut120094",
 			"Verdy p",
@@ -81,5 +82,11 @@
 	"action-usermanager-deleteuser": "supprimer des utilisateurs",
 	"right-usermanager-deleteuser": "Supprimer un utilisateur depuis Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "coché",
-	"bs-usermanager-icon-bool-false-aria-label": "décoché"
+	"bs-usermanager-icon-bool-false-aria-label": "décoché",
+	"bs-usermanager-save": "Enregistrer",
+	"bs-usermanager-cancel": "Annuler",
+	"bs-usermanager-showdisabled": "Afficher les utilisateurs désactivés",
+	"bs-usermanager-disabled": "Désactivé",
+	"bs-usermanager-missing-param": "Paramètre manquant : $1",
+	"bs-usermanager-warning-password-change-own": "Vous modifiez votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion."
 }

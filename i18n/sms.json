@@ -21,5 +21,6 @@
 	"bs-usermanager-editpassword": "Vaajât peittsääʹn",
 	"bs-usermanager-nouserselected": "Vaʹlljed õõʹnni",
 	"action-usermanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:usermanager}}\"",
-	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed"
+	"action-usermanager-deleteuser": "õõʹnnʼjid jaukkeed",
+	"bs-usermanager-save": "Ruõkk"
 }

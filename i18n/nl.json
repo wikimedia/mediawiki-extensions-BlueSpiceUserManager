@@ -79,5 +79,11 @@
 	"action-usermanager-deleteuser": "gebruikers te verwijderen",
 	"right-usermanager-deleteuser": "Een gebruiker verwijderen via Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "aangevinkt",
-	"bs-usermanager-icon-bool-false-aria-label": "niet aangevinkt"
+	"bs-usermanager-icon-bool-false-aria-label": "niet aangevinkt",
+	"bs-usermanager-save": "Opslaan",
+	"bs-usermanager-cancel": "Annuleren",
+	"bs-usermanager-showdisabled": "Gedeactiveerde gebruikers tonen",
+	"bs-usermanager-disabled": "Gedeactiveerd",
+	"bs-usermanager-missing-param": "Ontbrekende parameter: $1",
+	"bs-usermanager-warning-password-change-own": "U wijzigt uw eigen wachtwoord. U wordt uitgelogd en doorgestuurd naar de aanmeldpagina."
 }

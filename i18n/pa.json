@@ -8,5 +8,8 @@
 	"bs-usermanager-labelnewpassword": "ਲੰਘ-ਸ਼ਬਦ",
 	"bs-usermanager-labelpasswordcheck": "ਪਾਰਸ਼ਬਦ ਦੀ ਤਸਦੀਕ ਕਰੋ",
 	"bs-usermanager-editpassword": "ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
-	"bs-usermanager-label-password-change-strategy-pw": "ਸਿੱਧਾ ਪਾਰਸ਼ਬਦ ਬਦਲੋ"
+	"bs-usermanager-label-password-change-strategy-pw": "ਸਿੱਧਾ ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
+	"bs-usermanager-text": "ਵਰਤੋਂਕਾਰ",
+	"bs-usermanager-save": "ਸਾਂਭੋ",
+	"bs-usermanager-cancel": "ਰੱਦ ਕਰੋ"
 }
