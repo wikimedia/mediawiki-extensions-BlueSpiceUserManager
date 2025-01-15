@@ -12,5 +12,7 @@
 	"bs-usermanager-titleadduser": "Lasit geavaheaddji",
 	"bs-usermanager-labelnewpassword": "Beassansátni",
 	"bs-usermanager-labelpasswordcheck": "Nanne beassansáni",
-	"bs-usermanager-editpassword": "Molsso beassansáni"
+	"bs-usermanager-editpassword": "Molsso beassansáni",
+	"bs-usermanager-save": "Vurke",
+	"bs-usermanager-disabled": "Váldojuvvon eret anus"
 }

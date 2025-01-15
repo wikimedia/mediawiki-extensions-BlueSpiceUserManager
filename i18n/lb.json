@@ -59,5 +59,8 @@
 	"action-usermanager-viewspecialpage": "Spezialsäit \"{{int:usermanager}}\" weisen",
 	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
 	"bs-usermanager-label-password-change-strategy": "Method",
-	"action-usermanager-deleteuser": "Benotzer läschen"
+	"action-usermanager-deleteuser": "Benotzer läschen",
+	"bs-usermanager-save": "Späicheren",
+	"bs-usermanager-cancel": "Ofbriechen",
+	"bs-usermanager-disabled": "Desaktivéiert"
 }

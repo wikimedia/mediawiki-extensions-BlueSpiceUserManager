@@ -78,5 +78,11 @@
 	"action-usermanager-deleteuser": "{{doc-action|usermanager-deleteuser}}",
 	"right-usermanager-deleteuser": "{{doc-right|usermanager-deleteuser}}",
 	"bs-usermanager-icon-bool-true-aria-label": "Aria label for a icon that indicates a checked state of a boolean option",
-	"bs-usermanager-icon-bool-false-aria-label": "Aria label for a icon that indicates a unchecked state of a boolean option"
+	"bs-usermanager-icon-bool-false-aria-label": "Aria label for a icon that indicates a unchecked state of a boolean option",
+	"bs-usermanager-save": "Label for the save button{{Identical|Save}}",
+	"bs-usermanager-cancel": "Label for the cancel button{{Identical|Cancel}}",
+	"bs-usermanager-showdisabled": "Button label to show disabled users",
+	"bs-usermanager-disabled": "Text for the pill displaying that a user is disabled",
+	"bs-usermanager-missing-param": "Generic error message for missing parameters.\n$1 - parameter name",
+	"bs-usermanager-warning-password-change-own": "Warning message when user is about to change their own password"
 }

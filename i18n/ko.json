@@ -67,5 +67,10 @@
 	"bs-usermanager-label-password-change-strategy-pw": "직접 비밀번호 변경",
 	"bs-usermanager-no-mail": "선택된 사용자는 확인된 이메일 주소가 없습니다",
 	"action-usermanager-deleteuser": "사용자 삭제",
-	"right-usermanager-deleteuser": "Special:UserManager를 통한 사용자 삭제"
+	"right-usermanager-deleteuser": "Special:UserManager를 통한 사용자 삭제",
+	"bs-usermanager-save": "저장",
+	"bs-usermanager-cancel": "취소",
+	"bs-usermanager-showdisabled": "비활성화된 사용자 표시",
+	"bs-usermanager-disabled": "비활성화됨",
+	"bs-usermanager-missing-param": "변수가 없습니다: $1"
 }

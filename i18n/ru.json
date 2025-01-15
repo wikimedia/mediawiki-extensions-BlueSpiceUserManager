@@ -57,5 +57,7 @@
 	"action-usermanager-editpassword": "Изменить пароли участника",
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
-	"action-usermanager-deleteuser": "удалить пользователей"
+	"action-usermanager-deleteuser": "удалить пользователей",
+	"bs-usermanager-save": "Сохранить",
+	"bs-usermanager-cancel": "Отмена"
 }

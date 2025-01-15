@@ -74,5 +74,11 @@
 	"action-usermanager-deleteuser": "delete users",
 	"right-usermanager-deleteuser": "Delete a user over Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "checked",
-	"bs-usermanager-icon-bool-false-aria-label": "unchecked"
+	"bs-usermanager-icon-bool-false-aria-label": "unchecked",
+	"bs-usermanager-save": "Save",
+	"bs-usermanager-cancel": "Cancel",
+	"bs-usermanager-showdisabled": "Show disabled users",
+	"bs-usermanager-disabled": "Disabled",
+	"bs-usermanager-missing-param": "Missing parameter: $1",
+	"bs-usermanager-warning-password-change-own": "You are changing your own password. You will be logged out and redirected to the login page."
 }
