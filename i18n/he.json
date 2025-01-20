@@ -52,8 +52,8 @@
 	"bs-usermanager-endisable": "הפעלה/ביטול",
 	"bs-usermanager-confirmdisableuser": "האם ברצונך לבטל את {{PLURAL:$1|חשבון המשתמש הזה|$1 חשבונות המשתמשים האלו}}?",
 	"bs-usermanager-confirmenableuser": "האם ברצונך להפעיל את {{PLURAL:$1|חשבון המשתמש הזה|$1 חשבונות המשתמשים האלו}}?",
-	"bs-usermanager-titledisableuser": "ביטול משתמש",
-	"bs-usermanager-titleenableuser": "הפעלת משתמש",
+	"bs-usermanager-titledisableuser": "חסימת משתמש",
+	"bs-usermanager-titleenableuser": "שחרור חסימת משתמש",
 	"usermanager": "ניהול משתמשים",
 	"bs-usermanager-group-add-not-allowed": "אין באפשרותך להוסיף משתמשים לקבוצה $1",
 	"bs-usermanager-group-remove-not-allowed": "אין באפשרותך להסיר משתמשים מהקבוצה $1",
@@ -84,8 +84,11 @@
 	"bs-usermanager-icon-bool-false-aria-label": "לא מסומן",
 	"bs-usermanager-save": "שמירה",
 	"bs-usermanager-cancel": "ביטול",
-	"bs-usermanager-showdisabled": "הצגת משתמשים מושבתים",
+	"bs-usermanager-showdisabled": "הצגת משתמשים חסומים",
 	"bs-usermanager-disabled": "כבוי",
 	"bs-usermanager-missing-param": "פרמטר חסר: $1",
-	"bs-usermanager-warning-password-change-own": "{{GENDER:|אתה|את}} משנה את הסיסמה של עצמך. {{GENDER:|תנותק ותועבר|תנותקי ותועברי}} לדף הכניסה."
+	"bs-usermanager-warning-password-change-own": "{{GENDER:|אתה|את}} משנה את הסיסמה של עצמך. {{GENDER:|תנותק ותועבר|תנותקי ותועברי}} לדף הכניסה.",
+	"bs-usermanager-showenabled": "הצגת משתמשים פעילים",
+	"bs-usermanager-mass-enable": "שחרור חסימה של משתמשים",
+	"bs-usermanager-mass-disable": "חסימת משתמשים"
 }
