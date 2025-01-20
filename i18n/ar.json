@@ -52,8 +52,8 @@
 	"bs-usermanager-endisable": "تمكين/تعطيل",
 	"bs-usermanager-confirmdisableuser": "هل تريد حقًا تعطيل {{PLURAL:$1| هذا المستخدم | هؤلاء $1 مستخدم}}؟",
 	"bs-usermanager-confirmenableuser": "هل تريد حقًا تمكين {{PLURAL:$1| هذا المستخدم | هؤلاء $1 مستخدم}}؟",
-	"bs-usermanager-titledisableuser": "تعطيل المستخدم",
-	"bs-usermanager-titleenableuser": "تمكين مستخدم",
+	"bs-usermanager-titledisableuser": "منع المستخدم",
+	"bs-usermanager-titleenableuser": "إلغاء منع المستخدم",
 	"usermanager": "مدير المستخدم",
 	"bs-usermanager-group-add-not-allowed": "لا يُسمَح لك بإضافة مستخدمين إلى المجموعة $1",
 	"bs-usermanager-group-remove-not-allowed": "لا يُسمَح لك بإزالة مستخدمين من المجموعة $1",
@@ -84,8 +84,11 @@
 	"bs-usermanager-icon-bool-false-aria-label": "غير مفحوص",
 	"bs-usermanager-save": "حفظ",
 	"bs-usermanager-cancel": "إلغاء",
-	"bs-usermanager-showdisabled": "إظهار المستخدمين المعوقين",
+	"bs-usermanager-showdisabled": "إظهار المستخدمين الممنوعين",
 	"bs-usermanager-disabled": "عاجز",
 	"bs-usermanager-missing-param": "المعلمة المفقودة: $1",
-	"bs-usermanager-warning-password-change-own": "أنت تقوم بتغيير كلمة المرور الخاصة بك. سيتم تسجيل خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول."
+	"bs-usermanager-warning-password-change-own": "أنت تقوم بتغيير كلمة المرور الخاصة بك. سيتم تسجيل خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول.",
+	"bs-usermanager-showenabled": "إظهار المستخدمين النشطين",
+	"bs-usermanager-mass-enable": "إلغاء منع المستخدمين",
+	"bs-usermanager-mass-disable": "منع المستخدمين"
 }
