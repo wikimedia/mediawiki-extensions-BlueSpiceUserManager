@@ -30,11 +30,12 @@
 namespace BlueSpice\UserManager\Hook;
 
 use BlueSpice\Hook;
+use MediaWiki\User\User;
 
 abstract class BSUserManagerAfterSetGroups extends Hook {
 
 	/**
-	 * @var \User
+	 * @var User
 	 */
 	protected $user;
 
@@ -65,7 +66,7 @@ abstract class BSUserManagerAfterSetGroups extends Hook {
 
 	/**
 	 *
-	 * @param \User $user
+	 * @param User $user
 	 * @param array $groups
 	 * @param array $addGroups
 	 * @param array $removeGroups
@@ -87,7 +88,7 @@ abstract class BSUserManagerAfterSetGroups extends Hook {
 	 *
 	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param \User $user
+	 * @param User $user
 	 * @param array $groups
 	 * @param array $addGroups
 	 * @param array $removeGroups
