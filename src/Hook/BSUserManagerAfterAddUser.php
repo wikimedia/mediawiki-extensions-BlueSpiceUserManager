@@ -30,6 +30,7 @@
 namespace BlueSpice\UserManager\Hook;
 
 use BlueSpice\Hook;
+use MediaWiki\User\User;
 
 /**
  * Located in \BlueSpice\UserManager\Extension::addUser after a user was initially added
@@ -44,7 +45,7 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 
 	/**
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $user = null;
 
@@ -62,16 +63,16 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 
 	/**
 	 *
-	 * @var \User
+	 * @var User
 	 */
 	protected $performer = null;
 
 	/**
 	 * @param \UserManager $userManager
-	 * @param \User $user
+	 * @param User $user
 	 * @param array $metaData
 	 * @param \Status &$status
-	 * @param \User $performer
+	 * @param User $performer
 	 * @return bool
 	 */
 	public static function callback( $userManager, $user, $metaData, &$status, $performer ) {
@@ -86,10 +87,10 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 	 * @param \IContextSource $context
 	 * @param \Config $config
 	 * @param \UserManager $userManager
-	 * @param \User $user
+	 * @param User $user
 	 * @param array $metaData
 	 * @param \Status &$status
-	 * @param \User $performer
+	 * @param User $performer
 	 */
 	public function __construct( $context, $config, $userManager, $user, $metaData,
 		&$status, $performer ) {

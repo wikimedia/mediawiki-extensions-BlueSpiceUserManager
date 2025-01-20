@@ -33,8 +33,8 @@ use BlueSpice\Hook;
 use BlueSpice\UserManager\Extension as UserManager;
 use Config;
 use IContextSource;
+use MediaWiki\User\User;
 use Status;
-use User;
 
 /**
  * Located in \BlueSpice\UserManager\Extension::deleteUser after a user was deleted

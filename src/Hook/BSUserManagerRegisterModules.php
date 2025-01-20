@@ -2,7 +2,7 @@
 
 namespace BlueSpice\UserManager\Hook;
 
-use User;
+use MediaWiki\User\User;
 
 interface BSUserManagerRegisterModules {
 
