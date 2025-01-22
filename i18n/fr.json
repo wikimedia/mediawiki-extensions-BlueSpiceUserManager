@@ -53,8 +53,8 @@
 	"bs-usermanager-endisable": "Activer / désactiver",
 	"bs-usermanager-confirmdisableuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir désactiver {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-confirmenableuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir activer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
-	"bs-usermanager-titledisableuser": "Désactiver l’utilisateur",
-	"bs-usermanager-titleenableuser": "Activer l’utilisateur",
+	"bs-usermanager-titledisableuser": "Bloquer l’utilisateur",
+	"bs-usermanager-titleenableuser": "Débloquer l’utilisateur",
 	"usermanager": "Gestionnaire des utilisateurs",
 	"bs-usermanager-group-add-not-allowed": "Vous n’êtes pas autorisé{{GENDER:||e}} à ajouter des utilisateurs au groupe $1",
 	"bs-usermanager-group-remove-not-allowed": "Vous n’êtes pas autorisé{{GENDER:||e}} à supprimer des utilisateurs du groupe $1",
@@ -85,8 +85,11 @@
 	"bs-usermanager-icon-bool-false-aria-label": "décoché",
 	"bs-usermanager-save": "Enregistrer",
 	"bs-usermanager-cancel": "Annuler",
-	"bs-usermanager-showdisabled": "Afficher les utilisateurs désactivés",
+	"bs-usermanager-showdisabled": "Afficher les utilisateurs bloqués",
 	"bs-usermanager-disabled": "Désactivé",
 	"bs-usermanager-missing-param": "Paramètre manquant : $1",
-	"bs-usermanager-warning-password-change-own": "Vous modifiez votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion."
+	"bs-usermanager-warning-password-change-own": "Vous modifiez votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion.",
+	"bs-usermanager-showenabled": "Afficher les utilisateurs actifs",
+	"bs-usermanager-mass-enable": "Débloquer les utilisateurs",
+	"bs-usermanager-mass-disable": "Bloquer les utilisateurs"
 }
