@@ -3,6 +3,7 @@
 namespace BlueSpice\UserManager;
 
 use BlueSpice\IAdminTool;
+use MediaWiki\Message\Message;
 
 class AdminTool implements IAdminTool {
 
@@ -17,7 +18,7 @@ class AdminTool implements IAdminTool {
 
 	/**
 	 *
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getDescription() {
 		return wfMessage( 'bs-usermanager-desc' );
@@ -25,7 +26,7 @@ class AdminTool implements IAdminTool {
 
 	/**
 	 *
-	 * @return \Message
+	 * @return Message
 	 */
 	public function getName() {
 		return wfMessage( 'bs-usermanager-label' );
