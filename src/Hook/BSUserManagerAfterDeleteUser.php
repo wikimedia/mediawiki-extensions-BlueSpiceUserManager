@@ -31,8 +31,8 @@ namespace BlueSpice\UserManager\Hook;
 
 use BlueSpice\Hook;
 use BlueSpice\UserManager\Extension as UserManager;
-use IContextSource;
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\User\User;
 use Status;
 
