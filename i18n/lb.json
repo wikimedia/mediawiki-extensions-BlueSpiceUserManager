@@ -62,8 +62,8 @@
 	"action-usermanager-deleteuser": "Benotzer läschen",
 	"bs-usermanager-save": "Späicheren",
 	"bs-usermanager-cancel": "Ofbriechen",
-	"bs-usermanager-disabled": "Desaktivéiert",
 	"bs-usermanager-showdisabled": "Gespaarte Benotzer weisen",
+	"bs-usermanager-disabled": "Desaktivéiert",
 	"bs-usermanager-showenabled": "Aktiv Benotzer weisen",
 	"bs-usermanager-mass-enable": "Benotzer entspären",
 	"bs-usermanager-mass-disable": "Benotzer spären"
