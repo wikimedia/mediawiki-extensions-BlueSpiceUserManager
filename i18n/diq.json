@@ -9,5 +9,6 @@
 	"bs-usermanager-headergroups": "Grubi",
 	"bs-usermanager-groups-more": "... zêde",
 	"bs-usermanager-headerenabled": "Feal",
-	"action-usermanager-editpassword": "paroleyanê karberi bıvurne"
+	"action-usermanager-editpassword": "paroleyanê karberi bıvurne",
+	"bs-usermanager-titledisableuser": "Karberi kılit ke"
 }
