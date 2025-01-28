@@ -32,6 +32,7 @@ namespace BlueSpice\UserManager\Hook;
 use BlueSpice\Hook;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 
 /**
@@ -59,7 +60,7 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 
 	/**
 	 *
-	 * @var \Status
+	 * @var Status
 	 */
 	protected $status = null;
 
@@ -73,7 +74,7 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 	 * @param \UserManager $userManager
 	 * @param User $user
 	 * @param array $metaData
-	 * @param \Status &$status
+	 * @param Status &$status
 	 * @param User $performer
 	 * @return bool
 	 */
@@ -91,7 +92,7 @@ abstract class BSUserManagerAfterAddUser extends Hook {
 	 * @param \UserManager $userManager
 	 * @param User $user
 	 * @param array $metaData
-	 * @param \Status &$status
+	 * @param Status &$status
 	 * @param User $performer
 	 */
 	public function __construct( $context, $config, $userManager, $user, $metaData,
