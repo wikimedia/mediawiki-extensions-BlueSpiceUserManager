@@ -5,7 +5,7 @@ namespace BlueSpice\UserManager\Special;
 use Html;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class UserManager extends SpecialPage {
 	/** @var Config */
