@@ -14,6 +14,7 @@ use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Deferred\SiteStatsUpdate;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Status\Status;
 use MediaWiki\User\PasswordReset;
@@ -24,7 +25,6 @@ use PermissionsError;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
-use Sanitizer;
 use StatusValue;
 
 class UserManager implements LoggerAwareInterface {
