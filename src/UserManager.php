@@ -467,7 +467,7 @@ class UserManager implements LoggerAwareInterface {
 		$reason = [ 'hookaborted' ];
 		$res = $this->hookContainer->run( 'BlockIp', [
 			&$block,
-			&$performer,
+			&$actor,
 			&$reason
 		] );
 		if ( !$res ) {
