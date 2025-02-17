@@ -74,5 +74,14 @@
 	"action-usermanager-deleteuser": "deler usatores",
 	"right-usermanager-deleteuser": "Deler un usator via Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "marcate",
-	"bs-usermanager-icon-bool-false-aria-label": "non marcate"
+	"bs-usermanager-icon-bool-false-aria-label": "non marcate",
+	"bs-usermanager-save": "Salveguardar",
+	"bs-usermanager-cancel": "Cancellar",
+	"bs-usermanager-showdisabled": "Monstrar usatores blocate",
+	"bs-usermanager-disabled": "Disactivate",
+	"bs-usermanager-missing-param": "Parametro mancante: $1",
+	"bs-usermanager-warning-password-change-own": "Tu es sur le puncto de modificar tu proprie contrasigno. Le systema claudera tu session e te redirigera verso le pagina de apertura de session.",
+	"bs-usermanager-showenabled": "Monstrar usatores active",
+	"bs-usermanager-mass-enable": "Disblocar usatores",
+	"bs-usermanager-mass-disable": "Blocar usatores"
 }
