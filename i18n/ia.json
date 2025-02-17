@@ -42,5 +42,14 @@
 	"bs-usermanager-label-password-change-strategy": "Methodo",
 	"bs-usermanager-label-password-change-strategy-reset": "Inviar al usator un ligamine de reinitialisation de contrasigno",
 	"bs-usermanager-label-password-change-strategy-pw": "Cambiar directemente le contrasigno",
-	"bs-usermanager-no-mail": "Le usator seligite non ha un adresse de e-mail confirmate"
+	"bs-usermanager-no-mail": "Le usator seligite non ha un adresse de e-mail confirmate",
+	"bs-usermanager-save": "Salveguardar",
+	"bs-usermanager-cancel": "Cancellar",
+	"bs-usermanager-showdisabled": "Monstrar usatores blocate",
+	"bs-usermanager-disabled": "Disactivate",
+	"bs-usermanager-missing-param": "Parametro mancante: $1",
+	"bs-usermanager-warning-password-change-own": "Tu es sur le puncto de modificar tu proprie contrasigno. Le systema claudera tu session e te redirigera verso le pagina de apertura de session.",
+	"bs-usermanager-showenabled": "Monstrar usatores active",
+	"bs-usermanager-mass-enable": "Disblocar usatores",
+	"bs-usermanager-mass-disable": "Blocar usatores"
 }
