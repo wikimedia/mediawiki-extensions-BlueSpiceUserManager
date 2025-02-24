@@ -20,7 +20,7 @@ bs.usermanager.ui.dialog.AddUserDialog.prototype.getContentPanel = function() {
 	} );
 };
 
-bs.usermanager.ui.dialog.AddUserDialog.prototype.saveData = async function( data ) {
+bs.usermanager.ui.dialog.AddUserDialog.prototype.saveData = function( data ) {
 	var dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/create/' + data.username,

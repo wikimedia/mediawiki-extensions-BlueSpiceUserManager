@@ -25,6 +25,7 @@ bs.usermanager.ui.dialog.EditGroupsDialog.prototype.initialize = function() {
 
 	this.groupInput = new OOJSPlus.ui.widget.GroupMultiSelectWidget( {
 		$overlay: this.$overlay,
+		groupTypes: [ 'core-minimal', 'explicit', 'custom', 'extension-minimal' ]
 	} );
 	this.groupInput.setValue( this.groups );
 	this.groupInput.connect( this, { change: 'updateSize' } );
@@ -40,22 +41,23 @@ bs.usermanager.ui.dialog.EditGroupsDialog.prototype.initialize = function() {
 
 bs.usermanager.ui.dialog.EditGroupsDialog.prototype.getActionProcess = function( action ) {
 	return bs.usermanager.ui.dialog.EditGroupsDialog.parent.prototype.getActionProcess.call( this, action ).next(
-		async function() {
+		function() {
 			if ( action === 'save' ) {
-				let data = {};
 				var dfd = $.Deferred();
 				this.pushPending();
-				try {
-					await this.saveData( { users: this.users, groups: this.groupInput.getValue() } );
+				this.saveData( { users: this.users, groups: this.groupInput.getValue() } ).done( function() {
 					this.close( { reload: true } );
-				} catch ( e ) {
+				}.bind( this ) ).fail( function( e ) {
 					this.popPending();
 					if ( !e ) {
-						dfd.reject();
+						dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-error-generic' ) ) );
 					} else {
-						dfd.reject( new OO.ui.Error( e ) );
+						if ( typeof e === 'string' ) {
+							e = new OO.ui.Error( e );
+						}
+						dfd.reject( e );
 					}
-				}
+				}.bind( this ) );
 				return dfd.promise();
 			} else {
 				this.close( { reload: false } );
@@ -64,16 +66,26 @@ bs.usermanager.ui.dialog.EditGroupsDialog.prototype.getActionProcess = function(
 	);
 };
 
-bs.usermanager.ui.dialog.EditGroupsDialog.prototype.saveData = async function( data ) {
-	var dfd = $.Deferred();
+bs.usermanager.ui.dialog.EditGroupsDialog.prototype.saveData = function( data ) {
+	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/set',
 		method: 'POST',
 		data: JSON.stringify( data ),
 		dataType: 'json',
 		contentType: 'application/json'
-	} ).done( function() {
-		dfd.resolve();
+	} ).done( function( response ) {
+		let errors = [];
+		for ( const user in response ) {
+			if ( response.hasOwnProperty( user ) && response[user] !== true ) {
+				errors.push( user + ':' + response[user] );
+			}
+		}
+		if ( errors.length ) {
+			dfd.reject( new OO.ui.Error( errors.join( '<br>' ) ) );
+		} else {
+			dfd.resolve();
+		}
 	}.bind( this ) ).fail( function( xhr, status, err ) {
 		dfd.reject( xhr.hasOwnProperty( 'responseJSON' ) ? xhr.responseJSON.message : '' );
 	}.bind( this ) );
