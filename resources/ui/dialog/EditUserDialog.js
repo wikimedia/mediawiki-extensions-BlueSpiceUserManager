@@ -47,43 +47,41 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.onValidityCheck = function( va
 };
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.getActionProcess = function( action ) {
-	return bs.usermanager.ui.dialog.EditUserDialog.parent.prototype.getActionProcess.call( this, action ).next(
-		async function() {
-			if ( action === 'save' ) {
-				let data = {};
-				var dfd = $.Deferred();
-				this.pushPending();
-				try {
-					data = await this.getValidData();
-				} catch ( e ) {
-					this.popPending();
-					dfd.resolve();
-					return dfd.promise();
-				}
-				try {
-					await this.saveData( data );
+	if ( action === 'save' ) {
+		return new OO.ui.Process( function() {
+			var dfd = $.Deferred();
+			this.pushPending();
+			this.getValidData().done( function( data ) {
+				this.saveData( data ).done( function() {
 					this.close( { reload: true } );
-				} catch ( e ) {
+				}.bind( this ) ).fail( function( e ) {
 					this.popPending();
 					if ( !e ) {
-						dfd.reject();
+						dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-error-generic' ) ) );
 					} else {
 						dfd.reject( new OO.ui.Error( e ) );
 					}
-				}
-				return dfd.promise();
-			} else {
-				this.close( { reload: false } );
-			}
-		}, this
-	);
+				}.bind( this ) );
+			}.bind( this ) ).fail( function() {
+				this.popPending();
+				dfd.resolve();
+			}.bind( this ) );
+			return dfd.promise();
+		}, this );
+	}
+	if ( action === 'cancel' ) {
+		return new OO.ui.Process( function() {
+			this.close( { reload: false } );
+		}, this );
+	}
+	return bs.usermanager.ui.dialog.EditUserDialog.parent.prototype.getActionProcess.call( this, action );
 };
 
-bs.usermanager.ui.dialog.EditUserDialog.prototype.getValidData = async function() {
+bs.usermanager.ui.dialog.EditUserDialog.prototype.getValidData = function() {
 	return this.content.getValidData();
 };
 
-bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = async function( data ) {
+bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = function( data ) {
 	var dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/edit/' + this.username,
@@ -93,7 +91,7 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = async function( dat
 		contentType: 'application/json'
 	} ).done( function() {
 		dfd.resolve();
-	}.bind( this ) ).fail( function( err, status, xhr ) {
+	}.bind( this ) ).fail( function( xhr, status, err ) {
 		dfd.reject( xhr.hasOwnProperty( 'responseJSON' ) ? xhr.responseJSON.message : '' );
 	}.bind( this ) );
 	return dfd.promise();

@@ -40,6 +40,7 @@ bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function() {
 		$overlay: this.$overlay,
 		groupTypes: [ 'core-minimal', 'explicit', 'custom', 'extension-minimal' ]
 	} );
+
 	this.groupInput.setValue( this.groups );
 	this.groupInput.connect( this, { change: function() { this.emit( 'change' ); } } );
 
@@ -72,27 +73,31 @@ bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function() {
 	this.$element.append( form.$element );
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = async function() {
-	await this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] );
-	return {
-		username: this.usernameInput.getValue(),
-		realName: this.realNameInput.getValue(),
-		email: this.emailInput.getValue(),
-		enabled: this.enabled,
-		groups: this.groupInput.getValue()
-	};
+bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function() {
+	const dfd = $.Deferred();
+	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( function() {
+		dfd.resolve( {
+			username: this.usernameInput.getValue(),
+			realName: this.realNameInput.getValue(),
+			email: this.emailInput.getValue(),
+			enabled: this.enabled,
+			groups: this.groupInput.getValue()
+		} );
+		}.bind( this ) ).fail( function() {
+			dfd.reject();
+		}.bind( this ) );
+	return dfd.promise();
 };
 
 bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = async function() {
-	try {
-		await this.getValidData();
+	this.getValidData().done( function() {
 		this.emit( 'validityCheck', true );
-	} catch ( e ) {
-		this.emit( 'validityCheck', false );
-	}
+	}.bind( this ) ).fail( function() {
+		this.emit('validityCheck', false);
+	}.bind( this ) );
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = async function( fields ) {
+bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = function( fields ) {
 	const dfd = $.Deferred();
 	const promises = fields.map( field => field.getValidity() );
 	$.when( ...promises ).done( function() {

@@ -114,7 +114,8 @@
 				"bs-usermanager-warning-password-change-own",
 				"bs-usermanager-showenabled",
 				"bs-usermanager-mass-enable",
-				"bs-usermanager-mass-disable"
+				"bs-usermanager-mass-disable",
+				"bs-usermanager-error-generic"
 			]
 		}
 	},

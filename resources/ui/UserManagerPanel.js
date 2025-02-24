@@ -324,8 +324,8 @@ bs.usermanager.ui.UserManagerPanel.prototype.editGroups = function( rows ) {
 		users.push( row.user_name );
 		// Intersect with previous value
 		groups = groups.length ? groups.filter( function( n ) {
-			return row.groups.indexOf( n ) !== -1;
-		} ) : row.groups;
+			return row.groups_raw.indexOf( n ) !== -1;
+		} ) : row.groups_raw;
 	} );
 	groups = groups.filter( function( item, pos ) {
 		return groups.indexOf( item ) === pos;
@@ -353,7 +353,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.openWindow = function( dialog ) {
 
 bs.usermanager.ui.UserManagerPanel.prototype.getUserDetailsDialogData = function( action, row ) {
 	row = row || {};
-	console.log( row );
+
 	return {
 		username: row.user_name || '',
 		realName: row.user_real_name || '',

@@ -51,5 +51,6 @@
 	"bs-usermanager-warning-password-change-own": "You are changing your own password. You will be logged out and redirected to the login page.",
 	"bs-usermanager-showenabled": "Show active users",
 	"bs-usermanager-mass-enable": "Unblock users",
-	"bs-usermanager-mass-disable": "Block users"
+	"bs-usermanager-mass-disable": "Block users",
+	"bs-usermanager-error-generic": "An error occurred"
 }
