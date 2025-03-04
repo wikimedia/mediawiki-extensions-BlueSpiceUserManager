@@ -37,8 +37,8 @@
 	"bs-usermanager-endisable": "Aktivieren/Deaktivieren",
 	"bs-usermanager-confirmdisableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} deaktivieren?",
 	"bs-usermanager-confirmenableuser": "Möchtest du wirklich {{PLURAL:$1|diesen Benutzer|diese $1 Benutzer}} aktivieren?",
-	"bs-usermanager-titledisableuser": "Benutzer deaktivieren",
-	"bs-usermanager-titleenableuser": "Benutzer aktivieren",
+	"bs-usermanager-titledisableuser": "Benutzer sperren",
+	"bs-usermanager-titleenableuser": "Benutzer entsperren",
 	"usermanager": "Benutzerverwaltung",
 	"bs-usermanager-group-add-not-allowed": "Du bist nicht berechtigt, Benutzer zu der Gruppe $1 hinzuzufügen.",
 	"bs-usermanager-group-remove-not-allowed": "Du bist nicht berechtigt, Benutzer von der Gruppe $1 zu entfernen.",
@@ -50,5 +50,14 @@
 	"bs-usermanager-label-password-change-strategy": "Methode",
 	"bs-usermanager-label-password-change-strategy-reset": "Link zum Zurücksetzen des Passworts an den Nutzer schicken",
 	"bs-usermanager-label-password-change-strategy-pw": "Passwort direkt ändern",
-	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse"
+	"bs-usermanager-no-mail": "Der ausgewählte Nutzer hat keine bestätigte E-Mail-Adresse",
+	"bs-usermanager-save": "Speichern",
+	"bs-usermanager-cancel": "Abbrechen",
+	"bs-usermanager-showdisabled": "Blockierte Benutzer anzeigen",
+	"bs-usermanager-disabled": "Deaktiviert",
+	"bs-usermanager-missing-param": "Fehlender Parameter: $1",
+	"bs-usermanager-warning-password-change-own": "Du änderst gerade dein eigenes Passwort. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet.",
+	"bs-usermanager-showenabled": "Aktive Benutzer anzeigen",
+	"bs-usermanager-mass-enable": "Benutzer entsperren",
+	"bs-usermanager-mass-disable": "Benutzer sperren"
 }
