@@ -5,9 +5,9 @@ namespace BlueSpice\UserManager\Special;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class UserManager extends SpecialPage {
+class UserManager extends OOJSGridSpecialPage {
 	/** @var Config */
 	private $config;
 
@@ -23,8 +23,7 @@ class UserManager extends SpecialPage {
 	 * @param string $subPage
 	 * @return void
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
+	public function doExecute( $subPage ) {
 		$this->getOutput()->addModules( 'ext.bluespice.userManager' );
 		$this->getOutput()->addHTML(
 			Html::element( 'div', [ 'id' => 'bs-usermanager-grid' ] )
