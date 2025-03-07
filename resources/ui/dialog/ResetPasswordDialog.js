@@ -87,51 +87,54 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.onStrategySelect = functi
 	this.updateSize();
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getValidData = async function() {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getValidData = function() {
+	const dfd = $.Deferred();
 	if ( this.strategySelector.findSelectedItem().getData() !== 'password' ) {
-		return { strategy: this.strategySelector.findSelectedItem().getData() };
+		dfd.resolve( { strategy: this.strategySelector.findSelectedItem().getData() } );
+		return dfd.promise();
 	}
 	let data = {
 		strategy: 'password'
 	};
-	try {
-		await this.passwordInput.getValidity();
-		await this.passwordRepeatInput.getValidity();
-	} catch ( e ) {
+	this.passwordInput.getValidity().done( function() {
+		this.passwordRepeatInput.getValidity().done( function() {
+			data.password = this.passwordInput.getValue();
+			data.repassword = this.passwordRepeatInput.getValue();
+			dfd.resolve( data );
+		}.bind( this ) ).fail( function() {
+			this.passwordInput.setValidityFlag( false );
+			this.passwordRepeatInput.setValidityFlag( false );
+			dfd.reject();
+		}.bind( this ) );
+	}.bind( this ) ).fail( function() {
 		this.passwordInput.setValidityFlag( false );
 		this.passwordRepeatInput.setValidityFlag( false );
-		throw e;
-	}
-	data.password = this.passwordInput.getValue();
-	data.repassword = this.passwordRepeatInput.getValue();
-	return data;
+		dfd.reject();
+	}.bind( this ) );
+	return dfd.promise();
 };
 
 bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getActionProcess = function( action ) {
 	return bs.usermanager.ui.dialog.ResetPasswordDialog.parent.prototype.getActionProcess.call( this, action ).next(
-		async function() {
+		function() {
 			if ( action === 'save' ) {
-				let data = {};
 				var dfd = $.Deferred();
 				this.pushPending();
-				try {
-					data = await this.getValidData();
-				} catch ( e ) {
+				this.getValidData().done( function( data ) {
+					this.saveData( data ).done( function() {
+						this.close( { reload: true } );
+					}.bind( this ) ).fail( function( e ) {
+						this.popPending();
+						if ( !e ) {
+							dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-error-generic' ) ) );
+						} else {
+							dfd.reject( new OO.ui.Error( e ) );
+						}
+					}.bind( this ) );
+				}.bind( this ) ).fail( function() {
 					this.popPending();
 					dfd.resolve();
-					return dfd.promise();
-				}
-				try {
-					await this.saveData( data );
-					this.close( { reload: true } );
-				} catch ( e ) {
-					this.popPending();
-					if ( !e ) {
-						dfd.reject();
-					} else {
-						dfd.reject( new OO.ui.Error( e ) );
-					}
-				}
+				}.bind( this ) );
 				return dfd.promise();
 			} else {
 				this.close( { reload: false } );
@@ -140,8 +143,8 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getActionProcess = functi
 	);
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.saveData = async function( data ) {
-	var dfd = $.Deferred();
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.saveData = function( data ) {
+	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/password/' + this.username,
 		method: 'POST',
