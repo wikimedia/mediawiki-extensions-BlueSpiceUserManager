@@ -10,5 +10,6 @@
 	"bs-usermanager-editpassword": "ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
 	"bs-usermanager-label-password-change-strategy-pw": "ਸਿੱਧਾ ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
 	"bs-usermanager-save": "ਸਾਂਭੋ",
-	"bs-usermanager-cancel": "ਰੱਦ ਕਰੋ"
+	"bs-usermanager-cancel": "ਰੱਦ ਕਰੋ",
+	"bs-usermanager-error-generic": "ਇੱਕ ਗਲਤੀ ਆਈ ਐ"
 }

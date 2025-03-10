@@ -45,5 +45,6 @@
 	"bs-usermanager-disabled": "Desaktivéiert",
 	"bs-usermanager-showenabled": "Aktiv Benotzer weisen",
 	"bs-usermanager-mass-enable": "Benotzer entspären",
-	"bs-usermanager-mass-disable": "Benotzer spären"
+	"bs-usermanager-mass-disable": "Benotzer spären",
+	"bs-usermanager-error-generic": "Et ass e Feeler geschitt"
 }
