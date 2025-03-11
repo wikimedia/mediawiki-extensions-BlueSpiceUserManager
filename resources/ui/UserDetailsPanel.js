@@ -89,7 +89,7 @@ bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function() {
 	return dfd.promise();
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = async function() {
+bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = function() {
 	this.getValidData().done( function() {
 		this.emit( 'validityCheck', true );
 	}.bind( this ) ).fail( function() {
