@@ -58,26 +58,33 @@ bs.usermanager.ui.AddUserPanel.prototype.makeForm = function() {
 	this.$element.append( form.$element );
 };
 
-bs.usermanager.ui.AddUserPanel.prototype.getValidData = async function() {
-	await this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] );
-	try {
-		await this.passwordInput.getValidity();
-		await this.passwordRepeatInput.getValidity();
-		if ( this.passwordInput.getValue() !== this.passwordRepeatInput.getValue() ) {
-			throw new OO.ui.Error( mw.msg( 'bs-usermanager-errorpasswordmismatch' ) );
-		}
-	} catch ( e ) {
-		this.passwordInput.setValidityFlag( false );
-		this.passwordRepeatInput.setValidityFlag( false );
-		throw e;
-	}
-	return {
-		username: this.usernameInput.getValue(),
-		realName: this.realNameInput.getValue(),
-		email: this.emailInput.getValue(),
-		enabled: true,
-		groups: this.groupInput.getValue(),
-		password: this.passwordInput.getValue(),
-		repassword: this.passwordRepeatInput.getValue()
-	};
+bs.usermanager.ui.AddUserPanel.prototype.getValidData = function() {
+	const dfd = $.Deferred();
+	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( function() {
+		this.passwordInput.getValidity().done( function() {
+			this.passwordRepeatInput.getValidity().done( function() {
+				if ( this.passwordInput.getValue() !== this.passwordRepeatInput.getValue() ) {
+					dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-errorpasswordmismatch' ) ) );
+				}
+				dfd.resolve( {
+					username: this.usernameInput.getValue(),
+					realName: this.realNameInput.getValue(),
+					email: this.emailInput.getValue(),
+					enabled: true,
+					groups: this.groupInput.getValue(),
+					password: this.passwordInput.getValue(),
+					repassword: this.passwordRepeatInput.getValue()
+				} );
+			}.bind( this ) ).fail( function() {
+				this.passwordInput.setValidityFlag( false );
+				this.passwordRepeatInput.setValidityFlag( false );
+				dfd.reject();
+			}.bind( this ) );
+		}.bind( this ) ).fail( function() {
+			this.passwordInput.setValidityFlag( false );
+			this.passwordRepeatInput.setValidityFlag( false );
+			dfd.reject();
+		}.bind( this ) );
+	}.bind( this ) );
+	return dfd.promise();
 };
