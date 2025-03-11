@@ -43,5 +43,6 @@
 	"bs-usermanager-editpassword": "تغییر اسم رمز",
 	"bs-usermanager-multipleuserselected": "شما هر بار فقط اسم رمز یک کاربر را می‌توانید تغییر دهید",
 	"action-usermanager-editpassword": "تغییر اسم رمز کاربران",
-	"right-usermanager-editpassword": "تغییر اسم رمز کاربران از طریق مدیر در صفحهٔ ویژهٔ [[Special:UserManager]]"
+	"right-usermanager-editpassword": "تغییر اسم رمز کاربران از طریق مدیر در صفحهٔ ویژهٔ [[Special:UserManager]]",
+	"bs-usermanager-error-generic": "خطایی رخ داد"
 }

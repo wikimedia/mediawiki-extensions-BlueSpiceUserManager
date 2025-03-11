@@ -58,5 +58,6 @@
 	"bs-usermanager-warning-password-change-own": "{{GENDER:|אתה|את}} משנה את הסיסמה של עצמך. {{GENDER:|תנותק ותועבר|תנותקי ותועברי}} לדף הכניסה.",
 	"bs-usermanager-showenabled": "הצגת משתמשים פעילים",
 	"bs-usermanager-mass-enable": "שחרור חסימה של משתמשים",
-	"bs-usermanager-mass-disable": "חסימת משתמשים"
+	"bs-usermanager-mass-disable": "חסימת משתמשים",
+	"bs-usermanager-error-generic": "אירעה שגיאה"
 }
