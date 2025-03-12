@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.usermanager.ui.dialog' );
 
-bs.usermanager.ui.dialog.ResetPasswordDialog = function( cfg ) {
+bs.usermanager.ui.dialog.ResetPasswordDialog = function ( cfg ) {
 	bs.usermanager.ui.dialog.ResetPasswordDialog.parent.call( this, cfg );
 	this.username = cfg.username;
 	this.email = cfg.email;
@@ -16,7 +16,7 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.static.actions = [
 	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
 ];
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.initialize = function() {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.initialize = function () {
 	bs.usermanager.ui.dialog.ResetPasswordDialog.parent.prototype.initialize.call( this );
 
 	this.content = new OO.ui.PanelLayout( {
@@ -82,59 +82,59 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.initialize = function() {
 	this.strategySelector.selectItem( this.strategySelector.findFirstSelectableItem() );
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.onStrategySelect = function( item ) {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.onStrategySelect = function ( item ) {
 	this.$passwordPanel.toggle( item.getData() === 'password' );
 	this.updateSize();
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getValidData = function() {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getValidData = function () {
 	const dfd = $.Deferred();
 	if ( this.strategySelector.findSelectedItem().getData() !== 'password' ) {
 		dfd.resolve( { strategy: this.strategySelector.findSelectedItem().getData() } );
 		return dfd.promise();
 	}
-	let data = {
+	const data = {
 		strategy: 'password'
 	};
-	this.passwordInput.getValidity().done( function() {
-		this.passwordRepeatInput.getValidity().done( function() {
+	this.passwordInput.getValidity().done( () => {
+		this.passwordRepeatInput.getValidity().done( () => {
 			data.password = this.passwordInput.getValue();
 			data.repassword = this.passwordRepeatInput.getValue();
 			dfd.resolve( data );
-		}.bind( this ) ).fail( function() {
+		} ).fail( () => {
 			this.passwordInput.setValidityFlag( false );
 			this.passwordRepeatInput.setValidityFlag( false );
 			dfd.reject();
-		}.bind( this ) );
-	}.bind( this ) ).fail( function() {
+		} );
+	} ).fail( () => {
 		this.passwordInput.setValidityFlag( false );
 		this.passwordRepeatInput.setValidityFlag( false );
 		dfd.reject();
-	}.bind( this ) );
+	} );
 	return dfd.promise();
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getActionProcess = function( action ) {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getActionProcess = function ( action ) {
 	return bs.usermanager.ui.dialog.ResetPasswordDialog.parent.prototype.getActionProcess.call( this, action ).next(
-		function() {
+		function () {
 			if ( action === 'save' ) {
-				var dfd = $.Deferred();
+				const dfd = $.Deferred();
 				this.pushPending();
-				this.getValidData().done( function( data ) {
-					this.saveData( data ).done( function() {
+				this.getValidData().done( ( data ) => {
+					this.saveData( data ).done( () => {
 						this.close( { reload: true } );
-					}.bind( this ) ).fail( function( e ) {
+					} ).fail( ( e ) => {
 						this.popPending();
 						if ( !e ) {
 							dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-error-generic' ) ) );
 						} else {
 							dfd.reject( new OO.ui.Error( e ) );
 						}
-					}.bind( this ) );
-				}.bind( this ) ).fail( function() {
+					} );
+				} ).fail( () => {
 					this.popPending();
 					dfd.resolve();
-				}.bind( this ) );
+				} );
 				return dfd.promise();
 			} else {
 				this.close( { reload: false } );
@@ -143,7 +143,7 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getActionProcess = functi
 	);
 };
 
-bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.saveData = function( data ) {
+bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.saveData = function ( data ) {
 	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/password/' + this.username,
@@ -151,19 +151,19 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.saveData = function( data
 		data: JSON.stringify( data ),
 		dataType: 'json',
 		contentType: 'application/json'
-	} ).done( function() {
+	} ).done( () => {
 		dfd.resolve();
-	}.bind( this ) ).fail( function( xhr, status, err ) {
+	} ).fail( ( xhr ) => {
 		dfd.reject( xhr.hasOwnProperty( 'responseJSON' ) ? xhr.responseJSON.message : '' );
-	}.bind( this ) );
+	} );
 	return dfd.promise();
 };
 
 bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.getBodyHeight = function () {
 	if ( !this.$errors.hasClass( 'oo-ui-element-hidden' ) ) {
-		return this.$element.find( '.oo-ui-processDialog-errors' )[0].scrollHeight;
+		return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
 	}
-	return this.$body[0].scrollHeight;
+	return this.$body[ 0 ].scrollHeight;
 };
 
 bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.onDismissErrorButtonClick = function () {

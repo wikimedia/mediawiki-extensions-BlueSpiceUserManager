@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.usermanager.ui.dialog' );
 
-bs.usermanager.ui.dialog.AddUserDialog = function( cfg ) {
+bs.usermanager.ui.dialog.AddUserDialog = function ( cfg ) {
 	cfg.isCreation = true;
 	bs.usermanager.ui.dialog.AddUserDialog.parent.call( this, cfg );
 };
@@ -14,24 +14,24 @@ bs.usermanager.ui.dialog.AddUserDialog.static.actions = [
 	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
 ];
 
-bs.usermanager.ui.dialog.AddUserDialog.prototype.getContentPanel = function() {
+bs.usermanager.ui.dialog.AddUserDialog.prototype.getContentPanel = function () {
 	return new bs.usermanager.ui.AddUserPanel( {
 		$overlay: this.$overlay
 	} );
 };
 
-bs.usermanager.ui.dialog.AddUserDialog.prototype.saveData = function( data ) {
-	var dfd = $.Deferred();
+bs.usermanager.ui.dialog.AddUserDialog.prototype.saveData = function ( data ) {
+	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/create/' + data.username,
 		method: 'POST',
 		data: JSON.stringify( data ),
 		dataType: 'json',
 		contentType: 'application/json'
-	} ).done( function() {
+	} ).done( () => {
 		dfd.resolve();
-	}.bind( this ) ).fail( function( xhr, status, err ) {
+	} ).fail( ( xhr ) => {
 		dfd.reject( xhr.hasOwnProperty( 'responseJSON' ) ? xhr.responseJSON.message : '' );
-	}.bind( this ) );
+	} );
 	return dfd.promise();
 };

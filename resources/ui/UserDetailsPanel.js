@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.usermanager.ui' );
 
-bs.usermanager.ui.UserDetailsPanel = function( cfg ) {
+bs.usermanager.ui.UserDetailsPanel = function ( cfg ) {
 	cfg = cfg || {};
 	cfg.expanded = false;
 	cfg.padded = true;
@@ -10,14 +10,14 @@ bs.usermanager.ui.UserDetailsPanel = function( cfg ) {
 	this.username = cfg.username || '';
 	this.realName = cfg.realName || '';
 	this.email = cfg.email || '';
-	this.enabled = typeof cfg.enabled !== undefined ? cfg.enabled : true;
+	this.enabled = cfg.enabled !== undefined ? cfg.enabled : true;
 	this.groups = cfg.groups || [];
 	this.$overlay = cfg.$overlay || true;
 };
 
 OO.inheritClass( bs.usermanager.ui.UserDetailsPanel, OO.ui.PanelLayout );
 
-bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function() {
+bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function () {
 	this.usernameInput = new OO.ui.TextInputWidget( {
 		value: this.username,
 		classes: [ 'um-username' ],
@@ -42,12 +42,14 @@ bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function() {
 	} );
 
 	this.groupInput.setValue( this.groups );
-	this.groupInput.connect( this, { change: function() { this.emit( 'change' ); } } );
+	this.groupInput.connect( this, { change: function () {
+		this.emit( 'change' );
+	} } );
 
 	this.makeForm();
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function() {
+bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function () {
 	const form = new OO.ui.FieldsetLayout( {
 		classes: [ 'um-form' ]
 	} );
@@ -73,9 +75,9 @@ bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function() {
 	this.$element.append( form.$element );
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function() {
+bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function () {
 	const dfd = $.Deferred();
-	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( function() {
+	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( () => {
 		dfd.resolve( {
 			username: this.usernameInput.getValue(),
 			realName: this.realNameInput.getValue(),
@@ -83,26 +85,26 @@ bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function() {
 			enabled: this.enabled,
 			groups: this.groupInput.getValue()
 		} );
-		}.bind( this ) ).fail( function() {
-			dfd.reject();
-		}.bind( this ) );
+	} ).fail( () => {
+		dfd.reject();
+	} );
 	return dfd.promise();
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = function() {
-	this.getValidData().done( function() {
+bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = function () {
+	this.getValidData().done( () => {
 		this.emit( 'validityCheck', true );
-	}.bind( this ) ).fail( function() {
-		this.emit('validityCheck', false);
-	}.bind( this ) );
+	} ).fail( () => {
+		this.emit( 'validityCheck', false );
+	} );
 };
 
-bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = function( fields ) {
+bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = function ( fields ) {
 	const dfd = $.Deferred();
-	const promises = fields.map( field => field.getValidity() );
-	$.when( ...promises ).done( function() {
+	const promises = fields.map( ( field ) => field.getValidity() );
+	$.when( ...promises ).done( () => {
 		dfd.resolve();
-	} ).fail( function() {
+	} ).fail( () => {
 		dfd.reject();
 	} );
 	return dfd.promise();

@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.usermanager.ui' );
 
-bs.usermanager.ui.AddUserPanel = function( cfg ) {
+bs.usermanager.ui.AddUserPanel = function ( cfg ) {
 	cfg = cfg || {};
 	cfg.isCreation = true;
 	bs.usermanager.ui.AddUserPanel.parent.call( this, cfg );
@@ -8,7 +8,7 @@ bs.usermanager.ui.AddUserPanel = function( cfg ) {
 
 OO.inheritClass( bs.usermanager.ui.AddUserPanel, bs.usermanager.ui.UserDetailsPanel );
 
-bs.usermanager.ui.AddUserPanel.prototype.initialize = function() {
+bs.usermanager.ui.AddUserPanel.prototype.initialize = function () {
 	this.passwordInput = new OO.ui.TextInputWidget( {
 		type: 'password',
 		required: true,
@@ -24,7 +24,7 @@ bs.usermanager.ui.AddUserPanel.prototype.initialize = function() {
 	bs.usermanager.ui.AddUserPanel.parent.prototype.initialize.call( this );
 };
 
-bs.usermanager.ui.AddUserPanel.prototype.makeForm = function() {
+bs.usermanager.ui.AddUserPanel.prototype.makeForm = function () {
 	const form = new OO.ui.FieldsetLayout( {
 		classes: [ 'um-form' ]
 	} );
@@ -58,11 +58,11 @@ bs.usermanager.ui.AddUserPanel.prototype.makeForm = function() {
 	this.$element.append( form.$element );
 };
 
-bs.usermanager.ui.AddUserPanel.prototype.getValidData = function() {
+bs.usermanager.ui.AddUserPanel.prototype.getValidData = function () {
 	const dfd = $.Deferred();
-	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( function() {
-		this.passwordInput.getValidity().done( function() {
-			this.passwordRepeatInput.getValidity().done( function() {
+	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( () => {
+		this.passwordInput.getValidity().done( () => {
+			this.passwordRepeatInput.getValidity().done( () => {
 				if ( this.passwordInput.getValue() !== this.passwordRepeatInput.getValue() ) {
 					dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-errorpasswordmismatch' ) ) );
 				}
@@ -75,16 +75,16 @@ bs.usermanager.ui.AddUserPanel.prototype.getValidData = function() {
 					password: this.passwordInput.getValue(),
 					repassword: this.passwordRepeatInput.getValue()
 				} );
-			}.bind( this ) ).fail( function() {
+			} ).fail( () => {
 				this.passwordInput.setValidityFlag( false );
 				this.passwordRepeatInput.setValidityFlag( false );
 				dfd.reject();
-			}.bind( this ) );
-		}.bind( this ) ).fail( function() {
+			} );
+		} ).fail( () => {
 			this.passwordInput.setValidityFlag( false );
 			this.passwordRepeatInput.setValidityFlag( false );
 			dfd.reject();
-		}.bind( this ) );
-	}.bind( this ) );
+		} );
+	} );
 	return dfd.promise();
 };
