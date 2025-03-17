@@ -51,5 +51,6 @@
 	"bs-usermanager-warning-password-change-own": "Tu es sur le puncto de modificar tu proprie contrasigno. Le systema claudera tu session e te redirigera verso le pagina de apertura de session.",
 	"bs-usermanager-showenabled": "Monstrar usatores active",
 	"bs-usermanager-mass-enable": "Disblocar usatores",
-	"bs-usermanager-mass-disable": "Blocar usatores"
+	"bs-usermanager-mass-disable": "Blocar usatores",
+	"bs-usermanager-error-generic": "Un error ha occurrite"
 }
