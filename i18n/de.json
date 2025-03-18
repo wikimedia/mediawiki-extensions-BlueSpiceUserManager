@@ -9,7 +9,8 @@
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Tkarcher",
-			"Umherirrender"
+			"Umherirrender",
+			"Mschlindwein"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
@@ -59,5 +60,6 @@
 	"bs-usermanager-warning-password-change-own": "Du änderst gerade dein eigenes Passwort. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet.",
 	"bs-usermanager-showenabled": "Aktive Benutzer anzeigen",
 	"bs-usermanager-mass-enable": "Benutzer entsperren",
-	"bs-usermanager-mass-disable": "Benutzer sperren"
+	"bs-usermanager-mass-disable": "Benutzer sperren",
+	"bs-usermanager-error-generic": "Es ist ein Fehler aufgetreten"
 }
