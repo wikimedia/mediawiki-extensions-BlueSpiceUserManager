@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceUserManager",
 	"license-name": "GPL-3.0-only",
-	"version": "4.2.0-alpha",
+	"version": "5.0.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceUserManager",
 	"author": [
 		"Sebastian Ulbricht",
@@ -37,7 +37,7 @@
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3",
+			"BlueSpiceFoundation": ">= 5.0",
 			"OOJSPlus": ">= 3.0.0"
 		}
 	},
