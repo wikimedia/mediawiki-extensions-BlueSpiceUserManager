@@ -37,7 +37,7 @@
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3",
+			"BlueSpiceFoundation": ">= 5.0",
 			"OOJSPlus": ">= 3.0.0"
 		}
 	},
