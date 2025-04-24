@@ -8,8 +8,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"BlueSpice\\UserManager\\": "src",
-			"BlueSpice\\UserManager\\Tests\\": "tests/phpunit"
+			"BlueSpice\\UserManager\\": "src"
 		}
 	},
 	"require-dev": {
