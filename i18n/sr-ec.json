@@ -69,5 +69,6 @@
 	"bs-usermanager-icon-bool-false-aria-label": "непроверено",
 	"bs-usermanager-save": "Сачувај",
 	"bs-usermanager-cancel": "Откажи",
-	"bs-usermanager-disabled": "Онемогућено"
+	"bs-usermanager-disabled": "Онемогућено",
+	"bs-usermanager-error-generic": "Дошло је до грешке"
 }

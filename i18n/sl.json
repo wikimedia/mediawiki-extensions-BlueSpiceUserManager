@@ -75,5 +75,6 @@
 	"action-usermanager-deleteuser": "brisanje uporabnikov",
 	"right-usermanager-deleteuser": "Izbris uporabnika s Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "obkljukano",
-	"bs-usermanager-icon-bool-false-aria-label": "neobkljukano"
+	"bs-usermanager-icon-bool-false-aria-label": "neobkljukano",
+	"bs-usermanager-mass-disable": "Blokiraj uporabnike"
 }

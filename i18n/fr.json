@@ -4,6 +4,7 @@
 			"Florian COLLIN",
 			"Gomoko",
 			"Grind24",
+			"JLTRY",
 			"Ltrlg",
 			"Mahabarata",
 			"SnowedEarth",
@@ -91,5 +92,6 @@
 	"bs-usermanager-warning-password-change-own": "Vous modifiez votre propre mot de passe. Vous serez déconnecté et redirigé vers la page de connexion.",
 	"bs-usermanager-showenabled": "Afficher les utilisateurs actifs",
 	"bs-usermanager-mass-enable": "Débloquer les utilisateurs",
-	"bs-usermanager-mass-disable": "Bloquer les utilisateurs"
+	"bs-usermanager-mass-disable": "Bloquer les utilisateurs",
+	"bs-usermanager-error-generic": "Une erreur s’est produite"
 }

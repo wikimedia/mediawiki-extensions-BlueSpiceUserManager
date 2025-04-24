@@ -67,5 +67,6 @@
 	"right-usermanager-viewspecialpage": "دست‌یابی به صفحهٔ ویژهٔ [[Special:UserManager]]",
 	"action-usermanager-editpassword": "تغییر اسم رمز کاربران",
 	"right-usermanager-editpassword": "تغییر اسم رمز کاربران از طریق مدیر در صفحهٔ ویژهٔ [[Special:UserManager]]",
-	"action-usermanager-deleteuser": "حذف کاربران"
+	"action-usermanager-deleteuser": "حذف کاربران",
+	"bs-usermanager-error-generic": "خطایی رخ داد"
 }

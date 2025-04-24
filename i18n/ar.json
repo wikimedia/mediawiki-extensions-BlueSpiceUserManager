@@ -90,5 +90,6 @@
 	"bs-usermanager-warning-password-change-own": "أنت تقوم بتغيير كلمة المرور الخاصة بك. سيتم تسجيل خروجك وإعادة توجيهك إلى صفحة تسجيل الدخول.",
 	"bs-usermanager-showenabled": "إظهار المستخدمين النشطين",
 	"bs-usermanager-mass-enable": "إلغاء منع المستخدمين",
-	"bs-usermanager-mass-disable": "منع المستخدمين"
+	"bs-usermanager-mass-disable": "منع المستخدمين",
+	"bs-usermanager-error-generic": "حدث خطأ"
 }

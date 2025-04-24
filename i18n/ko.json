@@ -74,5 +74,6 @@
 	"bs-usermanager-disabled": "비활성화됨",
 	"bs-usermanager-missing-param": "변수가 없습니다: $1",
 	"bs-usermanager-mass-enable": "사용자 차단 해제",
-	"bs-usermanager-mass-disable": "사용자 차단"
+	"bs-usermanager-mass-disable": "사용자 차단",
+	"bs-usermanager-error-generic": "오류가 발생했습니다"
 }
