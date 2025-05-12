@@ -3,10 +3,11 @@
 		"authors": [
 			"ArenaL5",
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-usermanager-desc": "Interfaz administrativa para engadir, editar e elminar usuarios",
+	"bs-usermanager-desc": "Interface administrativa para engadir, editar e eliminar usuarios",
 	"bs-usermanager-admin-nodelete": "A conta de administrador non pode ser eliminada.",
 	"bs-usermanager-self-nodelete": "Non pode eliminar a súa conta.",
 	"bs-usermanager-db-error": "Ocorreu un erro na base de datos.",
