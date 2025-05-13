@@ -15,7 +15,8 @@
 			"佛壁灯",
 			"沈澄心",
 			"神樂坂秀吉",
-			"科劳"
+			"科劳",
+			"Administrator66"
 		]
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
@@ -38,13 +39,13 @@
 	"bs-usermanager-no-self-block": "您不能禁用您自己。",
 	"bs-usermanager-block-error": "{{GENDER:$1|用户}}$1不能禁用。",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|用户}}$1不能启用。",
-	"bs-usermanager-headerenabled": "已启用",
+	"bs-usermanager-headerenabled": "活跃",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|用户}}$1已通过用户管理器禁用",
 	"bs-usermanager-endisable": "启用/禁用",
-	"bs-usermanager-confirmdisableuser": "确认禁用{{PLURAL:$1|用户}}$1？",
-	"bs-usermanager-confirmenableuser": "确认启用{{PLURAL:$1|用户}}$1？",
-	"bs-usermanager-titledisableuser": "封禁用户",
-	"bs-usermanager-titleenableuser": "解封用户",
+	"bs-usermanager-confirmdisableuser": "您确定要停用{{PLURAL:$1|此用户|这$1用户}} 吗？",
+	"bs-usermanager-confirmenableuser": "您确定要激活{{PLURAL:$1|此用户|这$1用户}} 吗？",
+	"bs-usermanager-titledisableuser": "停用用户",
+	"bs-usermanager-titleenableuser": "激活用户",
 	"usermanager": "用户管理",
 	"bs-usermanager-group-add-not-allowed": "您不被允许添加用户至用户组$1",
 	"bs-usermanager-group-remove-not-allowed": "您不被允许从用户组$1中移除用户",
@@ -64,6 +65,6 @@
 	"bs-usermanager-missing-param": "缺少参数：$1",
 	"bs-usermanager-warning-password-change-own": "您正在更改自己的密码。您将被注销并重定向到登录页面。",
 	"bs-usermanager-showenabled": "显示活跃用户",
-	"bs-usermanager-mass-enable": "解封用户",
-	"bs-usermanager-mass-disable": "封禁用户"
+	"bs-usermanager-mass-enable": "激活用户",
+	"bs-usermanager-mass-disable": "停用用户"
 }

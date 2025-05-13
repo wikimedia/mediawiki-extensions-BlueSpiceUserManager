@@ -33,8 +33,8 @@
 	"bs-usermanager-endisable": "Омогући/онемогући",
 	"bs-usermanager-confirmdisableuser": "Желите ли заиста да онемогућите {{PLURAL:$1|овог корисника|ових $1 корисника}}?",
 	"bs-usermanager-confirmenableuser": "Желите ли заиста да омогућите {{PLURAL:$1|овог корисника|ових $1 корисника}}?",
-	"bs-usermanager-titledisableuser": "Блокирај корисника",
-	"bs-usermanager-titleenableuser": "Деблокирај корисника",
+	"bs-usermanager-titledisableuser": "Онемогући корисника",
+	"bs-usermanager-titleenableuser": "Омогући корисника",
 	"usermanager": "Управљач корисницима",
 	"bs-usermanager-group-add-not-allowed": "Није вам дозвољено да додате кориснике у групу $1",
 	"bs-usermanager-group-remove-not-allowed": "Није вам дозвољено да уклоните кориснике из групе $1",
@@ -45,5 +45,7 @@
 	"bs-usermanager-save": "Сачувај",
 	"bs-usermanager-cancel": "Откажи",
 	"bs-usermanager-disabled": "Онемогућено",
+	"bs-usermanager-mass-enable": "Активни корисници",
+	"bs-usermanager-mass-disable": "Онемогућени корисници",
 	"bs-usermanager-error-generic": "Дошло је до грешке"
 }
