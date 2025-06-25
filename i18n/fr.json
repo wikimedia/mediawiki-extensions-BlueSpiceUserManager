@@ -35,7 +35,7 @@
 	"bs-usermanager-unblock-error": "L’utilisat{{GENDER:$1|eur|rice}} $1 ne peut pas être activé{{GENDER:$1||e}}.",
 	"bs-usermanager-headerenabled": "Activé",
 	"bs-usermanager-log-user-disabled": "L’utilisat{{GENDER:$1|eur|rice}} $1 a été désactivé{{GENDER:$1||e}} via UserManager",
-	"bs-usermanager-endisable": "Activer / désactiver",
+	"bs-usermanager-endisable": "Activer/désactiver",
 	"bs-usermanager-confirmdisableuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir désactiver {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-confirmenableuser": "Êtes-vous sûr{{GENDER:||e}} de vouloir activer {{PLURAL:$1|cet utilisateur|ces $1 utilisateurs}} ?",
 	"bs-usermanager-titledisableuser": "Bloquer l’utilisateur",
