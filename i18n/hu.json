@@ -6,6 +6,7 @@
 			"R-Joe"
 		]
 	},
+	"bs-usermanager-desc": "Adminisztrációs felület felhasználók hozzáadásához, szerkesztéséhez és törléséhez",
 	"bs-usermanager-self-nodelete": "Nem törölheti a saját fiókját.",
 	"bs-usermanager-db-error": "Adatbázis hiba történt.",
 	"bs-usermanager-enter-pwd": "Adjon meg egy jelszót.",
@@ -14,6 +15,7 @@
 	"bs-usermanager-invalid-realname": "Valódi név érvénytelen.",
 	"bs-usermanager-invalid-uname": "Felhasználó név érvénytelen.",
 	"bs-usermanager-invalid-email-gen": "E-mail cím érvénytelen.",
+	"bs-usermanager-label": "Felhasználó kezelő",
 	"bs-usermanager-text": "Felhasználók",
 	"bs-usermanager-user-added": "A felhasználót hozzáadták.",
 	"bs-usermanager-user-exists": "A felhasználónév már létezik.",
@@ -29,8 +31,10 @@
 	"bs-usermanager-labelpasswordcheck": "Jelszó megerősítése",
 	"bs-usermanager-titledeleteuser": "Felhasználó törlése",
 	"bs-usermanager-groups-more": "... több",
+	"bs-usermanager-no-self-desysop": "A saját adminisztrációs jog nem vehető el.",
 	"bs-usermanager-no-self-block": "Nem tudja letiltani magát.",
 	"bs-usermanager-endisable": "Be/kikapcsolás",
+	"usermanager": "Felhasználó kezelő",
 	"bs-usermanager-group-add-not-allowed": "Felhasználók hozzáadása a csoporthoz $1 nem megengedettek.",
 	"bs-usermanager-group-remove-not-allowed": "Felhasználók eltávolítása a csoport $1 nem megengedett.",
 	"bs-usermanager-editgroups": "Csoportok szerkesztése",
@@ -44,10 +48,17 @@
 	"bs-usermanager-filter-only-activated-users": "Az összes aktivált felhasználó megjelenítése",
 	"bs-usermanager-filter-only-deactivated-users": "Az összes deaktivált felhasználó megjelenítése",
 	"action-usermanager-editpassword": "felhasználók jelszavainak módosítása",
+	"right-usermanager-editpassword": "Felhasználói jelszavak módosítása a [[Special:UserManager]] speciális lapon található kezelővel",
 	"bs-usermanager-label-password-change-strategy": "Módszer",
+	"bs-usermanager-label-password-change-strategy-reset": "Jelszó-helyreállító link küldése a felhasználónak",
 	"bs-usermanager-label-password-change-strategy-pw": "Jelszó módosítása közvetlenül",
 	"bs-usermanager-no-mail": "A kiválasztott felhasználónak nincs megerősített e-mail címe",
 	"action-usermanager-deleteuser": "felhasználók törlése",
 	"bs-usermanager-icon-bool-true-aria-label": "bejelölt",
-	"bs-usermanager-icon-bool-false-aria-label": "nem bejelölt"
+	"bs-usermanager-icon-bool-false-aria-label": "nem bejelölt",
+	"bs-usermanager-save": "Mentés",
+	"bs-usermanager-cancel": "Mégse",
+	"bs-usermanager-missing-param": "Hiányzó paraméter: $1",
+	"bs-usermanager-warning-password-change-own": "Saját jelszavad módosítod. Kijelentkeztetünk, és átirányítunk a bejelentkezési oldalra.",
+	"bs-usermanager-showenabled": "Aktív felhasználók megjelenítése"
 }

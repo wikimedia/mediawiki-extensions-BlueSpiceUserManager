@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-usermanager-warning-password-change-own": "Saját jelszavát módosítja. Kijelentkeztetjük, és átirányítjuk a bejelentkezési oldalra."
+}
