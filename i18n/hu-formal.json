@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-usermanager-confirmdisableuser": "Biztosan deaktiválja {{PLURAL:$1| ezt a felhasználót| $1 felhasználókat}}?",
+	"bs-usermanager-confirmenableuser": "Biztosan aktiválja {{PLURAL:$1| ezt a felhasználót| $1 felhasználókat}}?",
+	"bs-usermanager-warning-password-change-own": "Saját jelszavát módosítja. Kijelentkeztetjük, és átirányítjuk a bejelentkezési oldalra."
+}
