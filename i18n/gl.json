@@ -3,10 +3,11 @@
 		"authors": [
 			"ArenaL5",
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-usermanager-desc": "Interfaz administrativa para engadir, editar e elminar usuarios",
+	"bs-usermanager-desc": "Interface administrativa para engadir, editar e eliminar usuarios",
 	"bs-usermanager-admin-nodelete": "A conta de administrador non pode ser eliminada.",
 	"bs-usermanager-self-nodelete": "Non pode eliminar a súa conta.",
 	"bs-usermanager-db-error": "Ocorreu un erro na base de datos.",
@@ -43,10 +44,10 @@
 	"bs-usermanager-user-disabled": "Desactivouse {{GENDER:$1|ó usuario|á usuaria}} $1.",
 	"bs-usermanager-user-enabled": "Activouse {{GENDER:$1|ó usuario|á usuaria}} $1.",
 	"bs-usermanager-endisable": "Activar/desactivar",
-	"bs-usermanager-confirmdisableuser": "Realmente quere desactivar {{GENDER:$1|ó usuario|á usuaria}} $1?",
-	"bs-usermanager-confirmenableuser": "Realmente quere activar {{GENDER:$1|ó usuario|á usuaria}} $1?",
-	"bs-usermanager-titledisableuser": "Desactivar ó usuario",
-	"bs-usermanager-titleenableuser": "Activar ó usuario",
+	"bs-usermanager-confirmdisableuser": "Realmente quere desactivar {{PLURAL:$1|este usuario|estes $1 usuarios}}?",
+	"bs-usermanager-confirmenableuser": "Realmente quere activar {{PLURAL:$1|este usuario|estes $1 usuarios}}?",
+	"bs-usermanager-titledisableuser": "Bloquear un usuario",
+	"bs-usermanager-titleenableuser": "Desbloquear un usuario",
 	"usermanager": "Administrador de usuarios",
 	"bs-usermanager-group-add-not-allowed": "Non tes permisos para engadir usuarios ó grupo $1",
 	"bs-usermanager-group-remove-not-allowed": "Non tes permisos para eliminar usuarios do grupo $1",
