@@ -4,7 +4,8 @@
 			"Edustus",
 			"Fitoschido",
 			"SMP",
-			"Vfc"
+			"Vfc",
+			"Yupik"
 		]
 	},
 	"bs-usermanager-enter-pwd": "Si us plau, introdueix una contrasenya.",
@@ -17,5 +18,6 @@
 	"bs-usermanager-labelpasswordcheck": "Confirma la contrasenya",
 	"bs-usermanager-groups-more": "... més",
 	"action-usermanager-viewspecialpage": "veure la pàgina especial «{{int:usermanager}}»",
-	"right-usermanager-viewspecialpage": "Accedir a la pàgina especial [[Special:UserManager]]"
+	"right-usermanager-viewspecialpage": "Accedir a la pàgina especial [[Special:UserManager]]",
+	"bs-usermanager-headerusername": "Nom d'usuari"
 }
