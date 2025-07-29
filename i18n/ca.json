@@ -4,7 +4,8 @@
 			"Edustus",
 			"Fitoschido",
 			"SMP",
-			"Vfc"
+			"Vfc",
+			"Yupik"
 		]
 	},
 	"bs-usermanager-headeremail": "Adreça electrònica",
@@ -12,5 +13,6 @@
 	"bs-usermanager-titleadduser": "Afegir usuari",
 	"bs-usermanager-titleeditdetails": "Editar l'usuari",
 	"bs-usermanager-labelnewpassword": "Contrasenya",
-	"bs-usermanager-labelpasswordcheck": "Confirma la contrasenya"
+	"bs-usermanager-labelpasswordcheck": "Confirma la contrasenya",
+	"bs-usermanager-headerusername": "Nom d'usuari"
 }
