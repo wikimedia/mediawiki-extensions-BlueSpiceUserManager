@@ -4,9 +4,11 @@
 			"Edustus",
 			"Fitoschido",
 			"SMP",
-			"Vfc"
+			"Vfc",
+			"Yupik"
 		]
 	},
+	"bs-usermanager-headerusername": "Nom d'usuari",
 	"bs-usermanager-headeremail": "Adreça electrònica",
 	"bs-usermanager-headergroups": "Grups",
 	"bs-usermanager-titleadduser": "Afegir usuari",
