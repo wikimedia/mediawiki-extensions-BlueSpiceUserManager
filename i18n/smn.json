@@ -9,9 +9,9 @@
 	"bs-usermanager-headerusername": "Kevtteenommâ",
 	"bs-usermanager-headerrealname": "Olmâ nommâ",
 	"bs-usermanager-titleadduser": "Lasseet kevttee",
+	"bs-usermanager-labelnewpassword": "Syelisääni",
 	"bs-usermanager-labelpasswordcheck": "Nonnii syelisääni",
 	"bs-usermanager-editpassword": "Molso syelisääni",
 	"bs-usermanager-save": "Vuorkkii",
-	"bs-usermanager-disabled": "Meddâlistum kiävtust",
-	"bs-usermanager-labelnewpassword": "Syelisääni"
+	"bs-usermanager-disabled": "Meddâlistum kiävtust"
 }
