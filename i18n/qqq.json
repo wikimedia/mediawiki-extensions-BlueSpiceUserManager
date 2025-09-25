@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"Liuxinyu970226",
 			"McDutchie",
 			"Stephan Muggli <muggli@hallowelt.biz>",
@@ -31,8 +32,8 @@
 	"bs-usermanager-headerenabled": "Column headline and label for enabled status\n{{Identical|Enabled}}",
 	"bs-usermanager-log-user-disabled": "Log text when user was disabled via UserManager.\n\n* $1 is the username - use for GENDER distinction",
 	"bs-usermanager-endisable": "Action button label for enable/disable action\n{{Identical|Enable}}\n{{Identical|Disable}}",
-	"bs-usermanager-confirmdisableuser": "Text in confirmation dialogue for disabling a user.",
-	"bs-usermanager-confirmenableuser": "Text in confirmation dialogue for enabling a user.",
+	"bs-usermanager-confirmdisableuser": "Text in the confirmation dialog for disabling a user.",
+	"bs-usermanager-confirmenableuser": "Text in the confirmation dialog for enabling a user.",
 	"bs-usermanager-titledisableuser": "Window title for disable user",
 	"bs-usermanager-titleenableuser": "Window title for enable user",
 	"usermanager": "Page title for special page of user manager",
