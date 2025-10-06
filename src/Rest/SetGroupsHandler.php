@@ -37,6 +37,7 @@ class SetGroupsHandler extends UserMassActionHandler {
 	public function getBodyParamSettings(): array {
 		return array_merge( parent::getBodyParamSettings(), [
 			'groups' => [
+				self::PARAM_SOURCE => 'body',
 				ParamValidator::PARAM_TYPE => 'array',
 				ParamValidator::PARAM_REQUIRED => false
 			],

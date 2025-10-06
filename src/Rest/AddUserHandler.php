@@ -31,10 +31,12 @@ class AddUserHandler extends UpdateUserHandler {
 	public function getBodyParamSettings(): array {
 		return array_merge( parent::getBodyParamSettings(), [
 			'password' => [
+				self::PARAM_SOURCE => 'body',
 				ParamValidator::PARAM_TYPE => 'string',
 				ParamValidator::PARAM_REQUIRED => true
 			],
 			'repassword' => [
+				self::PARAM_SOURCE => 'body',
 				ParamValidator::PARAM_TYPE => 'string',
 				ParamValidator::PARAM_REQUIRED => true
 			]
