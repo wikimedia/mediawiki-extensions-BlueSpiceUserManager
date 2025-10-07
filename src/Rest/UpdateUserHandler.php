@@ -101,6 +101,11 @@ class UpdateUserHandler extends SimpleHandler {
 	 */
 	public function getBodyParamSettings(): array {
 		return [
+			'username' => [
+				static::PARAM_SOURCE => 'body',
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_REQUIRED => false
+			],
 			'realName' => [
 				self::PARAM_SOURCE => 'body',
 				ParamValidator::PARAM_TYPE => 'string',
