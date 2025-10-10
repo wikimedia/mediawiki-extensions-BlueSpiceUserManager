@@ -82,11 +82,12 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.getValidData = function () {
 };
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = function ( data ) {
+	const { username, ...dataWithoutUsername } = data;
 	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/edit/' + this.username,
 		method: 'POST',
-		data: JSON.stringify( data ),
+		data: JSON.stringify( dataWithoutUsername ),
 		dataType: 'json',
 		contentType: 'application/json'
 	} ).done( () => {
