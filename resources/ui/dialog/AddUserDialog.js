@@ -21,12 +21,11 @@ bs.usermanager.ui.dialog.AddUserDialog.prototype.getContentPanel = function () {
 };
 
 bs.usermanager.ui.dialog.AddUserDialog.prototype.saveData = function ( data ) {
-	const { username, ...dataWithoutUsername } = data;
 	const dfd = $.Deferred();
 	$.ajax( {
-		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/create/' + username,
+		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/create/' + data.username,
 		method: 'POST',
-		data: JSON.stringify( dataWithoutUsername ),
+		data: JSON.stringify( data ),
 		dataType: 'json',
 		contentType: 'application/json'
 	} ).done( () => {
