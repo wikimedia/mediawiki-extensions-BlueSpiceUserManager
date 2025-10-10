@@ -82,6 +82,7 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.getValidData = function () {
 };
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.saveData = function ( data ) {
+	delete data.username;
 	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/user/edit/' + this.username,
