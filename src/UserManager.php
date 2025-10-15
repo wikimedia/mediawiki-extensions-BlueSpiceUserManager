@@ -114,7 +114,7 @@ class UserManager implements LoggerAwareInterface {
 
 		$userDataReq = new UserDataAuthenticationRequest();
 		$userDataReq->email = $data['email'];
-		$userDataReq->realname = $data['realName'];
+		$userDataReq->realname = $this->getValidRealName( $data['realName'] );
 		$userDataReq->username = $user->getName();
 
 		$tempPassReq = new TemporaryPasswordAuthenticationRequest();
@@ -172,7 +172,7 @@ class UserManager implements LoggerAwareInterface {
 		$this->assertActorCan( 'edit', $user, $actor );
 		$data = $this->getValidatedData( $data );
 		if ( isset( $data['realName'] ) ) {
-			$user->setRealName( $data['realName'] );
+			$user->setRealName( $this->getValidRealName( $data['realName'] ) );
 		}
 		if ( isset( $data['email'] ) ) {
 			$user->setEmail( $data['email'] );
@@ -525,4 +525,20 @@ class UserManager implements LoggerAwareInterface {
 		throw new RuntimeException( implode( ", ", $messages ) );
 	}
 
+	/**
+	 * @param mixed $realName
+	 * @return string
+	 */
+	private function getValidRealName( mixed $realName ): string {
+		if ( !is_string( $realName ) ) {
+			return '';
+		}
+		$realName = trim( $realName );
+
+		$sanitized = Sanitizer::stripAllTags( $realName );
+		if ( $realName !== $sanitized ) {
+			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-realname' );
+		}
+		return $realName;
+	}
 }
