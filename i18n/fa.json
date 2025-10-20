@@ -7,6 +7,7 @@
 			"Darafsh",
 			"FarsiNevis",
 			"Jeeputer",
+			"LordProfo",
 			"Reza1615"
 		]
 	},
@@ -32,7 +33,7 @@
 	"bs-usermanager-headergroups": "گروه‌ها",
 	"bs-usermanager-titleadduser": "افزودن کاربر",
 	"bs-usermanager-titleeditdetails": "ویرایش کاربر",
-	"bs-usermanager-labelnewpassword": "رمز عبور",
+	"bs-usermanager-labelnewpassword": "گذرواژه",
 	"bs-usermanager-labelpasswordcheck": "تأیید رمز عبور",
 	"bs-usermanager-titledeleteuser": "حذف کاربر",
 	"bs-usermanager-confirmdeleteuser": "آیا اطمینان دارید که می‌خواهید {{PLURAL:$1|این کاربر|این $1 کاربر}} را حذف کنید؟",
