@@ -4,8 +4,10 @@
 			"Ajam",
 			"Beginneruser",
 			"Dalba",
+			"Darafsh",
 			"FarsiNevis",
 			"Jeeputer",
+			"LordProfo",
 			"Reza1615"
 		]
 	},
@@ -23,9 +25,9 @@
 	"bs-usermanager-headergroups": "گروه‌ها",
 	"bs-usermanager-titleadduser": "افزودن کاربر",
 	"bs-usermanager-titleeditdetails": "ویرایش کاربر",
-	"bs-usermanager-labelnewpassword": "رمز عبور",
+	"bs-usermanager-labelnewpassword": "گذرواژه",
 	"bs-usermanager-labelpasswordcheck": "تأیید رمز عبور",
-	"bs-usermanager-no-self-desysop": "نمی‌توانید امتیاز مدیریت خودتان را بگیرید.",
+	"bs-usermanager-no-self-desysop": "نمی‌توانید دسترسی مدیریت خودتان را بگیرید.",
 	"bs-usermanager-no-self-block": "شما نمی‌توانید خودتان را غیر فعال کنید.",
 	"bs-usermanager-block-error": "{{GENDER:$1|کاربر}} $1 نمی‌تواند غیر فعال شود.",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|کاربر}} $1 نمی‌تواند فعال شود.",
