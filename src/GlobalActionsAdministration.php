@@ -19,15 +19,9 @@ class GlobalActionsAdministration extends RestrictedTextLink {
 		return 'ga-bs-usermanager';
 	}
 
-	/**
-	 * @return array
-	 */
+	/** @inheritDoc */
 	public function getPermissions(): array {
-		$permissions = [
-			'usermanager-viewspecialpage',
-			'usermanager-editpassword'
-		];
-		return $permissions;
+		return [ 'wikiadmin' ];
 	}
 
 	/**
