@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "This user does not exist.",
 	"bs-usermanager-invalid-pwd": "The password is invalid.",
 	"bs-usermanager-invalid-email-gen": "The email address is invalid.",
-	"bs-usermanager-label": "User manager",
 	"bs-usermanager-text": "Users",
 	"bs-usermanager-user-exists": "The username already exists.",
 	"bs-usermanager-headerusername": "Username",

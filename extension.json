@@ -19,9 +19,6 @@
 					"extPath": "/BlueSpiceUserManager"
 				}
 			},
-			"AdminToolRegistry": {
-				"bs-usermanager-manager": "BlueSpice\\UserManager\\AdminTool"
-			},
 			"PermissionRegistry": {
 				"usermanager-editpassword": {
 					"type": "global",
