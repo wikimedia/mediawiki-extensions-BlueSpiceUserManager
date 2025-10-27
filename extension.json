@@ -110,7 +110,8 @@
 				"bs-usermanager-showenabled",
 				"bs-usermanager-mass-enable",
 				"bs-usermanager-mass-disable",
-				"bs-usermanager-error-generic"
+				"bs-usermanager-error-generic",
+				"bs-usermanager-password-repeat-mismatch-label"
 			]
 		}
 	},

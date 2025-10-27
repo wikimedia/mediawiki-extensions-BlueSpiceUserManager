@@ -62,5 +62,6 @@
 	"bs-usermanager-mass-enable": "Benutzer aktivieren",
 	"bs-usermanager-mass-disable": "Benutzer deaktivieren",
 	"bs-usermanager-error-generic": "Es ist ein Fehler aufgetreten",
-	"bs-usermanager-invalid-realname": "Der echte Name ist unzulässig."
+	"bs-usermanager-invalid-realname": "Der echte Name ist unzulässig.",
+	"bs-usermanager-password-repeat-mismatch-label": "Die Passwörter stimmen nicht überein. Bitte {{#FORMAL:überprüfe|überprüfen Sie}} die Eingabe."
 }

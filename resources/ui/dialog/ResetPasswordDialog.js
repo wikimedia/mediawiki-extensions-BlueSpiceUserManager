@@ -13,7 +13,7 @@ bs.usermanager.ui.dialog.ResetPasswordDialog.static.name = 'resetPasswordDialog'
 bs.usermanager.ui.dialog.ResetPasswordDialog.static.title = mw.msg( 'bs-usermanager-editpassword' );
 bs.usermanager.ui.dialog.ResetPasswordDialog.static.actions = [
 	{ action: 'save', label: mw.msg( 'bs-usermanager-save' ), flags: [ 'primary', 'progressive' ] },
-	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
+	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe', 'close' ] }
 ];
 
 bs.usermanager.ui.dialog.ResetPasswordDialog.prototype.initialize = function () {

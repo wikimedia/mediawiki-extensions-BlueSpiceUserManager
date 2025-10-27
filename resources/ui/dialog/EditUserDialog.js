@@ -16,7 +16,7 @@ bs.usermanager.ui.dialog.EditUserDialog.static.name = 'editUserDialog';
 bs.usermanager.ui.dialog.EditUserDialog.static.title = mw.msg( 'bs-usermanager-titleeditdetails' );
 bs.usermanager.ui.dialog.EditUserDialog.static.actions = [
 	{ action: 'save', label: mw.msg( 'bs-usermanager-save' ), flags: [ 'primary', 'progressive' ] },
-	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
+	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe', 'close' ] }
 ];
 
 bs.usermanager.ui.dialog.EditUserDialog.prototype.initialize = function () {
