@@ -28,19 +28,22 @@ bs.usermanager.ui.AddUserPanel.prototype.makeForm = function () {
 	const form = new OO.ui.FieldsetLayout( {
 		classes: [ 'um-form' ]
 	} );
+	this.passwordInputField = new OO.ui.FieldLayout( this.passwordInput, {
+		label: mw.msg( 'bs-usermanager-labelnewpassword' ),
+		align: 'left'
+	} );
+	this.passwordRepeatInputField = new OO.ui.FieldLayout( this.passwordRepeatInput, {
+		label: mw.msg( 'bs-usermanager-labelpasswordcheck' ),
+		align: 'left',
+		classes: [ 'um-password-repeat-field' ]
+	} );
 	form.addItems( [
 		new OO.ui.FieldLayout( this.usernameInput, {
 			label: mw.msg( 'bs-usermanager-headerusername' ),
 			align: 'left'
 		} ),
-		new OO.ui.FieldLayout( this.passwordInput, {
-			label: mw.msg( 'bs-usermanager-labelnewpassword' ),
-			align: 'left'
-		} ),
-		new OO.ui.FieldLayout( this.passwordRepeatInput, {
-			label: mw.msg( 'bs-usermanager-labelpasswordcheck' ),
-			align: 'left'
-		} ),
+		this.passwordInputField,
+		this.passwordRepeatInputField,
 		new OO.ui.FieldLayout( this.realNameInput, {
 			label: mw.msg( 'bs-usermanager-headerrealname' ),
 			align: 'left'
@@ -64,23 +67,33 @@ bs.usermanager.ui.AddUserPanel.prototype.getValidData = function () {
 		this.passwordInput.getValidity().done( () => {
 			this.passwordRepeatInput.getValidity().done( () => {
 				if ( this.passwordInput.getValue() !== this.passwordRepeatInput.getValue() ) {
-					dfd.reject( new OO.ui.Error( mw.msg( 'bs-usermanager-errorpasswordmismatch' ) ) );
+					this.passwordInput.setValidityFlag( true );
+					this.passwordRepeatInput.setValidityFlag( false );
+					this.passwordRepeatInputField.setErrors( [
+						mw.msg( 'bs-usermanager-password-repeat-mismatch-label' )
+					] );
+
+					dfd.reject();
+				} else {
+					this.passwordRepeatInputField.setErrors( [] );
+					dfd.resolve( {
+						username: this.usernameInput.getValue(),
+						realName: this.realNameInput.getValue(),
+						email: this.emailInput.getValue(),
+						enabled: true,
+						groups: this.groupInput.getValue(),
+						password: this.passwordInput.getValue(),
+						repassword: this.passwordRepeatInput.getValue()
+					} );
 				}
-				dfd.resolve( {
-					username: this.usernameInput.getValue(),
-					realName: this.realNameInput.getValue(),
-					email: this.emailInput.getValue(),
-					enabled: true,
-					groups: this.groupInput.getValue(),
-					password: this.passwordInput.getValue(),
-					repassword: this.passwordRepeatInput.getValue()
-				} );
 			} ).fail( () => {
+				this.passwordRepeatInputField.setErrors( [] );
 				this.passwordInput.setValidityFlag( false );
 				this.passwordRepeatInput.setValidityFlag( false );
 				dfd.reject();
 			} );
 		} ).fail( () => {
+			this.passwordRepeatInputField.setErrors( [] );
 			this.passwordInput.setValidityFlag( false );
 			this.passwordRepeatInput.setValidityFlag( false );
 			dfd.reject();

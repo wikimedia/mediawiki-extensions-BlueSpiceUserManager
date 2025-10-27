@@ -12,7 +12,7 @@ bs.usermanager.ui.dialog.EditGroupsDialog.static.name = 'editGroupsDialog';
 bs.usermanager.ui.dialog.EditGroupsDialog.static.title = mw.msg( 'bs-usermanager-editgroups' );
 bs.usermanager.ui.dialog.EditGroupsDialog.static.actions = [
 	{ action: 'save', label: mw.msg( 'bs-usermanager-save' ), flags: [ 'primary', 'progressive' ] },
-	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
+	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe', 'close' ] }
 ];
 
 bs.usermanager.ui.dialog.EditGroupsDialog.prototype.initialize = function () {

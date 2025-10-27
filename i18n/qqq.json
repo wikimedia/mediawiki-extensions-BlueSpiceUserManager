@@ -57,5 +57,6 @@
 	"bs-usermanager-mass-enable": "Label for the mass enable button",
 	"bs-usermanager-mass-disable": "Label for the mass disable button",
 	"bs-usermanager-error-generic": "Generic error message for an unknown error",
-	"bs-usermanager-invalid-realname": "Error message when user enters an invalid real name"
+	"bs-usermanager-invalid-realname": "Error message when user enters an invalid real name",
+	"bs-usermanager-password-repeat-mismatch-label": "Label for validity check if passwords do not match"
 }

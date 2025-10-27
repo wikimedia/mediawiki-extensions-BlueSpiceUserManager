@@ -11,7 +11,7 @@ bs.usermanager.ui.dialog.AddUserDialog.static.name = 'addUserDialog';
 bs.usermanager.ui.dialog.AddUserDialog.static.title = mw.msg( 'bs-usermanager-titleadduser' );
 bs.usermanager.ui.dialog.AddUserDialog.static.actions = [
 	{ action: 'save', label: mw.msg( 'bs-usermanager-save' ), flags: [ 'primary', 'progressive' ], disabled: true },
-	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe' ] }
+	{ action: 'cancel', label: mw.msg( 'bs-usermanager-cancel' ), flags: [ 'safe', 'close' ] }
 ];
 
 bs.usermanager.ui.dialog.AddUserDialog.prototype.getContentPanel = function () {
