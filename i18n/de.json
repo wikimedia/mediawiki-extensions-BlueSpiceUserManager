@@ -58,7 +58,7 @@
 	"bs-usermanager-showdisabled": "Deaktivierte Benutzer anzeigen",
 	"bs-usermanager-disabled": "Deaktiviert",
 	"bs-usermanager-missing-param": "Fehlender Parameter: $1",
-	"bs-usermanager-warning-password-change-own": "Du änderst gerade dein eigenes Passwort. Du wirst abgemeldet und zur Anmeldeseite weitergeleitet.",
+	"bs-usermanager-warning-password-change-own": "{{#FORMAL:Du änderst|Sie ändern}} gerade {{#FORMAL:dein|Ihr}} eigenes Passwort. {{#FORMAL:Du wirst|Sie werden}} abgemeldet und zur Anmeldeseite weitergeleitet.",
 	"bs-usermanager-showenabled": "Aktive Benutzer anzeigen",
 	"bs-usermanager-mass-enable": "Benutzer aktivieren",
 	"bs-usermanager-mass-disable": "Benutzer deaktivieren",
