@@ -11,7 +11,7 @@
 	"bs-usermanager-enter-pwd": "Please enter a password.",
 	"bs-usermanager-idnotexist": "This user does not exist.",
 	"bs-usermanager-invalid-pwd": "The password is invalid.",
-	"bs-usermanager-invalid-realname": "The real name is invalid.",
+	"bs-usermanager-invalid-realname": "The real name is invalid",
 	"bs-usermanager-invalid-uname": "The username is invalid.",
 	"bs-usermanager-invalid-email-gen": "The email address is invalid.",
 	"bs-usermanager-label": "User manager",

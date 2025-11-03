@@ -16,7 +16,7 @@
 	"bs-usermanager-enter-pwd": "Text for please enter a password.",
 	"bs-usermanager-idnotexist": "Text for this user does not exist.",
 	"bs-usermanager-invalid-pwd": "Text for the password is invalid.",
-	"bs-usermanager-invalid-realname": "Text for the real name is invalid.",
+	"bs-usermanager-invalid-realname": "Error message when user enters an invalid real name",
 	"bs-usermanager-invalid-uname": "Text for the username is invalid.",
 	"bs-usermanager-invalid-email-gen": "Text for the email adresse is invalid.",
 	"bs-usermanager-label": "Anchor text for user manager\n{{Identical|User manager}}",
