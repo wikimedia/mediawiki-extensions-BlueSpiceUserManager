@@ -15,7 +15,6 @@
 	"bs-usermanager-idnotexist": "هذا المستخدم غير موجود.",
 	"bs-usermanager-invalid-pwd": "كلمة المرور غير صالحة",
 	"bs-usermanager-invalid-email-gen": "عنوان البريد الإلكتروني غير صالح.",
-	"bs-usermanager-label": "مدير المستخدم",
 	"bs-usermanager-text": "المستخدمون",
 	"bs-usermanager-user-exists": "اسم المستخدم موجود بالفعل.",
 	"bs-usermanager-headerusername": "اسم المستخدم",

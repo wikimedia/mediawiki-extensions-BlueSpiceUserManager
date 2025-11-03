@@ -10,7 +10,6 @@
 	"bs-usermanager-idnotexist": "Овој корисник не постои.",
 	"bs-usermanager-invalid-pwd": "Лозинката е неважечка.",
 	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
-	"bs-usermanager-label": "Раководство со корисници",
 	"bs-usermanager-user-exists": "Корисничкото име веќе постои.",
 	"bs-usermanager-headerusername": "Корисничко име",
 	"bs-usermanager-headerrealname": "Вистинско име",

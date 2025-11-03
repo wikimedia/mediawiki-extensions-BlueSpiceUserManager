@@ -15,7 +15,6 @@
 	"bs-usermanager-idnotexist": "該名使用者不存在。",
 	"bs-usermanager-invalid-pwd": "密碼無效。",
 	"bs-usermanager-invalid-email-gen": "電子郵件地址無效。",
-	"bs-usermanager-label": "使用者管理",
 	"bs-usermanager-text": "使用者",
 	"bs-usermanager-user-exists": "使用者已存在。",
 	"bs-usermanager-headerusername": "使用者名稱",

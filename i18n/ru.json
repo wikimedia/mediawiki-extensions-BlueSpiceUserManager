@@ -16,7 +16,6 @@
 	"bs-usermanager-idnotexist": "Такого участника не существует.",
 	"bs-usermanager-invalid-pwd": "Пароль неверен.",
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
-	"bs-usermanager-label": "Управление учётными записями",
 	"bs-usermanager-text": "Пользователи",
 	"bs-usermanager-user-exists": "Такое имя участника уже существует.",
 	"bs-usermanager-headerusername": "Имя участника",

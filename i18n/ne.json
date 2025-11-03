@@ -13,7 +13,6 @@
 	"bs-usermanager-idnotexist": "यो प्रयोगकर्ता अस्तित्वमा छैन।",
 	"bs-usermanager-invalid-pwd": "प्रवेश शब्द मान्य छैन।",
 	"bs-usermanager-invalid-email-gen": "इमेल ठेगाना अमान्य छ।",
-	"bs-usermanager-label": "प्रयोगकर्ता प्रबन्धक",
 	"bs-usermanager-user-exists": "यो प्रयोगकर्तानाम पहिले देखि समावेस छ।",
 	"bs-usermanager-headerusername": "प्रयोगकर्ता नाम",
 	"bs-usermanager-headerrealname": "वास्तविक नाम",

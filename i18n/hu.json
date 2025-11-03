@@ -10,7 +10,6 @@
 	"bs-usermanager-idnotexist": "A felhasználó nem létezik",
 	"bs-usermanager-invalid-pwd": "Érvénytelen jelszó.",
 	"bs-usermanager-invalid-email-gen": "E-mail cím érvénytelen.",
-	"bs-usermanager-label": "Felhasználó kezelő",
 	"bs-usermanager-text": "Felhasználók",
 	"bs-usermanager-user-exists": "A felhasználónév már létezik.",
 	"bs-usermanager-headerusername": "Felhasználónév",

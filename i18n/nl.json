@@ -13,7 +13,6 @@
 	"bs-usermanager-idnotexist": "Deze gebruiker bestaat niet.",
 	"bs-usermanager-invalid-pwd": "Het wachtwoord is ongeldig.",
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is ongeldig.",
-	"bs-usermanager-label": "Gebruikersbeheer",
 	"bs-usermanager-text": "Gebruikers",
 	"bs-usermanager-user-exists": "De gebruikersnaam bestaat al.",
 	"bs-usermanager-headerusername": "Gebruikersnaam",

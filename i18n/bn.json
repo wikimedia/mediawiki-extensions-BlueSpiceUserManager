@@ -10,7 +10,6 @@
 	"bs-usermanager-idnotexist": "এই ব্যবহারকারীর অস্তিত্ব নেই।",
 	"bs-usermanager-invalid-pwd": "পাসওয়ার্ডটি ভুল।",
 	"bs-usermanager-invalid-email-gen": "ইমেল ঠিকানাটি অবৈধ।",
-	"bs-usermanager-label": "ব্যবহারকারী ব্যবস্থাপক",
 	"bs-usermanager-text": "ব্যবহারকারীগণ",
 	"bs-usermanager-user-exists": "ব্যবহারকারী নাম ইতিমধ্যে বিদ্যমান।",
 	"bs-usermanager-headerusername": "ব্যবহারকারী নাম",

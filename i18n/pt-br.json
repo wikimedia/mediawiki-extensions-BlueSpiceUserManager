@@ -12,7 +12,6 @@
 	"bs-usermanager-idnotexist": "Esse usuário não existe.",
 	"bs-usermanager-invalid-pwd": "A senha é inválida.",
 	"bs-usermanager-invalid-email-gen": "o endereço de email é inválido.",
-	"bs-usermanager-label": "Administrador de usuários",
 	"bs-usermanager-text": "Usuários",
 	"bs-usermanager-user-exists": "O nome de usuário já existe.",
 	"bs-usermanager-headerusername": "Nome de usuário",

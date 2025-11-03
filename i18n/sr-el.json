@@ -6,7 +6,6 @@
 	"bs-usermanager-idnotexist": "Ovaj korisnik ne postoji.",
 	"bs-usermanager-invalid-pwd": "Lozinka nije ispravna.",
 	"bs-usermanager-invalid-email-gen": "Imejl nije važeći.",
-	"bs-usermanager-label": "Upravljač korisnicima",
 	"bs-usermanager-text": "Korisnici",
 	"bs-usermanager-user-exists": "Korisničko ime već postoji.",
 	"bs-usermanager-headerusername": "Korisničko ime",

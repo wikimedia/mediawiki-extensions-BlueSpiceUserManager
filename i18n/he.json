@@ -15,7 +15,6 @@
 	"bs-usermanager-idnotexist": "המשתמש אינו קיים.",
 	"bs-usermanager-invalid-pwd": "הסיסמה אינה תקינה.",
 	"bs-usermanager-invalid-email-gen": "כתובת הדוא\"ל אינה תקינה.",
-	"bs-usermanager-label": "ניהול משתמשים",
 	"bs-usermanager-text": "משתמשים",
 	"bs-usermanager-user-exists": "שם המשתמש כבר קיים.",
 	"bs-usermanager-headerusername": "שם משתמש",
