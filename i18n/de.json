@@ -18,7 +18,6 @@
 	"bs-usermanager-idnotexist": "Dieser Benutzer existiert nicht.",
 	"bs-usermanager-invalid-pwd": "Das Passwort ist unzulässig.",
 	"bs-usermanager-invalid-email-gen": "Die E-Mail-Adresse ist unzulässig.",
-	"bs-usermanager-label": "Benutzerverwaltung",
 	"bs-usermanager-text": "Benutzer",
 	"bs-usermanager-user-exists": "Der Benutzername ist schon vorhanden.",
 	"bs-usermanager-headerusername": "Benutzername",

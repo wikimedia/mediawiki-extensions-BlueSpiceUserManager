@@ -15,7 +15,6 @@
 	"bs-usermanager-idnotexist": "این کاربر وجود ندارد.",
 	"bs-usermanager-invalid-pwd": "رمز عبور نامعتبر است.",
 	"bs-usermanager-invalid-email-gen": "نشانی ایمیل نامعتبر است.",
-	"bs-usermanager-label": "مدیر کاربران",
 	"bs-usermanager-text": "کاربران",
 	"bs-usermanager-user-exists": "این نام کاربری از قبل وجود دارد.",
 	"bs-usermanager-headerusername": "نام کاربری",

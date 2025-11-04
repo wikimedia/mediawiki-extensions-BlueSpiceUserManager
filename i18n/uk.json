@@ -14,7 +14,6 @@
 	"bs-usermanager-idnotexist": "Цей користувач не існує.",
 	"bs-usermanager-invalid-pwd": "Неприпустимий пароль.",
 	"bs-usermanager-invalid-email-gen": "Адреса електронної пошти недійсна.",
-	"bs-usermanager-label": "Менеджер користувачів",
 	"bs-usermanager-text": "Користувачі",
 	"bs-usermanager-user-exists": "Ім'я користувача вже існує.",
 	"bs-usermanager-headerusername": "Ім'я користувача",

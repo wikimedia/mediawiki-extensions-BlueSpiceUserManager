@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "Denne brukeren finnes ikke.",
 	"bs-usermanager-invalid-pwd": "Passordet er ugyldig.",
 	"bs-usermanager-invalid-email-gen": "Epostadressen er ugyldig.",
-	"bs-usermanager-label": "Brukerbehandler",
 	"bs-usermanager-text": "Brukere",
 	"bs-usermanager-user-exists": "Brukernavnet finnes allerede.",
 	"bs-usermanager-headerusername": "Brukernavn",

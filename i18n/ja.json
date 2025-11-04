@@ -16,7 +16,6 @@
 	"bs-usermanager-idnotexist": "この利用者は存在しません。",
 	"bs-usermanager-invalid-pwd": "パスワードが無効です。",
 	"bs-usermanager-invalid-email-gen": "メールアドレスが無効です。",
-	"bs-usermanager-label": "利用者マネージャー",
 	"bs-usermanager-user-exists": "既に存在する利用者名です。",
 	"bs-usermanager-headerusername": "利用者名",
 	"bs-usermanager-headerrealname": "本名",

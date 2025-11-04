@@ -23,7 +23,6 @@
 	"bs-usermanager-idnotexist": "此用户不存在。",
 	"bs-usermanager-invalid-pwd": "密码无效。",
 	"bs-usermanager-invalid-email-gen": "邮件地址无效。",
-	"bs-usermanager-label": "用户管理",
 	"bs-usermanager-text": "用户",
 	"bs-usermanager-user-exists": "用户已存在。",
 	"bs-usermanager-headerusername": "用户名",

@@ -13,7 +13,6 @@
 	"bs-usermanager-idnotexist": "Denna användare existerar inte.",
 	"bs-usermanager-invalid-pwd": "Lösenordet är ogiltigt.",
 	"bs-usermanager-invalid-email-gen": "E-postadressen är ogiltig.",
-	"bs-usermanager-label": "Användaradministrering",
 	"bs-usermanager-user-exists": "Användarnamnet existerar redan.",
 	"bs-usermanager-headerusername": "Användarnamn",
 	"bs-usermanager-headerrealname": "Riktigt namn",

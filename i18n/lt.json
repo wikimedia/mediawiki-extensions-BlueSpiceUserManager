@@ -11,7 +11,6 @@
 	"bs-usermanager-idnotexist": "Šis vartotojas neegzistuoja.",
 	"bs-usermanager-invalid-pwd": "Slaptažodis yra neteisingas.",
 	"bs-usermanager-invalid-email-gen": "El. pašto adresas yra neteisingas.",
-	"bs-usermanager-label": "Naudotojų tvarkyklė",
 	"bs-usermanager-text": "Naudotojai",
 	"bs-usermanager-user-exists": "Vartotojo vardas jau egzistuoja.",
 	"bs-usermanager-headerusername": "Vartotojo vardas",

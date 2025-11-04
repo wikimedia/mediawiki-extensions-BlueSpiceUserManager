@@ -12,7 +12,6 @@
 	"bs-usermanager-idnotexist": "Овај корисник не постоји.",
 	"bs-usermanager-invalid-pwd": "Лозинка није исправна.",
 	"bs-usermanager-invalid-email-gen": "Имејл није важећи.",
-	"bs-usermanager-label": "Управљач корисницима",
 	"bs-usermanager-text": "Корисници",
 	"bs-usermanager-user-exists": "Корисничко име већ постоји.",
 	"bs-usermanager-headerusername": "Корисничко име",

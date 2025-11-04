@@ -9,7 +9,6 @@
 	"bs-usermanager-idnotexist": "Ta uporabnik ne obstaja.",
 	"bs-usermanager-invalid-pwd": "Geslo ni veljavno.",
 	"bs-usermanager-invalid-email-gen": "E-poštni naslov ni veljaven.",
-	"bs-usermanager-label": "Upravitelj uporabnikov",
 	"bs-usermanager-text": "Uporabniki",
 	"bs-usermanager-user-exists": "To uporabniško ime že obstaja.",
 	"bs-usermanager-headerusername": "Uporabniško ime",
