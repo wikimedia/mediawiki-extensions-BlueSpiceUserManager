@@ -16,7 +16,7 @@
 	"bs-usermanager-enter-pwd": "Geef een wachtwoord op.",
 	"bs-usermanager-idnotexist": "Deze gebruiker bestaat niet.",
 	"bs-usermanager-invalid-pwd": "Het wachtwoord is ongeldig.",
-	"bs-usermanager-invalid-realname": "De volledige naam van de gebruiker is ongeldig.",
+	"bs-usermanager-invalid-realname": "De volledige naam is ongeldig",
 	"bs-usermanager-invalid-uname": "De gebruikersnaam is ongeldig.",
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is ongeldig.",
 	"bs-usermanager-label": "Gebruikersbeheer",

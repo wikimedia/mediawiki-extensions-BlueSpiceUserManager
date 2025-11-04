@@ -15,7 +15,7 @@
 	"bs-usermanager-enter-pwd": "Унестие лозинку.",
 	"bs-usermanager-idnotexist": "Овај корисник не постоји.",
 	"bs-usermanager-invalid-pwd": "Лозинка није исправна.",
-	"bs-usermanager-invalid-realname": "Право име је неисправно.",
+	"bs-usermanager-invalid-realname": "Право име је неисправно",
 	"bs-usermanager-invalid-uname": "Корисничко име није важеће.",
 	"bs-usermanager-invalid-email-gen": "Имејл није важећи.",
 	"bs-usermanager-label": "Управљач корисницима",
