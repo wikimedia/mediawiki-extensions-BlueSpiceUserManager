@@ -39,5 +39,6 @@
 	"usermanager": "利用者マネージャー",
 	"bs-usermanager-editgroups": "グループを編集",
 	"bs-usermanager-editpassword": "パスワードを変更",
-	"action-usermanager-editpassword": "利用者のパスワードの変更"
+	"action-usermanager-editpassword": "利用者のパスワードの変更",
+	"bs-usermanager-invalid-realname": "本名が無効です。"
 }

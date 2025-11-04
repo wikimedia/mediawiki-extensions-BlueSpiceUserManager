@@ -48,5 +48,6 @@
 	"bs-usermanager-label-password-change-strategy": "Método",
 	"bs-usermanager-label-password-change-strategy-reset": "Enviar enlace de restablecimiento de contraseña al usuario",
 	"bs-usermanager-label-password-change-strategy-pw": "Cambiar la contraseña directamente",
-	"bs-usermanager-no-mail": "El usuario seleccionado no tiene una dirección de correo electrónico confirmada"
+	"bs-usermanager-no-mail": "El usuario seleccionado no tiene una dirección de correo electrónico confirmada",
+	"bs-usermanager-invalid-realname": "El nombre verdadero no es válido."
 }

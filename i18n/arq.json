@@ -15,5 +15,6 @@
 	"bs-usermanager-headeremail": "لادريسة تاع ليمال",
 	"bs-usermanager-headergroups": "جماعات",
 	"bs-usermanager-labelnewpassword": "كلمتٰ السرّ",
-	"bs-usermanager-labelpasswordcheck": "أكّد كلمتٰ السرّ"
+	"bs-usermanager-labelpasswordcheck": "أكّد كلمتٰ السرّ",
+	"bs-usermanager-invalid-realname": "الأسم الصحّاني هادا ماشي مقبول."
 }

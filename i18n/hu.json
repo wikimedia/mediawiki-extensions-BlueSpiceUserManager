@@ -54,5 +54,6 @@
 	"bs-usermanager-showenabled": "Aktív felhasználók megjelenítése",
 	"bs-usermanager-mass-enable": "Felhasználók aktiválása",
 	"bs-usermanager-mass-disable": "Felhasználók deaktiválása",
-	"bs-usermanager-error-generic": "Hiba történt"
+	"bs-usermanager-error-generic": "Hiba történt",
+	"bs-usermanager-invalid-realname": "Valódi név érvénytelen."
 }

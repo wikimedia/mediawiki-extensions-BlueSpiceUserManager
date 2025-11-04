@@ -42,5 +42,6 @@
 	"bs-usermanager-label-password-change-strategy": "Metode",
 	"bs-usermanager-label-password-change-strategy-reset": "Manne 'u collegamende pe azzerà 'a password a l'utende",
 	"bs-usermanager-label-password-change-strategy-pw": "Cange 'a password direttamende",
-	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email"
+	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email",
+	"bs-usermanager-invalid-realname": "'U nome vere non g'è valide."
 }

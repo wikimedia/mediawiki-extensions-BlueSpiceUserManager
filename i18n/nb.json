@@ -42,5 +42,6 @@
 	"bs-usermanager-label-password-change-strategy": "Metode",
 	"bs-usermanager-label-password-change-strategy-reset": "Send lenke for tilbakestilling av passord til brukeren",
 	"bs-usermanager-label-password-change-strategy-pw": "Endre passord direkte",
-	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse"
+	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse",
+	"bs-usermanager-invalid-realname": "Det virkelige navnet er ugyldig."
 }

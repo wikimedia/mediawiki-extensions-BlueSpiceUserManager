@@ -28,5 +28,6 @@
 	"usermanager": "Раководство со корисници",
 	"bs-usermanager-editgroups": "Уреди групи",
 	"bs-usermanager-editpassword": "Смени лозинка",
-	"action-usermanager-editpassword": "промена на кориснички лозинки"
+	"action-usermanager-editpassword": "промена на кориснички лозинки",
+	"bs-usermanager-invalid-realname": "Вистинското име е неважечко."
 }

@@ -59,5 +59,6 @@
 	"bs-usermanager-showenabled": "إظهار المستخدمين النشطين",
 	"bs-usermanager-mass-enable": "تفعيل المستخدمين",
 	"bs-usermanager-mass-disable": "إلغاء تنشيط المستخدمين",
-	"bs-usermanager-error-generic": "حدث خطأ"
+	"bs-usermanager-error-generic": "حدث خطأ",
+	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح."
 }

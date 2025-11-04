@@ -18,5 +18,6 @@
 	"bs-usermanager-titleeditdetails": "Donn ene Metmaacher ändere",
 	"bs-usermanager-labelnewpassword": "Et Paßwoot",
 	"bs-usermanager-labelpasswordcheck": "Norr_ens dat Paßwoot",
-	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme."
+	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme.",
+	"bs-usermanager-invalid-realname": "Dä „reschtejje Name“ es onjöltesch udder Kappes."
 }

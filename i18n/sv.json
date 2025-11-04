@@ -42,5 +42,6 @@
 	"bs-usermanager-editpassword": "Ändra lösenord",
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
-	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]"
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
+	"bs-usermanager-invalid-realname": "Det riktiga namnet är ogiltigt."
 }

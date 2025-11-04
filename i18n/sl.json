@@ -44,5 +44,6 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Povezava za ponastavitev gesla po e-pošti",
 	"bs-usermanager-label-password-change-strategy-pw": "Neposredna sprememba gesla",
 	"bs-usermanager-no-mail": "Izbrani uporabnik nima potrjenega e-poštnega naslova",
-	"bs-usermanager-mass-disable": "Blokiraj uporabnike"
+	"bs-usermanager-mass-disable": "Blokiraj uporabnike",
+	"bs-usermanager-invalid-realname": "Pravo ime ni veljavno."
 }

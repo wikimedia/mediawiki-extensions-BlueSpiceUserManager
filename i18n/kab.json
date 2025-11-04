@@ -18,5 +18,6 @@
 	"bs-usermanager-titleeditdetails": "Ẓreg aseqdac",
 	"bs-usermanager-labelnewpassword": "Awal uffir",
 	"bs-usermanager-labelpasswordcheck": "Sentem awal uffir",
-	"bs-usermanager-no-self-desysop": "Ur tezmireḍ ara ad tekkseḍ azref-ik n sysop."
+	"bs-usermanager-no-self-desysop": "Ur tezmireḍ ara ad tekkseḍ azref-ik n sysop.",
+	"bs-usermanager-invalid-realname": "Yir isem ilaw."
 }

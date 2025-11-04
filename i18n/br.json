@@ -17,5 +17,6 @@
 	"bs-usermanager-titleadduser": "Ouzhpennañ un implijer",
 	"bs-usermanager-titleeditdetails": "Aozañ an implijer",
 	"bs-usermanager-labelnewpassword": "Ger-tremen",
-	"bs-usermanager-labelpasswordcheck": "Kadarnaat ar ger-tremen"
+	"bs-usermanager-labelpasswordcheck": "Kadarnaat ar ger-tremen",
+	"bs-usermanager-invalid-realname": "Direizh eo ar gwir anv."
 }

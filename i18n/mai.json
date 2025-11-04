@@ -18,5 +18,6 @@
 	"bs-usermanager-titleeditdetails": "प्रयोक्ता सम्पादन करू",
 	"bs-usermanager-labelnewpassword": "कूटशब्द",
 	"bs-usermanager-labelpasswordcheck": "कूटशब्द जाँचू",
-	"bs-usermanager-no-self-desysop": "अहाँ अपन माइनजन अधिकार नै घुमा सकए छी।"
+	"bs-usermanager-no-self-desysop": "अहाँ अपन माइनजन अधिकार नै घुमा सकए छी।",
+	"bs-usermanager-invalid-realname": "असल नाम अमान्य अछि।"
 }

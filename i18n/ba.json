@@ -22,5 +22,6 @@
 	"bs-usermanager-titleeditdetails": "Ҡатнашыусыны мөхәррирләргә",
 	"bs-usermanager-labelnewpassword": "Серһүҙ",
 	"bs-usermanager-labelpasswordcheck": "Серһүҙҙе раҫлағыҙ",
-	"bs-usermanager-no-self-desysop": "Хаким хоҡуғын үҙегеҙ һала алмайһығыҙ."
+	"bs-usermanager-no-self-desysop": "Хаким хоҡуғын үҙегеҙ һала алмайһығыҙ.",
+	"bs-usermanager-invalid-realname": "Ҡатнашыусының бындай ысын исеме ярамай."
 }

@@ -59,5 +59,6 @@
 	"bs-usermanager-showenabled": "הצגת משתמשים פעילים",
 	"bs-usermanager-mass-enable": "הפעלת משתמשים",
 	"bs-usermanager-mass-disable": "השבתת משתמשים",
-	"bs-usermanager-error-generic": "אירעה שגיאה"
+	"bs-usermanager-error-generic": "אירעה שגיאה",
+	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין."
 }

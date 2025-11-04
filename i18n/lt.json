@@ -45,5 +45,6 @@
 	"bs-usermanager-label-password-change-strategy": "Metodas",
 	"bs-usermanager-label-password-change-strategy-reset": "Siųsti slaptažodžio nustatymo iš naujo nuorodą naudotojui",
 	"bs-usermanager-label-password-change-strategy-pw": "Pakeisti slaptažodį tiesiogiai",
-	"bs-usermanager-no-mail": "Pasirinktas naudotojas neturi patvirtinto el. pašto adreso"
+	"bs-usermanager-no-mail": "Pasirinktas naudotojas neturi patvirtinto el. pašto adreso",
+	"bs-usermanager-invalid-realname": "Tikrasis vardas yra neteisingas."
 }

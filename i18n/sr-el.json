@@ -41,5 +41,6 @@
 	"bs-usermanager-disabled": "Onemogućeno",
 	"bs-usermanager-mass-enable": "Aktivni korisnici",
 	"bs-usermanager-mass-disable": "Onemogućeni korisnici",
-	"bs-usermanager-error-generic": "Došlo je do greške"
+	"bs-usermanager-error-generic": "Došlo je do greške",
+	"bs-usermanager-invalid-realname": "Pravo ime je neispravno."
 }
