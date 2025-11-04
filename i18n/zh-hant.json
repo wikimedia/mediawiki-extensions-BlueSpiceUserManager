@@ -58,5 +58,6 @@
 	"bs-usermanager-showenabled": "顯示生效使用者",
 	"bs-usermanager-mass-enable": "生效使用者",
 	"bs-usermanager-mass-disable": "失效使用者",
-	"bs-usermanager-error-generic": "發生錯誤"
+	"bs-usermanager-error-generic": "發生錯誤",
+	"bs-usermanager-invalid-realname": "真實姓名無效。"
 }

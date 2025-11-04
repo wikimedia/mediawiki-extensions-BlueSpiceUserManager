@@ -49,5 +49,6 @@
 	"bs-usermanager-showdisabled": "Mostra utenti disattivati",
 	"bs-usermanager-disabled": "Disattivato",
 	"bs-usermanager-mass-enable": "Attiva utenti",
-	"bs-usermanager-mass-disable": "Disattiva utenti"
+	"bs-usermanager-mass-disable": "Disattiva utenti",
+	"bs-usermanager-invalid-realname": "Il nome vero non è valido"
 }

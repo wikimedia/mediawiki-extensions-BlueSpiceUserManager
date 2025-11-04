@@ -60,5 +60,6 @@
 	"bs-usermanager-showenabled": "Afficher les utilisateurs actifs",
 	"bs-usermanager-mass-enable": "Débloquer les utilisateurs",
 	"bs-usermanager-mass-disable": "Bloquer les utilisateurs",
-	"bs-usermanager-error-generic": "Une erreur s’est produite"
+	"bs-usermanager-error-generic": "Une erreur s’est produite",
+	"bs-usermanager-invalid-realname": "Le vrai nom n’est pas valide."
 }

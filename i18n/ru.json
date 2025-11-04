@@ -37,5 +37,6 @@
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
 	"bs-usermanager-save": "Сохранить",
-	"bs-usermanager-cancel": "Отмена"
+	"bs-usermanager-cancel": "Отмена",
+	"bs-usermanager-invalid-realname": "Такое настоящее имя участника недопустимо."
 }

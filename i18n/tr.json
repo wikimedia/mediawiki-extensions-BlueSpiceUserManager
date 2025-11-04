@@ -47,5 +47,6 @@
 	"bs-usermanager-label-password-change-strategy": "Yöntem",
 	"bs-usermanager-label-password-change-strategy-reset": "Kullanıcıya parola sıfırlama bağlantısını gönder",
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
-	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok"
+	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
+	"bs-usermanager-invalid-realname": "Gerçek ad geçersiz."
 }
