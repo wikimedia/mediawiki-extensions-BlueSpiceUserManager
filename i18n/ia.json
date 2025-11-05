@@ -11,7 +11,7 @@
 	"bs-usermanager-enter-pwd": "Per favor entra un contrasigno.",
 	"bs-usermanager-idnotexist": "Iste usator non existe.",
 	"bs-usermanager-invalid-pwd": "Le contrasigno non es valide.",
-	"bs-usermanager-invalid-realname": "Le nomine real es invalide.",
+	"bs-usermanager-invalid-realname": "Le nomine real es invalide",
 	"bs-usermanager-invalid-uname": "Le nomine de usator non es valide.",
 	"bs-usermanager-invalid-email-gen": "Le adresse de e-mail non es valide.",
 	"bs-usermanager-label": "Gestor de usatores",

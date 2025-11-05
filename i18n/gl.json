@@ -14,7 +14,7 @@
 	"bs-usermanager-enter-pwd": "Introduza un contrasinal.",
 	"bs-usermanager-idnotexist": "Ese usuario non existe.",
 	"bs-usermanager-invalid-pwd": "O contrasinal non é válido.",
-	"bs-usermanager-invalid-realname": "O nome real do usuario é inválido.",
+	"bs-usermanager-invalid-realname": "O nome real non é válido",
 	"bs-usermanager-invalid-uname": "O nome de usuario non é válido.",
 	"bs-usermanager-invalid-email-gen": "O enderezo de correo electrónico non é válido.",
 	"bs-usermanager-label": "Administrador de usuarios",

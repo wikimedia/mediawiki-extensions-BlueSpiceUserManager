@@ -17,7 +17,7 @@
 	"bs-usermanager-enter-pwd": "لطفاً یک رمز عبور وارد کنید.",
 	"bs-usermanager-idnotexist": "این کاربر وجود ندارد.",
 	"bs-usermanager-invalid-pwd": "رمز عبور نامعتبر است.",
-	"bs-usermanager-invalid-realname": "نام حقیقی نامعتبر است.",
+	"bs-usermanager-invalid-realname": "نام حقیقی نامعتبر است",
 	"bs-usermanager-invalid-uname": "نام کاربری نامعتبر است.",
 	"bs-usermanager-invalid-email-gen": "نشانی ایمیل نامعتبر است.",
 	"bs-usermanager-label": "مدیر کاربران",
