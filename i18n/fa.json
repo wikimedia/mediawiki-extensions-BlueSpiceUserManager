@@ -47,5 +47,5 @@
 	"action-usermanager-editpassword": "تغییر اسم رمز کاربران",
 	"right-usermanager-editpassword": "تغییر اسم رمز کاربران از طریق مدیر در صفحهٔ ویژهٔ [[Special:UserManager]]",
 	"bs-usermanager-error-generic": "خطایی رخ داد",
-	"bs-usermanager-invalid-realname": "نام حقیقی نامعتبر است."
+	"bs-usermanager-invalid-realname": "نام حقیقی نامعتبر است"
 }

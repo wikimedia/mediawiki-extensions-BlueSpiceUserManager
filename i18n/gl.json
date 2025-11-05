@@ -56,5 +56,5 @@
 	"bs-usermanager-mass-enable": "Activar os usuarios",
 	"bs-usermanager-mass-disable": "Desactivar os usuarios",
 	"bs-usermanager-error-generic": "Houbo un erro",
-	"bs-usermanager-invalid-realname": "O nome real do usuario é inválido."
+	"bs-usermanager-invalid-realname": "O nome real non é válido"
 }
