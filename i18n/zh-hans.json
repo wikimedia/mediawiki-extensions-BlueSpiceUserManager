@@ -67,5 +67,5 @@
 	"bs-usermanager-showenabled": "显示活跃用户",
 	"bs-usermanager-mass-enable": "激活用户",
 	"bs-usermanager-mass-disable": "停用用户",
-	"bs-usermanager-invalid-realname": "真实姓名无效。"
+	"bs-usermanager-invalid-realname": "真实姓名无效"
 }

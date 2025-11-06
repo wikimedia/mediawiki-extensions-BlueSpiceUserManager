@@ -60,5 +60,6 @@
 	"bs-usermanager-mass-enable": "تفعيل المستخدمين",
 	"bs-usermanager-mass-disable": "إلغاء تنشيط المستخدمين",
 	"bs-usermanager-error-generic": "حدث خطأ",
-	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح."
+	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح",
+	"bs-usermanager-password-repeat-mismatch-label": "كلمات المرور غير متطابقة. يُرجى التحقق من إدخالك."
 }

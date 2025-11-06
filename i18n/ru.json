@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"EneshTranslates",
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
@@ -39,5 +40,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
 	"bs-usermanager-save": "Сохранить",
 	"bs-usermanager-cancel": "Отмена",
-	"bs-usermanager-invalid-realname": "Такое настоящее имя участника недопустимо."
+	"bs-usermanager-invalid-realname": "Настоящее имя указано неверно",
+	"bs-usermanager-password-repeat-mismatch-label": "Пароли не совпадают. Пожалуйста, проверьте введённое."
 }

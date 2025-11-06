@@ -53,5 +53,6 @@
 	"bs-usermanager-mass-enable": "Activar usatores",
 	"bs-usermanager-mass-disable": "Disactivar usatores",
 	"bs-usermanager-error-generic": "Un error ha occurrite",
-	"bs-usermanager-invalid-realname": "Le nomine real es invalide"
+	"bs-usermanager-invalid-realname": "Le nomine real es invalide",
+	"bs-usermanager-password-repeat-mismatch-label": "Le contrasignos non es identic. Per favor verifica tu entrata."
 }
