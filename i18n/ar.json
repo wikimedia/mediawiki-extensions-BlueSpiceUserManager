@@ -18,7 +18,7 @@
 	"bs-usermanager-enter-pwd": "يرجى إدخال كلمة سر.",
 	"bs-usermanager-idnotexist": "هذا المستخدم غير موجود.",
 	"bs-usermanager-invalid-pwd": "كلمة المرور غير صالحة",
-	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح.",
+	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح",
 	"bs-usermanager-invalid-uname": "اسم المستخدم غير صالح.",
 	"bs-usermanager-invalid-email-gen": "عنوان البريد الإلكتروني غير صالح.",
 	"bs-usermanager-label": "مدير المستخدم",
@@ -91,5 +91,6 @@
 	"bs-usermanager-showenabled": "إظهار المستخدمين النشطين",
 	"bs-usermanager-mass-enable": "تفعيل المستخدمين",
 	"bs-usermanager-mass-disable": "إلغاء تنشيط المستخدمين",
-	"bs-usermanager-error-generic": "حدث خطأ"
+	"bs-usermanager-error-generic": "حدث خطأ",
+	"bs-usermanager-password-repeat-mismatch-label": "كلمات المرور غير متطابقة. يُرجى التحقق من إدخالك."
 }

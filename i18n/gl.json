@@ -79,5 +79,6 @@
 	"bs-usermanager-showenabled": "Mostrar os usuarios activos",
 	"bs-usermanager-mass-enable": "Activar os usuarios",
 	"bs-usermanager-mass-disable": "Desactivar os usuarios",
-	"bs-usermanager-error-generic": "Houbo un erro"
+	"bs-usermanager-error-generic": "Houbo un erro",
+	"bs-usermanager-password-repeat-mismatch-label": "Os contrasinais non coinciden. Comproba o que escribiches."
 }

@@ -26,7 +26,7 @@
 	"bs-usermanager-enter-pwd": "请输入密码。",
 	"bs-usermanager-idnotexist": "此用户不存在。",
 	"bs-usermanager-invalid-pwd": "密码无效。",
-	"bs-usermanager-invalid-realname": "真实姓名无效。",
+	"bs-usermanager-invalid-realname": "真实姓名无效",
 	"bs-usermanager-invalid-uname": "用户名无效。",
 	"bs-usermanager-invalid-email-gen": "邮件地址无效。",
 	"bs-usermanager-label": "用户管理",

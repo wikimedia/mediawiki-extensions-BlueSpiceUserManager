@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"EneshTranslates",
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
@@ -19,7 +20,7 @@
 	"bs-usermanager-enter-pwd": "Пожалуйста, введите пароль.",
 	"bs-usermanager-idnotexist": "Такого участника не существует.",
 	"bs-usermanager-invalid-pwd": "Пароль неверен.",
-	"bs-usermanager-invalid-realname": "Такое настоящее имя участника недопустимо.",
+	"bs-usermanager-invalid-realname": "Настоящее имя указано неверно",
 	"bs-usermanager-invalid-uname": "Такое имя участника недопустимо.",
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
 	"bs-usermanager-label": "Управление учётными записями",
@@ -59,5 +60,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
 	"action-usermanager-deleteuser": "удалить пользователей",
 	"bs-usermanager-save": "Сохранить",
-	"bs-usermanager-cancel": "Отмена"
+	"bs-usermanager-cancel": "Отмена",
+	"bs-usermanager-password-repeat-mismatch-label": "Пароли не совпадают. Пожалуйста, проверьте введённое."
 }
