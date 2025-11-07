@@ -72,5 +72,6 @@
 	"bs-usermanager-disabled": "Онемогућено",
 	"bs-usermanager-error-generic": "Дошло је до грешке",
 	"bs-usermanager-mass-enable": "Активни корисници",
-	"bs-usermanager-mass-disable": "Онемогућени корисници"
+	"bs-usermanager-mass-disable": "Онемогућени корисници",
+	"bs-usermanager-password-repeat-mismatch-label": "Лозинке се не поклапају. Молимо проверите унос."
 }

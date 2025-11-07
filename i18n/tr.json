@@ -5,6 +5,7 @@
 			"Can",
 			"MuratTheTurkish",
 			"Rapsar",
+			"Sakblue",
 			"SaldırganSincap",
 			"Sayginer",
 			"Violetanka"
@@ -17,7 +18,7 @@
 	"bs-usermanager-enter-pwd": "Lütfen bir parola girin.",
 	"bs-usermanager-idnotexist": "Böyle bir kullanıcı yoktur.",
 	"bs-usermanager-invalid-pwd": "Parola geçersiz.",
-	"bs-usermanager-invalid-realname": "Gerçek ad geçersiz.",
+	"bs-usermanager-invalid-realname": "Gerçek isim geçersiz",
 	"bs-usermanager-invalid-uname": "Kullanıcı adı geçersiz.",
 	"bs-usermanager-invalid-email-gen": "E-posta adresi geçersiz.",
 	"bs-usermanager-label": "Kullanıcı yöneticisi",
@@ -78,5 +79,6 @@
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
 	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
 	"action-usermanager-deleteuser": "kullanıcılarını sil",
-	"right-usermanager-deleteuser": "Special:UserManager yerine bir kullanıcıyı silme"
+	"right-usermanager-deleteuser": "Special:UserManager yerine bir kullanıcıyı silme",
+	"bs-usermanager-password-repeat-mismatch-label": "Şifreler eşleşmiyor. Lütfen girişinizi kontrol edin."
 }
