@@ -5,6 +5,7 @@
 			"Can",
 			"MuratTheTurkish",
 			"Rapsar",
+			"Sakblue",
 			"SaldırganSincap",
 			"Sayginer",
 			"Violetanka"
@@ -49,5 +50,6 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Kullanıcıya parola sıfırlama bağlantısını gönder",
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
 	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
-	"bs-usermanager-invalid-realname": "Gerçek ad geçersiz."
+	"bs-usermanager-invalid-realname": "Gerçek isim geçersiz",
+	"bs-usermanager-password-repeat-mismatch-label": "Şifreler eşleşmiyor. Lütfen girişinizi kontrol edin."
 }
