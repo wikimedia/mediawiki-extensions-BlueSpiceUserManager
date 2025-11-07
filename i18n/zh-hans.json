@@ -65,5 +65,6 @@
 	"bs-usermanager-warning-password-change-own": "您正在更改自己的密码。您将被注销并重定向到登录页面。",
 	"bs-usermanager-showenabled": "显示活跃用户",
 	"bs-usermanager-mass-enable": "激活用户",
-	"bs-usermanager-mass-disable": "停用用户"
+	"bs-usermanager-mass-disable": "停用用户",
+	"bs-usermanager-invalid-realname": "真实姓名无效"
 }

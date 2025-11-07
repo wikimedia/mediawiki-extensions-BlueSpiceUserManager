@@ -56,5 +56,7 @@
 	"bs-usermanager-showenabled": "Actieve gebruikers weergeven",
 	"bs-usermanager-mass-enable": "Gebruikers inschakelen",
 	"bs-usermanager-mass-disable": "Gebruikers uitschakelen",
-	"bs-usermanager-error-generic": "Er is een fout opgetreden"
+	"bs-usermanager-error-generic": "Er is een fout opgetreden",
+	"bs-usermanager-invalid-realname": "De volledige naam is ongeldig",
+	"bs-usermanager-password-repeat-mismatch-label": "De wachtwoorden komen niet overeen. Controleer uw invoer."
 }

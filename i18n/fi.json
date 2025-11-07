@@ -25,5 +25,6 @@
 	"bs-usermanager-confirmdisableuser": "Haluatko todella poistaa {{PLURAL:$1|tämän käyttäjän|nämä $1 käyttäjää}}?",
 	"bs-usermanager-editgroups": "Muokkaa ryhmiä",
 	"bs-usermanager-editpassword": "Vaihda salasana",
-	"bs-usermanager-multipleuserselected": "Voit muuttaa salasanan vain yhdelle käyttäjälle kerrallaan"
+	"bs-usermanager-multipleuserselected": "Voit muuttaa salasanan vain yhdelle käyttäjälle kerrallaan",
+	"bs-usermanager-invalid-realname": "Oikea nimi on virheellinen."
 }

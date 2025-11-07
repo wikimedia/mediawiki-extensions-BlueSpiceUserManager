@@ -46,5 +46,6 @@
 	"bs-usermanager-showenabled": "Aktiv Benotzer weisen",
 	"bs-usermanager-mass-enable": "Benotzer aktivéieren",
 	"bs-usermanager-mass-disable": "Benotzer desaktivéieren",
-	"bs-usermanager-error-generic": "Et ass e Feeler geschitt"
+	"bs-usermanager-error-generic": "Et ass e Feeler geschitt",
+	"bs-usermanager-invalid-realname": "De richtegen Numm ass ongülteg"
 }
