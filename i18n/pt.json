@@ -77,5 +77,7 @@
 	"action-usermanager-deleteuser": "eliminar utilizadores",
 	"right-usermanager-deleteuser": "Eliminar um utilizador usando Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "verificado",
-	"bs-usermanager-icon-bool-false-aria-label": "não verificado"
+	"bs-usermanager-icon-bool-false-aria-label": "não verificado",
+	"bs-usermanager-save": "Guardar",
+	"bs-usermanager-cancel": "Cancelar"
 }
