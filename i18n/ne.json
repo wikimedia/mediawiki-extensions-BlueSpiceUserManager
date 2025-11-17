@@ -40,5 +40,6 @@
 	"bs-usermanager-endisable": "सक्षम/असक्षम",
 	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू",
 	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्",
-	"bs-usermanager-title-nouserselected": "कुनैपनि प्रयाेगकर्ता छानिएकाे छैन"
+	"bs-usermanager-title-nouserselected": "कुनैपनि प्रयाेगकर्ता छानिएकाे छैन",
+	"bs-usermanager-text": "प्रयोगकर्ताहरू"
 }
