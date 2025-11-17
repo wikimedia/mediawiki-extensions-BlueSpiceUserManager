@@ -27,5 +27,6 @@
 	"bs-usermanager-endisable": "सक्षम/असक्षम",
 	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू",
 	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्",
-	"bs-usermanager-invalid-realname": "वास्तविक नाम अमान्य छ।"
+	"bs-usermanager-invalid-realname": "वास्तविक नाम अमान्य छ।",
+	"bs-usermanager-text": "प्रयोगकर्ताहरू"
 }
