@@ -59,5 +59,6 @@
 	"bs-usermanager-mass-enable": "生效使用者",
 	"bs-usermanager-mass-disable": "失效使用者",
 	"bs-usermanager-error-generic": "發生錯誤",
-	"bs-usermanager-invalid-realname": "真實姓名無效。"
+	"bs-usermanager-invalid-realname": "真實姓名無效",
+	"bs-usermanager-password-repeat-mismatch-label": "密碼不符。請檢查您輸入的內容。"
 }
