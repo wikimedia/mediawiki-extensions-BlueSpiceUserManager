@@ -18,7 +18,7 @@
 	"bs-usermanager-enter-pwd": "請輸入密碼。",
 	"bs-usermanager-idnotexist": "該名使用者不存在。",
 	"bs-usermanager-invalid-pwd": "密碼無效。",
-	"bs-usermanager-invalid-realname": "真實姓名無效。",
+	"bs-usermanager-invalid-realname": "真實姓名無效",
 	"bs-usermanager-invalid-uname": "使用者名稱無效。",
 	"bs-usermanager-invalid-email-gen": "電子郵件地址無效。",
 	"bs-usermanager-label": "使用者管理",
@@ -91,5 +91,6 @@
 	"bs-usermanager-showenabled": "顯示生效使用者",
 	"bs-usermanager-mass-enable": "生效使用者",
 	"bs-usermanager-mass-disable": "失效使用者",
-	"bs-usermanager-error-generic": "發生錯誤"
+	"bs-usermanager-error-generic": "發生錯誤",
+	"bs-usermanager-password-repeat-mismatch-label": "密碼不符。請檢查您輸入的內容。"
 }
