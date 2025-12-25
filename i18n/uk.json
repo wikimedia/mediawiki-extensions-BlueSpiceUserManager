@@ -4,6 +4,7 @@
 			"Andriykopanytsia",
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Piramidion",
 			"Renamerr",
 			"Vlad5250",
@@ -48,5 +49,5 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Надіслати користувачеві посилання для скидання пароля",
 	"bs-usermanager-label-password-change-strategy-pw": "Змінюйте пароль безпосередньо",
 	"bs-usermanager-no-mail": "Вибраний користувач не має підтвердженої адреси електронної пошти",
-	"bs-usermanager-invalid-realname": "Справжнє ім'я неприпустиме."
+	"bs-usermanager-invalid-realname": "Справжнє ім'я неприпустиме"
 }
