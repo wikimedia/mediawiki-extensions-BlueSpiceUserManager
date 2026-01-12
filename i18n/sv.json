@@ -5,6 +5,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Mjälten",
+			"Stefan2255",
 			"Technic2",
 			"WikiPhoenix"
 		]
@@ -27,7 +28,7 @@
 	"bs-usermanager-no-self-block": "Du kan inte inaktivera dig själv.",
 	"bs-usermanager-block-error": "{{GENDER:$1|Användaren}} $1 kunde inte inaktiveras.",
 	"bs-usermanager-unblock-error": "{{GENDER:$1|Användaren}} $1 kunde inte aktiveras.",
-	"bs-usermanager-headerenabled": "Aktiverad",
+	"bs-usermanager-headerenabled": "Aktiv",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Användaren}} $1 inaktiverades via UserManager",
 	"bs-usermanager-endisable": "Aktivera/inaktivera",
 	"bs-usermanager-confirmdisableuser": "Vill du verkligen inaktivera {{PLURAL:$1|denna användare|dessa $1 användare}}?",
@@ -42,5 +43,21 @@
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
 	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
-	"bs-usermanager-invalid-realname": "Det riktiga namnet är ogiltigt."
+	"bs-usermanager-invalid-realname": "Det riktiga namnet är ogiltigt.",
+	"bs-usermanager-text": "Användare",
+	"bs-usermanager-label-password-change-strategy": "Metod",
+	"bs-usermanager-label-password-change-strategy-reset": "Skicka länk för återställning av lösenord till användaren",
+	"bs-usermanager-label-password-change-strategy-pw": "Ändra lösenord direkt",
+	"bs-usermanager-no-mail": "Vald användare har inte bekräftad e-postadress",
+	"bs-usermanager-save": "Spara",
+	"bs-usermanager-cancel": "Avbryt",
+	"bs-usermanager-showdisabled": "Visa inaktiverade användare",
+	"bs-usermanager-disabled": "Inaktiverad",
+	"bs-usermanager-missing-param": "Parameter saknas: $1",
+	"bs-usermanager-warning-password-change-own": "Du ändrar ditt eget lösenord. Du kommer att loggas ut och omdirigeras till inloggningssidan.",
+	"bs-usermanager-showenabled": "Visa aktiva användare",
+	"bs-usermanager-mass-enable": "Aktivera användare",
+	"bs-usermanager-mass-disable": "Inaktivera användare",
+	"bs-usermanager-error-generic": "Ett fel uppstod",
+	"bs-usermanager-password-repeat-mismatch-label": "Lösenorden matchar inte. Kontrollera dina inmatningar."
 }
