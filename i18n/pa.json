@@ -4,12 +4,22 @@
 			"Cabal"
 		]
 	},
+	"bs-usermanager-idnotexist": "ਵਰਤੋਂਕਾਰ ਮੌਜੂਦ ਨਹੀਂ ਏ।",
+	"bs-usermanager-invalid-pwd": "ਲੰਘ-ਸ਼ਬਦ ਗਲਤ ਏ।",
+	"bs-usermanager-invalid-email-gen": "ਈਮੇਲ ਪਤਾ ਗਲਤ ਏ।",
 	"bs-usermanager-text": "ਵਰਤੋਂਕਾਰ",
+	"bs-usermanager-user-exists": "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਏ।",
+	"bs-usermanager-headerusername": "ਵਰਤੋਂਕਾਰ-ਨਾਂ",
+	"bs-usermanager-headerrealname": "ਅਸਲੀ ਨਾਂ",
+	"bs-usermanager-headeremail": "ਈਮੇਲ",
+	"bs-usermanager-titleadduser": "ਵਰਤੋਂਕਾਰ ਸ਼ਾਮਲ ਕਰੋ",
+	"bs-usermanager-titleeditdetails": "ਵਰਤੋਂਕਾਰ ਸੋਧੋ",
 	"bs-usermanager-labelnewpassword": "ਲੰਘ-ਸ਼ਬਦ",
 	"bs-usermanager-labelpasswordcheck": "ਪਾਰਸ਼ਬਦ ਦੀ ਤਸਦੀਕ ਕਰੋ",
+	"bs-usermanager-headerenabled": "ਸਰਗਰਮ",
 	"bs-usermanager-editpassword": "ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
 	"bs-usermanager-label-password-change-strategy-pw": "ਸਿੱਧਾ ਪਾਰਸ਼ਬਦ ਬਦਲੋ",
 	"bs-usermanager-save": "ਸਾਂਭੋ",
 	"bs-usermanager-cancel": "ਰੱਦ ਕਰੋ",
-	"bs-usermanager-error-generic": "ਇੱਕ ਗਲਤੀ ਆਈ ਐ"
+	"bs-usermanager-error-generic": "ਇੱਕ ਗਲਤੀ ਆਈ ਏ"
 }
