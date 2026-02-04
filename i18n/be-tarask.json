@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
@@ -9,5 +10,6 @@
 	"bs-usermanager-labelnewpassword": "Пароль",
 	"bs-usermanager-labelpasswordcheck": "Пацьвердзіць пароль",
 	"bs-usermanager-editpassword": "Зьмяніць пароль",
-	"bs-usermanager-label-password-change-strategy": "Спосаб"
+	"bs-usermanager-label-password-change-strategy": "Спосаб",
+	"bs-usermanager-cancel": "Скасаваць"
 }
