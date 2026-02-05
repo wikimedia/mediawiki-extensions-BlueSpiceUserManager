@@ -11,5 +11,7 @@
 	"bs-usermanager-labelpasswordcheck": "Пацьвердзіць пароль",
 	"bs-usermanager-editpassword": "Зьмяніць пароль",
 	"bs-usermanager-label-password-change-strategy": "Спосаб",
-	"bs-usermanager-cancel": "Скасаваць"
+	"bs-usermanager-cancel": "Скасаваць",
+	"bs-usermanager-endisable": "Актываваць/дэактываваць",
+	"bs-usermanager-titleenableuser": "Актываваць карыстальніка"
 }
