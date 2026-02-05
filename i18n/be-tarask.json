@@ -14,5 +14,7 @@
 	"bs-usermanager-editpassword": "Зьмяніць пароль",
 	"bs-usermanager-editpassword-successful": "Пароль пасьпяховы зьменены",
 	"bs-usermanager-label-password-change-strategy": "Спосаб",
-	"bs-usermanager-cancel": "Скасаваць"
+	"bs-usermanager-cancel": "Скасаваць",
+	"bs-usermanager-endisable": "Актываваць/дэактываваць",
+	"bs-usermanager-titleenableuser": "Актываваць карыстальніка"
 }
