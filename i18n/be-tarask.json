@@ -9,9 +9,9 @@
 	"bs-usermanager-headeremail": "Электронная пошта",
 	"bs-usermanager-labelnewpassword": "Пароль",
 	"bs-usermanager-labelpasswordcheck": "Пацьвердзіць пароль",
+	"bs-usermanager-endisable": "Актываваць/дэактываваць",
+	"bs-usermanager-titleenableuser": "Актываваць карыстальніка",
 	"bs-usermanager-editpassword": "Зьмяніць пароль",
 	"bs-usermanager-label-password-change-strategy": "Спосаб",
-	"bs-usermanager-cancel": "Скасаваць",
-	"bs-usermanager-endisable": "Актываваць/дэактываваць",
-	"bs-usermanager-titleenableuser": "Актываваць карыстальніка"
+	"bs-usermanager-cancel": "Скасаваць"
 }
