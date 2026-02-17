@@ -48,5 +48,6 @@
 	"bs-usermanager-save": "Guardar",
 	"bs-usermanager-cancel": "Cancelar",
 	"bs-usermanager-showdisabled": "Mostrar utilizadores desativados",
-	"bs-usermanager-disabled": "Desativado"
+	"bs-usermanager-disabled": "Desativado",
+	"bs-usermanager-invalid-realname": "O nome verdadeiro é inválido."
 }

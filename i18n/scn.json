@@ -17,5 +17,6 @@
 	"bs-usermanager-labelnewpassword": "Password",
 	"bs-usermanager-labelpasswordcheck": "Cunferma password",
 	"bs-usermanager-editgroups": "Cancia gruppi",
-	"bs-usermanager-editpassword": "Cancia la password"
+	"bs-usermanager-editpassword": "Cancia la password",
+	"bs-usermanager-invalid-realname": "Lu nomu veru nun è vàliddu"
 }

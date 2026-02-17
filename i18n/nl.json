@@ -6,7 +6,8 @@
 			"Mainframe98",
 			"McDutchie",
 			"Romaine",
-			"SPQRobin"
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"bs-usermanager-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van gebruikers",
@@ -44,7 +45,7 @@
 	"action-usermanager-editpassword": "gebruikerswachtwoorden wijzigen",
 	"right-usermanager-editpassword": "Gebruikerswachtwoorden wijzigen met de speciale beheerpagina [[Special:UserManager]]",
 	"bs-usermanager-label-password-change-strategy": "Methode",
-	"bs-usermanager-label-password-change-strategy-reset": "Verstuur link om wachtwoord te resetten naar gebruiker",
+	"bs-usermanager-label-password-change-strategy-reset": "Stuur de koppeling voor het opnieuw instellen van het wachtwoord naar de gebruiker",
 	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
 	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres",
 	"bs-usermanager-save": "Opslaan",
@@ -56,5 +57,7 @@
 	"bs-usermanager-showenabled": "Actieve gebruikers weergeven",
 	"bs-usermanager-mass-enable": "Gebruikers inschakelen",
 	"bs-usermanager-mass-disable": "Gebruikers uitschakelen",
-	"bs-usermanager-error-generic": "Er is een fout opgetreden"
+	"bs-usermanager-error-generic": "Er is een fout opgetreden",
+	"bs-usermanager-invalid-realname": "De volledige naam is ongeldig",
+	"bs-usermanager-password-repeat-mismatch-label": "De wachtwoorden komen niet overeen. Controleer uw invoer."
 }

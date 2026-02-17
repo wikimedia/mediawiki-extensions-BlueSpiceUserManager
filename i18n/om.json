@@ -11,5 +11,6 @@
 	"bs-usermanager-headeremail": "Imeelii",
 	"bs-usermanager-headergroups": "Gareewwan",
 	"bs-usermanager-titleadduser": "Fayyadamaa ida'i",
-	"bs-usermanager-titleeditdetails": "Fayyadamaa jijjiiri"
+	"bs-usermanager-titleeditdetails": "Fayyadamaa jijjiiri",
+	"bs-usermanager-invalid-realname": "Maqaan dhugaa kun sirrii miti."
 }

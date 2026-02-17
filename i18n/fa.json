@@ -4,11 +4,11 @@
 			"Ajam",
 			"Beginneruser",
 			"Dalba",
+			"Darafsh",
 			"FarsiNevis",
 			"Jeeputer",
-			"Reza1615",
-			"Darafsh",
-			"LordProfo"
+			"LordProfo",
+			"Reza1615"
 		]
 	},
 	"bs-usermanager-desc": "میانای مدیریتی برای افزودن و ویرایش و حذف کاربران",
@@ -45,5 +45,6 @@
 	"bs-usermanager-multipleuserselected": "شما هر بار فقط اسم رمز یک کاربر را می‌توانید تغییر دهید",
 	"action-usermanager-editpassword": "تغییر اسم رمز کاربران",
 	"right-usermanager-editpassword": "تغییر اسم رمز کاربران از طریق مدیر در صفحهٔ ویژهٔ [[Special:UserManager]]",
-	"bs-usermanager-error-generic": "خطایی رخ داد"
+	"bs-usermanager-error-generic": "خطایی رخ داد",
+	"bs-usermanager-invalid-realname": "نام حقیقی نامعتبر است"
 }
