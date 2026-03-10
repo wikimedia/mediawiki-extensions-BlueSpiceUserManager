@@ -203,6 +203,107 @@ class UserManager implements LoggerAwareInterface {
 
 	/**
 	 * @param User $user
+	 * @param string $group
+	 * @param Authority $actor
+	 * @return void
+	 */
+	public function addUserToGroup( User $user, string $group, Authority $actor ) {
+		$this->assertActorCan( 'setGroups', $user, $actor );
+		$attemptChangeSelf = $actor->getUser()->getId() == $user->getId();
+		$changeableGroups = $this->userGroupManager->getGroupsChangeableBy( $actor );
+		$excludeGroups = [ '*', 'user', 'autoconfirmed', 'emailconfirmed' ];
+
+		if ( in_array( $group, $excludeGroups ) ) {
+			$this->throw( RuntimeException::class, 'bs-usermanager-group-add-not-allowed', [ $group ] );
+		}
+
+		if ( !in_array( $group, $changeableGroups['add'] ) &&
+			( !$attemptChangeSelf || !in_array( $group, $changeableGroups['add-self'] ) )
+		) {
+			$this->throw( RuntimeException::class, 'bs-usermanager-group-add-not-allowed', [ $group ] );
+		}
+		$oldGroups = $this->userGroupManager->getUserGroupMemberships( $user );
+		$this->userGroupManager->addUserToGroup( $user, $group );
+		return $this->updateAfterGroupChanged( $user, [ $group ], [], $actor, '', $oldGroups );
+	}
+
+	/**
+	 * @param User $user
+	 * @param string $group
+	 * @param Authority $actor
+	 * @return void
+	 */
+	public function removeUserFromGroup( User $user, string $group, Authority $actor ) {
+		$this->assertActorCan( 'setGroups', $user, $actor );
+
+		$attemptChangeSelf = $actor->getUser()->getId() == $user->getId();
+		$excludeGroups = [ '*', 'user', 'autoconfirmed', 'emailconfirmed' ];
+
+		$checkSelfSysopRemove = $attemptChangeSelf
+			&& $group !== 'sysop'
+			&& in_array( 'sysop', $this->userGroupManager->getUserEffectiveGroups( $actor->getUser() ) );
+		if ( $checkSelfSysopRemove ) {
+			$this->throw( RuntimeException::class, 'bs-usermanager-no-self-desysop' );
+		}
+		$changeableGroups = $this->userGroupManager->getGroupsChangeableBy( $actor );
+		if ( in_array( $group, $excludeGroups ) ) {
+			$this->throw( RuntimeException::class, 'bs-usermanager-group-remove-not-allowed', [ $group ] );
+		}
+		if (
+			!in_array( $group, $changeableGroups['remove'] ) &&
+			( !$attemptChangeSelf || !in_array( $group, $changeableGroups['remove-self'] ) )
+		) {
+			$this->throw( RuntimeException::class, 'bs-usermanager-group-remove-not-allowed', [ $group ] );
+		}
+		$oldGroups = $this->userGroupManager->getUserGroupMemberships( $user );
+		$this->userGroupManager->removeUserFromGroup( $user, $group );
+		return $this->updateAfterGroupChanged( $user, [], [ $group ], $actor, '', $oldGroups );
+	}
+
+	/**
+	 * @param User $user
+	 * @param array $added
+	 * @param array $removed
+	 * @param Authority $actor
+	 * @param string $reason
+	 * @param array $oldGroups
+	 * @return Status
+	 */
+	protected function updateAfterGroupChanged( User $user, array $added, array $removed,
+	Authority $actor, string $reason, array $oldGroups ) {
+		$excludeGroups = [ '*', 'user', 'autoconfirmed', 'emailconfirmed' ];
+		$status = Status::newGood( $user );
+		$this->hookContainer->run( 'UserGroupsChanged', [
+			$user,
+			$added,
+			$removed,
+			$actor->getUser(),
+			$reason,
+			$oldGroups,
+			$this->userGroupManager->getUserGroupMemberships( $user )
+		] );
+		$this->hookContainer->run(
+			'BSUserManagerAfterSetGroups',
+			[
+				$user,
+				$this->userGroupManager->getUserGroupMemberships( $user ),
+				$added,
+				$removed,
+				$excludeGroups,
+				&$status
+			]
+		);
+
+		if ( !$status->isOK() ) {
+			$this->throwFromStatus( $status );
+		}
+
+		$user->invalidateCache();
+		return $status;
+	}
+
+	/**
+	 * @param User $user
 	 * @param array $groups
 	 * @param Authority $actor
 	 * @return void
@@ -256,35 +357,7 @@ class UserManager implements LoggerAwareInterface {
 			$reallyRemove[] = $group;
 			$this->userGroupManager->removeUserFromGroup( $user, $group );
 		}
-
-		$status = Status::newGood( $user );
-		$this->hookContainer->run( 'UserGroupsChanged', [
-			$user,
-			$reallyAdd,
-			$reallyRemove,
-			$actor->getUser(),
-			'',
-			$oldUGMs,
-			$this->userGroupManager->getUserGroupMemberships( $user )
-		] );
-		$this->hookContainer->run(
-			'BSUserManagerAfterSetGroups',
-			[
-				$user,
-				$groups,
-				$addGroups,
-				$removeGroups,
-				$excludeGroups,
-				&$status
-			]
-		);
-
-		if ( !$status->isOK() ) {
-			$this->throwFromStatus( $status );
-		}
-
-		$user->invalidateCache();
-		return $status;
+		return $this->updateAfterGroupChanged( $user, $reallyAdd, $reallyRemove, $actor, '', $oldUGMs );
 	}
 
 	public function resetPassword( User $user, array $params, Authority $actor ) {

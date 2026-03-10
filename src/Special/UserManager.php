@@ -2,19 +2,23 @@
 
 namespace BlueSpice\UserManager\Special;
 
+use BlueSpice\UserManager\GroupManager;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use OOJSPlus\Special\OOJSGridSpecialPage;
+use OOUI\MessageWidget;
 
 class UserManager extends OOJSGridSpecialPage {
+
 	/** @var Config */
 	private $config;
 
 	/**
 	 * @param ConfigFactory $configFactory
 	 */
-	public function __construct( ConfigFactory $configFactory ) {
+	public function __construct( ConfigFactory $configFactory, private readonly GroupManager $groupManager ) {
 		parent::__construct( 'UserManager', 'wikiadmin' );
 		$this->config = $configFactory->makeConfig( 'bsg' );
 	}
@@ -23,8 +27,18 @@ class UserManager extends OOJSGridSpecialPage {
 	 * @param string $subPage
 	 * @return void
 	 */
-	public function doExecute( $subPage ) {
-		$this->getOutput()->addModules( 'ext.bluespice.userManager' );
+	public function execute( $subPage ) {
+		$this->getOutput()->addModules( [ 'ext.bluespice.userManager' ] );
+		$request = RequestContext::getMain()->getRequest();
+		if ( $request->getVal( 'group' ) ) {
+			$groupName = $request->getVal( 'group' );
+			$this->outputTeam( $groupName );
+			parent::execute( $groupName );
+			$this->getOutput()->setPageTitle( $groupName );
+			return;
+		}
+
+		parent::execute( $subPage );
 		$this->getOutput()->addHTML(
 			Html::element( 'div', [ 'id' => 'bs-usermanager-grid' ] )
 		);
@@ -35,5 +49,33 @@ class UserManager extends OOJSGridSpecialPage {
 				'usergroups' => $this->getUser()->isAllowedAll( 'userrights', 'wikiadmin' ),
 			]
 		] );
+	}
+
+	/**
+	 * @param string $groupName
+	 * @return void
+	 */
+	protected function outputTeam( string $groupName ) {
+		try {
+			$group = $this->groupManager->assertGroupExists( $groupName );
+		} catch ( \Throwable $ex ) {
+			$this->getOutput()->enableOOUI();
+			$this->getOutput()->addHTML(
+				new MessageWidget(
+					[
+						'type' => 'error',
+						'label' => $this->msg( 'bs-usermanager-group-not-found', $groupName )->text()
+					]
+				)
+			);
+			return;
+		}
+
+		$this->getOutput()->addHTML(
+			Html::element( 'div', [
+				'id' => 'bs-usermanager-group-details',
+				'data-group' => $groupName
+			] )
+		);
 	}
 }

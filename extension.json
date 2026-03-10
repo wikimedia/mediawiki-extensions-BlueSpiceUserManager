@@ -29,6 +29,14 @@
 					]
 				}
 			}
+		},
+		"BlueSpiceDiscovery": {
+			"BreadcrumbDataProviderRegistry": {
+				"usermanagement": {
+					"class": "BlueSpice\\UserManager\\BreadcrumbDataProvider\\SpecialUserManagerProvider",
+					"services": [ "SpecialPageFactory" ]
+				}
+			}
 		}
 	},
 	"requires": {
@@ -41,7 +49,7 @@
 	"SpecialPages": {
 		"UserManager": {
 			"class": "BlueSpice\\UserManager\\Special\\UserManager",
-			"services": [ "ConfigFactory" ]
+			"services": [ "ConfigFactory", "BlueSpice.UserManager.GroupManager" ]
 		}
 	},
 	"ExtensionMessagesFiles": {
@@ -57,15 +65,22 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice.userManager": {
-			"scripts": [
+			"packageFiles": [
+				"bluespice.userManager.js",
+				"ui/UserManagementPanel.js",
+				"ui/GroupDetailsPanel.js",
+				"ui/UserPanel.js",
+				"ui/GroupsPanel.js",
 				"ui/UserDetailsPanel.js",
 				"ui/AddUserPanel.js",
 				"ui/dialog/EditUserDialog.js",
 				"ui/dialog/EditGroupsDialog.js",
 				"ui/dialog/AddUserDialog.js",
 				"ui/dialog/ResetPasswordDialog.js",
-				"ui/UserManagerPanel.js",
-				"bluespice.userManager.js"
+				"ui/dialog/CreateGroupDialog.js",
+				"ui/dialog/ShowUserGroupsDialog.js",
+				"ui/widget/GroupMembershipWidget.js",
+				"ui/dialog/AddGroupMemberDialog.js"
 			],
 			"styles": {
 				"bluespice.userManager.less": {}
@@ -111,7 +126,37 @@
 				"bs-usermanager-mass-enable",
 				"bs-usermanager-mass-disable",
 				"bs-usermanager-error-generic",
-				"bs-usermanager-password-repeat-mismatch-label"
+				"bs-usermanager-password-repeat-mismatch-label",
+				"bs-usermanager-tab-label-groups",
+				"bs-usermanager-tab-label-users",
+				"bs-usermanager-member-user-count",
+				"bs-usermanager-member-user-info-label",
+				"bs-usermanager-member-group-count",
+				"bs-usermanager-member-group-info-label",
+				"bs-usermanager-showgroups-user-label",
+				"bs-usermanager-showgroups-title",
+				"bs-usermanager-create-groups-dialog-title",
+				"bs-usermanager-action-create",
+				"bs-usermanager-create-groups-group-name",
+				"bs-usermanager-groups-header-group-name",
+				"bs-usermanager-groups-header-members",
+				"bs-usermanager-action-edit-group",
+				"bs-usermanager-action-delete-group",
+				"bs-usermanager-action-create-group",
+				"bs-usermanager-group-details-header-user",
+				"bs-usermanager-group-details-header-action-remove-member",
+				"bs-usermanager-group-details-section-members",
+				"bs-usermanager-group-details-section-members-action-add-user",
+				"bs-usermanager-group-details-action-delete-group",
+				"bs-usermanager-group-details-confirm-delete-group",
+				"bs-usermanager-group-details-button-action-label-delete",
+				"bs-usermanager-group-details-error-delete-group",
+				"bs-usermanager-groups-confirm-remove-member",
+				"bs-usermanager-groups-error-remove-member",
+				"bs-usermanager-action-label-remove",
+				"bs-usermanager-groups-action-add-member-title",
+				"bs-usermanager-action-label-add",
+				"bs-usermanager-groups-member-field-user"
 			]
 		}
 	},
@@ -130,6 +175,9 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface"
+		},
+		"registerDynamicConfig": {
+			"class": "\\BlueSpice\\UserManager\\HookHandler\\RegisterDynamicConfig"
 		}
 	},
 	"ServiceWiringFiles": [
@@ -171,11 +219,48 @@
 			"path": "/bs-usermanager/v1/password/{username}",
 			"class": "\\BlueSpice\\UserManager\\Rest\\ChangePasswordHandler",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/create/{name}",
+			"class": "BlueSpice\\UserManager\\Rest\\AddGroup",
+			"services": [ "BlueSpice.UserManager.GroupManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/edit/{name}/{newName}",
+			"class": "BlueSpice\\UserManager\\Rest\\EditGroup",
+			"services": [ "BlueSpice.UserManager.GroupManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/delete/{name}",
+			"class": "BlueSpice\\UserManager\\Rest\\DeleteGroup",
+			"services": [ "BlueSpice.UserManager.GroupManager" ]
+		},
+		{
+			"method": "GET",
+			"path": "/bs-usermanager/v1/groups/members/{name}",
+			"class": "BlueSpice\\UserManager\\Rest\\GetGroupMembers",
+			"services": [ "BlueSpice.UserManager.GroupManager" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/assign/{group}",
+			"class": "BlueSpice\\UserManager\\Rest\\AddUserToGroup",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/bs-usermanager/v1/groups/unassign/{group}",
+			"class": "BlueSpice\\UserManager\\Rest\\RemoveUserFromGroup",
+			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
 		}
 	],
 	"Hooks": {
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback"
+		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
 	},
 	"config_prefix": "bsg",
 	"config": {
