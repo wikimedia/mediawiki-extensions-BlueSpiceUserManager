@@ -1,9 +1,18 @@
 bs.util.registerNamespace( 'bs.usermanager.ui' );
 
-bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
+require( './dialog/EditUserDialog.js' );
+require( './dialog/AddUserDialog.js' );
+require( './dialog/EditGroupsDialog.js' );
+require( './dialog/ResetPasswordDialog.js' );
+require( './widget/GroupMembershipWidget.js' );
+require( './UserDetailsPanel.js' );
+require( './AddUserPanel.js' );
+
+bs.usermanager.ui.UserPanel = function ( cfg ) {
 	cfg = cfg || {};
 	this.permissions = cfg.permissions || {};
 	this.bucketsInitialized = false;
+	this.tab = cfg.tab;
 
 	const columns = {
 		user_name: { // eslint-disable-line camelcase
@@ -39,15 +48,17 @@ bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
 		groups: {
 			type: 'text',
 			headerText: mw.msg( 'bs-usermanager-headergroups' ),
-			filter: { type: 'tag_list' },
 			sortable: false,
-			valueParser: function ( value ) {
-				const pills = [];
-				$.each( value, ( i, group ) => { // eslint-disable-line no-jquery/no-each-util
-					pills.push( '<span class="um-group-pill">' + group + '</span>' );
+			filter: { type: 'list' },
+			valueParser: function ( value, row ) {
+				const numberOfUserGroups = value.length;
+				return new bs.usermanager.ui.widget.GroupMembershipWidget( {
+					membershipList: value,
+					rawValues: row.groups_raw,
+					type: 'user',
+					count: numberOfUserGroups,
+					infoAbout: row.user_real_name || row.user_name
 				} );
-
-				return new OO.ui.HtmlSnippet( pills );
 			},
 			maxWidth: 300
 		},
@@ -101,7 +112,12 @@ bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
 		}
 	} );
 	this.store.connect( this, {
-		loaded: function () {
+		loaded: function ( values ) {
+			const numberOfGroups = Object.keys( values ).length;
+			const $badgeNumer = $( '<span>' ).addClass( 'bs-um-tab-badge' ).text( numberOfGroups );
+			this.tab.getTabItem().setLabel(
+				new OO.ui.HtmlSnippet( $( '<span>' ).text( mw.msg( 'bs-usermanager-tab-label-users' ) ).append( $badgeNumer ) )
+			);
 			// Reset previously selected abilities when grid is reloaded
 			this.setAbilitiesOnSelection( [] );
 			if ( this.bucketsInitialized ) {
@@ -126,12 +142,12 @@ bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
 		store: this.store,
 		columns: columns
 	};
-	bs.usermanager.ui.UserManagerPanel.parent.call( this, cfg );
+	bs.usermanager.ui.UserPanel.parent.call( this, cfg );
 };
 
-OO.inheritClass( bs.usermanager.ui.UserManagerPanel, OOJSPlus.ui.panel.ManagerGrid );
+OO.inheritClass( bs.usermanager.ui.UserPanel, OOJSPlus.ui.panel.ManagerGrid );
 
-bs.usermanager.ui.UserManagerPanel.prototype.getToolbarActions = function () {
+bs.usermanager.ui.UserPanel.prototype.getToolbarActions = function () {
 	const actions = [];
 	actions.push( this.getAddAction( { icon: 'userAdd', flags: [ 'progressive' ], displayBothIconAndLabel: true } ) );
 	if ( this.isAllowed( 'usergroups' ) ) {
@@ -199,7 +215,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.getToolbarActions = function () {
 	return actions;
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.onAction = function ( action, row ) {
+bs.usermanager.ui.UserPanel.prototype.onAction = function ( action, row ) {
 	const selected = this.grid.getSelectedRows();
 	if ( action === 'edit' && ( selected.length === 1 || row ) ) {
 		this.editUser( row || selected[ 0 ] );
@@ -221,7 +237,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.onAction = function ( action, row )
 	}
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.getInitialAbilities = function () {
+bs.usermanager.ui.UserPanel.prototype.getInitialAbilities = function () {
 	return {
 		add: true,
 		usergroups: false,
@@ -230,21 +246,21 @@ bs.usermanager.ui.UserManagerPanel.prototype.getInitialAbilities = function () {
 	};
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.isAllowed = function ( action ) {
+bs.usermanager.ui.UserPanel.prototype.isAllowed = function ( action ) {
 	return this.permissions[ action ];
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.onInitialize = function () {
-	bs.usermanager.ui.UserManagerPanel.parent.prototype.onInitialize.apply( this, arguments );
+bs.usermanager.ui.UserPanel.prototype.onInitialize = function () {
+	bs.usermanager.ui.UserPanel.parent.prototype.onInitialize.apply( this, arguments );
 	this.toolbar.getTool( 'enableuser' ).toggle( false );
 	this.toolbar.getTool( 'showEnabled' ).toggle( false );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.onItemSelected = function ( item, selectedItems ) {
+bs.usermanager.ui.UserPanel.prototype.onItemSelected = function ( item, selectedItems ) {
 	this.setAbilitiesOnSelection( selectedItems );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.setAbilitiesOnSelection = function ( selectedItems ) {
+bs.usermanager.ui.UserPanel.prototype.setAbilitiesOnSelection = function ( selectedItems ) {
 	if ( selectedItems.length === 1 ) {
 		this.setAbilities( { usergroups: true, enableuser: true, disableuser: true } );
 	} else if ( selectedItems.length > 1 ) {
@@ -254,21 +270,21 @@ bs.usermanager.ui.UserManagerPanel.prototype.setAbilitiesOnSelection = function 
 	}
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.addUser = function () {
+bs.usermanager.ui.UserPanel.prototype.addUser = function () {
 	const dialog = new bs.usermanager.ui.dialog.AddUserDialog(
 		this.getUserDetailsDialogData( 'add' )
 	);
 	this.openWindow( dialog );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.editUser = function ( row ) {
+bs.usermanager.ui.UserPanel.prototype.editUser = function ( row ) {
 	const dialog = new bs.usermanager.ui.dialog.EditUserDialog(
 		this.getUserDetailsDialogData( 'edit', row )
 	);
 	this.openWindow( dialog );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.editPassword = function ( row ) {
+bs.usermanager.ui.UserPanel.prototype.editPassword = function ( row ) {
 	const dialog = new bs.usermanager.ui.dialog.ResetPasswordDialog( {
 		username: row.user_name,
 		email: row.user_email || '',
@@ -277,7 +293,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.editPassword = function ( row ) {
 	this.openWindow( dialog );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.disableUsers = function ( rows ) {
+bs.usermanager.ui.UserPanel.prototype.disableUsers = function ( rows ) {
 	const users = [];
 	rows.forEach( ( row ) => {
 		users.push( row.user_name );
@@ -289,7 +305,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.disableUsers = function ( rows ) {
 	} );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.enableUsers = function ( rows ) {
+bs.usermanager.ui.UserPanel.prototype.enableUsers = function ( rows ) {
 	const users = [];
 	rows.forEach( ( row ) => {
 		users.push( row.user_name );
@@ -301,7 +317,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.enableUsers = function ( rows ) {
 	} );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.doDisableEnableUsers = function ( users, action ) {
+bs.usermanager.ui.UserPanel.prototype.doDisableEnableUsers = function ( users, action ) {
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/block/' + action,
 		method: 'POST',
@@ -317,7 +333,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.doDisableEnableUsers = function ( u
 	} );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.editGroups = function ( rows ) {
+bs.usermanager.ui.UserPanel.prototype.editGroups = function ( rows ) {
 	const users = [];
 	let groups = [];
 	rows.forEach( ( row ) => {
@@ -333,7 +349,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.editGroups = function ( rows ) {
 	this.openWindow( dialog );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.openWindow = function ( dialog ) {
+bs.usermanager.ui.UserPanel.prototype.openWindow = function ( dialog ) {
 	if ( !this.windowManager ) {
 		this.windowManager = new OO.ui.WindowManager();
 		$( 'body' ).append( this.windowManager.$element );
@@ -347,7 +363,7 @@ bs.usermanager.ui.UserManagerPanel.prototype.openWindow = function ( dialog ) {
 	} );
 };
 
-bs.usermanager.ui.UserManagerPanel.prototype.getUserDetailsDialogData = function ( action, row ) {
+bs.usermanager.ui.UserPanel.prototype.getUserDetailsDialogData = function ( action, row ) {
 	row = row || {};
 
 	return {
