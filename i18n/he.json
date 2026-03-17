@@ -8,7 +8,8 @@
 			"Guycn2",
 			"Steeve815",
 			"נדב ס",
-			"תומר ט"
+			"תומר ט",
+			"Neriah"
 		]
 	},
 	"bs-usermanager-desc": "ממשק ניהולי עבור הוספה, עריכה ומחיקה של משתמשים",
@@ -59,5 +60,5 @@
 	"bs-usermanager-mass-enable": "הפעלת משתמשים",
 	"bs-usermanager-mass-disable": "השבתת משתמשים",
 	"bs-usermanager-error-generic": "אירעה שגיאה",
-	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין."
+	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין"
 }
