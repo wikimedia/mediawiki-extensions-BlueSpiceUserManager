@@ -47,5 +47,16 @@
 	"bs-usermanager-mass-enable": "Benotzer aktivéieren",
 	"bs-usermanager-mass-disable": "Benotzer desaktivéieren",
 	"bs-usermanager-error-generic": "Et ass e Feeler geschitt",
-	"bs-usermanager-invalid-realname": "De richtegen Numm ass ongülteg"
+	"bs-usermanager-invalid-realname": "De richtegen Numm ass ongülteg",
+	"bs-usermanager-member-user-info-label": "Gruppe weisen",
+	"bs-usermanager-member-group-count": "{{PLURAL:$1|$1 Member|$1 Memberen}}",
+	"bs-usermanager-create-groups-group-name": "Gruppennumm",
+	"bs-usermanager-action-edit-group": "Grupp änneren",
+	"bs-usermanager-group-details-confirm-delete-group": "Sidd Dir sécher, datt Dir d'Grupp „$1“ läsche wëllt? Doduerch ginn all d'Memberen aus der Grupp ewechgeholl.",
+	"bs-usermanager-group-details-error-delete-group": "Beim Läsche vun der Grupp ass e Feeler geschitt. Probéiert wgl. nach eng Kéier oder kontaktéiert Ären Administrateur.",
+	"bs-usermanager-groups-error-remove-member": "Beim Ewechhuele vum Benotzer aus der Grupp ass e Feeler geschitt. Probéiert wgl. nach eng Kéier oder kontaktéiert Ären Administrateur.",
+	"bs-usermanager-action-label-remove": "Ewechhuelen",
+	"bs-usermanager-groups-action-add-member-title": "Member derbäisetzen",
+	"bs-usermanager-group-invalid-name-numeric": "De Gruppennumm muss op d'mannst een Zeeche laang sinn",
+	"bs-usermanager-action-not-allowed": "Dës Aktioun ass net erlaabt"
 }
