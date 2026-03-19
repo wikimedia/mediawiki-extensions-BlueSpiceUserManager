@@ -4,6 +4,7 @@
 			"Ajeje Brazorf",
 			"Beta16",
 			"Dream Indigo",
+			"FL2226",
 			"GpieroMW",
 			"Lorelai87",
 			"Martinligabue",
@@ -59,6 +60,7 @@
 	"bs-usermanager-member-group-count": "{{PLURAL:$1|$1 membro|$1 membri}}",
 	"bs-usermanager-member-group-info-label": "Mostra membri",
 	"bs-usermanager-showgroups-user-label": "$1 è membro di {{PLURAL:$2|un gruppo|$2 gruppi}}",
+	"bs-usermanager-showgroups-title": "associazioni",
 	"bs-usermanager-create-groups-dialog-title": "Crea un gruppo",
 	"bs-usermanager-action-create": "Crea",
 	"bs-usermanager-create-groups-group-name": "Nome gruppo",
@@ -82,8 +84,10 @@
 	"bs-usermanager-groups-action-add-member-title": "Aggiungi membro",
 	"bs-usermanager-action-label-add": "Aggiungi",
 	"bs-usermanager-groups-member-field-user": "Utente",
+	"bs-usermanager-group-not-existing": "Non è stato possibile trovare il gruppo con questo nome",
 	"bs-usermanager-group-already-exists": "Questo gruppo esiste già",
 	"bs-usermanager-group-invalid-name-length": "Il nome del gruppo non può essere più lungo di 255 caratteri",
 	"bs-usermanager-group-invalid-name-numeric": "Il nome del gruppo deve avere almeno un carattere",
+	"bs-usermanager-group-invalid-name": "Il nome del gruppo contiene {{se PLURALE:$1|un carattere|caratteri}} non valido/validi:$2",
 	"bs-usermanager-action-not-allowed": "Questa azione non è consentita"
 }

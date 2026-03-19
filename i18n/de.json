@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"DraconicDark",
 			"Hwboehm",
 			"Justman10000",
@@ -75,13 +76,13 @@
 	"bs-usermanager-create-groups-dialog-title": "Gruppe erstellen",
 	"bs-usermanager-action-create": "Erstellen",
 	"bs-usermanager-create-groups-group-name": "Gruppenname",
-	"bs-usermanager-groups-header-group-name": "Grouppenname",
+	"bs-usermanager-groups-header-group-name": "Gruppenname",
 	"bs-usermanager-groups-header-members": "Mitglieder",
 	"bs-usermanager-action-edit-group": "Gruppe bearbeiten",
 	"bs-usermanager-action-delete-group": "Gruppe löschen",
 	"bs-usermanager-action-create-group": "Gruppe erstellen",
 	"bs-usermanager-group-details-header-user": "Benutzer",
-	"bs-usermanager-group-details-header-action-remove-member": "Benutzer von der Gruppe entfernen",
+	"bs-usermanager-group-details-header-action-remove-member": "Benutzer aus der Gruppe entfernen",
 	"bs-usermanager-group-details-section-members": "Mitglieder",
 	"bs-usermanager-group-details-section-members-action-add-user": "Mitglied hinzufügen",
 	"bs-usermanager-group-details-action-delete-group": "Gruppe löschen",
