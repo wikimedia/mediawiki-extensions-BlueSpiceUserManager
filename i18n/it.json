@@ -88,6 +88,6 @@
 	"bs-usermanager-group-already-exists": "Questo gruppo esiste già",
 	"bs-usermanager-group-invalid-name-length": "Il nome del gruppo non può essere più lungo di 255 caratteri",
 	"bs-usermanager-group-invalid-name-numeric": "Il nome del gruppo deve avere almeno un carattere",
-	"bs-usermanager-group-invalid-name": "Il nome del gruppo contiene {{se PLURALE:$1|un carattere|caratteri}} non valido/validi:$2",
+	"bs-usermanager-group-invalid-name": "Il nome del gruppo contiene {{PLURAL:$1|un carattere|caratteri}} non {{PLURAL:$1|valido|validi}}: $2",
 	"bs-usermanager-action-not-allowed": "Questa azione non è consentita"
 }

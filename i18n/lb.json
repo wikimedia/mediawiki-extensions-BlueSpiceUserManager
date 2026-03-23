@@ -54,6 +54,7 @@
 	"bs-usermanager-member-user-info-label": "Gruppe weisen",
 	"bs-usermanager-member-group-count": "{{PLURAL:$1|$1 Member|$1 Memberen}}",
 	"bs-usermanager-member-group-info-label": "Membere weisen",
+	"bs-usermanager-showgroups-title": "Memberschaften",
 	"bs-usermanager-create-groups-dialog-title": "Eng Grupp uleeën",
 	"bs-usermanager-action-create": "Uleeën",
 	"bs-usermanager-create-groups-group-name": "Gruppennumm",
