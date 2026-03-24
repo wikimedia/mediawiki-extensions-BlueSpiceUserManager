@@ -108,7 +108,7 @@ bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
 				return;
 			}
 			const buckets = this.store.getBuckets();
-			if ( buckets.hasOwnProperty( 'groups' ) && this.grid.columns.groups.filter ) {
+			if ( buckets.hasOwnProperty( 'groups' ) && this.grid.externalFilter.filterOptions.groups.filter ) {
 				// Convert key value to `{data: key, label: value }`
 				const options = [];
 				for ( const groupKey in buckets.groups ) {
@@ -117,7 +117,7 @@ bs.usermanager.ui.UserManagerPanel = function ( cfg ) {
 					}
 					options.push( { data: groupKey, label: buckets.groups[ groupKey ] } );
 				}
-				this.grid.columns.groups.filter.setOptions( options );
+				this.grid.externalFilter.filterOptions.groups.filter.setOptions( options );
 			}
 			this.bucketsInitialized = true;
 		}
