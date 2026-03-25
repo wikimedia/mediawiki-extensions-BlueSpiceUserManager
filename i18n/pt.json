@@ -41,7 +41,7 @@
 	"bs-usermanager-no-self-block": "Não pode desativar-se a si mesmo.",
 	"bs-usermanager-block-error": "Não foi possível desativar {{GENDER:$1|o utilizador|a utilizadora}}.",
 	"bs-usermanager-unblock-error": "Não foi possível ativar {{GENDER:$1|o utilizador|a utilizadora}}.",
-	"bs-usermanager-headerenabled": "Ativado",
+	"bs-usermanager-headerenabled": "Ativo",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|O utilizador $1 foi desativado|A utilizadora $1 foi desativada}} através do gestor de utilizadores.",
 	"bs-usermanager-user-disabled": "{{GENDER:$1|O utilizador $1 foi desativado|A utilizadora $1 foi desativada}}.",
 	"bs-usermanager-user-enabled": "{{GENDER:$1|O utilizador $1 foi ativado|A utilizadora $1 foi ativada}}.",
@@ -77,5 +77,9 @@
 	"action-usermanager-deleteuser": "eliminar utilizadores",
 	"right-usermanager-deleteuser": "Eliminar um utilizador usando Special:UserManager",
 	"bs-usermanager-icon-bool-true-aria-label": "verificado",
-	"bs-usermanager-icon-bool-false-aria-label": "não verificado"
+	"bs-usermanager-icon-bool-false-aria-label": "não verificado",
+	"bs-usermanager-save": "Guardar",
+	"bs-usermanager-cancel": "Cancelar",
+	"bs-usermanager-showdisabled": "Mostrar utilizadores desativados",
+	"bs-usermanager-disabled": "Desativado"
 }

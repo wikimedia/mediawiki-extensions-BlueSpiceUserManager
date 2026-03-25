@@ -21,7 +21,7 @@
 	"bs-usermanager-enter-pwd": "Унестие лозинку.",
 	"bs-usermanager-idnotexist": "Овај корисник не постоји.",
 	"bs-usermanager-invalid-pwd": "Лозинка није исправна.",
-	"bs-usermanager-invalid-realname": "Право име је неисправно.",
+	"bs-usermanager-invalid-realname": "Право име је неисправно",
 	"bs-usermanager-invalid-uname": "Корисничко име није важеће.",
 	"bs-usermanager-invalid-email-gen": "Имејл није важећи.",
 	"bs-usermanager-label": "Управљач корисницима",
@@ -66,5 +66,17 @@
 	"bs-usermanager-title-multipleuserselected": "Више корисника је одабрано",
 	"bs-usermanager-multipleuserselected": "Можете изменити лозинку само једном кориснику у исто време",
 	"bs-usermanager-invalid-groups": "Групе нису важеће",
-	"bs-usermanager-label-password-change-strategy": "Начин"
+	"bs-usermanager-label-password-change-strategy": "Начин",
+	"bs-usermanager-save": "Сачувај",
+	"bs-usermanager-cancel": "Откажи",
+	"bs-usermanager-disabled": "Онемогућено",
+	"bs-usermanager-mass-enable": "Активни корисници",
+	"bs-usermanager-mass-disable": "Онемогућени корисници",
+	"bs-usermanager-error-generic": "Дошло је до грешке",
+	"bs-usermanager-password-repeat-mismatch-label": "Лозинке се не поклапају. Молимо проверите унос.",
+	"bs-usermanager-member-user-info-label": "Прикажи групе",
+	"bs-usermanager-create-groups-group-name": "Име групе",
+	"bs-usermanager-action-create-group": "Направи групу",
+	"bs-usermanager-action-label-remove": "Уклони",
+	"bs-usermanager-groups-action-add-member-title": "Додај члана"
 }

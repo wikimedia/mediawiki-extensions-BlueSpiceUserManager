@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
+			"EneshTranslates",
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
 			"Mitte27",
 			"Okras",
 			"Striking Blue",
-			"Vlad5250"
+			"Vlad5250",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-usermanager-desc": "Интерфейс администрирования для добавления, правки и удаления пользователей",
@@ -18,7 +20,7 @@
 	"bs-usermanager-enter-pwd": "Пожалуйста, введите пароль.",
 	"bs-usermanager-idnotexist": "Такого участника не существует.",
 	"bs-usermanager-invalid-pwd": "Пароль неверен.",
-	"bs-usermanager-invalid-realname": "Такое настоящее имя участника недопустимо.",
+	"bs-usermanager-invalid-realname": "Настоящее имя указано неверно",
 	"bs-usermanager-invalid-uname": "Такое имя участника недопустимо.",
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
 	"bs-usermanager-label": "Управление учётными записями",
@@ -50,5 +52,11 @@
 	"right-usermanager-viewspecialpage": "доступ к служебной странице [[Special:UserManager]]",
 	"action-usermanager-editpassword": "Изменить пароли участника",
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
-	"bs-usermanager-text": "Пользователи"
+	"bs-usermanager-text": "Пользователи",
+	"usermanager": "Управление учётными записями",
+	"bs-usermanager-group-remove-not-allowed": "Вам не разрешено удалять пользователей из группы $1",
+	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
+	"bs-usermanager-save": "Сохранить",
+	"bs-usermanager-cancel": "Отмена",
+	"bs-usermanager-password-repeat-mismatch-label": "Пароли не совпадают. Пожалуйста, проверьте введённое."
 }
