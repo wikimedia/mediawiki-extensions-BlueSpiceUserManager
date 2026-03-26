@@ -8,5 +8,10 @@
 	"bs-usermanager-save": "بچاؤ",
 	"bs-usermanager-cancel": "منسوخ",
 	"bs-usermanager-titledisableuser": "ورتُو تے پابندی لاؤ۔",
-	"bs-usermanager-headerenabled": "متحرک"
+	"bs-usermanager-headerenabled": "متحرک",
+	"bs-usermanager-create-groups-dialog-title": "گروپ بݨاؤ",
+	"bs-usermanager-action-create": "بݨاؤ",
+	"bs-usermanager-group-details-header-user": "ورتݨ آلا",
+	"bs-usermanager-group-details-action-delete-group": "گروپ مٹاؤ",
+	"bs-usermanager-action-label-add": "شامل کرو"
 }

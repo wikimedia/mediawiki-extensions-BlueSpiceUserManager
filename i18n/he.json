@@ -6,7 +6,9 @@
 			"Erelon",
 			"Ex-Diktator",
 			"Guycn2",
+			"Neriah",
 			"Steeve815",
+			"YaronSh",
 			"נדב ס",
 			"תומר ט"
 		]
@@ -18,7 +20,7 @@
 	"bs-usermanager-enter-pwd": "נא להקליד סיסמה.",
 	"bs-usermanager-idnotexist": "המשתמש אינו קיים.",
 	"bs-usermanager-invalid-pwd": "הסיסמה אינה תקינה.",
-	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין.",
+	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין",
 	"bs-usermanager-invalid-uname": "שם המשתמש אינו תקין.",
 	"bs-usermanager-invalid-email-gen": "כתובת הדוא\"ל אינה תקינה.",
 	"bs-usermanager-label": "ניהול משתמשים",
@@ -91,5 +93,10 @@
 	"bs-usermanager-showenabled": "הצגת משתמשים פעילים",
 	"bs-usermanager-mass-enable": "הפעלת משתמשים",
 	"bs-usermanager-mass-disable": "השבתת משתמשים",
-	"bs-usermanager-error-generic": "אירעה שגיאה"
+	"bs-usermanager-error-generic": "אירעה שגיאה",
+	"bs-usermanager-member-user-info-label": "הצגת קבוצות",
+	"bs-usermanager-create-groups-group-name": "שם הקבוצה",
+	"bs-usermanager-action-edit-group": "עריכת קבוצה",
+	"bs-usermanager-action-label-remove": "הסרה",
+	"bs-usermanager-action-not-allowed": "הפעולה הזאת אסורה"
 }
