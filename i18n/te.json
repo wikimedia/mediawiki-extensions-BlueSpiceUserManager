@@ -8,5 +8,9 @@
 	"bs-usermanager-headerrealname": "అసలు పేరు",
 	"bs-usermanager-headeremail": "ఈమెయిలు",
 	"bs-usermanager-headerregistration": "నమోదు",
-	"bs-usermanager-labelnewpassword": "సంకేతపదం"
+	"bs-usermanager-labelnewpassword": "సంకేతపదం",
+	"bs-usermanager-tab-label-users": "వాడుకరులు",
+	"bs-usermanager-group-details-header-user": "వాడుకరి",
+	"bs-usermanager-action-label-add": "చేర్చు",
+	"bs-usermanager-groups-member-field-user": "వాడుకరి"
 }
