@@ -8,7 +8,8 @@
 			"أَحمد",
 			"ديفيد",
 			"سامي الرحيلي",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Mohammed Qays"
 		]
 	},
 	"bs-usermanager-desc": "واجهة الإدارة لإضافة وتحرير وحذف المستخدمين",
@@ -60,5 +61,18 @@
 	"bs-usermanager-mass-disable": "إلغاء تنشيط المستخدمين",
 	"bs-usermanager-error-generic": "حدث خطأ",
 	"bs-usermanager-invalid-realname": "الاسم الحقيقي غير صالح",
-	"bs-usermanager-password-repeat-mismatch-label": "كلمات المرور غير متطابقة. يُرجى التحقق من إدخالك."
+	"bs-usermanager-password-repeat-mismatch-label": "كلمات المرور غير متطابقة. يُرجى التحقق من إدخالك.",
+	"bs-usermanager-tab-label-groups": "المجموعات",
+	"bs-usermanager-tab-label-users": "المستخدمون",
+	"bs-usermanager-member-user-count": "{{PLURAL:$1| $1 مجموعة| $1 مجموعات}}",
+	"bs-usermanager-showgroups-title": "الأعضاء",
+	"bs-usermanager-create-groups-dialog-title": "إنشاء مجموعة",
+	"bs-usermanager-action-create": "أنشئ",
+	"bs-usermanager-action-create-group": "إنشاء مجموعة",
+	"bs-usermanager-group-details-header-user": "مستخدم",
+	"bs-usermanager-group-details-header-action-remove-member": "إزالة المستخدم من المجموعة",
+	"bs-usermanager-group-details-action-delete-group": "حذف المجموعة",
+	"bs-usermanager-group-details-button-action-label-delete": "حذف",
+	"bs-usermanager-group-not-found": "لم يُعثر على مجموعة \"$1\"",
+	"bs-usermanager-action-label-add": "أضف"
 }
