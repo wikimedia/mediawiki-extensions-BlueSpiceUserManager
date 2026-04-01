@@ -34,7 +34,7 @@
 			"BreadcrumbDataProviderRegistry": {
 				"usermanagement": {
 					"class": "BlueSpice\\UserManager\\BreadcrumbDataProvider\\SpecialUserManagerProvider",
-					"services": [ "SpecialPageFactory" ]
+					"services": [ "SpecialPageFactory", "BlueSpice.UserManager.GroupManager" ]
 				}
 			}
 		}

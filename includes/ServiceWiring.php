@@ -25,6 +25,7 @@ return [
 			$services->getDBLoadBalancer(),
 			$services->getMainConfig(),
 			$services->getHookContainer(),
+			$services->getService( 'MWStakeCommonUtilsFactory' ),
 			LoggerFactory::getInstance( 'BlueSpiceUserManager.GroupManager' ),
 			new GroupManagerSpecialLogLogger()
 		);

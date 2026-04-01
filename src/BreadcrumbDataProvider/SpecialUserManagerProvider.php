@@ -3,6 +3,7 @@
 namespace BlueSpice\UserManager\BreadcrumbDataProvider;
 
 use BlueSpice\Discovery\BreadcrumbDataProvider\BaseBreadcrumbDataProvider;
+use BlueSpice\UserManager\GroupManager;
 use MediaWiki\SpecialPage\SpecialPageFactory;
 use MediaWiki\Title\Title;
 use RuntimeException;
@@ -13,13 +14,15 @@ class SpecialUserManagerProvider extends BaseBreadcrumbDataProvider {
 
 	/**
 	 * @param SpecialPageFactory $specialPageFactory
+	 * @param GroupManager $groupManager
 	 * @param TitleFactory $titleFactory
 	 * @param MessageLocalizer $messageLocalizer
 	 * @param WebRequestValues $webRequestValues
 	 * @param NamespaceInfo $namespaceInfo
 	 */
 	public function __construct( private SpecialPageFactory $specialPageFactory,
-		$titleFactory, $messageLocalizer, $webRequestValues, $namespaceInfo ) {
+		private readonly GroupManager $groupManager, $titleFactory, $messageLocalizer,
+		$webRequestValues, $namespaceInfo ) {
 		parent::__construct( $titleFactory, $messageLocalizer, $webRequestValues, $namespaceInfo );
 
 		$this->groupName = '';
@@ -53,7 +56,7 @@ class SpecialUserManagerProvider extends BaseBreadcrumbDataProvider {
 		$labels = [];
 		if ( $this->groupName ) {
 			$labels[] = [
-				'text' => $this->groupName
+				'text' => $this->groupManager->getGroupDisplayName( $this->groupName )
 			];
 		}
 		return $labels;
