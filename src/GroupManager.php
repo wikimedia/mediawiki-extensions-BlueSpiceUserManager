@@ -10,6 +10,7 @@ use MediaWiki\Message\Message;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Psr\Log\LoggerInterface;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -24,6 +25,8 @@ class GroupManager {
 	private Config $config;
 	/** @var HookContainer */
 	private HookContainer $hookContainer;
+	/** @var UtilityFactory */
+	private UtilityFactory $utilityFactory;
 	/** @var LoggerInterface */
 	private LoggerInterface $logger;
 	/** @var GroupManagerSpecialLogLogger */
@@ -34,17 +37,20 @@ class GroupManager {
 	 * @param ILoadBalancer $lb
 	 * @param Config $config Main config (wg)
 	 * @param HookContainer $hookContainer
+	 * @param UtilityFactory $utilityFactory
 	 * @param LoggerInterface $logger
 	 * @param GroupManagerSpecialLogLogger $spLogger
 	 */
 	public function __construct(
 		DynamicConfigManager $configManager, ILoadBalancer $lb, Config $config,
-		HookContainer $hookContainer, LoggerInterface $logger, GroupManagerSpecialLogLogger $spLogger
+		HookContainer $hookContainer, UtilityFactory $utilityFactory,
+		LoggerInterface $logger, GroupManagerSpecialLogLogger $spLogger
 	) {
 		$this->configManager = $configManager;
 		$this->lb = $lb;
 		$this->config = $config;
 		$this->hookContainer = $hookContainer;
+		$this->utilityFactory = $utilityFactory;
 		$this->logger = $logger;
 		$this->spLogger = $spLogger;
 	}
@@ -109,6 +115,22 @@ class GroupManager {
 	public function getGroupMembers( string $name ) {
 		$this->assertGroupExists( $name );
 		return $this->getMembers( $name );
+	}
+
+	/**
+	 * @param string $groupName
+	 * @return string
+	 */
+	public function getGroupDisplayName( string $groupName ) {
+		$displayName = $groupName;
+		$msg = Message::newFromKey( "group-$groupName" );
+		if ( $msg->exists() ) {
+			$displayName = $msg->plain();
+		}
+		$groupHelper = $this->utilityFactory->getGroupHelper();
+		$groupType = $groupHelper->getGroupType( $groupName );
+		$this->hookContainer->run( 'MWStakeGroupStoreGroupDisplayName', [ $groupName, &$displayName, $groupType ] );
+		return $displayName;
 	}
 
 	/**

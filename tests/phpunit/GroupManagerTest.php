@@ -9,6 +9,7 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Permissions\Authority;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use MWStake\MediaWiki\Component\DynamicConfig\GlobalsDynamicConfig;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -38,10 +39,12 @@ class GroupManagerTest extends TestCase {
 		} else {
 			$hcMock = $this->getHookContainerMock( 'BSUserManagerBeforeAddGroup', [ $group, $authority ] );
 		}
+		$utilityMock = $this->getUtilityMock();
 		$loggerMock = $this->getLoggerMock( $expectSuccess );
 		$spLoggerMock = $this->getSpLoggerMock( $expectSuccess );
 
-		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock, $hcMock, $loggerMock, $spLoggerMock );
+		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock,
+			$hcMock, $utilityMock, $loggerMock, $spLoggerMock );
 		if ( !$expectSuccess ) {
 			$this->expectException( Throwable::class );
 		}
@@ -79,10 +82,13 @@ class GroupManagerTest extends TestCase {
 		} else {
 			$hcMock = $this->getHookContainerMock();
 		}
+		$utilityMock = $this->getUtilityMock();
+
 		$loggerMock = $this->getLoggerMock( $expectSuccess );
 		$spLoggerMock = $this->getSpLoggerMock( $expectSuccess );
 
-		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock, $hcMock, $loggerMock, $spLoggerMock );
+		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock,
+			$hcMock, $utilityMock, $loggerMock, $spLoggerMock );
 		if ( !$expectSuccess ) {
 			$this->expectException( Throwable::class );
 		}
@@ -103,11 +109,13 @@ class GroupManagerTest extends TestCase {
 			[ 'ug_group' => 'Dummy' ],
 			GroupManager::class . '::unassignUsers'
 		] );
+		$utilityMock = $this->getUtilityMock();
 		$hcMock = $this->getHookContainerMock( 'BSUserManagerGroupDeleted', [ 'Dummy', $authority ] );
 		$loggerMock = $this->getLoggerMock( true );
 		$spLoggerMock = $this->getSpLoggerMock( true );
 
-		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock, $hcMock, $loggerMock, $spLoggerMock );
+		$manager = new GroupManager( $dynamicConfigMock, $lbMock, $configMock, $hcMock,
+			$utilityMock, $loggerMock, $spLoggerMock );
 		$manager->removeGroup( 'Dummy', $authority );
 	}
 
@@ -212,6 +220,14 @@ class GroupManagerTest extends TestCase {
 			$mock->expects( $this->never() )
 				->method( 'run' );
 		}
+		return $mock;
+	}
+
+	/**
+	 * @return UtilityFactory|MockObject
+	 */
+	private function getUtilityMock() {
+		$mock = $this->createMock( UtilityFactory::class );
 		return $mock;
 	}
 

@@ -17,8 +17,12 @@ class UserManager extends OOJSGridSpecialPage {
 
 	/**
 	 * @param ConfigFactory $configFactory
+	 * @param GroupManager $groupManager
 	 */
-	public function __construct( ConfigFactory $configFactory, private readonly GroupManager $groupManager ) {
+	public function __construct(
+		ConfigFactory $configFactory,
+		private readonly GroupManager $groupManager
+	) {
 		parent::__construct( 'UserManager', 'wikiadmin' );
 		$this->config = $configFactory->makeConfig( 'bsg' );
 	}
@@ -34,7 +38,8 @@ class UserManager extends OOJSGridSpecialPage {
 			$groupName = $request->getVal( 'group' );
 			$this->outputTeam( $groupName );
 			parent::execute( $groupName );
-			$this->getOutput()->setPageTitle( $groupName );
+			$displayName = $this->groupManager->getGroupDisplayName( $groupName );
+			$this->getOutput()->setPageTitle( $displayName );
 			return;
 		}
 
