@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Brettchenweber",
 			"DraconicDark",
 			"Hwboehm",
 			"Justman10000",
@@ -11,8 +12,7 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Tkarcher",
 			"Umherirrender",
-			"Vhoesl",
-			"Brettchenweber"
+			"Vhoesl"
 		]
 	},
 	"bs-usermanager-desc": "Administrationsoberfläche für das Hinzufügen, Bearbeiten und Löschen von Benutzern",
