@@ -48,5 +48,10 @@
 	"bs-usermanager-mass-disable": "Онемогућени корисници",
 	"bs-usermanager-error-generic": "Дошло је до грешке",
 	"bs-usermanager-invalid-realname": "Право име је неисправно",
-	"bs-usermanager-password-repeat-mismatch-label": "Лозинке се не поклапају. Молимо проверите унос."
+	"bs-usermanager-password-repeat-mismatch-label": "Лозинке се не поклапају. Молимо проверите унос.",
+	"bs-usermanager-member-user-info-label": "Прикажи групе",
+	"bs-usermanager-create-groups-group-name": "Име групе",
+	"bs-usermanager-action-create-group": "Направи групу",
+	"bs-usermanager-action-label-remove": "Уклони",
+	"bs-usermanager-groups-action-add-member-title": "Додај члана"
 }

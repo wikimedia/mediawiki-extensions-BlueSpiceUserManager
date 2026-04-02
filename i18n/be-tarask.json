@@ -13,5 +13,7 @@
 	"bs-usermanager-label-password-change-strategy": "Спосаб",
 	"bs-usermanager-endisable": "Актываваць/дэактываваць",
 	"bs-usermanager-titleenableuser": "Актываваць карыстальніка",
-	"bs-usermanager-cancel": "Скасаваць"
+	"bs-usermanager-cancel": "Скасаваць",
+	"bs-usermanager-headerenabled": "Актыўны",
+	"bs-usermanager-titledisableuser": "Дэактываваць карыстальніка"
 }
