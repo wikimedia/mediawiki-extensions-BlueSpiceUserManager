@@ -6,7 +6,9 @@
 			"Erelon",
 			"Ex-Diktator",
 			"Guycn2",
+			"Neriah",
 			"Steeve815",
+			"YaronSh",
 			"נדב ס",
 			"תומר ט"
 		]
@@ -60,5 +62,10 @@
 	"bs-usermanager-mass-enable": "הפעלת משתמשים",
 	"bs-usermanager-mass-disable": "השבתת משתמשים",
 	"bs-usermanager-error-generic": "אירעה שגיאה",
-	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין."
+	"bs-usermanager-invalid-realname": "השם האמיתי אינו תקין",
+	"bs-usermanager-member-user-info-label": "הצגת קבוצות",
+	"bs-usermanager-create-groups-group-name": "שם הקבוצה",
+	"bs-usermanager-action-edit-group": "עריכת קבוצה",
+	"bs-usermanager-action-label-remove": "הסרה",
+	"bs-usermanager-action-not-allowed": "הפעולה הזאת אסורה"
 }
