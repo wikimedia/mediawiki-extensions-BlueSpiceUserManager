@@ -10,15 +10,15 @@
 	"bs-usermanager-cancel": "منسوخ",
 	"bs-usermanager-create-groups-dialog-title": "گروپ بݨاؤ",
 	"bs-usermanager-action-create": "بݨاؤ",
-	"bs-usermanager-group-details-header-user": "ورتݨ آلا",
-	"bs-usermanager-group-details-action-delete-group": "گروپ مٹاؤ",
-	"bs-usermanager-action-label-add": "شامل کرو",
 	"bs-usermanager-groups-header-group-name": "گروپ ناں",
 	"bs-usermanager-groups-header-members": "ممبراں",
 	"bs-usermanager-action-delete-group": "گروپ مٹاؤ",
+	"bs-usermanager-group-details-header-user": "ورتݨ آلا",
 	"bs-usermanager-group-details-section-members-action-add-user": "رکن شامل کرو",
+	"bs-usermanager-group-details-action-delete-group": "گروپ مٹاؤ",
 	"bs-usermanager-group-details-button-action-label-delete": "مٹاؤ",
 	"bs-usermanager-action-label-remove": "ہٹاؤ",
 	"bs-usermanager-groups-action-add-member-title": "رکن شامل کرو",
+	"bs-usermanager-action-label-add": "شامل کرو",
 	"bs-usermanager-groups-member-field-user": "ورتݨ آلا"
 }
