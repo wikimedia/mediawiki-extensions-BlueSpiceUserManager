@@ -40,7 +40,7 @@
 		}
 	},
 	"requires": {
-		"MediaWiki": ">= 1.43.0",
+		"MediaWiki": ">= 1.46.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.0",
 			"OOJSPlus": ">= 3.0.0"

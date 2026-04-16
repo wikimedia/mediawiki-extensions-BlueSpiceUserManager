@@ -19,8 +19,13 @@ class UserManager extends OOJSGridSpecialPage {
 	 * @param ConfigFactory $configFactory
 	 */
 	public function __construct( ConfigFactory $configFactory, private readonly GroupManager $groupManager ) {
-		parent::__construct( 'UserManager', 'wikiadmin' );
+		parent::__construct( 'UserManager' );
 		$this->config = $configFactory->makeConfig( 'bsg' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'wikiadmin';
 	}
 
 	/**
