@@ -13,5 +13,6 @@
 	"bs-usermanager-editpassword": "Molso syelisääni",
 	"bs-usermanager-save": "Vuorkkii",
 	"bs-usermanager-disabled": "Meddâlistum kiävtust",
-	"bs-usermanager-labelnewpassword": "Syelisääni"
+	"bs-usermanager-labelnewpassword": "Syelisääni",
+	"bs-usermanager-action-label-add": "Lasseet"
 }
