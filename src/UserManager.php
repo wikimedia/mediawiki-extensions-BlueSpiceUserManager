@@ -9,6 +9,7 @@ use MediaWiki\Auth\UserDataAuthenticationRequest;
 use MediaWiki\Auth\UsernameAuthenticationRequest;
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\BlockManager;
+use MediaWiki\Block\BlockTargetFactory;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Deferred\SiteStatsUpdate;
@@ -50,6 +51,11 @@ class UserManager implements LoggerAwareInterface {
 	private DatabaseBlockStore $databaseBlockStore;
 
 	/**
+	 * @var BlockTargetFactory
+	 */
+	private BlockTargetFactory $blockTargetFactory;
+
+	/**
 	 * @var HookContainer
 	 */
 	private HookContainer $hookContainer;
@@ -72,17 +78,20 @@ class UserManager implements LoggerAwareInterface {
 	/**
 	 * @param BlockManager $blockManager
 	 * @param DatabaseBlockStore $databaseBlockStore
+	 * @param BlockTargetFactory $blockTargetFactory
 	 * @param HookContainer $hookContainer
 	 * @param AuthManager $authManager
 	 * @param UserGroupManager $userGroupManager
 	 * @param PasswordReset $passwordReset
 	 */
 	public function __construct(
-		BlockManager $blockManager, DatabaseBlockStore $databaseBlockStore, HookContainer $hookContainer,
+		BlockManager $blockManager, DatabaseBlockStore $databaseBlockStore, BlockTargetFactory $blockTargetFactory,
+		HookContainer $hookContainer,
 		AuthManager $authManager, UserGroupManager $userGroupManager, PasswordReset $passwordReset
 	) {
 		$this->blockManager = $blockManager;
 		$this->databaseBlockStore = $databaseBlockStore;
+		$this->blockTargetFactory = $blockTargetFactory;
 		$this->hookContainer = $hookContainer;
 		$this->authManager = $authManager;
 		$this->userGroupManager = $userGroupManager;
@@ -528,7 +537,7 @@ class UserManager implements LoggerAwareInterface {
 		# Create block object.
 		$block = new DatabaseBlock();
 		$block->setBlocker( $actor->getUser() );
-		$block->setTarget( $user );
+		$block->setTarget( $this->blockTargetFactory->newFromUser( $user ) );
 		$block->setExpiry( 'infinity' );
 		$block->setReason( Message::newFromKey( 'bs-usermanager-log-user-disabled', $user->getName() )->text() );
 		$block->isEmailBlocked( true );

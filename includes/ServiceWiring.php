@@ -11,6 +11,7 @@ return [
 		$manager = new UserManager(
 			$services->get( 'BlockManager' ),
 			$services->get( 'DatabaseBlockStore' ),
+			$services->get( 'BlockTargetFactory' ),
 			$services->get( 'HookContainer' ),
 			$services->get( 'AuthManager' ),
 			$services->get( 'UserGroupManager' ),
