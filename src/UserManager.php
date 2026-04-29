@@ -16,6 +16,7 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Message\Message;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Permissions\Authority;
+use MediaWiki\Session\SessionManager;
 use MediaWiki\Status\Status;
 use MediaWiki\User\PasswordReset;
 use MediaWiki\User\User;
@@ -338,16 +339,18 @@ class UserManager implements LoggerAwareInterface {
 	private function overrideDomain() {
 		// This is to overcome username case issues with custom AuthPlugin (i.e. LDAPAuth)
 		// LDAPAuth would otherwise turn the username to first-char-upper-rest-lower-case
-		// At the end of this method we switch $_SESSION['wsDomain'] back again
-		$this->domain = isset( $_SESSION['wsDomain'] ) ? $_SESSION['wsDomain'] : '';
-		$_SESSION['wsDomain'] = 'local';
+		// At the end of this method we switch the session 'wsDomain' back again
+		$session = SessionManager::getGlobalSession();
+		$this->domain = $session->get( 'wsDomain', '' );
+		$session->set( 'wsDomain', 'local' );
 	}
 
 	/**
 	 * @return void
 	 */
 	private function restoreDomain() {
-		$_SESSION['wsDomain'] = $this->domain;
+		$session = SessionManager::getGlobalSession();
+		$session->set( 'wsDomain', $this->domain );
 	}
 
 	/**
