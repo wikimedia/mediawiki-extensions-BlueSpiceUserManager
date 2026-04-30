@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -12,7 +13,7 @@
 	"bs-usermanager-enter-pwd": "비밀번호를 입력하세요.",
 	"bs-usermanager-idnotexist": "이 사용자는 존재하지 않습니다.",
 	"bs-usermanager-invalid-pwd": "비밀번호가 올바르지 않습니다.",
-	"bs-usermanager-invalid-realname": "실명이 올바르지 않습니다.",
+	"bs-usermanager-invalid-realname": "실명이 올바르지 않습니다",
 	"bs-usermanager-invalid-uname": "사용자 이름이 올바르지 않습니다.",
 	"bs-usermanager-invalid-email-gen": "이메일 주소가 올바르지 않습니다.",
 	"bs-usermanager-label": "사용자 관리자",
