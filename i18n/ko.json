@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -48,7 +49,7 @@
 	"bs-usermanager-mass-enable": "사용자 활성화",
 	"bs-usermanager-mass-disable": "사용자 비활성화",
 	"bs-usermanager-error-generic": "오류가 발생했습니다",
-	"bs-usermanager-invalid-realname": "실명이 올바르지 않습니다.",
+	"bs-usermanager-invalid-realname": "실명이 올바르지 않습니다",
 	"bs-usermanager-tab-label-groups": "그룹",
 	"bs-usermanager-tab-label-users": "사용자",
 	"bs-usermanager-create-groups-dialog-title": "그룹 만들기",
