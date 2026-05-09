@@ -122,5 +122,6 @@
 	"bs-usermanager-group-invalid-name-length": "The group name cannot be longer than 255 characters",
 	"bs-usermanager-group-invalid-name-numeric": "The group name needs to have at least one character",
 	"bs-usermanager-group-invalid-name": "The group name contains {{PLURAL:$1|an invalid character|invalid characters}}: $2",
-	"bs-usermanager-action-not-allowed": "This action is not allowed"
+	"bs-usermanager-action-not-allowed": "This action is not allowed",
+	"bs-usermanager-global-label": "Global"
 }

@@ -127,5 +127,6 @@
 	"bs-usermanager-group-invalid-name-length": "Error label for group name which exceeds max number of characters",
 	"bs-usermanager-group-invalid-name-numeric": "Error label if group name does not contain any character",
 	"bs-usermanager-group-invalid-name": "Error label if group name contains invalid characters",
-	"bs-usermanager-action-not-allowed": "Error label if action is not allowed"
+	"bs-usermanager-action-not-allowed": "Error label if action is not allowed",
+	"bs-usermanager-global-label": "Badge label to indicate global menu"
 }
