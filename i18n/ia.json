@@ -91,5 +91,6 @@
 	"bs-usermanager-group-invalid-name-length": "Le nomine del gruppo non pote esser plus longe de 255 characteres",
 	"bs-usermanager-group-invalid-name-numeric": "Le nomine del gruppo debe haber al minus un character",
 	"bs-usermanager-group-invalid-name": "Le nomine del gruppo contine {{PLURAL:$1|un character|characteres}} non valide: $2",
-	"bs-usermanager-action-not-allowed": "Iste action non es permittite"
+	"bs-usermanager-action-not-allowed": "Iste action non es permittite",
+	"bs-usermanager-global-label": "Global"
 }
