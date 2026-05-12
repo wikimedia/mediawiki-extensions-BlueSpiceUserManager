@@ -103,5 +103,6 @@
 	"bs-usermanager-group-invalid-name-length": "De Gruppennumm däerf net méi laang wéi 255 Zeeche sinn.",
 	"bs-usermanager-group-invalid-name-numeric": "De Gruppennumm muss op d'mannst een Zeeche laang sinn",
 	"bs-usermanager-group-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt|kommen ongülteg}} Zeeche vir: $2",
-	"bs-usermanager-action-not-allowed": "Dës Aktioun ass net erlaabt"
+	"bs-usermanager-action-not-allowed": "Dës Aktioun ass net erlaabt",
+	"bs-usermanager-global-label": "Global"
 }

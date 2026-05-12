@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bisang",
 			"Hwangjy9",
 			"Tensama0415",
 			"Ykhwong"
@@ -93,5 +94,6 @@
 	"bs-usermanager-action-label-remove": "제거",
 	"bs-usermanager-action-label-add": "추가",
 	"bs-usermanager-groups-member-field-user": "사용자",
-	"bs-usermanager-group-already-exists": "이 그룹은 이미 존재합니다"
+	"bs-usermanager-group-already-exists": "이 그룹은 이미 존재합니다",
+	"bs-usermanager-global-label": "전역"
 }

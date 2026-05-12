@@ -17,7 +17,7 @@
 	"bs-usermanager-enter-pwd": "Geef een wachtwoord op.",
 	"bs-usermanager-idnotexist": "Deze gebruiker bestaat niet.",
 	"bs-usermanager-invalid-pwd": "Het wachtwoord is onjuist.",
-	"bs-usermanager-invalid-realname": "De volledige naam is ongeldig",
+	"bs-usermanager-invalid-realname": "De volledige naam is onjuist",
 	"bs-usermanager-invalid-uname": "De gebruikersnaam is ongeldig.",
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is onjuist.",
 	"bs-usermanager-label": "Gebruikersbeheer",
@@ -128,5 +128,6 @@
 	"bs-usermanager-group-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens",
 	"bs-usermanager-group-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten",
 	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een ongeldig teken|ongeldige tekens}}: $2",
-	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan"
+	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan",
+	"bs-usermanager-global-label": "Globaal"
 }
