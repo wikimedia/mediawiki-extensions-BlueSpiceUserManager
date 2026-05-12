@@ -58,7 +58,7 @@
 	"bs-usermanager-mass-enable": "Gebruikers inschakelen",
 	"bs-usermanager-mass-disable": "Gebruikers uitschakelen",
 	"bs-usermanager-error-generic": "Er is een fout opgetreden",
-	"bs-usermanager-invalid-realname": "De volledige naam is ongeldig",
+	"bs-usermanager-invalid-realname": "De volledige naam is onjuist",
 	"bs-usermanager-password-repeat-mismatch-label": "De wachtwoorden komen niet overeen. Controleer uw invoer.",
 	"bs-usermanager-tab-label-groups": "Groepen",
 	"bs-usermanager-tab-label-users": "Gebruikers",
@@ -96,5 +96,6 @@
 	"bs-usermanager-group-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens",
 	"bs-usermanager-group-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten",
 	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een ongeldig teken|ongeldige tekens}}: $2",
-	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan"
+	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan",
+	"bs-usermanager-global-label": "Globaal"
 }
