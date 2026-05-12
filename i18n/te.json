@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chaduvari",
 			"Veeven"
 		]
 	},
@@ -12,5 +13,6 @@
 	"bs-usermanager-tab-label-users": "వాడుకరులు",
 	"bs-usermanager-group-details-header-user": "వాడుకరి",
 	"bs-usermanager-action-label-add": "చేర్చు",
-	"bs-usermanager-groups-member-field-user": "వాడుకరి"
+	"bs-usermanager-groups-member-field-user": "వాడుకరి",
+	"bs-usermanager-global-label": "సార్వత్రిక"
 }
