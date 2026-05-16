@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"bs-usermanager-tab-label-groups": "Kooxo",
+	"bs-usermanager-tab-label-users": "Isticmaalayaasha",
+	"bs-usermanager-member-user-count": "{{PLURAL:$1|$1 koox|$1 kooxo}}",
+	"bs-usermanager-showgroups-title": "Xubinnimooyinka",
+	"bs-usermanager-create-groups-dialog-title": "Abuur koox",
+	"bs-usermanager-action-create": "Abuur",
+	"bs-usermanager-action-create-group": "Abuur koox",
+	"bs-usermanager-group-details-header-user": "Isticmaalaha",
+	"bs-usermanager-group-details-header-action-remove-member": "Ka saar isticmaalaha kooxda",
+	"bs-usermanager-group-details-action-delete-group": "Tirtir koox",
+	"bs-usermanager-group-details-button-action-label-delete": "Tirtir",
+	"bs-usermanager-group-not-found": "Kooxda \"$1\" lama helin",
+	"bs-usermanager-action-label-add": "Ku dar"
+}
