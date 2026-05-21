@@ -75,7 +75,7 @@
 	"bs-usermanager-label-password-change-strategy": "방식",
 	"bs-usermanager-showenabled": "활성화된 사용자 표시",
 	"bs-usermanager-password-repeat-mismatch-label": "비밀번호가 일치하지 않습니다. 입력 내용을 다시 확인해 주세요.",
-	"bs-usermanager-member-user-count": "{{PLURAL:$1|그룹 1개|그룹 $1개|}}",
+	"bs-usermanager-member-user-count": "{{PLURAL:$1|그룹 1개|그룹 $1개}}",
 	"bs-usermanager-member-user-info-label": "그룹 표시",
 	"bs-usermanager-member-group-count": "{{PLURAL:$1|회원 1명|회원 $1명}}",
 	"bs-usermanager-member-group-info-label": "회원 표시",
@@ -90,5 +90,10 @@
 	"bs-usermanager-group-invalid-name-length": "그룹 이름은 255글자를 넘을 수 없습니다",
 	"bs-usermanager-group-invalid-name-numeric": "그룹 이름은 적어도 한 글자 이상이어야 합니다",
 	"bs-usermanager-group-invalid-name": "그룹 이름이 {{PLURAL:$1|올바르지 않은 문자}}를 포함하고 있습니다: $2",
-	"bs-usermanager-action-not-allowed": "이 작업은 허용되지 않았습니다"
+	"bs-usermanager-action-not-allowed": "이 작업은 허용되지 않았습니다",
+	"bs-usermanager-warning-password-change-own": "본인의 비밀번호를 변경 중입니다. 로그아웃 후 로그인 페이지로 이동합니다.",
+	"bs-usermanager-group-details-confirm-delete-group": "\"$1\" 그룹을 삭제하시겠습니까? 이렇게 하면 그룹의 모든 회원이 제거됩니다.",
+	"bs-usermanager-group-details-error-delete-group": "그룹을 삭제하던 중에 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요.",
+	"bs-usermanager-groups-confirm-remove-member": "그룹에서 사용자 \"$1\"님을 제거하시겠습니까?",
+	"bs-usermanager-groups-error-remove-member": "그룹에서 사용자를 제거하던 중에 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요."
 }
