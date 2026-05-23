@@ -127,7 +127,7 @@
 	"bs-usermanager-group-already-exists": "Deze groep bestaat al",
 	"bs-usermanager-group-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens",
 	"bs-usermanager-group-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten",
-	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een ongeldig teken|ongeldige tekens}}: $2",
+	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een incorrect teken|incorrecte tekens}}: $2",
 	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan",
 	"bs-usermanager-global-label": "Globaal"
 }
