@@ -104,6 +104,7 @@ bs.usermanager.ui.UserPanel = function ( cfg ) {
 	};
 	this.store = new OOJSPlus.ui.data.store.RemoteRestStore( {
 		path: 'mws/v1/user-query-store',
+		cacheResults: true,
 		filter: {
 			enabled: {
 				type: 'boolean',
@@ -325,7 +326,7 @@ bs.usermanager.ui.UserPanel.prototype.doDisableEnableUsers = function ( users, a
 		dataType: 'json',
 		contentType: 'application/json'
 	} ).done( () => {
-		this.store.reload();
+		this.store.reloadNoCache();
 	} ).fail( function ( xhr, status, err ) {
 		this.$element.prepend( new OO.ui.MessageWidget(
 			{ type: 'error', label: xhr.hasOwnProperty( 'responseJSON' ) ? xhr.responseJSON.message : err }
@@ -357,7 +358,7 @@ bs.usermanager.ui.UserPanel.prototype.openWindow = function ( dialog ) {
 	this.windowManager.addWindows( [ dialog ] );
 	this.windowManager.openWindow( dialog ).closed.then( ( data ) => {
 		if ( data && data.reload ) {
-			this.store.reload();
+			this.store.reloadNoCache();
 		}
 		this.windowManager.clearWindows();
 	} );
