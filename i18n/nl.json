@@ -53,7 +53,7 @@
 	"bs-usermanager-showdisabled": "Uitgeschakelde gebruikers weergeven",
 	"bs-usermanager-disabled": "Uitgeschakeld",
 	"bs-usermanager-missing-param": "Ontbrekende parameter: $1",
-	"bs-usermanager-warning-password-change-own": "U wijzigt uw eigen wachtwoord. U wordt uitgelogd en doorgestuurd naar de aanmeldpagina.",
+	"bs-usermanager-warning-password-change-own": "U wijzigt uw eigen wachtwoord. U wordt afgemeld en doorgestuurd naar de aanmeldpagina.",
 	"bs-usermanager-showenabled": "Actieve gebruikers weergeven",
 	"bs-usermanager-mass-enable": "Gebruikers inschakelen",
 	"bs-usermanager-mass-disable": "Gebruikers uitschakelen",
