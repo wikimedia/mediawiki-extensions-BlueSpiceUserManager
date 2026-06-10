@@ -5,9 +5,18 @@ namespace BlueSpice\UserManager\HookHandler;
 use BlueSpice\UserManager\EnhancedGlobalActionsAdministration;
 use BlueSpice\UserManager\GlobalActionsAdministration;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
 class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
+
+	/**
+	 * @param TitleFactory $titleFactory
+	 */
+	public function __construct(
+		private readonly TitleFactory $titleFactory
+	) {
+	}
 
 	/**
 	 * @inheritDoc
@@ -18,9 +27,9 @@ class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 			'GlobalActionsAdministration',
 			[
 				'ga-bluespice-usermanager' => [
-					'factory' => static function () use ( $skin ) {
+					'factory' => function () use ( $skin ) {
 						if ( is_a( $skin, 'SkinBlueSpiceEclipseSkin', true ) ) {
-							return new EnhancedGlobalActionsAdministration();
+							return new EnhancedGlobalActionsAdministration( $this->titleFactory );
 						}
 						return new GlobalActionsAdministration();
 					}
