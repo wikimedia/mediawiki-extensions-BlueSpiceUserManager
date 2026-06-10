@@ -174,7 +174,8 @@
 	],
 	"HookHandlers": {
 		"common-user-interface": {
-			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface"
+			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface",
+			"services": [ "TitleFactory" ]
 		},
 		"registerDynamicConfig": {
 			"class": "\\BlueSpice\\UserManager\\HookHandler\\RegisterDynamicConfig"
