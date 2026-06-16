@@ -17,6 +17,7 @@
 	"bs-usermanager-idnotexist": "この利用者は存在しません。",
 	"bs-usermanager-invalid-pwd": "パスワードが無効です。",
 	"bs-usermanager-invalid-email-gen": "メールアドレスが無効です。",
+	"bs-usermanager-text": "利用者",
 	"bs-usermanager-user-exists": "既に存在する利用者名です。",
 	"bs-usermanager-headerusername": "利用者名",
 	"bs-usermanager-headerrealname": "本名",
@@ -40,6 +41,5 @@
 	"bs-usermanager-editgroups": "グループを編集",
 	"bs-usermanager-editpassword": "パスワードを変更",
 	"action-usermanager-editpassword": "利用者のパスワードの変更",
-	"bs-usermanager-invalid-realname": "本名が無効です",
-	"bs-usermanager-text": "利用者"
+	"bs-usermanager-invalid-realname": "本名が無効です"
 }
