@@ -85,9 +85,8 @@ bs.usermanager.ui.GroupsPanel = function ( cfg ) {
 	bs.usermanager.ui.GroupsPanel.parent.call( this, cfg );
 
 	this.store.connect( this, {
-		loaded: ( values ) => {
-			const numberOfGroups = Object.keys( values ).length;
-			const $badgeNumer = $( '<span>' ).addClass( 'bs-um-tab-badge' ).text( numberOfGroups );
+		loaded: () => {
+			const $badgeNumer = $( '<span>' ).addClass( 'bs-um-tab-badge' ).text( this.store.getTotal() );
 			this.tab.getTabItem().setLabel(
 				new OO.ui.HtmlSnippet( $( '<span>' ).text( mw.msg( 'bs-usermanager-tab-label-groups' ) ).append( $badgeNumer ) )
 			);

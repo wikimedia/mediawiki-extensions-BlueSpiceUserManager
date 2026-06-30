@@ -113,9 +113,8 @@ bs.usermanager.ui.UserPanel = function ( cfg ) {
 		}
 	} );
 	this.store.connect( this, {
-		loaded: function ( values ) {
-			const numberOfGroups = Object.keys( values ).length;
-			const $badgeNumer = $( '<span>' ).addClass( 'bs-um-tab-badge' ).text( numberOfGroups );
+		loaded: function () {
+			const $badgeNumer = $( '<span>' ).addClass( 'bs-um-tab-badge' ).text( this.store.getTotal() );
 			this.tab.getTabItem().setLabel(
 				new OO.ui.HtmlSnippet( $( '<span>' ).text( mw.msg( 'bs-usermanager-tab-label-users' ) ).append( $badgeNumer ) )
 			);
