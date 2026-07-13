@@ -6,6 +6,7 @@ use BlueSpice\UserManager\UserManager;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
@@ -33,6 +34,9 @@ abstract class UserGroupActions extends SimpleHandler {
 		return true;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
 		$bodyParams = $this->getValidatedBody();

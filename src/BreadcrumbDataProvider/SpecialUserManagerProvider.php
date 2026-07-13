@@ -63,7 +63,6 @@ class SpecialUserManagerProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -72,7 +71,6 @@ class SpecialUserManagerProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isSelfLink( $node ): bool {
