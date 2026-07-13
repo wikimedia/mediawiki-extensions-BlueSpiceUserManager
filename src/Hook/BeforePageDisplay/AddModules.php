@@ -7,6 +7,9 @@ use MediaWiki\MediaWikiServices;
 
 class AddModules extends BeforePageDisplay {
 
+	/**
+	 * @return bool
+	 */
 	protected function skipProcessing() {
 		$title = $this->getContext()->getTitle();
 		if ( !$title || !$title->isSpecial( 'UserManager' ) ) {
@@ -15,6 +18,9 @@ class AddModules extends BeforePageDisplay {
 		return false;
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
 		$modules = [];

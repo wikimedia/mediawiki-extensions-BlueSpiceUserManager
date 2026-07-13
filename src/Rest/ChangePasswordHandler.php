@@ -5,6 +5,7 @@ namespace BlueSpice\UserManager\Rest;
 use BlueSpice\UserManager\UserManager;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\User\UserFactory;
 use Throwable;
@@ -34,6 +35,9 @@ class ChangePasswordHandler extends SimpleHandler {
 		return true;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$username = $this->getValidatedParams()['username'];
 		$user = $this->userFactory->newFromName( $username );
