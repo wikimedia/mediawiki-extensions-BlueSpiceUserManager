@@ -22,7 +22,7 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 	 * @param string $username
 	 * @param array $data
 	 * @return void
-	 * @dataProvider getUserCreationData
+	 * @dataProvider provideUserCreationData
 	 * @covers \BlueSpice\UserManager\UserManager::addUser
 	 */
 	public function testAddUser(
@@ -45,7 +45,7 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 	 * @param string|null $expectedException
 	 * @param array $data
 	 * @return void
-	 * @dataProvider getUserEditData
+	 * @dataProvider provideUserEditData
 	 * @covers \BlueSpice\UserManager\UserManager::updateUser
 	 */
 	public function testEditUser(
@@ -178,7 +178,7 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @return array[]
 	 */
-	public function getUserEditData() {
+	public function provideUserEditData() {
 		return [
 			'no-permissions' => [
 				'authorityIsAllowed' => false,
@@ -198,7 +198,7 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @return array[]
 	 */
-	public function getUserCreationData() {
+	public function provideUserCreationData() {
 		return [
 			'no-permissions' => [
 				'authorityIsAllowed' => false,

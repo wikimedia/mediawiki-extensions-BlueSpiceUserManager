@@ -3,6 +3,7 @@
 namespace BlueSpice\UserManager\Rest;
 
 use BlueSpice\UserManager\GroupManager;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -14,6 +15,9 @@ class GetGroupMembers extends SimpleHandler {
 	public function __construct( private readonly GroupManager $groupManager ) {
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
 

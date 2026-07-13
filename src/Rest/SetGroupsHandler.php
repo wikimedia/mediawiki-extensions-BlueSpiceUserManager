@@ -3,6 +3,7 @@
 namespace BlueSpice\UserManager\Rest;
 
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Rest\Response;
 use Throwable;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -15,6 +16,9 @@ class SetGroupsHandler extends UserMassActionHandler {
 		return true;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$users = $this->getUsers();
 		$groups = $this->getValidatedBody()['groups'];

@@ -4,11 +4,15 @@ namespace BlueSpice\UserManager\Rest;
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use Throwable;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class AddUserHandler extends UpdateUserHandler {
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$user = $this->getAssertedUser();
 		$params = $this->getValidatedBody();

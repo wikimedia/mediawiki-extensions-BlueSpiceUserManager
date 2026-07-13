@@ -3,6 +3,7 @@
 namespace BlueSpice\UserManager\Rest;
 
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Rest\Response;
 use Throwable;
 
 class BlockUsersHandler extends UserMassActionHandler {
@@ -14,6 +15,9 @@ class BlockUsersHandler extends UserMassActionHandler {
 		return true;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$users = $this->getUsers();
 		$res = [];
