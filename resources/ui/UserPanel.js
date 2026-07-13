@@ -340,7 +340,7 @@ bs.usermanager.ui.UserPanel.prototype.editGroups = function ( rows ) {
 	rows.forEach( ( row ) => {
 		users.push( row.user_name );
 		// Intersect with previous value
-		groups = groups.length ? groups.filter( ( n ) => row.groups_raw.indexOf( n ) !== -1 ) : row.groups_raw;
+		groups = groups.length ? groups.filter( ( n ) => row.groups_raw.indexOf( n ) !== -1 ) : row.groups_raw; // eslint-disable-line unicorn/prefer-includes
 	} );
 	groups = groups.filter( ( item, pos ) => groups.indexOf( item ) === pos );
 	const dialog = new bs.usermanager.ui.dialog.EditGroupsDialog( {
