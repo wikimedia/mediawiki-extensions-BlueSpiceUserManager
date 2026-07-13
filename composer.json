@@ -13,11 +13,6 @@
 	"require": {
 		"composer/installers": "~1.0|~2"
 	},
-	"autoload": {
-		"psr-4": {
-			"BlueSpice\\UserManager\\": "src"
-		}
-	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",
 		"mediawiki/mediawiki-phan-config": "0.14.0",
@@ -37,6 +32,11 @@
 		],
 		"phan": "phan -d . --long-progress-bar",
 		"phpcs": "phpcs -sp --cache"
+	},
+	"autoload": {
+		"psr-4": {
+			"BlueSpice\\UserManager\\": "src"
+		}
 	},
 	"extra": {
 		"installer-name": "BlueSpiceUserManager"
