@@ -23,7 +23,7 @@ class EnhancedGlobalActionsAdministration extends GlobalActionsAdministration {
 	 */
 	public function getPostHtml(): HtmlArmor {
 		$html = Html::element( 'span', [
-			'class' => 'badge rounded-pill text-bg-secondary'
+			'class' => 'badge'
 		], Message::newFromKey( 'bs-usermanager-global-label' )->text() );
 		return new HtmlArmor( $html );
 	}
