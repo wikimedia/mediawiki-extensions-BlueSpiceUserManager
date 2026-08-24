@@ -12,6 +12,7 @@ bs.usermanager.ui.UserDetailsPanel = function ( cfg ) {
 	this.email = cfg.email || '';
 	this.enabled = cfg.enabled !== undefined ? cfg.enabled : true;
 	this.groups = cfg.groups || [];
+	this.nonChangeableGroups = cfg.nonChangeableGroups || [];
 	this.$overlay = cfg.$overlay || true;
 };
 
@@ -83,7 +84,7 @@ bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function () {
 			realName: this.realNameInput.getValue(),
 			email: this.emailInput.getValue(),
 			enabled: this.enabled,
-			groups: this.groupInput.getValue()
+			groups: [ ...this.groupInput.getValue(), ...this.nonChangeableGroups ]
 		} );
 	} ).fail( () => {
 		dfd.reject();

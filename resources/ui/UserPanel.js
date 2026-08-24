@@ -251,7 +251,7 @@ bs.usermanager.ui.UserPanel.prototype.setAbilitiesOnSelection = function ( selec
 	if ( selectedItems.length === 1 ) {
 		this.setAbilities( { usergroups: true, enableuser: true, disableuser: true } );
 	} else if ( selectedItems.length > 1 ) {
-		this.setAbilities( { usergroups: true, enableuser: true, disableuser: true } );
+		this.setAbilities( { usergroups: false, enableuser: true, disableuser: true } );
 	} else {
 		this.setAbilities( { usergroups: false, enableuser: false, disableuser: false } );
 	}
@@ -343,6 +343,7 @@ bs.usermanager.ui.UserPanel.prototype.getUserDetailsDialogData = function ( acti
 		email: row.user_email || '',
 		enabled: row.hasOwnProperty( 'enabled' ) ? row.enabled : true,
 		groups: row.groups_raw || [],
+		nonChangeableGroups: ( row.groups_all || [] ).filter( ( value ) => !row.groups_raw.includes( value ) ),
 		isCreation: action === 'add'
 	};
 };

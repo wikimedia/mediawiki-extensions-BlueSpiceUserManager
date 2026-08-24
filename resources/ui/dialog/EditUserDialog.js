@@ -8,6 +8,7 @@ bs.usermanager.ui.dialog.EditUserDialog = function ( cfg ) {
 	this.email = cfg.email || '';
 	this.enabled = cfg.enabled || false;
 	this.groups = cfg.groups || [];
+	this.nonChangeableGroups = cfg.nonChangeableGroups || [];
 };
 
 OO.inheritClass( bs.usermanager.ui.dialog.EditUserDialog, OO.ui.ProcessDialog );
@@ -38,6 +39,7 @@ bs.usermanager.ui.dialog.EditUserDialog.prototype.getContentPanel = function () 
 		email: this.email,
 		enabled: this.enabled,
 		groups: this.groups,
+		nonChangeableGroups: this.nonChangeableGroups,
 		$overlay: this.$overlay
 	} );
 };
