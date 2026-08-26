@@ -157,7 +157,6 @@ class UserManager implements LoggerAwareInterface {
 		}
 		$this->restoreDomain();
 
-		$this->hookContainer->run( 'LocalUserCreated', [ $user, false ] );
 		$status = Status::newGood();
 		$this->hookContainer->run( 'BSUserManagerAfterAddUser', [ $this, $user, $data, &$status, $actor ] );
 		if ( !$status->isOK() ) {
