@@ -38,7 +38,6 @@
 	"usermanager": "Page title for special page of user manager",
 	"bs-usermanager-group-add-not-allowed": "Error message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when trying to add a user to a restricted group\n\n* $1 is the name of the restricted group",
 	"bs-usermanager-group-remove-not-allowed": "Error message in [{{canonicalurl:Special:WikiAdmin|mode=UserManager}} Special:WikiAdmin?mode=UserManager] when trying to remove a user from a restricted group\n\n* $1 is the name of the restricted group",
-	"bs-usermanager-editgroups": "Used as tooltip of an icon",
 	"bs-usermanager-editpassword": "{{Identical|Change password}}",
 	"bs-usermanager-multipleuserselected": "Used as explain text of an alert panel with JavaScript",
 	"action-usermanager-editpassword": "Enables the change of user passwords with the manager on the [[Special:UserManager]] special page.\n{{doc-action|usermanager-editpassword}}",

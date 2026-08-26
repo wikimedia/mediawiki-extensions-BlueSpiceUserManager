@@ -74,11 +74,13 @@ bs.usermanager.ui.dialog.CreateGroupDialog.prototype.getActionProcess = function
 						dfd.resolve();
 					},
 					error: ( jqXHR ) => {
-						const error = JSON.parse( jqXHR.responseText );
-						this.showErrors( new OO.ui.Error( error.message, { recoverable: false } ) );
+						const message = jqXHR.hasOwnProperty( 'responseJSON' ) && jqXHR.responseJSON.message ?
+							jqXHR.responseJSON.message :
+							mw.msg( 'bs-usermanager-error-generic' );
 						this.actions.setAbilities( { close: true } );
+						this.checkValidity();
 						this.popPending();
-						dfd.reject();
+						dfd.reject( new OO.ui.Error( message, { recoverable: false } ) );
 					}
 				} );
 			} ).fail( () => {
@@ -109,6 +111,11 @@ bs.usermanager.ui.dialog.CreateGroupDialog.prototype.getBodyHeight = function ()
 		return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
 	}
 	return this.$element.find( '.oo-ui-window-body' )[ 0 ].scrollHeight;
+};
+
+bs.usermanager.ui.dialog.CreateGroupDialog.prototype.onDismissErrorButtonClick = function () {
+	this.hideErrors();
+	this.updateSize();
 };
 
 bs.usermanager.ui.dialog.CreateGroupDialog.prototype.showErrors = function ( errors ) {

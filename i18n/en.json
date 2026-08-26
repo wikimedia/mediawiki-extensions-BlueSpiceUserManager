@@ -33,7 +33,6 @@
 	"usermanager": "User manager",
 	"bs-usermanager-group-add-not-allowed": "You are not allowed to add users to group $1",
 	"bs-usermanager-group-remove-not-allowed": "You are not allowed to remove users from group $1",
-	"bs-usermanager-editgroups": "Edit groups",
 	"bs-usermanager-editpassword": "Change password",
 	"bs-usermanager-multipleuserselected": "You can only change password for one user at a time",
 	"action-usermanager-editpassword": "change user passwords",
