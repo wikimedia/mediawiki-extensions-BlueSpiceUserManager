@@ -15,6 +15,12 @@ use RuntimeException;
  * @group Database
  */
 class UserManagerTest extends MediaWikiIntegrationTestCase {
+	protected function setUp(): void {
+		parent::setUp();
+		// External extension alias conflicts can emit development warnings that are unrelated
+		// to UserManager behavior and would otherwise fail this suite.
+		$this->setMwGlobals( 'wgDevelopmentWarnings', false );
+	}
 
 	/**
 	 * @param bool $authorityIsAllowed
@@ -220,6 +226,7 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 					'realName' => 'Test User',
 					'email' => 'test@domain.com',
 					'password' => 'asd893&&asldkf7)',
+					'repassword' => 'asd893&&asldkf7)',
 				],
 			],
 		];
