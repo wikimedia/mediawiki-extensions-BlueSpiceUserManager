@@ -563,6 +563,8 @@ class UserManager implements LoggerAwareInterface {
 			$this->throw( RuntimeException::class, 'bs-usermanager-block-error', [ $user->getName() ] );
 		}
 
+		$this->hookContainer->run( 'BlockIpComplete', [ $block, $user, null ] );
+
 		$this->logger->info( 'User blocked', [
 			'user' => $user->getName(),
 			'actor' => $actor->getUser()->getName()
