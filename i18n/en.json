@@ -6,7 +6,6 @@
 	},
 	"bs-usermanager-desc": "Administration interface for adding, editing and deleting users",
 	"bs-usermanager-idnotexist": "This user does not exist.",
-	"bs-usermanager-invalid-pwd": "The password is invalid.",
 	"bs-usermanager-invalid-email-gen": "The email address is invalid.",
 	"bs-usermanager-text": "Users",
 	"bs-usermanager-user-exists": "The username already exists.",
@@ -90,5 +89,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "The group name needs to have at least one character",
 	"bs-usermanager-group-invalid-name": "The group name contains {{PLURAL:$1|an invalid character|invalid characters}}: $2",
 	"bs-usermanager-action-not-allowed": "This action is not allowed",
-	"bs-usermanager-global-label": "Global"
+	"bs-usermanager-global-label": "Global",
+	"bs-usermanager-invalid-pwd-empty": "The password cannot be empty",
+	"bs-usermanager-invalid-pwd-repass": "The passwords do not match",
+	"bs-usermanager-invalid-pwd-username-match": "The password may not contain the username"
 }
