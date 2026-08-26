@@ -2,7 +2,6 @@ bs.util.registerNamespace( 'bs.usermanager.ui' );
 
 require( './dialog/EditUserDialog.js' );
 require( './dialog/AddUserDialog.js' );
-require( './dialog/EditGroupsDialog.js' );
 require( './dialog/ResetPasswordDialog.js' );
 require( './widget/GroupMembershipWidget.js' );
 require( './UserDetailsPanel.js' );
@@ -150,14 +149,6 @@ OO.inheritClass( bs.usermanager.ui.UserPanel, OOJSPlus.ui.panel.ManagerGrid );
 bs.usermanager.ui.UserPanel.prototype.getToolbarActions = function () {
 	const actions = [];
 	actions.push( this.getAddAction( { icon: 'userAdd', flags: [ 'progressive' ], displayBothIconAndLabel: true } ) );
-	if ( this.isAllowed( 'usergroups' ) ) {
-		actions.push( new OOJSPlus.ui.toolbar.tool.ToolbarTool( {
-			name: 'usergroups',
-			displayBothIconAndLabel: true,
-			icon: 'userContributions',
-			title: mw.msg( 'bs-usermanager-editgroups' )
-		} ) );
-	}
 	actions.push( new OOJSPlus.ui.toolbar.tool.ToolbarTool( {
 		name: 'enableuser',
 		displayBothIconAndLabel: true,
@@ -226,9 +217,6 @@ bs.usermanager.ui.UserPanel.prototype.onAction = function ( action, row ) {
 	if ( action === 'editpassword' && ( selected.length === 1 || row ) ) {
 		this.editPassword( row || selected[ 0 ] );
 	}
-	if ( action === 'usergroups' && selected.length > 0 ) {
-		this.editGroups( selected );
-	}
 	if ( action === 'disableuser' && ( selected.length > 0 || row ) ) {
 		this.disableUsers( row ? [ row ] : selected );
 	}
@@ -240,7 +228,6 @@ bs.usermanager.ui.UserPanel.prototype.onAction = function ( action, row ) {
 bs.usermanager.ui.UserPanel.prototype.getInitialAbilities = function () {
 	return {
 		add: true,
-		usergroups: false,
 		enableuser: false,
 		disableuser: false
 	};
@@ -333,22 +320,6 @@ bs.usermanager.ui.UserPanel.prototype.doDisableEnableUsers = function ( users, a
 	} );
 };
 
-bs.usermanager.ui.UserPanel.prototype.editGroups = function ( rows ) {
-	const users = [];
-	let groups = [];
-	rows.forEach( ( row ) => {
-		users.push( row.user_name );
-		// Intersect with previous value
-		groups = groups.length ? groups.filter( ( n ) => row.groups_raw.indexOf( n ) !== -1 ) : row.groups_raw;
-	} );
-	groups = groups.filter( ( item, pos ) => groups.indexOf( item ) === pos );
-	const dialog = new bs.usermanager.ui.dialog.EditGroupsDialog( {
-		users: users,
-		groups: groups
-	} );
-	this.openWindow( dialog );
-};
-
 bs.usermanager.ui.UserPanel.prototype.openWindow = function ( dialog ) {
 	if ( !this.windowManager ) {
 		this.windowManager = new OO.ui.WindowManager();
@@ -372,7 +343,6 @@ bs.usermanager.ui.UserPanel.prototype.getUserDetailsDialogData = function ( acti
 		email: row.user_email || '',
 		enabled: row.hasOwnProperty( 'enabled' ) ? row.enabled : true,
 		groups: row.groups_raw || [],
-		canEditGroups: this.isAllowed( 'usergroups' ),
 		isCreation: action === 'add'
 	};
 };
