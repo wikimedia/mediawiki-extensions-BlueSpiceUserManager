@@ -132,7 +132,7 @@ class UserManager implements LoggerAwareInterface {
 		], '' );
 
 		if ( $authResponse->status !== $authResponse::PASS ) {
-			$this->throw( RuntimeException::class, $authResponse->message->text() );
+			$this->throw( RuntimeException::class, $authResponse->message->parse() );
 		}
 
 		// Reload user
@@ -515,7 +515,7 @@ class UserManager implements LoggerAwareInterface {
 	) {
 		$messages = [];
 		foreach ( $status->getMessages() as $specifier ) {
-			$messages[] = Message::newFromSpecifier( $specifier )->plain();
+			$messages[] = Message::newFromSpecifier( $specifier )->parse();
 		}
 		$this->logger->error( 'Hook failure', [
 			'messages' => $messages
