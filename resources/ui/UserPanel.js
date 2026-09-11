@@ -139,7 +139,8 @@ bs.usermanager.ui.UserPanel = function ( cfg ) {
 	} );
 	cfg.grid = {
 		store: this.store,
-		columns: columns
+		columns: columns,
+		stateId: 'bs-usermanager-user-grid'
 	};
 	bs.usermanager.ui.UserPanel.parent.call( this, cfg );
 };
