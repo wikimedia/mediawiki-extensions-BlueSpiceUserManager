@@ -10,7 +10,6 @@
 	},
 	"bs-usermanager-desc": "Interfejs administracyjny do dodawania, edytowania i usuwania użytkowników",
 	"bs-usermanager-idnotexist": "Taki użytkownik nie istnieje.",
-	"bs-usermanager-invalid-pwd": "Hasło jest nieprawidłowe.",
 	"bs-usermanager-invalid-email-gen": "Adres e-mail jest nieprawidłowy.",
 	"bs-usermanager-user-exists": "Nazwa użytkownika już istnieje.",
 	"bs-usermanager-headerusername": "Nazwa użytkownika",
@@ -24,7 +23,6 @@
 	"bs-usermanager-titledisableuser": "Wyłączenie użytkownika",
 	"bs-usermanager-group-add-not-allowed": "Nie możesz dodawać użytkowników do grupy $1",
 	"bs-usermanager-group-remove-not-allowed": "Nie możesz usuwać użytkowników z grupy $1",
-	"bs-usermanager-editgroups": "Edytuj grupy",
 	"bs-usermanager-multipleuserselected": "Możesz zmienić hasło tylko jednego użytkownika na raz",
 	"action-usermanager-editpassword": "zmiany haseł użytkowników"
 }

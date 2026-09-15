@@ -8,7 +8,6 @@
 	},
 	"bs-usermanager-desc": "ব্যবহারকারী যোগ, সম্পাদনা এবং মুছে ফেলার জন্য প্রশাসনিক ইন্টারফেস",
 	"bs-usermanager-idnotexist": "এই ব্যবহারকারীর অস্তিত্ব নেই।",
-	"bs-usermanager-invalid-pwd": "পাসওয়ার্ডটি ভুল।",
 	"bs-usermanager-invalid-email-gen": "ইমেল ঠিকানাটি অবৈধ।",
 	"bs-usermanager-text": "ব্যবহারকারীগণ",
 	"bs-usermanager-user-exists": "ব্যবহারকারী নাম ইতিমধ্যে বিদ্যমান।",

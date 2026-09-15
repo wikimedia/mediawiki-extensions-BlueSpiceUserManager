@@ -14,7 +14,6 @@
 		]
 	},
 	"bs-usermanager-idnotexist": "Quest'utente non esiste.",
-	"bs-usermanager-invalid-pwd": "La password non è valida.",
 	"bs-usermanager-invalid-email-gen": "L'indirizzo email non è valido.",
 	"bs-usermanager-text": "Utenti",
 	"bs-usermanager-user-exists": "Il nome utente esiste già.",
@@ -40,7 +39,6 @@
 	"usermanager": "Gestione utente",
 	"bs-usermanager-group-add-not-allowed": "Non ti è consentito aggiungere utenti al gruppo $1 .",
 	"bs-usermanager-group-remove-not-allowed": "Non ti è consentito rimuovere utenti dal gruppo $1 .",
-	"bs-usermanager-editgroups": "Modifica gruppi",
 	"bs-usermanager-editpassword": "Cambia password",
 	"bs-usermanager-multipleuserselected": "È possibile modificare la password solo per un utente alla volta",
 	"action-usermanager-editpassword": "cambiare una password utente",
@@ -89,5 +87,8 @@
 	"bs-usermanager-group-invalid-name-length": "Il nome del gruppo non può essere più lungo di 255 caratteri",
 	"bs-usermanager-group-invalid-name-numeric": "Il nome del gruppo deve avere almeno un carattere",
 	"bs-usermanager-group-invalid-name": "Il nome del gruppo contiene {{PLURAL:$1|un carattere|caratteri}} non {{PLURAL:$1|valido|validi}}: $2",
-	"bs-usermanager-action-not-allowed": "Questa azione non è consentita"
+	"bs-usermanager-action-not-allowed": "Questa azione non è consentita",
+	"bs-usermanager-invalid-pwd-empty": "La password non può essere vuota",
+	"bs-usermanager-invalid-pwd-repass": "Le password non corrispondono",
+	"bs-usermanager-invalid-pwd-username-match": "La password non deve contenere il nome utente"
 }

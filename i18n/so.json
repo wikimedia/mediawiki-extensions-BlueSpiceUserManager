@@ -6,7 +6,6 @@
 	},
 	"bs-usermanager-desc": "Isndhexgalka maamulka ee lagu daro, lagu wax ka beddelo, laguna tirtiro isticmaalayaasha",
 	"bs-usermanager-idnotexist": "Isticmaalahan ma jiro.",
-	"bs-usermanager-invalid-pwd": "Furaha sirta ah waa khalad.",
 	"bs-usermanager-invalid-email-gen": "Ciwaanka iimaylka waa mid aan sax ahayn.",
 	"bs-usermanager-text": "Isticmaalayaasha",
 	"bs-usermanager-user-exists": "Magaca isticmaalaha hore ayuu u jiray.",
@@ -33,7 +32,6 @@
 	"usermanager": "Maamul isticmaalaha",
 	"bs-usermanager-group-add-not-allowed": "Looma oggola inaad isticmaalaya ku darto kooxda $1",
 	"bs-usermanager-group-remove-not-allowed": "Looma oggola inaad isticmaalayaasha ka saarto kooxda $1",
-	"bs-usermanager-editgroups": "Wax ka beddel kooxaha",
 	"bs-usermanager-editpassword": "Beddel furaha sirta ah",
 	"bs-usermanager-multipleuserselected": "Waxaad hal mar beddeli kartaa furaha sirta ah ee hal isticmaale oo keliya",
 	"action-usermanager-editpassword": "beddel furayaasha sirta ah ee isticmaalaha",
@@ -91,5 +89,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "Magaca kooxdu waa inuu lahaadaa ugu yaraan hal xaraf",
 	"bs-usermanager-group-invalid-name": "Magaca kooxdu wuxuu ka kooban yahay {{PLURAL:$1|xaraf aan ansax ahayn|xarfo aan ansax ahayn}}: $2",
 	"bs-usermanager-action-not-allowed": "Ficilkan lama oggola",
-	"bs-usermanager-global-label": "Caalami"
+	"bs-usermanager-global-label": "Caalami",
+	"bs-usermanager-invalid-pwd-empty": "Furaha sirta ahi ma noqon karo madhan",
+	"bs-usermanager-invalid-pwd-repass": "Furayaasha sirta ahi isma waafaqaan",
+	"bs-usermanager-invalid-pwd-username-match": "Furaha sirta ahi ma ka koobnaan karo magaca isticmaalaha"
 }

@@ -8,7 +8,6 @@
 		]
 	},
 	"bs-usermanager-idnotexist": "Dëse Benotzer gëtt et net.",
-	"bs-usermanager-invalid-pwd": "D'Passwuert ass ongülteg.",
 	"bs-usermanager-invalid-email-gen": "D'E-Mail-Adress ass ongülteg.",
 	"bs-usermanager-text": "Benotzer",
 	"bs-usermanager-user-exists": "De Benotzernumm gëtt et schonn.",
@@ -34,7 +33,6 @@
 	"usermanager": "Gestionnaire vu Benotzer",
 	"bs-usermanager-group-add-not-allowed": "Dir däerft keng Benotzer an d'Grupp $1 derbäisetzen",
 	"bs-usermanager-group-remove-not-allowed": "Dir däerft keng Benotzer aus dem Grupp $1 eraushuelen",
-	"bs-usermanager-editgroups": "Gruppen änneren",
 	"bs-usermanager-editpassword": "Passwuert änneren",
 	"bs-usermanager-multipleuserselected": "Dir kënnt d'Passwuert just fir ee Benotzer gläichzäiteg änneren",
 	"action-usermanager-editpassword": "Benotzer-Passwierder änneren",
@@ -84,5 +82,6 @@
 	"bs-usermanager-group-invalid-name-numeric": "De Gruppennumm muss op d'mannst een Zeeche laang sinn",
 	"bs-usermanager-group-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt|kommen ongülteg}} Zeeche vir: $2",
 	"bs-usermanager-action-not-allowed": "Dës Aktioun ass net erlaabt",
-	"bs-usermanager-global-label": "Global"
+	"bs-usermanager-global-label": "Global",
+	"bs-usermanager-invalid-pwd-empty": "D'Passwuert däerf net eidel sinn."
 }

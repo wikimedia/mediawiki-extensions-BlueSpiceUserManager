@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-usermanager-idnotexist": "St'utenti nun esisti.",
-	"bs-usermanager-invalid-pwd": "La password nun è vàlidda.",
 	"bs-usermanager-invalid-email-gen": "Lu nnirizzu email nun è vàliddu.",
 	"bs-usermanager-text": "Utenti",
 	"bs-usermanager-headerusername": "Nomu utenti",
@@ -16,7 +15,6 @@
 	"bs-usermanager-titleeditdetails": "Cancia utenti",
 	"bs-usermanager-labelnewpassword": "Password",
 	"bs-usermanager-labelpasswordcheck": "Cunferma password",
-	"bs-usermanager-editgroups": "Cancia gruppi",
 	"bs-usermanager-editpassword": "Cancia la password",
 	"bs-usermanager-invalid-realname": "Lu nomu veru nun è vàliddu"
 }

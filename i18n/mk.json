@@ -8,7 +8,6 @@
 	},
 	"bs-usermanager-desc": "Администраторски посредник за додавање, измена и бришење на корисници",
 	"bs-usermanager-idnotexist": "Овој корисник не постои.",
-	"bs-usermanager-invalid-pwd": "Лозинката е неважечка.",
 	"bs-usermanager-invalid-email-gen": "Е-поштата е неважечка.",
 	"bs-usermanager-user-exists": "Корисничкото име веќе постои.",
 	"bs-usermanager-headerusername": "Корисничко име",
@@ -25,7 +24,6 @@
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|Корисникот}} $1 е оневозможен преку UserManager",
 	"bs-usermanager-endisable": "Овозможи/оневозможи",
 	"usermanager": "Раководство со корисници",
-	"bs-usermanager-editgroups": "Уреди групи",
 	"bs-usermanager-editpassword": "Смени лозинка",
 	"action-usermanager-editpassword": "промена на кориснички лозинки",
 	"bs-usermanager-invalid-realname": "Вистинското име е неважечко."

@@ -20,7 +20,6 @@
 	"bs-usermanager-titledisableuser": "Deaktiver bruger",
 	"bs-usermanager-titleenableuser": "Aktiver bruger",
 	"bs-usermanager-group-add-not-allowed": "Du har ikke tilladelse til at tilføje brugere til gruppen $1",
-	"bs-usermanager-editgroups": "Rediger grupper",
 	"bs-usermanager-editpassword": "Skift adgangskode",
 	"action-usermanager-editpassword": "ændre brugeres adgangskoder",
 	"bs-usermanager-label-password-change-strategy": "Metode"
