@@ -107,5 +107,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "用户组名称需要至少一个字符",
 	"bs-usermanager-group-invalid-name": "用户组名称包含{{PLURAL:$1|一个无效字符|多个无效字符}}：$2",
 	"bs-usermanager-action-not-allowed": "不允许此操作",
-	"bs-usermanager-global-label": "全域"
+	"bs-usermanager-global-label": "全域",
+	"bs-usermanager-invalid-pwd-empty": "密码不能为空",
+	"bs-usermanager-invalid-pwd-repass": "密码不匹配",
+	"bs-usermanager-invalid-pwd-username-match": "密码可能不包含用户名"
 }
