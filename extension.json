@@ -177,6 +177,9 @@
 		},
 		"registerDynamicConfig": {
 			"class": "\\BlueSpice\\UserManager\\HookHandler\\RegisterDynamicConfig"
+		},
+		"removeSpecialBlock": {
+			"class": "\\BlueSpice\\UserManager\\Hook\\RemoveSpecialBlock"
 		}
 	},
 	"ServiceWiringFiles": [
@@ -259,7 +262,8 @@
 	"Hooks": {
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback",
-		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig",
+		"SpecialPage_initList": "removeSpecialBlock"
 	},
 	"config_prefix": "bsg",
 	"config": {
