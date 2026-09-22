@@ -6,7 +6,6 @@
 	},
 	"bs-usermanager-desc": "प्रयोक्ताकें जोडए, सम्पादन आ मेटाबए लेल माइनजन (प्रवन्धक)कें अवतरण",
 	"bs-usermanager-idnotexist": "इ प्रयोक्ता नै भेटल।",
-	"bs-usermanager-invalid-pwd": "कूटशब्द अमान्य अछि।",
 	"bs-usermanager-invalid-email-gen": "इ-पत्र अमान्य अछि।",
 	"bs-usermanager-user-exists": "इ प्रयोक्तानाम पहिने सँ अछि।",
 	"bs-usermanager-headerusername": "प्रयोक्ता नाम",

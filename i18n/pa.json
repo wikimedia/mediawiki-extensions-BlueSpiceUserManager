@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-usermanager-idnotexist": "ਵਰਤੋਂਕਾਰ ਮੌਜੂਦ ਨਹੀਂ ਏ।",
-	"bs-usermanager-invalid-pwd": "ਲੰਘ-ਸ਼ਬਦ ਗਲਤ ਏ।",
 	"bs-usermanager-invalid-email-gen": "ਈਮੇਲ ਪਤਾ ਗਲਤ ਏ।",
 	"bs-usermanager-text": "ਵਰਤੋਂਕਾਰ",
 	"bs-usermanager-user-exists": "ਵਰਤੋਂਕਾਰ-ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਏ।",

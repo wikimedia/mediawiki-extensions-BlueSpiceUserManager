@@ -12,7 +12,6 @@
 	},
 	"bs-usermanager-desc": "Administratie-interface voor het toevoegen, bewerken en verwijderen van gebruikers",
 	"bs-usermanager-idnotexist": "Deze gebruiker bestaat niet.",
-	"bs-usermanager-invalid-pwd": "Het wachtwoord is onjuist.",
 	"bs-usermanager-invalid-email-gen": "Het e-mailadres is onjuist.",
 	"bs-usermanager-text": "Gebruikers",
 	"bs-usermanager-user-exists": "De gebruikersnaam bestaat al.",
@@ -39,7 +38,6 @@
 	"usermanager": "Gebruikersbeheer",
 	"bs-usermanager-group-add-not-allowed": "U mag geen gebruikers toevoegen aan de groep $1",
 	"bs-usermanager-group-remove-not-allowed": "U mag geen gebruikers verwijderen uit de groep $1",
-	"bs-usermanager-editgroups": "Groepen bewerken",
 	"bs-usermanager-editpassword": "Wachtwoord wijzigen",
 	"bs-usermanager-multipleuserselected": "U kunt alleen het wachtwoord wijzigen voor één gebruiker tegelijk",
 	"action-usermanager-editpassword": "gebruikerswachtwoorden wijzigen",
@@ -97,5 +95,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten",
 	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een incorrect teken|incorrecte tekens}}: $2",
 	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan",
-	"bs-usermanager-global-label": "Globaal"
+	"bs-usermanager-global-label": "Globaal",
+	"bs-usermanager-invalid-pwd-empty": "Het wachtwoord mag niet leeg zijn",
+	"bs-usermanager-invalid-pwd-repass": "De wachtwoorden komen niet overeen.",
+	"bs-usermanager-invalid-pwd-username-match": "Het wachtwoord mag de gebruikersnaam niet bevatten"
 }

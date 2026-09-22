@@ -10,7 +10,6 @@
 	},
 	"bs-usermanager-desc": "Ҡатнашыусыларҙы өҫтәү, төҙәтеү һәм юйыу өсөн хаким интерфейсы",
 	"bs-usermanager-idnotexist": "Был ҡатнашыусы юҡ.",
-	"bs-usermanager-invalid-pwd": "Серһүҙ дөрөҫ түгел.",
 	"bs-usermanager-invalid-email-gen": "Электрон почтаның яраҡһыҙ адресы.",
 	"bs-usermanager-user-exists": "Бындай исемле ҡатнашыусы бар инде.",
 	"bs-usermanager-headerusername": "Ҡатнашыусы исеме",

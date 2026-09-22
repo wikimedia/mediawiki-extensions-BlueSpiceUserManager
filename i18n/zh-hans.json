@@ -24,7 +24,6 @@
 	},
 	"bs-usermanager-desc": "用于添加、编辑和删除用户的管理界面",
 	"bs-usermanager-idnotexist": "此用户不存在。",
-	"bs-usermanager-invalid-pwd": "密码无效。",
 	"bs-usermanager-invalid-email-gen": "邮件地址无效。",
 	"bs-usermanager-text": "用户",
 	"bs-usermanager-user-exists": "用户已存在。",
@@ -51,7 +50,6 @@
 	"usermanager": "用户管理",
 	"bs-usermanager-group-add-not-allowed": "您不被允许添加用户至用户组$1",
 	"bs-usermanager-group-remove-not-allowed": "您不被允许从用户组$1中移除用户",
-	"bs-usermanager-editgroups": "编辑组",
 	"bs-usermanager-editpassword": "更改密码",
 	"bs-usermanager-multipleuserselected": "您每次只能更改一位用户的密码",
 	"action-usermanager-editpassword": "更改用户密码",
@@ -109,5 +107,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "用户组名称需要至少一个字符",
 	"bs-usermanager-group-invalid-name": "用户组名称包含{{PLURAL:$1|一个无效字符|多个无效字符}}：$2",
 	"bs-usermanager-action-not-allowed": "不允许此操作",
-	"bs-usermanager-global-label": "全域"
+	"bs-usermanager-global-label": "全域",
+	"bs-usermanager-invalid-pwd-empty": "密码不能为空",
+	"bs-usermanager-invalid-pwd-repass": "密码不匹配",
+	"bs-usermanager-invalid-pwd-username-match": "密码可能不包含用户名"
 }

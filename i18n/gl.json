@@ -9,7 +9,6 @@
 	},
 	"bs-usermanager-desc": "Interface administrativa para engadir, editar e eliminar usuarios",
 	"bs-usermanager-idnotexist": "Ese usuario non existe.",
-	"bs-usermanager-invalid-pwd": "O contrasinal non é válido.",
 	"bs-usermanager-invalid-email-gen": "O enderezo de correo electrónico non é válido.",
 	"bs-usermanager-text": "Usuarios",
 	"bs-usermanager-user-exists": "O nome de usuario xa existe.",
@@ -36,7 +35,6 @@
 	"usermanager": "Administrador de usuarios",
 	"bs-usermanager-group-add-not-allowed": "Non tes permisos para engadir usuarios ó grupo «$1»",
 	"bs-usermanager-group-remove-not-allowed": "Non tes permisos para eliminar usuarios do grupo «$1»",
-	"bs-usermanager-editgroups": "Editar os grupos",
 	"bs-usermanager-editpassword": "Cambiar o contrasinal",
 	"bs-usermanager-multipleuserselected": "Só podes cambiar o contrasinal dun usuario de cada vez",
 	"action-usermanager-editpassword": "cambiar os contrasinais dos usuarios",
@@ -94,5 +92,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "O nome do grupo debe ter polo menos un carácter",
 	"bs-usermanager-group-invalid-name": "O nome do grupo contén {{PLURAL:$1|un carácter inválido|caracteres inválidos}}: $2",
 	"bs-usermanager-action-not-allowed": "A acción non está permitida",
-	"bs-usermanager-global-label": "Global"
+	"bs-usermanager-global-label": "Global",
+	"bs-usermanager-invalid-pwd-empty": "O contrasinal non pode estar baleiro",
+	"bs-usermanager-invalid-pwd-repass": "Os contrasinais non coinciden",
+	"bs-usermanager-invalid-pwd-username-match": "O contrasinal non pode conter o nome de usuario"
 }
