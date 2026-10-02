@@ -438,6 +438,7 @@ class UserManager implements LoggerAwareInterface {
 		$permissions = [
 			'add' => [ 'wikiadmin' ],
 			'edit' => [ 'wikiadmin' ],
+			'block' => [ 'wikiadmin' ],
 			'setGroups' => [ 'userrights' ],
 			'editPassword' => [ 'userrights', 'usermanager-editpassword' ],
 		];
@@ -488,8 +489,10 @@ class UserManager implements LoggerAwareInterface {
 	 * @param User $user
 	 * @param Authority $actor
 	 * @return void
+	 * @throws PermissionsError
 	 */
 	public function unblockUser( DatabaseBlock $block, User $user, Authority $actor ) {
+		$this->assertActorCan( 'block', $user, $actor );
 		$reason = '';
 		if ( !$this->hookContainer->run( 'UnblockUser', [ $block, $actor->getUser(), &$reason ] ) ) {
 			$this->logger->warning( 'Unblocking user failed due to UnblockUser hook', [
@@ -516,8 +519,10 @@ class UserManager implements LoggerAwareInterface {
 	 * @param User $user
 	 * @param Authority $actor
 	 * @return void
+	 * @throws PermissionsError
 	 */
 	public function blockUser( User $user, Authority $actor ) {
+		$this->assertActorCan( 'block', $user, $actor );
 		if ( $user->getId() == $actor->getUser()->getId() ) {
 			$this->throw( RuntimeException::class, 'bs-usermanager-no-self-block' );
 		}
