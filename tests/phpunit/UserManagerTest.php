@@ -104,6 +104,36 @@ class UserManagerTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
+	 * @covers \BlueSpice\UserManager\UserManager::blockUser
+	 * @return void
+	 */
+	public function testBlockUserWithoutPermission() {
+		[ $manager, $authority ] = $this->prepare( false, PermissionsError::class );
+		$user = $this->getTestUser()->getUser();
+		$manager->blockUser( $user, $authority );
+	}
+
+	/**
+	 * @covers \BlueSpice\UserManager\UserManager::unblockUser
+	 * @return void
+	 */
+	public function testUnblockUserWithoutPermission() {
+		[ $manager, $sysop ] = $this->prepare( true, null );
+		$user = $this->getTestUser()->getUser();
+		$manager->blockUser( $user, $sysop );
+		$block = $manager->getBlock( $user );
+		$this->assertInstanceOf( DatabaseBlock::class, $block );
+
+		[ $manager, $authority ] = $this->prepare( false, PermissionsError::class );
+		try {
+			$manager->unblockUser( $block, $user, $authority );
+		} finally {
+			$user = $this->getServiceContainer()->getUserFactory()->newFromName( $user->getName() );
+			$this->assertNotNull( $user->getBlock() );
+		}
+	}
+
+	/**
 	 * @param bool $authorityIsAllowed
 	 * @param string|null $expectedException
 	 * @param array $data
