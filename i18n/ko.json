@@ -93,5 +93,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "그룹 이름은 적어도 한 글자 이상이어야 합니다",
 	"bs-usermanager-group-invalid-name": "그룹 이름이 {{PLURAL:$1|올바르지 않은 문자}}를 포함하고 있습니다: $2",
 	"bs-usermanager-action-not-allowed": "이 작업은 허용되지 않았습니다",
-	"bs-usermanager-global-label": "전역"
+	"bs-usermanager-global-label": "전역",
+	"bs-usermanager-invalid-pwd-empty": "비밀번호는 빈 채로 둘 수 없습니다",
+	"bs-usermanager-invalid-pwd-repass": "비밀번호가 일치하지 않습니다",
+	"bs-usermanager-invalid-pwd-username-match": "비밀번호에는 사용자 이름이 포함될 수 없습니다"
 }
