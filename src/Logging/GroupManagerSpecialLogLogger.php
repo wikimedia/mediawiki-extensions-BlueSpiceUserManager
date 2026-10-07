@@ -2,7 +2,7 @@
 
 namespace BlueSpice\UserManager\Logging;
 
-use ManualLogEntry;
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Title\Title;
 
