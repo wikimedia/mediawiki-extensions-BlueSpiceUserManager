@@ -96,5 +96,8 @@
 	"bs-usermanager-group-details-confirm-delete-group": "\"$1\" 그룹을 삭제하시겠습니까? 이렇게 하면 그룹의 모든 회원이 제거됩니다.",
 	"bs-usermanager-group-details-error-delete-group": "그룹을 삭제하던 중에 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요.",
 	"bs-usermanager-groups-confirm-remove-member": "그룹에서 사용자 \"$1\"님을 제거하시겠습니까?",
-	"bs-usermanager-groups-error-remove-member": "그룹에서 사용자를 제거하던 중에 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요."
+	"bs-usermanager-groups-error-remove-member": "그룹에서 사용자를 제거하던 중에 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요.",
+	"bs-usermanager-invalid-pwd-empty": "비밀번호는 빈 채로 둘 수 없습니다",
+	"bs-usermanager-invalid-pwd-repass": "비밀번호가 일치하지 않습니다",
+	"bs-usermanager-invalid-pwd-username-match": "비밀번호에는 사용자 이름이 포함될 수 없습니다"
 }

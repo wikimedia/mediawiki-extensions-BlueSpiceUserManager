@@ -47,7 +47,7 @@
 	"right-usermanager-editpassword": "Gebruikerswachtwoorden wijzigen met de speciale beheerpagina [[Special:UserManager]]",
 	"bs-usermanager-label-password-change-strategy": "Methode",
 	"bs-usermanager-label-password-change-strategy-reset": "Stuur de koppeling voor het opnieuw instellen van het wachtwoord naar de gebruiker",
-	"bs-usermanager-label-password-change-strategy-pw": "Wijzig wachtwoord meteen",
+	"bs-usermanager-label-password-change-strategy-pw": "Wachtwoord direct wijzigen",
 	"bs-usermanager-no-mail": "De geselecteerde gebruiker heeft geen bevestigd e-mailadres",
 	"bs-usermanager-save": "Opslaan",
 	"bs-usermanager-cancel": "Annuleren",
@@ -98,5 +98,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten",
 	"bs-usermanager-group-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een incorrect teken|incorrecte tekens}}: $2",
 	"bs-usermanager-action-not-allowed": "Deze handeling is niet toegestaan",
-	"bs-usermanager-global-label": "Globaal"
+	"bs-usermanager-global-label": "Globaal",
+	"bs-usermanager-invalid-pwd-empty": "Het wachtwoord mag niet leeg zijn",
+	"bs-usermanager-invalid-pwd-repass": "De wachtwoorden komen niet overeen.",
+	"bs-usermanager-invalid-pwd-username-match": "Het wachtwoord mag de gebruikersnaam niet bevatten"
 }

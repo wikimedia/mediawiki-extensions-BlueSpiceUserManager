@@ -96,5 +96,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "Error label if group name does not contain any character",
 	"bs-usermanager-group-invalid-name": "Error label if group name contains invalid characters",
 	"bs-usermanager-action-not-allowed": "Error label if action is not allowed",
-	"bs-usermanager-global-label": "Badge label to indicate global menu"
+	"bs-usermanager-global-label": "Badge label to indicate global menu",
+	"bs-usermanager-invalid-pwd-empty": "Error label if password is empty",
+	"bs-usermanager-invalid-pwd-repass": "Error label if password and repeated password do not match",
+	"bs-usermanager-invalid-pwd-username-match": "Error label if password contains username"
 }
