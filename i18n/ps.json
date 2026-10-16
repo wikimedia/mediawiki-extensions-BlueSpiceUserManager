@@ -1,7 +1,6 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel",
 			"شاه زمان پټان"
 		]
 	},
@@ -90,5 +89,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "د ډلې نوم بايډ لږ تر لږه يوه لوښه ولري",
 	"bs-usermanager-group-invalid-name": "د ډلې نوم {{PLURAL:$1|يو ناسمه لوښه|ناسمې لوښې}} لري: $2",
 	"bs-usermanager-action-not-allowed": "د دې چارې اجازه نشته",
-	"bs-usermanager-global-label": "ټوليز"
+	"bs-usermanager-global-label": "ټوليز",
+	"bs-usermanager-invalid-pwd-empty": "پټنوم تش پاتې کېدی نشي",
+	"bs-usermanager-invalid-pwd-repass": "پټنومونه سره سمون نه خوري",
+	"bs-usermanager-invalid-pwd-username-match": "پټنوم کېدای شي کارن‌نوم ونه لري"
 }
