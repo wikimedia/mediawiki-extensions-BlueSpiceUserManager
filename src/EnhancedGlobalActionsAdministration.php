@@ -16,6 +16,11 @@ class EnhancedGlobalActionsAdministration extends GlobalActionsAdministration {
 		parent::__construct();
 	}
 
+	/** @inheritDoc */
+	public function getTarget(): string {
+		return '_self';
+	}
+
 	/**
 	 * @return string
 	 */
