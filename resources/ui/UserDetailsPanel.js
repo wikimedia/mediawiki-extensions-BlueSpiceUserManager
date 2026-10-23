@@ -85,9 +85,6 @@ bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function () {
 		this.realNameInput.getValidity(),
 		this.emailInput.getValidity()
 	];
-	if ( !this.isCreation ) {
-
-	}
 	$.when( ...validationPromises ).done( ( userData ) => {
 		if ( !userData ) {
 			dfd.reject();
