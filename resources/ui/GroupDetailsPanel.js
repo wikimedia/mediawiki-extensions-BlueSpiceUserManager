@@ -38,7 +38,10 @@ bs.usermanager.ui.GroupDetailsPanel = function ( cfg ) {
 	} );
 	cfg.grid = {
 		store: this.store,
-		columns: columns
+		columns: columns,
+		filtering: {
+			showQueryField: true
+		}
 	};
 	this.externalFilter = new OOJSPlus.ui.data.grid.ExternalFilter( {
 		store: this.store,

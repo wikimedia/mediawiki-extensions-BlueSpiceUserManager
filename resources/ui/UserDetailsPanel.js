@@ -12,7 +12,6 @@ bs.usermanager.ui.UserDetailsPanel = function ( cfg ) {
 	this.email = cfg.email || '';
 	this.enabled = cfg.enabled !== undefined ? cfg.enabled : true;
 	this.groups = cfg.groups || [];
-	this.nonChangeableGroups = cfg.nonChangeableGroups || [];
 	this.$overlay = cfg.$overlay || true;
 };
 
@@ -30,6 +29,7 @@ bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function () {
 		value: this.realName,
 		classes: [ 'um-realname' ]
 	} );
+	this.realNameInput.connect( this, { change: 'validateOnChange' } );
 	this.emailInput = new OO.ui.TextInputWidget( {
 		value: this.email,
 		validation: 'email',
@@ -78,14 +78,31 @@ bs.usermanager.ui.UserDetailsPanel.prototype.makeForm = function () {
 
 bs.usermanager.ui.UserDetailsPanel.prototype.getValidData = function () {
 	const dfd = $.Deferred();
-	this.checkValidity( [ this.usernameInput, this.realNameInput, this.emailInput ] ).done( () => {
-		dfd.resolve( {
-			username: this.usernameInput.getValue(),
-			realName: this.realNameInput.getValue(),
-			email: this.emailInput.getValue(),
-			enabled: this.enabled,
-			groups: [ ...this.groupInput.getValue(), ...this.nonChangeableGroups ]
-		} );
+
+	const validationPromises = [
+		mws.commonwebapis.user.getByUsername( this.username ),
+		this.usernameInput.getValidity(),
+		this.realNameInput.getValidity(),
+		this.emailInput.getValidity()
+	];
+	if ( !this.isCreation ) {
+
+	}
+	$.when( ...validationPromises ).done( ( userData ) => {
+		if ( !userData ) {
+			dfd.reject();
+		} else {
+			const nonChangeableGroups = ( userData.groups_all || [] )
+				.filter( ( value ) => !userData.groups_raw.includes( value ) );
+
+			dfd.resolve( {
+				username: this.usernameInput.getValue(),
+				realName: this.realNameInput.getValue(),
+				email: this.emailInput.getValue(),
+				enabled: this.enabled,
+				groups: [ ...this.groupInput.getValue(), ...nonChangeableGroups ]
+			} );
+		}
 	} ).fail( () => {
 		dfd.reject();
 	} );
@@ -98,15 +115,4 @@ bs.usermanager.ui.UserDetailsPanel.prototype.validateOnChange = function () {
 	} ).fail( () => {
 		this.emit( 'validityCheck', false );
 	} );
-};
-
-bs.usermanager.ui.UserDetailsPanel.prototype.checkValidity = function ( fields ) {
-	const dfd = $.Deferred();
-	const promises = fields.map( ( field ) => field.getValidity() );
-	$.when( ...promises ).done( () => {
-		dfd.resolve();
-	} ).fail( () => {
-		dfd.reject();
-	} );
-	return dfd.promise();
 };

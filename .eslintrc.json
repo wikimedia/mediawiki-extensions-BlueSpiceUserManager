@@ -10,7 +10,8 @@
 	},
 	"globals": {
 		"bs": "readonly",
-		"OOJSPlus": "readonly"
+		"OOJSPlus": "readonly",
+		"mws": "readonly"
 	},
 	"rules": {
 		"es-x/no-array-prototype-includes": "off",
