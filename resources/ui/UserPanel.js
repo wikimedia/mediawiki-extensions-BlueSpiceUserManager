@@ -140,7 +140,10 @@ bs.usermanager.ui.UserPanel = function ( cfg ) {
 	cfg.grid = {
 		store: this.store,
 		columns: columns,
-		stateId: 'bs-usermanager-user-grid'
+		stateId: 'bs-usermanager-user-grid',
+		filtering: {
+			showQueryField: true
+		}
 	};
 	bs.usermanager.ui.UserPanel.parent.call( this, cfg );
 };
@@ -344,7 +347,6 @@ bs.usermanager.ui.UserPanel.prototype.getUserDetailsDialogData = function ( acti
 		email: row.user_email || '',
 		enabled: row.hasOwnProperty( 'enabled' ) ? row.enabled : true,
 		groups: row.groups_raw || [],
-		nonChangeableGroups: ( row.groups_all || [] ).filter( ( value ) => !row.groups_raw.includes( value ) ),
 		isCreation: action === 'add'
 	};
 };

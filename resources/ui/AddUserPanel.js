@@ -101,3 +101,14 @@ bs.usermanager.ui.AddUserPanel.prototype.getValidData = function () {
 	} );
 	return dfd.promise();
 };
+
+bs.usermanager.ui.AddUserPanel.prototype.checkValidity = function ( fields ) {
+	const dfd = $.Deferred();
+	const promises = fields.map( ( field ) => field.getValidity() );
+	$.when( ...promises ).done( () => {
+		dfd.resolve();
+	} ).fail( () => {
+		dfd.reject();
+	} );
+	return dfd.promise();
+};

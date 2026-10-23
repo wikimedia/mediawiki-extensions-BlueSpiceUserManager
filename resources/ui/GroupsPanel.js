@@ -73,7 +73,10 @@ bs.usermanager.ui.GroupsPanel = function ( cfg ) {
 		store: this.store,
 		columns: columns,
 		multiSelect: false,
-		stateId: 'bs-usermanager-groups-grid'
+		stateId: 'bs-usermanager-groups-grid',
+		filtering: {
+			showQueryField: true
+		}
 	};
 
 	this.externalFilter = new OOJSPlus.ui.data.grid.ExternalFilter( {
