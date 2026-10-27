@@ -15,5 +15,6 @@
 	"bs-usermanager-titleenableuser": "Актываваць карыстальніка",
 	"bs-usermanager-cancel": "Скасаваць",
 	"bs-usermanager-headerenabled": "Актыўны",
-	"bs-usermanager-titledisableuser": "Дэактываваць карыстальніка"
+	"bs-usermanager-titledisableuser": "Дэактываваць карыстальніка",
+	"bs-usermanager-action-label-remove": "Прыбраць"
 }
