@@ -29,7 +29,8 @@ bs.usermanager.ui.dialog.ShowUserGroupsDialog.prototype.initialize = function ()
 
 	const $ul = $( '<ul>' );
 	$.each( this.groups, ( i, group ) => { // eslint-disable-line no-jquery/no-each-util
-		const url = mw.Title.makeTitle( -1, 'UserManager/' + group.raw ).getUrl( {
+		const url = mw.Title.makeTitle( -1, 'UserManager' ).getUrl( {
+			group: group.raw,
 			backTo: mw.config.get( 'wgPageName' )
 		} );
 		$ul.append( '<li><a href=' + url + '>' + group.displayName + '</a></li>' );
