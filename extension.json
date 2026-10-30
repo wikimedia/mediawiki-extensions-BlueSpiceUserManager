@@ -79,6 +79,7 @@
 				"ui/dialog/CreateGroupDialog.js",
 				"ui/dialog/ShowUserGroupsDialog.js",
 				"ui/widget/GroupMembershipWidget.js",
+				"ui/widget/GroupMemberPicker.js",
 				"ui/dialog/AddGroupMemberDialog.js"
 			],
 			"styles": {
@@ -257,6 +258,30 @@
 			"path": "/bs-usermanager/v1/groups/unassign/{group}",
 			"class": "BlueSpice\\UserManager\\Rest\\RemoveUserFromGroup",
 			"services": [ "BlueSpice.UserManager.Manager", "UserFactory" ]
+		},
+		{
+			"path": "/bs-usermanager/v1/user-store",
+			"class": "BlueSpice\\UserManager\\Rest\\UserStore",
+			"services": [
+				"HookContainer",
+				"DBLoadBalancer",
+				"UserFactory",
+				"LinkRenderer",
+				"TitleFactory",
+				"MWStakeCommonUtilsConfig",
+				"MWStakeCommonUtilsFactory",
+				"PermissionManager"
+			]
+		},
+		{
+			"path": "/bs-usermanager/v1/group-store",
+			"class": "BlueSpice\\UserManager\\Rest\\GroupStore",
+			"services": [
+				"HookContainer",
+				"MWStakeCommonUtilsFactory",
+				"MWStakeCommonUtilsConfig",
+				"PermissionManager"
+			]
 		}
 	],
 	"Hooks": {

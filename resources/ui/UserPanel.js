@@ -102,7 +102,7 @@ bs.usermanager.ui.UserPanel = function ( cfg ) {
 		actions: subActions
 	};
 	this.store = new OOJSPlus.ui.data.store.RemoteRestStore( {
-		path: 'mws/v1/user-query-store',
+		path: 'bs-usermanager/v1/user-store',
 		cacheResults: true,
 		filter: {
 			enabled: {
