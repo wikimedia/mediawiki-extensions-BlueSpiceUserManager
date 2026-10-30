@@ -63,7 +63,7 @@ bs.usermanager.ui.GroupsPanel = function ( cfg ) {
 		}
 	};
 	this.store = new OOJSPlus.ui.data.store.RemoteRestStore( {
-		path: 'mws/v1/group-store',
+		path: 'bs-usermanager/v1/group-store',
 		cacheResults: true,
 		sorter: {
 			name: { direction: 'asc' }

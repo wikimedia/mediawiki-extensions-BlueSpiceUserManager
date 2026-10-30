@@ -1,5 +1,7 @@
 bs.util.registerNamespace( 'bs.usermanager.ui.dialog' );
 
+require( './../widget/GroupMemberPicker.js' );
+
 bs.usermanager.ui.dialog.AddGroupMemberDialog = function ( config ) {
 	config = config || {};
 	this.group = config.group || {};
@@ -38,7 +40,7 @@ bs.usermanager.ui.dialog.AddGroupMemberDialog.prototype.initialize = function ()
 };
 
 bs.usermanager.ui.dialog.AddGroupMemberDialog.prototype.addItems = function () {
-	this.userInput = new OOJSPlus.ui.widget.UserPickerWidget( {
+	this.userInput = new bs.usermanager.ui.widget.GroupMemberPicker( {
 		$overlay: this.$overlay
 	} );
 	this.panel.$element.append(
@@ -73,12 +75,12 @@ bs.usermanager.ui.dialog.AddGroupMemberDialog.prototype.getActionProcess = funct
 				url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/assign/' + encodeURIComponent( this.group ),
 				type: 'POST',
 				data: JSON.stringify( {
-					user: selectedUser.userWidget.user.user_name
+					user: selectedUser.getUsername()
 				} ),
 				dataType: 'json',
 				contentType: 'application/json; charset=UTF-8'
 			} ).done( ( data ) => { // eslint-disable-line no-unused-vars
-				this.close( { action: 'submit', name: name } );
+				this.close( { action: 'submit' } );
 				dfd.resolve();
 			} ).fail( () => {
 				this.popPending();
