@@ -4,12 +4,12 @@ namespace BlueSpice\UserManager\Rest;
 
 use BlueSpice\UserManager\UserManager;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Exception\PermissionsError;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
-use PermissionsError;
 use Throwable;
 use Wikimedia\ParamValidator\ParamValidator;
 

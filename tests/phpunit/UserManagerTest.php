@@ -5,10 +5,10 @@ namespace BlueSpice\UserManager\Tests;
 use BlueSpice\UserManager\UserManager;
 use InvalidArgumentException;
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\Exception\PermissionsError;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\User\User;
 use MediaWikiIntegrationTestCase;
-use PermissionsError;
 use RuntimeException;
 
 /**
