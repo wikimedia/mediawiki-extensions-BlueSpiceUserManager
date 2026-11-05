@@ -80,6 +80,7 @@
 				"ui/dialog/ShowUserGroupsDialog.js",
 				"ui/widget/GroupMembershipWidget.js",
 				"ui/widget/GroupMemberPicker.js",
+				"ui/widget/GroupMultiSelectWidget.js",
 				"ui/dialog/AddGroupMemberDialog.js"
 			],
 			"styles": {
