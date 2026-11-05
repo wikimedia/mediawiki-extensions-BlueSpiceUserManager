@@ -1,5 +1,7 @@
 bs.util.registerNamespace( 'bs.usermanager.ui' );
 
+require( './widget/GroupMultiSelectWidget.js' );
+
 bs.usermanager.ui.UserDetailsPanel = function ( cfg ) {
 	cfg = cfg || {};
 	cfg.expanded = false;
@@ -37,7 +39,7 @@ bs.usermanager.ui.UserDetailsPanel.prototype.initialize = function () {
 		type: 'email'
 	} );
 	this.emailInput.connect( this, { change: 'validateOnChange' } );
-	this.groupInput = new OOJSPlus.ui.widget.GroupMultiSelectWidget( {
+	this.groupInput = new bs.usermanager.ui.widget.GroupMultiSelectWidget( {
 		$overlay: this.$overlay,
 		groupTypes: [ 'core-minimal', 'explicit', 'custom', 'extension-minimal' ]
 	} );
