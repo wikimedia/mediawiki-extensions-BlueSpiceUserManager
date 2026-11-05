@@ -28,7 +28,7 @@
 	"bs-usermanager-headerenabled": "সক্রিয়",
 	"bs-usermanager-log-user-disabled": "ব্যবহারকারী-ব্যবস্থাপক {{GENDER:$1|ব্যবহারকারী}} $1-কে নিষ্ক্রিয় করেছেন",
 	"bs-usermanager-endisable": "সক্রিয়/নিষ্ক্রিয় করুন",
-	"bs-usermanager-confirmdisableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} নিষ্ক্রিয় করতে চান?",
+	"bs-usermanager-confirmdisableuser": "আপনি কি নিশ্চিত আপনি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} নিষ্ক্রিয় করতে চান?",
 	"bs-usermanager-confirmenableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} সক্রিয় করতে চান?",
 	"bs-usermanager-titledisableuser": "ব্যবহারকারী নিষ্ক্রিয় করুন",
 	"bs-usermanager-titleenableuser": "ব্যবহারকারী সক্রিয় করুন",
