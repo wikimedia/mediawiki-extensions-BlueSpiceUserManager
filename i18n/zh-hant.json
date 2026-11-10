@@ -6,6 +6,7 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
+			"LowensteinYang",
 			"Sanmosa",
 			"Winston Sung",
 			"Xiplus"
@@ -33,8 +34,8 @@
 	"bs-usermanager-headerenabled": "生效",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|使用者}}「$1」已透過 UserManager 失效。",
 	"bs-usermanager-endisable": "生效/失效",
-	"bs-usermanager-confirmdisableuser": "您確定要失效{{PLURAL:$1|此名使用者|這 $1 位使用者}}嗎？",
-	"bs-usermanager-confirmenableuser": "您確定要生效{{PLURAL:$1|此名使用者|這 $1 位使用者}}嗎？",
+	"bs-usermanager-confirmdisableuser": "您確定要失效{{PLURAL:$1|此名使用者|這 $1 位使用者們}}嗎？",
+	"bs-usermanager-confirmenableuser": "您確定要啟用{{PLURAL:$1|此名使用者|這 $1 位使用者們}}嗎？",
 	"bs-usermanager-titledisableuser": "失效使用者",
 	"bs-usermanager-titleenableuser": "生效使用者",
 	"usermanager": "使用者管理",
