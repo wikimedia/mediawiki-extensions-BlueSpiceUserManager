@@ -103,5 +103,8 @@
 	"bs-usermanager-group-invalid-name-numeric": "Der Gruppenname muss mindestens ein Zeichen enthalten",
 	"bs-usermanager-group-invalid-name": "Der Gruppenname enthält {{PLURAL:$1|ein ungültiges Zeichen|ungültige Zeichen}}: $2",
 	"bs-usermanager-action-not-allowed": "Diese Aktion ist nicht erlaubt",
-	"bs-usermanager-global-label": "Global"
+	"bs-usermanager-global-label": "Global",
+	"bs-usermanager-invalid-pwd-empty": "Das Passwort darf nicht leer sein",
+	"bs-usermanager-invalid-pwd-repass": "Die Passwörter stimmen nicht überein",
+	"bs-usermanager-invalid-pwd-username-match": "Das Passwort darf den Benutzernamen nicht enthalten"
 }
