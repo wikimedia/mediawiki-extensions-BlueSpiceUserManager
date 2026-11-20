@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"DmitTrix",
 			"Erelon",
@@ -35,7 +36,7 @@
 	"bs-usermanager-headerenabled": "פעיל",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|המשתמש $1 הושבת|המשתמשת $1 הושבתה}} באמצעות ההרחבה UserManager",
 	"bs-usermanager-endisable": "הפעלה/השבתה",
-	"bs-usermanager-confirmdisableuser": "האם ברצונך להשבית את {{PLURAL:$1|חשבון המשתמש הזה|$1 חשבונות המשתמשים האלה}}?",
+	"bs-usermanager-confirmdisableuser": "האם ברצונך להשבית את {{PLURAL:$1|המשתמש הזה|$1 המשתמשים האלה}}?",
 	"bs-usermanager-confirmenableuser": "האם ברצונך להפעיל את {{PLURAL:$1|המשתמש הזה|$1 המשתמשים האלה}}?",
 	"bs-usermanager-titledisableuser": "השבתת משתמש",
 	"bs-usermanager-titleenableuser": "הפעלת משתמש",
